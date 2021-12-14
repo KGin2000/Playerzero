@@ -5,7 +5,14 @@ using UnityEngine;
 public class CharControl : MonoBehaviour
 {
     Rigidbody rb;
+    public float speed;
+    Animator animator;
+
     // Start is called before the first frame update
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
     void Start()
     {
         rb = this.GetComponent<Rigidbody>(); 
@@ -14,12 +21,15 @@ public class CharControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveHorizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveVertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
-        Vector3 movement = new Vector3 (moveHorizontal, 0, moveVertical);
+        this.transform.Translate(0,0, moveVertical);
+        this.transform.Translate(moveHorizontal,0, 0);
 
-        rb.AddForce(movement);
+        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal") * speed * Time.deltaTime);
+        animator.SetFloat("Vertical", Input.GetAxis("Vertical") * speed * Time.deltaTime);
+
     }
 }
