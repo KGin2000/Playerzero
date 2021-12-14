@@ -13,6 +13,7 @@ public class CharControl : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
+    
     void Start()
     {
         rb = this.GetComponent<Rigidbody>(); 
@@ -25,7 +26,7 @@ public class CharControl : MonoBehaviour
 
         float moveVertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
-        this.transform.Translate(0,0, moveVertical);
+        this.transform.Translate(0,moveVertical,0);
         this.transform.Translate(moveHorizontal,0, 0);
 
         animator.SetFloat("Horizontal", Input.GetAxis("Horizontal") * speed * Time.deltaTime);
