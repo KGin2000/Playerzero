@@ -22,7 +22,7 @@ public class CharControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal") * (speed*1.5f) * Time.deltaTime;
+        float moveHorizontal = Input.GetAxis("Horizontal") * (speed*1.7f) * Time.deltaTime;
 
         float moveVertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
