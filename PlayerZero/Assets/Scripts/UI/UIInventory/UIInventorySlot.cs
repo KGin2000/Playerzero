@@ -1,0 +1,235 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+{//555
+
+     public Vector3 MPosition; //สร้างตัวแปรนอก จะได้ไม่หนัก
+
+    private Camera mainCamera; 
+
+    private Canvas parentCanvas;        //30//
+    private Transform parentItem;
+    private GameObject draggedItem;
+
+    public Image inventorySlotHightlight;
+    public Image inventorySlotImage;
+    public TextMeshProUGUI textMeshProUGUI;
+
+    [SerializeField] private UIInventoryBar inventoryBar = null;
+    [SerializeField] private GameObject inventoryTextBoxPrefab = null;
+    [HideInInspector] public bool isSelected = false; // 32 // 
+    [HideInInspector] public ItemDetails itemDetails;
+    [SerializeField] private GameObject itemPrefab = null;
+    [HideInInspector] public int itemQuantity;
+    [SerializeField] private int slotNumber = 0;
+
+    private void Awake()        //30//
+    {
+        parentCanvas = GetComponentInParent<Canvas>();
+    }
+
+    private void OnEnable()
+    {
+        EventHandler.AfterSceneLoadEvent += SceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        EventHandler.AfterSceneLoadEvent -= SceneLoaded;
+    }
+
+    private void Start()
+    {
+        //mainCamera = Camera.main;// original
+        //parentItem = GameObject.FindGameObjectWithTag(Tags.ItemsParentTransform).transform;
+
+        MousePosition.sendposition += getNewPosition;       //  เรียก Class MousePosition
+    }
+
+    private void SetSelectedItem()
+    {
+        inventoryBar.ClearHighlightOnInventorySlots();
+
+        isSelected = true;
+
+        inventoryBar.SetHighlightedInventorySlots();
+
+        InventoryManager.Instance.SetSelectedInventoryItem(InventoryLocation.player, itemDetails.itemCode);
+    }
+
+    private void ClearSelectedItem()
+    {
+        inventoryBar.ClearHighlightOnInventorySlots();
+
+        isSelected = false;
+
+        InventoryManager.Instance.ClearSelectedInventoryItem(InventoryLocation.player);
+    }
+
+    void getNewPosition(Vector3 newposition)
+    {
+        MPosition = newposition;
+    }
+
+    private void DropSelectedItemAtMousePosition()
+    {
+        if (itemDetails != null && isSelected)
+        {
+            //Vector3 worldPosition = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -mainCamera.transform.position.z));
+            //Vector3 curScreenPoint = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, -screenPoint.z);
+            //Vector3 curPosition = Camera.main.ScreenToWorldPoint (curScreenPoint);
+            //curPosition.y = 0.0f;
+            //transform.position = curPosition;
+
+            //Debug.Log("test" + transform.position);
+        //transform.position = curPosition;
+
+
+            //Debug.Log(curPosition);
+            //worldPosition = transform.position;
+                        // เซตค่า Y = 0;
+            //transform.position = worldPosition;
+            //Debug.Log(curPosition);
+
+            GameObject itemGameObject = Instantiate(itemPrefab, MPosition, Quaternion.identity, parentItem);
+            Item item = itemGameObject.GetComponent<Item>();
+                //Debug.Log("Before item" + item.transform.rotation);
+            item.transform.Rotate(90.0f,0.0f,0.0f,Space.Self);
+                //Debug.Log("After item" + item.transform.rotation);
+            item.ItemCode = itemDetails.itemCode;
+
+            InventoryManager.Instance.RemoveItem(InventoryLocation.player, item.ItemCode);
+
+            //32//
+            if(InventoryManager.Instance.FindItemInInventory(InventoryLocation.player, item.ItemCode) == -1)
+            {
+                ClearSelectedItem();
+            }
+        }
+    }
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        if (itemDetails != null)
+        {
+            Player.Instance.DisablePlayerInputAndResetMovement();
+
+            draggedItem = Instantiate(inventoryBar.inventoryBarDraggedItem, inventoryBar.transform);
+                            // draggedItem.transform.position = vector3;
+                            // draggedItem.transform.Rotate(90.0f,0.0f,0.0f,Space.Self);
+                            //Debug.Log("OnBeginDrag" + "Position => " + draggedItem.transform.position + "Rotation =>" + draggedItem.transform.rotation);
+
+            Image draggedItemImage = draggedItem.GetComponentInChildren<Image>();
+                            //Debug.Log("OnBeginDrag" + "Position => " + draggedItemImage.transform.position + "Rotation =>" + draggedItemImage.transform.rotation);
+            draggedItemImage.sprite = inventorySlotImage.sprite;
+
+            SetSelectedItem();  //32//
+        }
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        if (draggedItem != null)
+        {
+            draggedItem.transform.position = MPosition;
+            
+            
+            //Debug.Log("OnDrag" + draggedItem.transform.rotation);
+        }
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+
+        if (draggedItem != null)
+        {
+            Destroy(draggedItem);
+
+            if (eventData.pointerCurrentRaycast.gameObject != null && eventData.pointerCurrentRaycast.gameObject.GetComponent<UIInventorySlot>() != null)
+            {
+                int toSlotNumber = eventData.pointerCurrentRaycast.gameObject.GetComponent<UIInventorySlot>().slotNumber;
+
+                InventoryManager.Instance.SwapInventoryItems(InventoryLocation.player, slotNumber, toSlotNumber);
+
+                DestroyInventoryTextBox(); //30//
+
+                ClearSelectedItem();    //32//
+            }
+            else
+            {
+                if (itemDetails.canBeDropped)
+                {
+                    Debug.Log("EndDrag");
+                    DropSelectedItemAtMousePosition();
+                }
+            }
+            Player.Instance.EnablePlayerInput();
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventdata)
+    {
+        if (eventdata.button == PointerEventData.InputButton.Left)
+        {
+            if (isSelected == true)
+            {
+                ClearSelectedItem();
+            }
+            else
+            {
+                if(itemQuantity > 0)
+                {
+                    SetSelectedItem();
+                }   
+            }
+        }
+    }
+
+    public  void OnPointerEnter(PointerEventData eventData)
+    {
+        if(itemQuantity != 0)
+        {
+            inventoryBar.inventoryTextBoxGameobject = Instantiate(inventoryTextBoxPrefab, transform.position, Quaternion.identity);
+            inventoryBar.inventoryTextBoxGameobject.transform.SetParent(parentCanvas.transform, false);
+
+            UIInventoryTextBox inventoryTextBox = inventoryBar.inventoryTextBoxGameobject.GetComponent<UIInventoryTextBox>();
+
+            string itemTypeDescription = InventoryManager.Instance.GetItemTypeDescription(itemDetails.itemType);
+
+            inventoryTextBox.SetTextboxText(itemDetails.itemDescription, itemTypeDescription, "", itemDetails.itemLongDescription, "", "");
+
+            if (inventoryBar.IsInventoryBarPositionButtom)
+            {
+                inventoryBar.inventoryTextBoxGameobject.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0f);
+                inventoryBar.inventoryTextBoxGameobject.transform.position = new Vector3(transform.position.x, transform.position.y + 50f, transform.position.z);
+            }
+
+            else
+            {
+                inventoryBar.inventoryTextBoxGameobject.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 1f);
+                inventoryBar.inventoryTextBoxGameobject.transform.position = new Vector3(transform.position.x, transform.position.y - 50f, transform.position.z);
+            }
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        DestroyInventoryTextBox();
+    }
+    
+    public void DestroyInventoryTextBox()
+    {
+        if (inventoryBar.inventoryTextBoxGameobject != null)
+        {
+            Destroy(inventoryBar.inventoryTextBoxGameobject);
+        }
+    }
+
+    public void SceneLoaded()
+    {
+        parentItem = GameObject.FindGameObjectWithTag(Tags.ItemsParentTransform).transform;
+    } 
+}

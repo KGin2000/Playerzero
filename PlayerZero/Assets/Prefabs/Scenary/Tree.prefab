@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7718744031092490867}
   m_Layer: 0
   m_Name: Tree
-  m_TagString: Tree
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1043871721
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7fd6d699153cb2e4fb34f2ab419b647e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

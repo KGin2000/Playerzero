@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da21c16bd02b4b842a763cc30f6dd432, type: 3}
+  m_Name: so_ItemList
+  m_EditorClassIdentifier: 
+  itemDetails:
+  - itemCode: 10000
+    itemType: 2
+    itemDescription: Watering Can
+    itemSprite: {fileID: 5471719376562228750, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
+    itemLongDescription: Use for Watering
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10001
+    itemType: 1
+    itemDescription: Orange
+    itemSprite: {fileID: -1508740589214030948, guid: ea63f5f0faa39e541983b2d020993efa, type: 3}
+    itemLongDescription: "\u0E40\u0E1B\u0E23\u0E35\u0E49\u0E22\u0E27\u0E08\u0E35\u0E4A\u0E14
+      \u0E42\u0E14\u0E19\u0E43\u0E08! "
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+  - itemCode: 10002
+    itemType: 1
+    itemDescription: Apple
+    itemSprite: {fileID: -3606841403275873578, guid: ea63f5f0faa39e541983b2d020993efa, type: 3}
+    itemLongDescription: "\u0E2B\u0E27\u0E32\u0E19 \u0E0A\u0E38\u0E48\u0E21\u0E09\u0E48\u0E33
+      \u0E2D\u0E23\u0E48\u0E2D\u0E22!"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+  - itemCode: 10003
+    itemType: 8
+    itemDescription: Grass1
+    itemSprite: {fileID: 5056341712583817290, guid: 2993cc048f8619c4a97ffd110ede7bdd, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 0
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 0
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0

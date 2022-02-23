@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Tree
+  - BoundsConfiner
+  - ItemsParentTransform
   layers:
   - Default
   - TransparentFX
@@ -47,6 +48,9 @@ TagManager:
     locked: 0
   - name: GroundGrass
     uniqueID: 2878866335
+    locked: 0
+  - name: GroundSoil
+    uniqueID: 3901954811
     locked: 0
   - name: Ground2
     uniqueID: 2790775749

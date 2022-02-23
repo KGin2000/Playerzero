@@ -9,6 +9,10 @@ public class Player : SingletonMonobehaviour<Player>
     private bool isCarrying = false;
     private bool isIdle;
     private bool isWalking;
+
+    
+    private Camera mainCamera;  //26//
+
     private ToolEffect toolEffect = ToolEffect.none;
 
     private Rigidbody rigidBody;
@@ -26,23 +30,30 @@ public class Player : SingletonMonobehaviour<Player>
         base.Awake();
         
         rigidBody = GetComponent<Rigidbody>();
+
+        mainCamera = Camera.main; //26//
     }
 
     private void Update()
     {
         #region Player Input
 
-        ResetAnimationTriggers();
+        if (!PlayerInputIsDisabled)
+        {
+            ResetAnimationTriggers();
 
-        PlayerMovementInput();
+            PlayerMovementInput();
 
-        //PlayerWalkInput();
+            //PlayerWalkInput();
 
-        EventHandler.CallMovementEvent(vInput, hInput, isWalking, isIdle, isCarrying,
-                        toolEffect,
-                        false,false,false,false);
+            PlayerTestInput();
 
-        #endregion
+            EventHandler.CallMovementEvent(vInput, hInput, isWalking, isIdle, isCarrying,
+                            toolEffect,
+                            false,false,false,false);
+        }
+    
+        #endregion Player Input
     }
 
     private void FixedUpdate()
@@ -122,5 +133,58 @@ public class Player : SingletonMonobehaviour<Player>
             isIdle = false;
             movementSpeed = Settings.runningSpeed;
         }
+    }
+
+    private void PlayerTestInput()                  //35//
+    {
+        if (Input.GetKey(KeyCode.T))
+        {
+            TimeManager.Instance.TestAdvanceGameMinute();
+        }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            TimeManager.Instance.TestAdvanceGameDay();
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            SceneControllerManager.Instance.FadeAndLoadScene(SceneName.Scene1_Farm.ToString(), transform.position);
+        }
+    }
+
+    private void ResetMovement()
+    {
+        hInput = 0f;
+        vInput = 0f;
+        isWalking = false;
+        isIdle = true;
+
+    }
+
+    public void DisablePlayerInputAndResetMovement()
+    {
+        DisablePlayerInput();
+        ResetMovement();
+
+        EventHandler.CallMovementEvent(vInput, hInput, isWalking, isIdle, isCarrying,
+                            toolEffect,
+                            false,false,false,false);
+        
+    }
+    
+    public void DisablePlayerInput()
+    {
+        PlayerInputIsDisabled = true ;
+    }
+
+    public void EnablePlayerInput()
+    {
+        PlayerInputIsDisabled = false;
+    }
+
+    public Vector3 GetPlayerViewporPosition()
+    {
+        return mainCamera.WorldToViewportPoint(transform.position);
     }
 }
