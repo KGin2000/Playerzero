@@ -26,7 +26,7 @@ public class MousePosition : MonoBehaviour
                   sendposition(direc);
               }
           }
-          Debug.Log("direc" + direc);
+          //Debug.Log("direc" + direc); //Print Position Mouse
        }
        else
        {

@@ -79,6 +79,18 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5442879543849834306, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442879543849834306, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442879543849834306, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9022117013169911221, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: _itemCode
       value: 10002

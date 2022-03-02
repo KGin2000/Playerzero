@@ -12,6 +12,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     private Canvas parentCanvas;        //30//
     private Transform parentItem;
+    private GridCursor gridCursor;       //      46      //
     private GameObject draggedItem;
 
     public Image inventorySlotHightlight;
@@ -47,6 +48,15 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         //parentItem = GameObject.FindGameObjectWithTag(Tags.ItemsParentTransform).transform;
 
         MousePosition.sendposition += getNewPosition;       //  เรียก Class MousePosition
+
+        gridCursor = FindObjectOfType<GridCursor>();        //      46      //
+    }
+
+    private void ClearCursor()
+    {
+        gridCursor.DisableCursor();
+
+        gridCursor.SelectedItemType = ItemType.none;
     }
 
     private void SetSelectedItem()
@@ -57,13 +67,28 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         inventoryBar.SetHighlightedInventorySlots();
 
+        gridCursor.ItemUseGridRadius = itemDetails.itemUseGridRadius;       //      46  {
+
+        if (itemDetails.itemUseGridRadius > 0)
+        {
+            gridCursor.EnableCursor();
+        }
+        else
+        {
+            gridCursor.DisableCursor();
+        }
+
+        gridCursor.SelectedItemType = itemDetails.itemType;                 //      46  }
+
         InventoryManager.Instance.SetSelectedInventoryItem(InventoryLocation.player, itemDetails.itemCode);
     }
 
     private void ClearSelectedItem()
     {
+        ClearCursor();
+        
         inventoryBar.ClearHighlightOnInventorySlots();
-
+        
         isSelected = false;
 
         InventoryManager.Instance.ClearSelectedInventoryItem(InventoryLocation.player);
@@ -94,20 +119,29 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             //transform.position = worldPosition;
             //Debug.Log(curPosition);
 
-            GameObject itemGameObject = Instantiate(itemPrefab, MPosition, Quaternion.identity, parentItem);
-            Item item = itemGameObject.GetComponent<Item>();
-                //Debug.Log("Before item" + item.transform.rotation);
-            item.transform.Rotate(90.0f,0.0f,0.0f,Space.Self);
-                //Debug.Log("After item" + item.transform.rotation);
-            item.ItemCode = itemDetails.itemCode;
+            //If Can Drop Item Here
+                 // 45  // Vector3Int gridPosition = GridPropertiesManager.Instance.grid.WorldToCell(MPosition);
+                 // 45  // GridPropertyDetails gridPropertyDetails = GridPropertiesManager.Instance.GetGridPropertyDetails(gridPosition.x, gridPosition.y);
 
-            InventoryManager.Instance.RemoveItem(InventoryLocation.player, item.ItemCode);
-
-            //32//
-            if(InventoryManager.Instance.FindItemInInventory(InventoryLocation.player, item.ItemCode) == -1)
+            //if (gridPropertyDetails != null && gridPropertyDetails.canDropItem)   // out 46
+            if (gridCursor.CursorPositionIsValid)
             {
-                ClearSelectedItem();
-            }
+                GameObject itemGameObject = Instantiate(itemPrefab, MPosition, Quaternion.identity, parentItem);
+                Item item = itemGameObject.GetComponent<Item>();
+                    //Debug.Log("Before item" + item.transform.rotation);
+                item.transform.Rotate(90.0f,0.0f,0.0f,Space.Self);
+                    //Debug.Log("After item" + item.transform.rotation);
+                item.ItemCode = itemDetails.itemCode;
+
+                InventoryManager.Instance.RemoveItem(InventoryLocation.player, item.ItemCode);
+
+                //32//
+                if(InventoryManager.Instance.FindItemInInventory(InventoryLocation.player, item.ItemCode) == -1)
+                {
+                    ClearSelectedItem();
+                }
+                 ClearCursor();
+            }   
         }
     }
 
@@ -163,6 +197,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                 if (itemDetails.canBeDropped)
                 {
                     Debug.Log("EndDrag");
+                    ClearCursor();
                     DropSelectedItemAtMousePosition();
                 }
             }
