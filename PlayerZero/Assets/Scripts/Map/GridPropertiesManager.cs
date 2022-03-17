@@ -1,12 +1,18 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 [RequireComponent(typeof(GenerateGUID))]
 public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManager>, ISaveable
 {
-     public Grid grid;
+    private Tilemap groundDecoration1;
+    private Tilemap groundDecoration2;
+     private Grid grid;
      private Dictionary<string, GridPropertyDetails> gridPropertyDictionary;
      [SerializeField] private SO_GridProperties[] so_gridPropertiesArray = null;
+     [SerializeField] private Tile[] dugGround = null;
+     [SerializeField] private Tile[] wateredGround = null;
 
      private string _iSaveableUniqueID;
      public string ISaveableUniqueID { get { return _iSaveableUniqueID; } set { _iSaveableUniqueID = value; }}
@@ -27,6 +33,7 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
         ISaveableRegister();
 
         EventHandler.AfterSceneLoadEvent += AfterSceneLoaded;
+        EventHandler.AdvanceGameDayEvent += AdvanceDay;
      }
 
      private void OnDisable()
@@ -34,12 +41,321 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
         ISaveableDeregister();
 
         EventHandler.AfterSceneLoadEvent -= AfterSceneLoaded;
+        EventHandler.AdvanceGameDayEvent -= AdvanceDay;
      }
 
      private void Start()
      {
          InitialiseGridProperties();
      }
+
+     private void ClearDisplayGroundDecorations()
+     {
+         groundDecoration1.ClearAllTiles();
+         groundDecoration2.ClearAllTiles();
+     }
+
+     private void ClearDisplayGridPropertyDetails()
+     {
+         ClearDisplayGroundDecorations();
+     }
+
+     public void DisplayDugGround(GridPropertyDetails gridPropertyDetails)
+     {
+         if (gridPropertyDetails.daysSinceDug > -1)
+         {
+             ConnectDugGround(gridPropertyDetails);
+         }
+     }
+
+     public void DisplayWateredGround(GridPropertyDetails gridPropertyDetails)
+     {
+         if(gridPropertyDetails.daysSinceWatered > -1)
+         {
+             ConnectWateredGround(gridPropertyDetails);
+         }
+     }
+
+     private void ConnectDugGround(GridPropertyDetails gridPropertyDetails)
+     {
+        Tile dugTile0 = SetDugTile(gridPropertyDetails.gridX, gridPropertyDetails.gridY);
+        groundDecoration1.SetTile(new Vector3Int(gridPropertyDetails.gridX, gridPropertyDetails.gridY,0), dugTile0);
+
+        GridPropertyDetails adjacentGridPropertyDetails;
+
+        adjacentGridPropertyDetails = GetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY + 1);
+        if(adjacentGridPropertyDetails != null && adjacentGridPropertyDetails.daysSinceDug > -1)
+        {
+            Tile dugTile1 = SetDugTile(gridPropertyDetails.gridX, gridPropertyDetails.gridY + 1);
+            groundDecoration1.SetTile(new Vector3Int(gridPropertyDetails.gridX, gridPropertyDetails.gridY + 1,0), dugTile1);
+        }
+
+        adjacentGridPropertyDetails = GetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY - 1);
+        if(adjacentGridPropertyDetails != null && adjacentGridPropertyDetails.daysSinceDug > -1)
+        {
+            Tile dugTile2 = SetDugTile(gridPropertyDetails.gridX, gridPropertyDetails.gridY - 1);
+            groundDecoration1.SetTile(new Vector3Int(gridPropertyDetails.gridX, gridPropertyDetails.gridY - 1,0), dugTile2);
+        }
+
+        adjacentGridPropertyDetails = GetGridPropertyDetails(gridPropertyDetails.gridX - 1, gridPropertyDetails.gridY);
+        if(adjacentGridPropertyDetails != null && adjacentGridPropertyDetails.daysSinceDug > -1)
+        {
+            Tile dugTile3 = SetDugTile(gridPropertyDetails.gridX - 1, gridPropertyDetails.gridY);
+            groundDecoration1.SetTile(new Vector3Int(gridPropertyDetails.gridX -1, gridPropertyDetails.gridY,0), dugTile3);
+        }
+
+        adjacentGridPropertyDetails = GetGridPropertyDetails(gridPropertyDetails.gridX + 1, gridPropertyDetails.gridY);
+        if(adjacentGridPropertyDetails != null && adjacentGridPropertyDetails.daysSinceDug > - 1)
+        {
+            Tile dugTile4 = SetDugTile(gridPropertyDetails.gridX + 1, gridPropertyDetails.gridY);
+            groundDecoration1.SetTile(new Vector3Int(gridPropertyDetails.gridX + 1, gridPropertyDetails.gridY,0), dugTile4);
+        }
+     }
+
+     private void ConnectWateredGround(GridPropertyDetails gridPropertyDetails)
+     {
+         #region 
+         Tile wateredTile0 = SetWateredTile(gridPropertyDetails.gridX, gridPropertyDetails.gridY);
+         groundDecoration2.SetTile(new Vector3Int(gridPropertyDetails.gridX, gridPropertyDetails.gridY, 0), wateredTile0);
+
+         GridPropertyDetails adjacentGridPropertyDetails;
+
+         adjacentGridPropertyDetails = GetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY + 1);
+        if(adjacentGridPropertyDetails != null && adjacentGridPropertyDetails.daysSinceWatered > -1)
+        {
+            Tile wateredTile1 = SetWateredTile(gridPropertyDetails.gridX, gridPropertyDetails.gridY + 1);
+            groundDecoration2.SetTile(new Vector3Int(gridPropertyDetails.gridX, gridPropertyDetails.gridY + 1,0), wateredTile1);
+        }
+
+        adjacentGridPropertyDetails = GetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY - 1);
+        if(adjacentGridPropertyDetails != null && adjacentGridPropertyDetails.daysSinceWatered > -1)
+        {
+            Tile wateredTile2 = SetWateredTile(gridPropertyDetails.gridX, gridPropertyDetails.gridY - 1);
+            groundDecoration2.SetTile(new Vector3Int(gridPropertyDetails.gridX, gridPropertyDetails.gridY - 1,0), wateredTile2);
+        }
+
+        adjacentGridPropertyDetails = GetGridPropertyDetails(gridPropertyDetails.gridX - 1, gridPropertyDetails.gridY);
+        if(adjacentGridPropertyDetails != null && adjacentGridPropertyDetails.daysSinceWatered > -1)
+        {
+            Tile wateredTile3 = SetWateredTile(gridPropertyDetails.gridX - 1, gridPropertyDetails.gridY);
+            groundDecoration2.SetTile(new Vector3Int(gridPropertyDetails.gridX -1, gridPropertyDetails.gridY,0), wateredTile3);
+        }
+
+        adjacentGridPropertyDetails = GetGridPropertyDetails(gridPropertyDetails.gridX + 1, gridPropertyDetails.gridY);
+        if(adjacentGridPropertyDetails != null && adjacentGridPropertyDetails.daysSinceWatered > - 1)
+        {
+            Tile wateredTile4 = SetWateredTile(gridPropertyDetails.gridX + 1, gridPropertyDetails.gridY);
+            groundDecoration2.SetTile(new Vector3Int(gridPropertyDetails.gridX + 1, gridPropertyDetails.gridY,0), wateredTile4);
+        }
+        #endregion
+     }
+
+     private Tile SetDugTile(int xGrid, int yGrid)
+     {
+         bool upDug = IsGridSquareDug(xGrid, yGrid + 1);
+         bool downDug = IsGridSquareDug(xGrid, yGrid - 1);
+         bool leftDug = IsGridSquareDug(xGrid - 1, yGrid);
+         bool rightDug = IsGridSquareDug(xGrid + 1, yGrid);
+
+         #region Set Tile based
+         
+         if (!upDug && !downDug && !rightDug && !leftDug)
+         {
+             return dugGround[0];
+         }
+        else if (!upDug && downDug && rightDug && !leftDug)
+         {
+             return dugGround[1];
+         }
+         else if (!upDug && downDug && rightDug && leftDug)
+         {
+             return dugGround[2];
+         }
+         else if (!upDug && downDug && !rightDug && leftDug)
+         {
+             return dugGround[3];
+         }
+         else if (!upDug && downDug && !rightDug && !leftDug)
+         {
+             return dugGround[4];
+         }
+         else if (upDug && downDug && rightDug && !leftDug)
+         {
+             return dugGround[5];
+         }
+         else if (upDug && downDug && rightDug && leftDug)
+         {
+             return dugGround[6];
+         }
+         else if (upDug && downDug && !rightDug && leftDug)
+         {
+             return dugGround[7];
+         }
+         else if (upDug && downDug && !rightDug && !leftDug)
+         {
+             return dugGround[8];
+         }
+         else if (upDug && !downDug && rightDug && !leftDug)
+         {
+             return dugGround[9];
+         }
+         else if (upDug && !downDug && rightDug && leftDug)
+         {
+             return dugGround[10];
+         }
+         else if (upDug && !downDug && !rightDug && leftDug)
+         {
+             return dugGround[11];
+         }
+         else if (upDug && !downDug && !rightDug && !leftDug)
+         {
+             return dugGround[12];
+         }
+         else if (!upDug && !downDug && rightDug && !leftDug)
+         {
+             return dugGround[13];
+         }
+         else if (!upDug && !downDug && rightDug && leftDug)
+         {
+             return dugGround[14];
+         }
+         else if (!upDug && !downDug && !rightDug && leftDug)
+         {
+             return dugGround[15];
+         }
+         return null;
+
+         #endregion Set TileBase Dug
+     }
+
+     private bool IsGridSquareDug(int xGrid,int yGrid)
+     {
+         GridPropertyDetails gridPropertyDetails = GetGridPropertyDetails(xGrid, yGrid);
+
+         if (gridPropertyDetails == null)
+         {
+             return false;
+         }
+         else if (gridPropertyDetails.daysSinceDug > -1)
+         {
+             return true;
+         }
+         else
+         {
+             return false;
+         }
+     }
+
+    private Tile SetWateredTile(int xGrid, int yGrid)
+     {
+         
+         bool upWatered = IsGridSquareWatered(xGrid, yGrid + 1);
+         bool downWatered = IsGridSquareWatered(xGrid, yGrid - 1);
+         bool leftWatered = IsGridSquareWatered(xGrid - 1, yGrid);
+         bool rightWatered = IsGridSquareWatered(xGrid + 1, yGrid);
+
+         #region Set Tile based
+         
+         if (!upWatered && !downWatered && !rightWatered && !leftWatered)
+         {
+             Debug.Log("0");return wateredGround[0];
+         }
+        else if (!upWatered && downWatered && rightWatered && !leftWatered)
+         {
+             Debug.Log("1");return wateredGround[1];
+         }
+         else if (!upWatered && downWatered && rightWatered && leftWatered)
+         {
+             Debug.Log("2");return wateredGround[2];
+         }
+         else if (!upWatered && downWatered && !rightWatered && leftWatered)
+         {
+             Debug.Log("3");return wateredGround[3];
+         }
+         else if (!upWatered && downWatered && !rightWatered && !leftWatered)
+         {
+             Debug.Log("4");return wateredGround[4];
+         }
+         else if (upWatered && downWatered && rightWatered && !leftWatered)
+         {
+             Debug.Log("5");return wateredGround[5];
+         }
+         else if (upWatered && downWatered && rightWatered && leftWatered)
+         {
+             Debug.Log("6");return wateredGround[6];
+         }
+         else if (upWatered && downWatered && !rightWatered && leftWatered)
+         {
+             Debug.Log("7");return wateredGround[7];
+         }
+         else if (upWatered && downWatered && !rightWatered && !leftWatered)
+         {
+             Debug.Log("8");return wateredGround[8];
+         }
+         else if (upWatered && !downWatered && rightWatered && !leftWatered)
+         {
+             Debug.Log("9");return wateredGround[9];
+         }
+         else if (upWatered && !downWatered && rightWatered && leftWatered)
+         {
+             Debug.Log("10");return wateredGround[10];
+         }
+         else if (upWatered && !downWatered && !rightWatered && leftWatered)
+         {
+             Debug.Log("11");return wateredGround[11];
+         }
+         else if (upWatered && !downWatered && !rightWatered && !leftWatered)
+         {
+             Debug.Log("12");return wateredGround[12];
+         }
+         else if (!upWatered && !downWatered && rightWatered && !leftWatered)
+         {
+             Debug.Log("13");return wateredGround[13];
+         }
+         else if (!upWatered && !downWatered && rightWatered && leftWatered)
+         {
+             Debug.Log("14");return wateredGround[14];
+         }
+         else if (!upWatered && !downWatered && !rightWatered && leftWatered)
+         {
+             return wateredGround[15];
+         }
+         return null;
+
+         #endregion Set TileBase Watered
+        
+     }
+
+     private bool IsGridSquareWatered(int xGrid, int yGrid)
+     {
+         GridPropertyDetails gridPropertyDetails = GetGridPropertyDetails(xGrid, yGrid);
+
+         if(gridPropertyDetails == null)
+         {
+             return false;
+         }
+         else if (gridPropertyDetails.daysSinceWatered > -1)
+         {
+             return true;
+         }
+         else
+         {
+             return false;
+         }
+     }
+
+     private void DisplayGridPropertyDetails()
+     {
+         foreach (KeyValuePair<string, GridPropertyDetails> item in gridPropertyDictionary)
+         {
+             GridPropertyDetails gridPropertyDetails = item.Value;
+
+             DisplayDugGround(gridPropertyDetails);
+
+             DisplayWateredGround(gridPropertyDetails);
+         }
+     }
+
 
      private void InitialiseGridProperties()
     {
@@ -105,7 +421,12 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
 
     public void AfterSceneLoaded()
     {
+        //Get Grid
         grid = GameObject.FindObjectOfType<Grid>();
+
+        //Get Tile Map
+        groundDecoration1 = GameObject.FindGameObjectWithTag(Tags.GroundDecoration1).GetComponent<Tilemap>();
+        groundDecoration2 = GameObject.FindGameObjectWithTag(Tags.GroundDecoration2).GetComponent<Tilemap>();
     }
 
     public GridPropertyDetails GetGridPropertyDetails(int gridx, int gridy, Dictionary<string, GridPropertyDetails> gridPropertyDictionary)
@@ -147,6 +468,13 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
                 {
                     gridPropertyDictionary = sceneSave.gridPropertyDetailsDictionary;
                 }
+
+                if (gridPropertyDictionary.Count > 0)
+                {
+                    ClearDisplayGridPropertyDetails();
+
+                    DisplayGridPropertyDetails();
+                }
             }
     }
 
@@ -165,20 +493,55 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
         GameObjectSave.sceneData. Add(sceneName, sceneSave);
     }
 
-    public void SetGridPropertyDetails(int gridx, int gridY, GridPropertyDetails gridPropertyDetails)
+    public void SetGridPropertyDetails(int gridX, int gridY, GridPropertyDetails gridPropertyDetails)
     {
-        SetGridPropertyDetails(gridx, gridY, gridPropertyDetails, gridPropertyDictionary);
+        SetGridPropertyDetails(gridX, gridY, gridPropertyDetails, gridPropertyDictionary);
     }
 
     public void SetGridPropertyDetails(int gridX, int gridY, GridPropertyDetails gridPropertyDetails, Dictionary<string, GridPropertyDetails>gridPropertyDictionary)
         {
             string key = "x" + gridX + "y" + gridY;
 
-            gridPropertyDetails.gridx = gridX;
+            gridPropertyDetails.gridX = gridX;
             gridPropertyDetails.gridY = gridY;
 
             gridPropertyDictionary[key] = gridPropertyDetails;
    
         }
+
+    private void AdvanceDay(int gameYear, Season gameSeason, int gameDay, string gameDayOfWeek, int gameHour, int gameMinute, int gameSecond)
+    {
+        ClearDisplayGridPropertyDetails();
+
+        foreach (SO_GridProperties so_GridProperties in so_gridPropertiesArray)
+        {
+
+            if(GameObjectSave.sceneData.TryGetValue(so_GridProperties.sceneName.ToString(), out SceneSave sceneSave))
+            {
+                if(sceneSave.gridPropertyDetailsDictionary != null)
+                {
+                    for (int i = sceneSave.gridPropertyDetailsDictionary.Count - 1; i >= 0; i--)
+                    {
+                        KeyValuePair<string, GridPropertyDetails> item = sceneSave.gridPropertyDetailsDictionary.ElementAt(i);
+
+                        GridPropertyDetails gridPropertyDetails = item.Value;
+
+                        #region Update all Grid Properties to reflect the advance in the day
+
+                        if(gridPropertyDetails.daysSinceWatered > -1)
+                        {
+                            gridPropertyDetails.daysSinceWatered= -1;
+                        }
+
+                        SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails, sceneSave.gridPropertyDetailsDictionary);
+
+                        #endregion
+                    }
+                }
+            }
+        }
+
+        DisplayGridPropertyDetails();
+    }
 }
     

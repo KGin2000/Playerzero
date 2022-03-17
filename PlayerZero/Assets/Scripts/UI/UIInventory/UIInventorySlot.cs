@@ -13,6 +13,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private Canvas parentCanvas;        //30//
     private Transform parentItem;
     private GridCursor gridCursor;       //      46      //
+    private Cursor cursor;
     private GameObject draggedItem;
 
     public Image inventorySlotHightlight;
@@ -35,11 +36,13 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private void OnEnable()
     {
         EventHandler.AfterSceneLoadEvent += SceneLoaded;
+        EventHandler.DropSelectedItemEvent += DropSelectedItemAtMousePosition;
     }
 
     private void OnDisable()
     {
         EventHandler.AfterSceneLoadEvent -= SceneLoaded;
+        EventHandler.DropSelectedItemEvent -= DropSelectedItemAtMousePosition;
     }
 
     private void Start()
@@ -50,11 +53,14 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         MousePosition.sendposition += getNewPosition;       //  เรียก Class MousePosition
 
         gridCursor = FindObjectOfType<GridCursor>();        //      46      //
+
+        cursor = FindObjectOfType<Cursor>();
     }
 
     private void ClearCursor()
     {
         gridCursor.DisableCursor();
+        cursor.DisableCursor();
 
         gridCursor.SelectedItemType = ItemType.none;
     }
@@ -69,6 +75,8 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         gridCursor.ItemUseGridRadius = itemDetails.itemUseGridRadius;       //      46  {
 
+        cursor.ItemUseRadius = itemDetails.itemUseRadius;
+
         if (itemDetails.itemUseGridRadius > 0)
         {
             gridCursor.EnableCursor();
@@ -78,7 +86,18 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             gridCursor.DisableCursor();
         }
 
+
+        if(itemDetails.itemUseRadius > 0f)
+        {
+            cursor.EnableCursor();
+        }
+        else
+        {
+            cursor.DisableCursor();
+        }
+
         gridCursor.SelectedItemType = itemDetails.itemType;                 //      46  }
+        cursor.SelectedItemType = itemDetails.itemType;
 
         InventoryManager.Instance.SetSelectedInventoryItem(InventoryLocation.player, itemDetails.itemCode);
     }
@@ -140,7 +159,6 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                 {
                     ClearSelectedItem();
                 }
-                 ClearCursor();
             }   
         }
     }
@@ -197,7 +215,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                 if (itemDetails.canBeDropped)
                 {
                     Debug.Log("EndDrag");
-                    ClearCursor();
+                    //ClearCursor();
                     DropSelectedItemAtMousePosition();
                 }
             }

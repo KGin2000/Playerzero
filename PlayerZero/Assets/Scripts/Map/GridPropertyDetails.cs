@@ -2,7 +2,7 @@
 
 public class GridPropertyDetails
 {
-   public int gridx;
+   public int gridX;
    public int gridY;
    public bool isDiggable = false;
    public bool canDropItem = false;

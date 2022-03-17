@@ -1,3 +1,56 @@
+public enum AnimationName
+{
+    idle,
+    walkUp,
+    walkDown,
+    walkLeft,
+    walkRight,
+    mineToolUp,
+    mineToolDown,
+    mineToolLeft,
+    mineToolRight,
+    chopToolUp,
+    chopToolDown,
+    chopToolLeft,
+    chopToolRight,
+    digToolUp,
+    digToolDown,
+    digToolLeft,
+    digToolRight,
+    liftToolUp,
+    liftToolDown,
+    liftToolLeft,
+    liftToolRight,
+    swingToolUp,
+    swingToolDown,
+    swingToolLeft,
+    swingToolRight,
+    count
+}
+
+public enum CharacterPartAnimator
+{
+    body,
+    count
+}
+
+public enum PartVariantColour
+{
+    none,
+    count
+}
+
+public enum PartVariantType
+{
+    none,
+    hoe,
+    pickaxe,
+    axe,
+    wateringCan,
+    Reaping,
+    count
+}
+
 public enum GridBoolProperty
 {
     diggable,

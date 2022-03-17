@@ -19,18 +19,18 @@ public class MousePosition : MonoBehaviour
           Vector3 direc = hit.point; //hit.point คืนเป็น Vector3
           direc.y = 0;              //กำหนดค่า y
 
-          if(Input.GetMouseButton(0))   //เช็คคลิ๊ก 0 เม้าซ้าย
-          {
+          //if(Input.GetMouseButton(0))   //เช็คคลิ๊ก 0 เม้าซ้าย
+          //{
               if (sendposition != null)
               {
                   sendposition(direc);
               }
-          }
+          //}
           //Debug.Log("direc" + direc); //Print Position Mouse
        }
        else
        {
-           Debug.Log("Out of Plane");
+           //Debug.Log("Out of Plane");
        }
        
    }

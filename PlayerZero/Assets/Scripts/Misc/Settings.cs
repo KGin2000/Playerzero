@@ -9,10 +9,18 @@ public static class Settings
 
     //TileMap
     public const float gridCellSize = 1f;       //Grid Cell Size in Unity Units
+    public static Vector2 cursorSize = Vector2.one;
+
+    //Player
+    public static float playerCentreYOffset = 0.875f;
 
     //Player Movement
     public const float runningSpeed = 5.333f;
     public const float walkingSpeed = 2.666f;
+    public static float useToolAnimationPause = 0.25f;
+    public static float liftToolAnimationPause = 0.4f;
+    public static float afterUseToolAnimationPause = 0.2f;
+    public static float afterLiftToolAnimationPause = 0.4f;
 
     public static int playerInitialInventoryCapacity = 24;
     public static int playerMaximumInventoryCapacity = 48;
@@ -21,6 +29,27 @@ public static class Settings
     public static int vInput;
     public static int hInput;
     public static int isWalking;
+    public static int toolEffect;
+    public static int isUsingMiningToolUp;
+    public static int isUsingMiningToolDown;
+    public static int isUsingMiningToolLeft;
+    public static int isUsingMiningToolRight;
+    public static int isUsingChoppingToolUp;
+    public static int isUsingChoppingToolDown;
+    public static int isUsingChoppingToolLeft;
+    public static int isUsingChoppingToolRight;
+    public static int isUsingDiggingToolUp;
+    public static int isUsingDiggingToolDown;
+    public static int isUsingDiggingToolLeft;
+    public static int isUsingDiggingToolRight;
+    public static int isUsingLiftingToolUp;
+    public static int isUsingLiftingToolDown;
+    public static int isUsingLiftingToolLeft;
+    public static int isUsingLiftingToolRight;
+    public static int isUsingSwingingToolUp;
+    public static int isUsingSwingingToolDown;
+    public static int isUsingSwingingToolLeft;
+    public static int isUsingSwingingToolRight;
 
     // Shared Animation Parameters
     public static int idleUp;
@@ -47,7 +76,32 @@ public static class Settings
         vInput = Animator.StringToHash("vInput");
         hInput = Animator.StringToHash("hInput");
         isWalking = Animator.StringToHash("isWalking");
+        toolEffect = Animator.StringToHash("toolEffect");
+        isUsingMiningToolUp = Animator.StringToHash("isUsingMiningToolUp");
+        isUsingMiningToolDown = Animator.StringToHash("isUsingMiningToolDown");
+        isUsingMiningToolLeft = Animator.StringToHash("isUsingMiningToolLeft");
+        isUsingMiningToolRight = Animator.StringToHash("isUsingMiningToolRight");
+        isUsingChoppingToolUp = Animator.StringToHash("isUsingChoppingToolUp");
+        isUsingChoppingToolDown = Animator.StringToHash("isUsingChoppingToolDown");
+        isUsingChoppingToolLeft = Animator.StringToHash("isUsingChoppingToolLeft");
+        isUsingChoppingToolRight = Animator.StringToHash("isUsingChoppingToolRight");
+        isUsingDiggingToolUp = Animator.StringToHash("isUsingDiggingToolUp");
+        isUsingDiggingToolDown = Animator.StringToHash("isUsingDiggingToolDown");
+        isUsingDiggingToolLeft = Animator.StringToHash("isUsingDiggingToolLeft");
+        isUsingDiggingToolRight = Animator.StringToHash("isUsingDiggingToolRight");
+        isUsingLiftingToolUp = Animator.StringToHash("isUsingLiftingToolUp");
+        isUsingLiftingToolDown = Animator.StringToHash("isUsingLiftingToolDown");
+        isUsingLiftingToolLeft = Animator.StringToHash("isUsingLiftingToolLeft");
+        isUsingLiftingToolRight = Animator.StringToHash("isUsingLiftingToolRight");
+        isUsingSwingingToolUp = Animator.StringToHash("isUsingSwingingToolUp");
+        isUsingSwingingToolDown = Animator.StringToHash("isUsingSwingingToolDown");
+        isUsingSwingingToolLeft = Animator.StringToHash("isUsingSwingingToolLeft");
+        isUsingSwingingToolRight = Animator.StringToHash("isUsingSwingingToolRight");
 
         // Shared Animation Parameters
+        idleUp = Animator.StringToHash("idleUp");
+        idleDown = Animator.StringToHash("idleDown");
+        idleRight = Animator.StringToHash("idleRight");
+        idleLeft = Animator.StringToHash("idleLeft");
     }
 }

@@ -63,3 +63,63 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+  - itemCode: 10004
+    itemType: 2
+    itemDescription: Watering Can
+    itemSprite: {fileID: 5471719376562228750, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
+    itemLongDescription: "\u0E23\u0E14\u0E19\u0E49\u0E33"
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10005
+    itemType: 3
+    itemDescription: HoeTool
+    itemSprite: {fileID: -5619285666156628218, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
+    itemLongDescription: "\u0E08\u0E2D\u0E1A\u0E43\u0E0A\u0E49\u0E02\u0E38\u0E14"
+    itemUseGridRadius: 4
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10006
+    itemType: 4
+    itemDescription: Axe
+    itemSprite: {fileID: -7908162705200595085, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
+    itemLongDescription: "\u0E02\u0E27\u0E32\u0E19\u0E43\u0E0A\u0E49\u0E15\u0E31\u0E14"
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10007
+    itemType: 5
+    itemDescription: Pickaxe
+    itemSprite: {fileID: -4312329199005865351, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
+    itemLongDescription: "\u0E40\u0E2A\u0E35\u0E22\u0E21\u0E40\u0E2A\u0E35\u0E49\u0E22\u0E21"
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10008
+    itemType: 6
+    itemDescription: ReapingTool
+    itemSprite: {fileID: -3425871062690078838, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
+    itemLongDescription: "\u0E16\u0E32\u0E07\u0E22\u0E48\u0E32"
+    itemUseGridRadius: 2
+    itemUseRadius: 1.5
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0

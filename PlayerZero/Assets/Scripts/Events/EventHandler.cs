@@ -3,11 +3,25 @@ using System.Collections.Generic;
 
 public delegate void MovementDelegate(float inputV, float inputH, bool isWalking, bool isIdle, bool isCarrying,
                                         ToolEffect toolEffect,
+                                        bool isUsingMiningToolUp, bool isUsingMiningToolDown, bool isUsingMiningToolLeft, bool isUsingMiningToolRight,
+                                        bool isUsingChoppingToolUp, bool isUsingChoppingToolDown, bool isUsingChoppingToolLeft, bool isUsingChoppingToolRight,
+                                        bool isUsingDiggingToolUp, bool isUsingDiggingToolDown, bool isUsingDiggingToolLeft, bool isUsingDiggingToolRight,
+                                        bool isUsingLiftingToolUp, bool isUsingLiftingToolDown, bool isUsingLiftingToolLeft, bool isUsingLiftingToolRight,
+                                        bool isUsingSwingingToolUp, bool isUsingSwingingToolDown, bool isUsingSwingingToolLeft, bool isUsingSwingingToolRight,
                                         bool idleUp, bool idleDown, bool idleRight, bool idleLeft);
 
                                         
 public static class EventHandler
 {
+    //Drop Selected item event
+    public static event Action DropSelectedItemEvent;
+
+    public static void CallDropSelectedItemEvent()
+    {
+        if(DropSelectedItemEvent != null)
+        DropSelectedItemEvent();
+    }
+
     //Inventory Update Event
     public static event Action<InventoryLocation, List<InventoryItem>> InventoryUpdatedEvent;
 
@@ -23,12 +37,22 @@ public static class EventHandler
     //Movement Event Call For Publishers
     public static void CallMovementEvent(float inputV, float inputH, bool isWalking, bool isIdle, bool isCarrying,
                                         ToolEffect toolEffect,
+                                        bool isUsingMiningToolUp, bool isUsingMiningToolDown, bool isUsingMiningToolLeft, bool isUsingMiningToolRight,
+                                        bool isUsingChoppingToolUp, bool isUsingChoppingToolDown, bool isUsingChoppingToolLeft, bool isUsingChoppingToolRight,
+                                        bool isUsingDiggingToolUp, bool isUsingDiggingToolDown, bool isUsingDiggingToolLeft, bool isUsingDiggingToolRight,
+                                        bool isUsingLiftingToolUp, bool isUsingLiftingToolDown, bool isUsingLiftingToolLeft, bool isUsingLiftingToolRight,
+                                        bool isUsingSwingingToolUp, bool isUsingSwingingToolDown, bool isUsingSwingingToolLeft, bool isUsingSwingingToolRight,
                                         bool idleUp, bool idleDown, bool idleRight, bool idleLeft)
     {
         if (MovementEvent != null)
             MovementEvent(inputV, inputH, isWalking, isIdle, isCarrying,
-                        toolEffect,
-                        idleUp, idleDown, idleRight, idleLeft);
+                            toolEffect,
+                            isUsingMiningToolUp, isUsingMiningToolDown, isUsingMiningToolLeft, isUsingMiningToolRight,
+                            isUsingChoppingToolUp, isUsingChoppingToolDown, isUsingChoppingToolLeft, isUsingChoppingToolRight,
+                            isUsingDiggingToolUp, isUsingDiggingToolDown, isUsingDiggingToolLeft, isUsingDiggingToolRight,
+                            isUsingLiftingToolUp, isUsingLiftingToolDown, isUsingLiftingToolLeft, isUsingLiftingToolRight,
+                            isUsingSwingingToolUp, isUsingSwingingToolDown, isUsingSwingingToolLeft, isUsingSwingingToolRight,
+                            idleUp, idleDown, idleRight, idleLeft);
     }
 
                             //Time Event//
