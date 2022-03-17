@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class GridCursor : MonoBehaviour
     {
+        
     public Vector3 MPosition;   // แก้Mouse
     private Canvas canvas;
     private Grid grid;

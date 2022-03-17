@@ -140,6 +140,10 @@ PrefabInstance:
       value: Apple (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
@@ -161,7 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2952158212373310071, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.0000002
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 2952158212373310071, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1676,6 +1680,10 @@ PrefabInstance:
       value: Apple (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
@@ -1965,6 +1973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Axe
       objectReference: {fileID: 0}
+    - target: {fileID: 3742780106719210911, guid: e47e98a311b0a0844889188efaa198e6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e47e98a311b0a0844889188efaa198e6, type: 3}
 --- !u!4 &222832717 stripped
@@ -2061,6 +2073,10 @@ PrefabInstance:
     - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_Name
       value: Apple (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_TagString
@@ -2494,6 +2510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hoe
       objectReference: {fileID: 0}
+    - target: {fileID: 1236458619342397572, guid: 3b21dea57805b6247b3d29ba8e529cc6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3083918281924913854, guid: 3b21dea57805b6247b3d29ba8e529cc6, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -2629,6 +2649,10 @@ PrefabInstance:
     - target: {fileID: 1353393791383071694, guid: b3cd0199261985244b626af516979412, type: 3}
       propertyPath: m_Name
       value: Pickaxe
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353393791383071694, guid: b3cd0199261985244b626af516979412, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2966948277707301364, guid: b3cd0199261985244b626af516979412, type: 3}
       propertyPath: m_RootOrder
@@ -2984,6 +3008,10 @@ PrefabInstance:
     - target: {fileID: 7957712944180053716, guid: 80c4cb2659ae22e4485de068d228b328, type: 3}
       propertyPath: m_Name
       value: Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957712944180053716, guid: 80c4cb2659ae22e4485de068d228b328, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80c4cb2659ae22e4485de068d228b328, type: 3}
@@ -3701,6 +3729,10 @@ PrefabInstance:
     - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_Name
       value: Apple (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_TagString
@@ -13640,6 +13672,10 @@ PrefabInstance:
     - target: {fileID: 928564668442667885, guid: 835a33f12c12d0e43b3647ab63304f34, type: 3}
       propertyPath: m_Name
       value: Watering_Can
+      objectReference: {fileID: 0}
+    - target: {fileID: 928564668442667885, guid: 835a33f12c12d0e43b3647ab63304f34, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3964965802333495639, guid: 835a33f12c12d0e43b3647ab63304f34, type: 3}
       propertyPath: m_RootOrder
@@ -46447,6 +46483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple
       objectReference: {fileID: 0}
+    - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2952158212373310071, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -48628,6 +48668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scythe
       objectReference: {fileID: 0}
+    - target: {fileID: 2543523264033078688, guid: fae7227adb1d8f84ebb3d8eaddc7ae16, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae7227adb1d8f84ebb3d8eaddc7ae16, type: 3}
 --- !u!4 &1653720478 stripped
@@ -50396,7 +50440,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23918
+  m_Name: pb_Mesh107000
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -69534,6 +69578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass1 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4860034890687929912, guid: 7f58eb92a151ad24286d6961f1e32abb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8689343901302871042, guid: 7f58eb92a151ad24286d6961f1e32abb, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -69552,7 +69600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8689343901302871042, guid: 7f58eb92a151ad24286d6961f1e32abb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8689343901302871042, guid: 7f58eb92a151ad24286d6961f1e32abb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -69560,7 +69608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8689343901302871042, guid: 7f58eb92a151ad24286d6961f1e32abb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8689343901302871042, guid: 7f58eb92a151ad24286d6961f1e32abb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -69602,6 +69650,10 @@ PrefabInstance:
     - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_Name
       value: Apple (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1377155384110440525, guid: 9d0ce69c35d632442a61115289ef4fed, type: 3}
       propertyPath: m_TagString

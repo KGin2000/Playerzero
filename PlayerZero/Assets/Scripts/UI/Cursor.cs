@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class Cursor : MonoBehaviour
 {
+    public Vector3 MPosition; 
     private Canvas canvas;
     private Camera mainCamera;
     [SerializeField] private Image cursorImage = null;
@@ -27,6 +28,7 @@ public class Cursor : MonoBehaviour
 
     private void Start()
     {
+         MousePosition.sendposition += getNewPosition; //  เรียก Class MousePosition
         mainCamera = Camera.main;
         canvas = GetComponentInParent<Canvas>();
     }
@@ -57,28 +59,32 @@ public class Cursor : MonoBehaviour
         SetCursorToValid();
         
         if  (
-            cursorPosition.x > (playerPosition.x + ItemUseRadius / 2f) && cursorPosition.y > (playerPosition.y + ItemUseRadius / 2f)
+            cursorPosition.x > (playerPosition.x + ItemUseRadius / 2f) && cursorPosition.z > (playerPosition.z + ItemUseRadius / 2f)
             ||
-            cursorPosition.x < (playerPosition.x - ItemUseRadius / 2f) && cursorPosition.y > (playerPosition.y + ItemUseRadius / 2f)
+            cursorPosition.x < (playerPosition.x - ItemUseRadius / 2f) && cursorPosition.z > (playerPosition.z + ItemUseRadius / 2f)
             ||
-            cursorPosition.x > (playerPosition.x - ItemUseRadius / 2f) && cursorPosition.y < (playerPosition.y - ItemUseRadius / 2f)
+            cursorPosition.x > (playerPosition.x - ItemUseRadius / 2f) && cursorPosition.z < (playerPosition.z - ItemUseRadius / 2f)
             ||
-            cursorPosition.x < (playerPosition.x + ItemUseRadius / 2f) && cursorPosition.y < (playerPosition.y - ItemUseRadius / 2f)
+            cursorPosition.x < (playerPosition.x + ItemUseRadius / 2f) && cursorPosition.z < (playerPosition.z - ItemUseRadius / 2f)
             )
             {
                 SetCursorToInvalid();
                 return;
             }
         
-        if (Mathf.Abs(cursorPosition.x - playerPosition.x) > ItemUseRadius || Mathf.Abs(cursorPosition.y - playerPosition.y) > ItemUseRadius)
+        if (Mathf.Abs(cursorPosition.x - playerPosition.x) > ItemUseRadius 
+        || Mathf.Abs(cursorPosition.z - playerPosition.z) > ItemUseRadius)
         {
             SetCursorToInvalid();
             return;
         }
+        Debug.Log("WOW");
 
         //Get Selected item details
         ItemDetails itemDetails = InventoryManager.Instance.GetSelectedInventoryItemDetails(InventoryLocation.player);
-        
+
+        Debug.Log("Go" + itemDetails);
+
         if (itemDetails == null)
         {
             SetCursorToInvalid();
@@ -133,7 +139,7 @@ public class Cursor : MonoBehaviour
         switch (itemDetails.itemType)
         {
             case ItemType.Reaping_tool :
-            return SetCursorValidityReapingTool(cursorPosition, playerPosition, itemDetails);
+                return SetCursorValidityReapingTool(cursorPosition, playerPosition, itemDetails);
 
             default:
                 return false;
@@ -171,6 +177,10 @@ public class Cursor : MonoBehaviour
         cursorImage.color = new Color(1f, 1f, 1f, 1f);
         CursorIsEnabled = true;
     }
+    void getNewPosition(Vector3 newposition)
+    {
+        MPosition = newposition;
+    }    
 
     public Vector3 GetWorldPositionForCursor()
     {
