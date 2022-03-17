@@ -9,6 +9,7 @@ public class Player : SingletonMonobehaviour<Player>
     private WaitForSeconds afterLiftToolAnimationPause;
     private WaitForSeconds afterUseToolAnimationPause;
     private GridCursor gridCursor;
+    private Cursor cursor;
 
     //Movement Parameters
     private float vInput;
@@ -57,7 +58,7 @@ public class Player : SingletonMonobehaviour<Player>
     [SerializeField] private SpriteRenderer equippedItemSpriteRenderer = null;
 
     //Player Can Swapped
-    private CharacterAttribute armsCharracterAttribute;
+    private CharacterAttribute armsCharacterAttribute;
     private CharacterAttribute toolCharacterAttribute;
 
     private bool _playerInputIsDisabled = false;
@@ -71,10 +72,24 @@ public class Player : SingletonMonobehaviour<Player>
         rigidBody = GetComponent<Rigidbody>();
 
         animationOverrides = GetComponent<AnimationOverrides>();
-        armsCharracterAttribute = new CharacterAttribute(CharacterPartAnimator.body, PartVariantColour.none, PartVariantType.none);
+        armsCharacterAttribute = new CharacterAttribute(CharacterPartAnimator.body, PartVariantColour.none, PartVariantType.none);
+        toolCharacterAttribute = new CharacterAttribute(CharacterPartAnimator.body, PartVariantColour.none, PartVariantType.hoe);
+
         characterAttributeCustomisationList = new List<CharacterAttribute>();
 
         mainCamera = Camera.main; //26//
+    }
+
+    private void OnDisable()
+    {
+        EventHandler.BeforeSceneUnloadFadeOutEvent -= DisablePlayerInputAndResetMovement;
+        EventHandler.AfterSceneLoadFadeInEvent -= EnablePlayerInput;
+    }
+
+    private void OnEnable()
+    {
+        EventHandler.BeforeSceneUnloadFadeOutEvent += DisablePlayerInputAndResetMovement;
+        EventHandler.AfterSceneLoadFadeInEvent += EnablePlayerInput;
     }
 
     void getNewPosition(Vector3 newposition)
@@ -85,6 +100,7 @@ public class Player : SingletonMonobehaviour<Player>
     private void Start()
     {
         gridCursor = FindObjectOfType<GridCursor>();
+        cursor = FindObjectOfType<Cursor>();
         useToolAnimationPause = new WaitForSeconds(Settings.useToolAnimationPause);
         liftToolAnimationPause = new WaitForSeconds(Settings.liftToolAnimationPause);
         afterUseToolAnimationPause = new WaitForSeconds(Settings.afterUseToolAnimationPause);
