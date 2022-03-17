@@ -53,8 +53,9 @@ public class Cursor : MonoBehaviour
 
     private void SetCursorValidity(Vector3 cursorPosition, Vector3 playerPosition)
     {
+        
         SetCursorToValid();
-
+        
         if  (
             cursorPosition.x > (playerPosition.x + ItemUseRadius / 2f) && cursorPosition.y > (playerPosition.y + ItemUseRadius / 2f)
             ||
@@ -77,7 +78,7 @@ public class Cursor : MonoBehaviour
 
         //Get Selected item details
         ItemDetails itemDetails = InventoryManager.Instance.GetSelectedInventoryItemDetails(InventoryLocation.player);
-
+        
         if (itemDetails == null)
         {
             SetCursorToInvalid();
