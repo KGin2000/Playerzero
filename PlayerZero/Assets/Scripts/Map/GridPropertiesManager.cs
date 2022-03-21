@@ -530,7 +530,7 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
 
                         if(gridPropertyDetails.daysSinceWatered > -1)
                         {
-                            gridPropertyDetails.daysSinceWatered= -1;
+                            gridPropertyDetails.daysSinceWatered = -1;
                         }
 
                         SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails, sceneSave.gridPropertyDetailsDictionary);
