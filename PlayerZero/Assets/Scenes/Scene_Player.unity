@@ -2466,6 +2466,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df706123c59a87a499be4a361fe803fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xzy:
+    serializedVersion: 2
+    m_Bits: 64
+  so_CropDetailsList: {fileID: 11400000, guid: 344ae9e62be2a66418c0aea265ca603f, type: 2}
   so_gridPropertiesArray:
   - {fileID: 11400000, guid: be718b384d992cb479d21652267a675b, type: 2}
   - {fileID: 11400000, guid: 76a1d2e5b5864394c929485e34537127, type: 2}
@@ -3708,6 +3712,7 @@ MonoBehaviour:
   cursorRectTransform: {fileID: 673977214}
   greenCursorSprite: {fileID: 21300000, guid: d33c021b96f541b4ab75158130705c38, type: 3}
   redCursorSprite: {fileID: 21300000, guid: 16af896f4e00d2c4d84883c5a659c124, type: 3}
+  so_CropDetailsList: {fileID: 11400000, guid: 344ae9e62be2a66418c0aea265ca603f, type: 2}
 --- !u!225 &2117743104
 CanvasGroup:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6274924236503710770
+--- !u!1001 &3802190535058064494
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -53,15 +53,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: m_Name
-      value: Orange
+      value: Wicker_Basket
       objectReference: {fileID: 0}
     - target: {fileID: 5102482091228907224, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: m_Size.x
-      value: 0.6539995
+      value: 0.6287436
       objectReference: {fileID: 0}
     - target: {fileID: 5102482091228907224, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: m_Size.y
-      value: 0.6046661
+      value: 0.8791816
       objectReference: {fileID: 0}
     - target: {fileID: 5102482091228907224, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: m_Size.z
@@ -69,39 +69,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5102482091228907224, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: m_Center.x
-      value: 0.0036667287
+      value: -0.0019843876
       objectReference: {fileID: 0}
     - target: {fileID: 5102482091228907224, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: m_Center.y
-      value: -0.06966716
+      value: 0.0024163723
       objectReference: {fileID: 0}
     - target: {fileID: 5102482091228907224, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: m_Center.z
-      value: 0
+      value: 6.5831467e-18
       objectReference: {fileID: 0}
     - target: {fileID: 5374980904157510006, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1508740589214030948, guid: ea63f5f0faa39e541983b2d020993efa, type: 3}
+      objectReference: {fileID: 21300000, guid: 0562c5d2fc9133b44a2eb01bdeabd0d7, type: 3}
     - target: {fileID: 5374980904157510006, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5442879543849834306, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442879543849834306, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442879543849834306, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9022117013169911221, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: _itemCode
-      value: 10001
+      value: 10000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}

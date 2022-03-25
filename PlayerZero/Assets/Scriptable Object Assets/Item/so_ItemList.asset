@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemDetails:
   - itemCode: 10000
-    itemType: 2
-    itemDescription: Watering Can
-    itemSprite: {fileID: 5471719376562228750, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
-    itemLongDescription: Use for Watering
+    itemType: 7
+    itemDescription: Wicker Basket
+    itemSprite: {fileID: 21300000, guid: 0562c5d2fc9133b44a2eb01bdeabd0d7, type: 3}
+    itemLongDescription: "\u0E15\u0E23\u0E30\u0E01\u0E25\u0E49\u0E32\u0E40\u0E01\u0E47\u0E1A\u0E1C\u0E25\u0E1C\u0E25\u0E34\u0E15"
     itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
@@ -123,3 +123,51 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+  - itemCode: 10009
+    itemType: 0
+    itemDescription: CarrotSeed
+    itemSprite: {fileID: 5943964564357768285, guid: 0541c90da67a9e34bbbee4e84b9b1dfd, type: 3}
+    itemLongDescription: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E41\u0E04\u0E23\u0E2D\u0E17"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10010
+    itemType: 0
+    itemDescription: CabbageSeed
+    itemSprite: {fileID: 2681426169418703813, guid: 0541c90da67a9e34bbbee4e84b9b1dfd, type: 3}
+    itemLongDescription: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E01\u0E30\u0E2B\u0E25\u0E48\u0E33\u0E1B\u0E25\u0E35"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10011
+    itemType: 1
+    itemDescription: Carrot
+    itemSprite: {fileID: -2996002688947889658, guid: e7be5ad07f07a354e9f4d47d993db4b0, type: 3}
+    itemLongDescription: "\u0E41\u0E04\u0E23\u0E2D\u0E17"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+  - itemCode: 10012
+    itemType: 1
+    itemDescription: Cabbage
+    itemSprite: {fileID: 7086760253628195734, guid: e7be5ad07f07a354e9f4d47d993db4b0, type: 3}
+    itemLongDescription: "\u0E01\u0E30\u0E2B\u0E25\u0E48\u0E33\u0E1B\u0E25\u0E35"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
