@@ -135,6 +135,8 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
                 inventoryLists[(int)inventoryLocation][toItem] = fromInventoryItem;
                 inventoryLists[(int)inventoryLocation][fromItem] = toInventoryItem;
             }
+            
+        EventHandler.CallInventoryUpdatedEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
     }
 
     public void ClearSelectedInventoryItem(InventoryLocation inventoryLocation) // 32

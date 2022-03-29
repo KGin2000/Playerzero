@@ -295,7 +295,7 @@ public class Player : SingletonMonobehaviour<Player>
                     break;
 
                 case ItemType.Watering_tool :
-
+                case ItemType.Chopping_tool :
                 case ItemType.Hoeing_tool :
                 case ItemType.Collecting_tool :
                     ProcessPlayerClickInputTool(gridPropertyDetails, itemDetails, playerDirection);
@@ -381,6 +381,13 @@ public class Player : SingletonMonobehaviour<Player>
                 if(gridCursor.CursorPositionIsValid)
                 {
                     WaterGroundAtCursor(gridPropertyDetails, playerDirection);
+                }
+                break;
+
+            case ItemType.Chopping_tool :
+                if(gridCursor.CursorPositionIsValid)
+                {
+                    ChopInPlayerDirection(gridPropertyDetails, itemDetails, playerDirection);
                 }
                 break;
             
@@ -496,6 +503,34 @@ public class Player : SingletonMonobehaviour<Player>
 
     }
 
+    private void ChopInPlayerDirection(GridPropertyDetails gridPropertyDetails, ItemDetails equippedItemDetails, Vector3Int playerDirection)
+    {
+        //Trigger animation
+        StartCoroutine(ChopInPlayerDirectionRoutine(gridPropertyDetails, equippedItemDetails, playerDirection));
+    }
+
+    private IEnumerator ChopInPlayerDirectionRoutine(GridPropertyDetails gridPropertyDetails, ItemDetails equippedItemDetails, Vector3Int playerDirection)
+    {
+        PlayerInputIsDisabled = true;
+        playerToolUseDisabled = true;
+
+        // //Set tool aniamtion to axe in override animation
+        // toolCharacterAttribute.partVariantType = PartVariantType.axe;
+        // characterAttributeCustomisationList.Clear();
+        // characterAttributeCustomisationList.Add(toolCharacterAttribute);
+        // animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);
+
+        ProcessCropWithEquippedItemInPlayerDirection(playerDirection, equippedItemDetails, gridPropertyDetails);
+
+        // yield return useToolAnimationPause;
+
+        //After animation pause
+        yield return afterUseToolAnimationPause;
+
+        PlayerInputIsDisabled = false;
+        playerToolUseDisabled = false;
+    }
+
     private void CollectInPlayerDirection(GridPropertyDetails gridPropertyDetails, ItemDetails equippedItemDetails, Vector3Int playerDirection)
     {
         StartCoroutine(CollectInPlayerDirectionRoutine(gridPropertyDetails, equippedItemDetails, playerDirection));
@@ -507,7 +542,7 @@ public class Player : SingletonMonobehaviour<Player>
         playerToolUseDisabled = true;
 
 
-        processCropWithEquippedItemInPlayerDirection(playerDirection, equippedItemDetails, gridPropertyDetails);
+        ProcessCropWithEquippedItemInPlayerDirection(playerDirection, equippedItemDetails, gridPropertyDetails);
 
         //yield return pickAnimationPause;
 
@@ -518,7 +553,7 @@ public class Player : SingletonMonobehaviour<Player>
         playerToolUseDisabled = false;
     }
 
-    private void processCropWithEquippedItemInPlayerDirection(Vector3Int playerDirection, ItemDetails equippedItemDetails, GridPropertyDetails gridPropertyDetails)
+    private void ProcessCropWithEquippedItemInPlayerDirection(Vector3Int playerDirection, ItemDetails equippedItemDetails, GridPropertyDetails gridPropertyDetails)
     {
         // switch (equippedItemDetails.itemType)
         // {
@@ -548,12 +583,16 @@ public class Player : SingletonMonobehaviour<Player>
 
         //Get crops at cursor grid location
         Crop crop = GridPropertiesManager.Instance.GetCropObjectAtGridLocation(gridPropertyDetails);
-
+        
         //Execute Process Tool Action For crop
         if (crop != null)
         {
             switch (equippedItemDetails.itemType)
             {
+                case ItemType.Chopping_tool : 
+                    crop.ProcessToolAction(equippedItemDetails);
+                    break;
+
                 case ItemType.Collecting_tool :
                     crop.ProcessToolAction(equippedItemDetails);
                     break;

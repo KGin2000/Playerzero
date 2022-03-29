@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cropDetails:
   - seedItemCode: 10009
-    growthDays: 0000000001000000010000000100000002000000
-    totalGrowthDays: 5
+    growthDays: 0000000001000000020000000300000005000000
     growthPrefab:
     - {fileID: 6835825124770624525, guid: 2457a4b4d35db52458ee7305a045ffbd, type: 3}
     - {fileID: 6835825124770624525, guid: 2457a4b4d35db52458ee7305a045ffbd, type: 3}
@@ -41,4 +40,32 @@ MonoBehaviour:
     cropProducedItemCode: 1b270000
     cropProducedMinQuantity: 01000000
     cropProducedMaxQuantity: 01000000
+    daysToRegrow: 0
+  - seedItemCode: 10013
+    growthDays: 0000000001000000020000000300000004000000
+    growthPrefab:
+    - {fileID: 6835825124770624525, guid: 2457a4b4d35db52458ee7305a045ffbd, type: 3}
+    - {fileID: 6835825124770624525, guid: 2457a4b4d35db52458ee7305a045ffbd, type: 3}
+    - {fileID: 6835825124770624525, guid: 2457a4b4d35db52458ee7305a045ffbd, type: 3}
+    - {fileID: 6835825124770624525, guid: 2457a4b4d35db52458ee7305a045ffbd, type: 3}
+    - {fileID: 43191962852122943, guid: 70d65914d767f564f98f6bbceac27c8d, type: 3}
+    growthSprite:
+    - {fileID: 21300000, guid: 9899f622fbfa7124da73d7c761de56a3, type: 3}
+    - {fileID: 21300000, guid: 18958533cee656a4fad484241e4479c3, type: 3}
+    - {fileID: 21300000, guid: c422af95170c5d84a8a4ab6ea9aff1fe, type: 3}
+    - {fileID: 21300000, guid: 0fd6382d3989c6248a447969cf9fb942, type: 3}
+    - {fileID: 21300000, guid: 7a2fbb3e8d1381b4b87719ab1a6e3060, type: 3}
+    seasons: 0000000001000000
+    harvestedSprite: {fileID: 0}
+    harvestedTransformItemCode: 10015
+    hideCropBeforeHarvestedAnimation: 0
+    disableCropCollidersBeforeHarvestedAnimation: 0
+    isHarvestedAnimation: 1
+    isHarvestActionEffect: 1
+    spawnCropProduceAtPlayerPosition: 0
+    harvestToolItemCode: 16270000
+    requiredHarvestActions: 03000000
+    cropProducedItemCode: 1d2700001e270000
+    cropProducedMinQuantity: 0100000002000000
+    cropProducedMaxQuantity: 0200000005000000
     daysToRegrow: 0

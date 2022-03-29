@@ -171,3 +171,39 @@ MonoBehaviour:
     canBeDropped: 1
     canBeEaten: 1
     canBeCarried: 1
+  - itemCode: 10013
+    itemType: 0
+    itemDescription: Oak Acorn
+    itemSprite: {fileID: 21300000, guid: 5121703ca58e3c147b4ce26f23aa0333, type: 3}
+    itemLongDescription: "\u0E42\u0E2D\u0E4A\u0E01"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10014
+    itemType: 1
+    itemDescription: wood
+    itemSprite: {fileID: 21300000, guid: b9acdfd512d31a840b7d68fde4a17d8d, type: 3}
+    itemLongDescription: "\u0E44\u0E21\u0E49"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10015
+    itemType: 0
+    itemDescription: Oak Tree Stump
+    itemSprite: {fileID: 21300000, guid: 17ca5f0be0ff94045a2ab9dcd2640ca7, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 0
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 0
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
