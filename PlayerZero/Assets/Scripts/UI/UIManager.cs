@@ -5,6 +5,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
 {
     private bool _pauseMenuOn = false;
     [SerializeField] private UIInventoryBar uiInventoryBar = null;
+    [SerializeField] private PauseMenuInventoryManagement pauseMenuInventoryManagement = null;
     [SerializeField] private GameObject pauseMenu = null;
     [SerializeField] private GameObject[] menuTabs = null;
     [SerializeField] private Button[] menuButtons = null;
@@ -63,6 +64,9 @@ public class UIManager : SingletonMonobehaviour<UIManager>
 
     private void DisablePauseMenu()
     {
+        //Destroy any currently dragged items
+        pauseMenuInventoryManagement.DestroyCurrentlyDraggedItems();
+
         PauseMenuOn = false;
         Player.Instance.PlayerInputIsDisabled = false;
         Time.timeScale = 1;

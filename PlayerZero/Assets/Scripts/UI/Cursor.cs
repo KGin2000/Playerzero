@@ -78,12 +78,10 @@ public class Cursor : MonoBehaviour
             SetCursorToInvalid();
             return;
         }
-        Debug.Log("WOW");
 
         //Get Selected item details
         ItemDetails itemDetails = InventoryManager.Instance.GetSelectedInventoryItemDetails(InventoryLocation.player);
 
-        Debug.Log("Go" + itemDetails);
 
         if (itemDetails == null)
         {
