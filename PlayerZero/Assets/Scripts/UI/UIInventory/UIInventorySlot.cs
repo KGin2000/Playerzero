@@ -14,7 +14,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private Transform parentItem;
     private GridCursor gridCursor;       //      46      //
     private Cursor cursor;
-    private GameObject draggedItem;
+    public GameObject draggedItem;
 
     public Image inventorySlotHightlight;
     public Image inventorySlotImage;
@@ -104,7 +104,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         InventoryManager.Instance.SetSelectedInventoryItem(InventoryLocation.player, itemDetails.itemCode);
     }
 
-    private void ClearSelectedItem()
+    public void ClearSelectedItem()
     {
         ClearCursor();
         

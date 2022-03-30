@@ -408,6 +408,7 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
 
              worldPosition = new Vector3(worldPosition.x + Settings.gridCellSize / 2, worldPosition.y, worldPosition.z + 1);
 
+            
              GameObject cropInstance = Instantiate(cropPrefab, worldPosition, Quaternion.identity);
              cropInstance.transform.Rotate(90.0f,0.0f,0.0f,Space.Self);
 
