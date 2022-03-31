@@ -6,6 +6,7 @@ public static class Settings
     public const float fadeInSeconds = 0.25f;
     public const float fadeOutSeconds = 0.35f;
     public const float targetAlpha = 0.45f;
+    public const float targetAlphaZero = 0.0f;
 
     //TileMap
     public const float gridCellSize = 1f;       //Grid Cell Size in Unity Units

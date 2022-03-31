@@ -5,13 +5,13 @@ public class TriggerObscuringItemFader : MonoBehaviour
 {
     private void OnTriggerEnter (Collider collision)
     {
-    ObscuringItemFader[] obscuringItemFader = collision.gameObject.GetComponentsInChildren<ObscuringItemFader>();
+    ObscuringDialogFader[] obscuringDialogFader = collision.gameObject.GetComponentsInChildren<ObscuringDialogFader>();
 
-        if (obscuringItemFader.Length > 0)
+        if (obscuringDialogFader.Length > 0)
         {
-            for(int i=0; i<obscuringItemFader.Length; i++)
+            for(int i=0; i<obscuringDialogFader.Length; i++)
             {
-                obscuringItemFader[i].FadeOut();
+                obscuringDialogFader[i].FadeIn();
             }
         }
     }
@@ -19,13 +19,13 @@ public class TriggerObscuringItemFader : MonoBehaviour
     private void OnTriggerExit (Collider collision)
     {
 
-        ObscuringItemFader[] obscuringItemFader = collision.gameObject.GetComponentsInChildren<ObscuringItemFader>();
+        ObscuringDialogFader[] obscuringDialogFader = collision.gameObject.GetComponentsInChildren<ObscuringDialogFader>();
 
-        if(obscuringItemFader.Length > 0)
+        if(obscuringDialogFader.Length > 0)
         {
-            for (int i = 0; i < obscuringItemFader.Length; i++)
+            for (int i = 0; i < obscuringDialogFader.Length; i++)
             {
-                obscuringItemFader[i].FadeIn();
+                obscuringDialogFader[i].FadeOut();
             }
         }
     }
