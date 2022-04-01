@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerPosition : MonoBehaviour
+{
+    public Vector3 Position;
+
+    // Update is called once per frame
+    void Update()
+    {
+        Position = transform.position;
+        //Debug.Log("PlayerPosition" + Position);
+    }
+}

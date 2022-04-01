@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : SingletonMonobehaviour<Player>
 {
+    public Vector3 PlayerPosition;
     public Vector3 MPosition;
     private AnimationOverrides animationOverrides;
     private WaitForSeconds afterLiftToolAnimationPause;

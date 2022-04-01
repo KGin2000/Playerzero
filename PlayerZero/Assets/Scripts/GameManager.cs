@@ -11,4 +11,7 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
     public DialogueSystem dialogueSystem;
+    public ShopManagerScript ShopManagerScript;
+    public PlayerPosition playerPosition;
+
 }
