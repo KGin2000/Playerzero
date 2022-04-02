@@ -25,6 +25,7 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+    canBeSell: 0
   - itemCode: 10001
     itemType: 1
     itemDescription: Orange
@@ -38,6 +39,7 @@ MonoBehaviour:
     canBeDropped: 1
     canBeEaten: 1
     canBeCarried: 1
+    canBeSell: 1
   - itemCode: 10002
     itemType: 1
     itemDescription: Apple
@@ -51,6 +53,7 @@ MonoBehaviour:
     canBeDropped: 1
     canBeEaten: 1
     canBeCarried: 1
+    canBeSell: 1
   - itemCode: 10003
     itemType: 8
     itemDescription: Grass1
@@ -63,6 +66,7 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+    canBeSell: 0
   - itemCode: 10004
     itemType: 2
     itemDescription: Watering Can
@@ -75,6 +79,7 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+    canBeSell: 0
   - itemCode: 10005
     itemType: 3
     itemDescription: HoeTool
@@ -87,6 +92,7 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+    canBeSell: 0
   - itemCode: 10006
     itemType: 4
     itemDescription: Axe
@@ -99,6 +105,7 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+    canBeSell: 0
   - itemCode: 10007
     itemType: 5
     itemDescription: Pickaxe
@@ -111,6 +118,7 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+    canBeSell: 0
   - itemCode: 10008
     itemType: 6
     itemDescription: ReapingTool
@@ -123,6 +131,7 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+    canBeSell: 0
   - itemCode: 10009
     itemType: 0
     itemDescription: CarrotSeed
@@ -135,6 +144,7 @@ MonoBehaviour:
     canBeDropped: 1
     canBeEaten: 0
     canBeCarried: 1
+    canBeSell: 0
   - itemCode: 10010
     itemType: 0
     itemDescription: CabbageSeed
@@ -147,6 +157,7 @@ MonoBehaviour:
     canBeDropped: 1
     canBeEaten: 0
     canBeCarried: 1
+    canBeSell: 0
   - itemCode: 10011
     itemType: 1
     itemDescription: Carrot
@@ -159,6 +170,7 @@ MonoBehaviour:
     canBeDropped: 1
     canBeEaten: 1
     canBeCarried: 1
+    canBeSell: 0
   - itemCode: 10012
     itemType: 1
     itemDescription: Cabbage
@@ -171,6 +183,7 @@ MonoBehaviour:
     canBeDropped: 1
     canBeEaten: 1
     canBeCarried: 1
+    canBeSell: 0
   - itemCode: 10013
     itemType: 0
     itemDescription: Oak Acorn
@@ -183,6 +196,7 @@ MonoBehaviour:
     canBeDropped: 1
     canBeEaten: 0
     canBeCarried: 1
+    canBeSell: 0
   - itemCode: 10014
     itemType: 1
     itemDescription: wood
@@ -195,6 +209,7 @@ MonoBehaviour:
     canBeDropped: 1
     canBeEaten: 0
     canBeCarried: 1
+    canBeSell: 0
   - itemCode: 10015
     itemType: 0
     itemDescription: Oak Tree Stump
@@ -207,3 +222,4 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+    canBeSell: 0

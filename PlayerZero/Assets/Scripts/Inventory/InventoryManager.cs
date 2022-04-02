@@ -255,6 +255,13 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         }
     }
 
+    public void GetItemForCalculate (Item item, GameObject gameObjectToDelete)
+    {
+        int itemCode = item.ItemCode;
+        SendCoinToWallet.Instance.CalculatePrice(itemCode);
+        Destroy(gameObjectToDelete);
+    }
+
     public void SetSelectedInventoryItem(InventoryLocation inventoryLocation, int itemCode) // 32 //
     {
         selectedInventoryItem[(int)inventoryLocation] = itemCode;

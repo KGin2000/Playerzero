@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class InteractNPC : MonoBehaviour
 {
 
     [SerializeField] DialogContainer dialogue;

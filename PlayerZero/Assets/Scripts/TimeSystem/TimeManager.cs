@@ -149,4 +149,22 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
             UpdateGameSecond();
         }
     }
+
+    public void TestAdvanceSkip()
+    {
+        if (gameHour >= 20 && gameHour <= 23)
+        {
+            Debug.Log("IF");
+            gameHour = 0;
+            gameDay += 1;
+            while(gameHour < 6)
+            {
+                UpdateGameSecond();
+            {
+        }
+        }
+        
+        }
+        
+    }
 }

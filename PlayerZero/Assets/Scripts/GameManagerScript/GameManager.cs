@@ -12,6 +12,6 @@ public class GameManager : MonoBehaviour
     }
     public DialogueSystem dialogueSystem;
     public ShopManagerScript ShopManagerScript;
-    public PlayerPosition playerPosition;
+    public GetPlayerPosition getPlayerPosition;
 
 }

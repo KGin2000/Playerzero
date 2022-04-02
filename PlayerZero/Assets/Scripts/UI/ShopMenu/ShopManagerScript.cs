@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ShopManagerScript : MonoBehaviour
 {
-    Vector3 PlayerPosition;
+    Vector3 GetPlayerPosition;
     public GameObject PrefabItem1 = null;
     public int[,] shopItems = new int[5,5];
     public float coins;
@@ -39,7 +39,7 @@ public class ShopManagerScript : MonoBehaviour
 
     public void Update()
     {
-        PlayerPosition =  GameManager.instance.playerPosition.Position;
+        GetPlayerPosition =  GameManager.instance.getPlayerPosition.PlayerPosition;
     }
 
     public void GetCoins(float getcoins)
@@ -66,8 +66,9 @@ public class ShopManagerScript : MonoBehaviour
                 Debug.Log("ITem 1");
                 GameObject Item1 = Instantiate(PrefabItem1, transform.position,Quaternion.identity);
                 Item1.transform.Rotate(90.0f,0.0f,0.0f,Space.Self);
-                PlayerPosition.z -= 1f;
-                Item1.transform.position = PlayerPosition;
+                GetPlayerPosition.z -= 1f;
+                Item1.transform.position = GetPlayerPosition;
+                Debug.Log("GetItem1");
             }
             else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 2)
             {

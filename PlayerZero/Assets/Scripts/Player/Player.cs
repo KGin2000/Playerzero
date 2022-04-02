@@ -613,6 +613,12 @@ public class Player : SingletonMonobehaviour<Player>
             TimeManager.Instance.TestAdvanceGameDay();
         }
 
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            TimeManager.Instance.TestAdvanceSkip();
+        }
+
+
         // if (Input.GetKeyDown(KeyCode.L))
         // {
         //     SceneControllerManager.Instance.FadeAndLoadScene(SceneName.Scene1_Farm.ToString(), transform.position);
