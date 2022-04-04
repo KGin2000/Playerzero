@@ -369,7 +369,7 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
 
              DisplayDugGround(gridPropertyDetails);
 
-             DisplayWateredGround(gridPropertyDetails);
+             DisplayWateredGround(gridPropertyDetails); 
 
              DisplayPlantedCrop(gridPropertyDetails);
          }
@@ -389,6 +389,7 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
              int growthStages = cropDetails.growthDays.Length;
 
              int currentGrowthStage = 0;
+
             //  int daysCounter = cropDetails.totalGrowthDays;
              for (int i = growthStages - 1; i >= 0; i--)
              {
@@ -399,6 +400,7 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
                  }
                 //  daysCounter = daysCounter - cropDetails.growthDays[i];
              }
+            
              
              cropPrefab = cropDetails.growthPrefab[currentGrowthStage];
 
@@ -408,7 +410,6 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
 
              worldPosition = new Vector3(worldPosition.x + Settings.gridCellSize / 2, worldPosition.y, worldPosition.z + 1);
 
-            
              GameObject cropInstance = Instantiate(cropPrefab, worldPosition, Quaternion.identity);
              cropInstance.transform.Rotate(90.0f,0.0f,0.0f,Space.Self);
 
@@ -626,15 +627,19 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
 
                         #region Update all Grid Properties to reflect the advance in the day
 
-                        //If a crop is planted
-                        if(gridPropertyDetails.growthDays > -1)
-                        {
-                            gridPropertyDetails.growthDays += 1;
-                        }
-
-                        if(gridPropertyDetails.daysSinceWatered > -1)
+                        if(gridPropertyDetails.growthDays > -1)     //If a crop is planted
+                                    {
+                                        gridPropertyDetails.growthDays += 1;
+                                    }
+                                    
+                        if(gridPropertyDetails.daysSinceWatered > -1)   //เช็คว่ารดน้ำรึยัง
                         {
                             gridPropertyDetails.daysSinceWatered = -1;
+                            
+                                if(gridPropertyDetails.growthDays > -1)     //If a crop is planted
+                                    {
+                                        gridPropertyDetails.growthDays += 1;
+                                    }
                         }
 
                         SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails, sceneSave.gridPropertyDetailsDictionary);
