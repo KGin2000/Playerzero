@@ -33,6 +33,7 @@ MonoBehaviour:
     hideCropBeforeHarvestedAnimation: 1
     disableCropCollidersBeforeHarvestedAnimation: 0
     isHarvestedAnimation: 1
+    UseWater: 1
     isHarvestActionEffect: 0
     spawnCropProduceAtPlayerPosition: 1
     harvestToolItemCode: 10270000
@@ -61,6 +62,7 @@ MonoBehaviour:
     hideCropBeforeHarvestedAnimation: 0
     disableCropCollidersBeforeHarvestedAnimation: 0
     isHarvestedAnimation: 1
+    UseWater: 0
     isHarvestActionEffect: 1
     spawnCropProduceAtPlayerPosition: 0
     harvestToolItemCode: 16270000

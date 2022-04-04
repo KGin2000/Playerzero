@@ -627,20 +627,28 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
 
                         #region Update all Grid Properties to reflect the advance in the day
 
-                        if(gridPropertyDetails.growthDays > -1)     //If a crop is planted
-                                    {
-                                        gridPropertyDetails.growthDays += 1;
-                                    }
-                                    
-                        if(gridPropertyDetails.daysSinceWatered > -1)   //เช็คว่ารดน้ำรึยัง
+                        SetUseWater();
+
+                        if (gridPropertyDetails.UseWater == true)
+                            {
+                                if(gridPropertyDetails.daysSinceWatered > -1)   //เช็คว่ารดน้ำรึยัง
+                                {
+                                        if(gridPropertyDetails.growthDays > -1)     //If a crop is planted
+                                            {
+                                                gridPropertyDetails.growthDays += 1;
+                                            }
+                                }
+                            }
+                        if (gridPropertyDetails.UseWater == false)
                         {
-                            gridPropertyDetails.daysSinceWatered = -1;
-                            
-                                if(gridPropertyDetails.growthDays > -1)     //If a crop is planted
-                                    {
-                                        gridPropertyDetails.growthDays += 1;
-                                    }
+                            Debug.Log("OPAAAAAAAAAAAAAA");
+                            if(gridPropertyDetails.growthDays > -1)     //If a crop is planted
+                                {
+                                    gridPropertyDetails.growthDays += 1;
+                                }
                         }
+
+                        gridPropertyDetails.daysSinceWatered = -1;
 
                         SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails, sceneSave.gridPropertyDetailsDictionary);
 
@@ -652,5 +660,18 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
 
         DisplayGridPropertyDetails();
     }
+    private void SetUseWater()
+     {
+         foreach (KeyValuePair<string, GridPropertyDetails> item in gridPropertyDictionary)
+         {
+             GridPropertyDetails gridPropertyDetails = item.Value;
+
+              if (gridPropertyDetails.seedItemCode > -1)
+        {
+            CropDetails cropDetails = so_CropDetailsList.GetCropDetails(gridPropertyDetails.seedItemCode);
+            gridPropertyDetails.UseWater = cropDetails.UseWater;
+        }
+         }
+     }  
 }
     

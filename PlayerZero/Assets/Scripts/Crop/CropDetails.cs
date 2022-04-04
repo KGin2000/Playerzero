@@ -17,6 +17,7 @@ public class CropDetails
     public bool hideCropBeforeHarvestedAnimation;
     public bool disableCropCollidersBeforeHarvestedAnimation;
     public bool isHarvestedAnimation;
+    public bool UseWater;
     public bool isHarvestActionEffect = false;
     public bool spawnCropProduceAtPlayerPosition;
     //public HarvestActionEffect harvestActionEffect;

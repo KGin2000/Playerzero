@@ -152,19 +152,16 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
 
     public void TestAdvanceSkip()
     {
-        if (gameHour >= 20 && gameHour <= 23)
+        if (gameHour >= 20 && gameHour <= 22)
         {
             Debug.Log("IF");
-            gameHour = 0;
-            gameDay += 1;
-            while(gameHour < 6)
+            int gamHourCal = ((24 - gameHour) + 6) * 3600 ;
+            for (int i = 0; i < gamHourCal; i++)
             {
                 UpdateGameSecond();
-            {
+            }
+            gameMinute = 0;
+            gameHour = 6;
         }
-        }
-        
-        }
-        
     }
 }
