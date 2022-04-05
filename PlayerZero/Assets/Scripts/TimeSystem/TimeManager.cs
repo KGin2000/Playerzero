@@ -7,7 +7,7 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
     private int gameYear = 1;
     private Season gameSeason = Season.Spring;
     private int gameDay = 1;
-    private int gameHour = 6;
+    public int gameHour = 6;
     private int gameMinute = 30;
     private int gameSecond = 0;
     private string gameDayOfWeek = "Mon";

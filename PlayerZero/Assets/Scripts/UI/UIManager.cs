@@ -5,15 +5,18 @@ public class UIManager : SingletonMonobehaviour<UIManager>
 {
     private bool _pauseMenuOn = false;
     private bool _shopMenuOn = false;
+    private bool _sleepMenuOn = false;
     [SerializeField] private UIInventoryBar uiInventoryBar = null;
     [SerializeField] private PauseMenuInventoryManagement pauseMenuInventoryManagement = null;
     [SerializeField] private GameObject pauseMenu = null;
     [SerializeField] private GameObject shopMenu = null;
+    [SerializeField] private GameObject sleepMenu = null;
     [SerializeField] private GameObject[] menuTabs = null;
     [SerializeField] private Button[] menuButtons = null;
 
     public bool PauseMenuOn { get => _pauseMenuOn; set => _pauseMenuOn = value; }
     public bool ShopMenuOn { get => _shopMenuOn; set => _shopMenuOn = value; }
+    public bool SleepMenuOn { get => _sleepMenuOn; set => _sleepMenuOn = value; }
 
     protected override void Awake()
     {
@@ -21,6 +24,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
 
         pauseMenu.SetActive(false);
         shopMenu.SetActive(false);
+        sleepMenu.SetActive(false);
     }
 
     //Update is Called once per frame
@@ -128,7 +132,36 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         shopMenu.SetActive(false);
     }
 
+    public void EnableSleepMenu()
+    {
+        //Destroy any currently dragged items
+        uiInventoryBar.DestroyCurrentlyDraggedItems();
 
+        //Clear currently selected items
+        uiInventoryBar.ClearCurrentlySelectedItems();
+
+        SleepMenuOn = true;
+        Player.Instance.PlayerInputIsDisabled = true;
+        Time.timeScale = 0;
+        sleepMenu.SetActive(true);
+
+        // //Trigger garbage collector
+        // System.GC.Collect();
+
+        // //Highlight selected button
+        // HighlightButtonForSelectedTab();
+    }
+
+    public void DisableSleepMenu()
+    {
+        // //Destroy any currently dragged items
+        // pauseMenuInventoryManagement.DestroyCurrentlyDraggedItems();
+
+        SleepMenuOn = false;
+        Player.Instance.PlayerInputIsDisabled = false;
+        Time.timeScale = 1;
+        sleepMenu.SetActive(false);
+    }
 
     private void HighlightButtonForSelectedTab()
     {

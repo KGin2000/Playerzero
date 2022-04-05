@@ -629,7 +629,7 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
 
                         SetUseWater();
 
-                        if (gridPropertyDetails.UseWater == true)
+                        if (gridPropertyDetails.UseWater == true)   //เช็คว่าต้องใช้น้ำมั้ย
                             {
                                 if(gridPropertyDetails.daysSinceWatered > -1)   //เช็คว่ารดน้ำรึยัง
                                 {
@@ -639,9 +639,8 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
                                             }
                                 }
                             }
-                        if (gridPropertyDetails.UseWater == false)
+                        else if (gridPropertyDetails.UseWater == false)
                         {
-                            Debug.Log("OPAAAAAAAAAAAAAA");
                             if(gridPropertyDetails.growthDays > -1)     //If a crop is planted
                                 {
                                     gridPropertyDetails.growthDays += 1;
@@ -659,19 +658,20 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
         }
 
         DisplayGridPropertyDetails();
+
     }
-    private void SetUseWater()
+    private void SetUseWater() //Set Use Water ให้เท่ากัน
      {
          foreach (KeyValuePair<string, GridPropertyDetails> item in gridPropertyDictionary)
          {
              GridPropertyDetails gridPropertyDetails = item.Value;
 
               if (gridPropertyDetails.seedItemCode > -1)
-        {
-            CropDetails cropDetails = so_CropDetailsList.GetCropDetails(gridPropertyDetails.seedItemCode);
-            gridPropertyDetails.UseWater = cropDetails.UseWater;
+                {
+                    CropDetails cropDetails = so_CropDetailsList.GetCropDetails(gridPropertyDetails.seedItemCode);
+                    gridPropertyDetails.UseWater = cropDetails.UseWater;
+                }
         }
-         }
      }  
 }
     
