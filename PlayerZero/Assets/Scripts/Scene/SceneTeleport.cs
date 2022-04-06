@@ -18,7 +18,7 @@ public class SceneTeleport : MonoBehaviour
 
           float yPosition = 0f;
 
-          float zPosition = Mathf.Approximately(scenePositionGoto.x, 0f) ? player.transform.position.z : scenePositionGoto.z;
+          float zPosition = Mathf.Approximately(scenePositionGoto.z, 0f) ? player.transform.position.z : scenePositionGoto.z;
 
           SceneControllerManager.Instance.FadeAndLoadScene(sceneNameGoto.ToString(), new Vector3(xPosition, yPosition, zPosition));
       }  

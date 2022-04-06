@@ -21,11 +21,11 @@ public class SceneSleep : MonoBehaviour
 
         if (gameHour >= 21)
         {
-            UIManager.Instance.EnableSleepMenu();
+            UIManager.Instance.EnableCanSleepMenu();
         }
         else
         {
-            Debug.Log("NOOOOOOOOOOOOOOOOOOOOOO");
+            UIManager.Instance.EnableNotSleepMenu();
         }
 
         // if (player != null)

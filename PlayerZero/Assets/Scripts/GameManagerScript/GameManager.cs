@@ -14,4 +14,5 @@ public class GameManager : MonoBehaviour
     public ShopManagerScript ShopManagerScript;
     public GetPlayerPosition getPlayerPosition;
     public TimeManager timeManager;
+    public ScreenTint screenTint;
 }

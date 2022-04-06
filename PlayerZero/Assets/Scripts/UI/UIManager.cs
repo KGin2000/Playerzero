@@ -5,18 +5,21 @@ public class UIManager : SingletonMonobehaviour<UIManager>
 {
     private bool _pauseMenuOn = false;
     private bool _shopMenuOn = false;
-    private bool _sleepMenuOn = false;
+    private bool _canSleepMenuOn = false;
+    private bool _notSleepMenuOn = false;
     [SerializeField] private UIInventoryBar uiInventoryBar = null;
     [SerializeField] private PauseMenuInventoryManagement pauseMenuInventoryManagement = null;
     [SerializeField] private GameObject pauseMenu = null;
     [SerializeField] private GameObject shopMenu = null;
-    [SerializeField] private GameObject sleepMenu = null;
+    [SerializeField] private GameObject canSleepMenu = null;
+    [SerializeField] private GameObject notSleepMenu = null;
     [SerializeField] private GameObject[] menuTabs = null;
     [SerializeField] private Button[] menuButtons = null;
 
     public bool PauseMenuOn { get => _pauseMenuOn; set => _pauseMenuOn = value; }
     public bool ShopMenuOn { get => _shopMenuOn; set => _shopMenuOn = value; }
-    public bool SleepMenuOn { get => _sleepMenuOn; set => _sleepMenuOn = value; }
+    public bool CanSleepMenuOn { get => _canSleepMenuOn; set => _canSleepMenuOn = value; }
+    public bool NotSleepMenuOn { get => _notSleepMenuOn; set => _notSleepMenuOn = value; }
 
     protected override void Awake()
     {
@@ -24,7 +27,8 @@ public class UIManager : SingletonMonobehaviour<UIManager>
 
         pauseMenu.SetActive(false);
         shopMenu.SetActive(false);
-        sleepMenu.SetActive(false);
+        canSleepMenu.SetActive(false);
+        notSleepMenu.SetActive(false);
     }
 
     //Update is Called once per frame
@@ -132,7 +136,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         shopMenu.SetActive(false);
     }
 
-    public void EnableSleepMenu()
+    public void EnableCanSleepMenu()
     {
         //Destroy any currently dragged items
         uiInventoryBar.DestroyCurrentlyDraggedItems();
@@ -140,10 +144,10 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         //Clear currently selected items
         uiInventoryBar.ClearCurrentlySelectedItems();
 
-        SleepMenuOn = true;
+        CanSleepMenuOn = true;
         Player.Instance.PlayerInputIsDisabled = true;
         Time.timeScale = 0;
-        sleepMenu.SetActive(true);
+        canSleepMenu.SetActive(true);
 
         // //Trigger garbage collector
         // System.GC.Collect();
@@ -152,15 +156,46 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         // HighlightButtonForSelectedTab();
     }
 
-    public void DisableSleepMenu()
+    public void DisableCanSleepMenu()
     {
         // //Destroy any currently dragged items
         // pauseMenuInventoryManagement.DestroyCurrentlyDraggedItems();
 
-        SleepMenuOn = false;
+        CanSleepMenuOn = false;
         Player.Instance.PlayerInputIsDisabled = false;
         Time.timeScale = 1;
-        sleepMenu.SetActive(false);
+        canSleepMenu.SetActive(false);
+    }
+
+    public void EnableNotSleepMenu()
+    {
+        //Destroy any currently dragged items
+        uiInventoryBar.DestroyCurrentlyDraggedItems();
+
+        //Clear currently selected items
+        uiInventoryBar.ClearCurrentlySelectedItems();
+
+        NotSleepMenuOn = true;
+        Player.Instance.PlayerInputIsDisabled = true;
+        Time.timeScale = 0;
+        notSleepMenu.SetActive(true);
+
+        // //Trigger garbage collector
+        // System.GC.Collect();
+
+        // //Highlight selected button
+        // HighlightButtonForSelectedTab();
+    }
+
+    public void DisableNotSleepMenu()
+    {
+        // //Destroy any currently dragged items
+        // pauseMenuInventoryManagement.DestroyCurrentlyDraggedItems();
+
+        NotSleepMenuOn = false;
+        Player.Instance.PlayerInputIsDisabled = false;
+        Time.timeScale = 1;
+        notSleepMenu.SetActive(false);
     }
 
     private void HighlightButtonForSelectedTab()
