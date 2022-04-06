@@ -12,6 +12,7 @@ public class ButtonManager : MonoBehaviour
     public void AcceptCanSleep()
     {
         UIManager.Instance.DisableCanSleepMenu();
+        UIManager.Instance.EnableFadeBlack();
         PlayerSleep.Instance.DoSleep();
         TimeManager.Instance.TestAdvanceSkip();
     }

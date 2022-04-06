@@ -53,7 +53,7 @@ public class ScreenTint : MonoBehaviour
     {
         while(f < 1f)
         {
-            f += Time.deltaTime * speed;
+            f += Time.deltaTime;
             f = Mathf.Clamp(f, 0, 1f);
 
             Color c = image.color;

@@ -7,12 +7,14 @@ public class UIManager : SingletonMonobehaviour<UIManager>
     private bool _shopMenuOn = false;
     private bool _canSleepMenuOn = false;
     private bool _notSleepMenuOn = false;
+    private bool _fadeBlack = false;
     [SerializeField] private UIInventoryBar uiInventoryBar = null;
     [SerializeField] private PauseMenuInventoryManagement pauseMenuInventoryManagement = null;
     [SerializeField] private GameObject pauseMenu = null;
     [SerializeField] private GameObject shopMenu = null;
     [SerializeField] private GameObject canSleepMenu = null;
     [SerializeField] private GameObject notSleepMenu = null;
+    [SerializeField] private GameObject fadeBlack = null;
     [SerializeField] private GameObject[] menuTabs = null;
     [SerializeField] private Button[] menuButtons = null;
 
@@ -20,6 +22,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
     public bool ShopMenuOn { get => _shopMenuOn; set => _shopMenuOn = value; }
     public bool CanSleepMenuOn { get => _canSleepMenuOn; set => _canSleepMenuOn = value; }
     public bool NotSleepMenuOn { get => _notSleepMenuOn; set => _notSleepMenuOn = value; }
+    public bool FadeBlack { get => _fadeBlack; set => _fadeBlack = value; }
 
     protected override void Awake()
     {
@@ -29,6 +32,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         shopMenu.SetActive(false);
         canSleepMenu.SetActive(false);
         notSleepMenu.SetActive(false);
+        fadeBlack.SetActive(false);
     }
 
     //Update is Called once per frame
@@ -196,6 +200,24 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         Player.Instance.PlayerInputIsDisabled = false;
         Time.timeScale = 1;
         notSleepMenu.SetActive(false);
+    }
+
+    public void EnableFadeBlack()
+    {
+        //Destroy any currently dragged items
+        uiInventoryBar.DestroyCurrentlyDraggedItems();
+
+        //Clear currently selected items
+        uiInventoryBar.ClearCurrentlySelectedItems();
+
+        FadeBlack = true;
+        fadeBlack.SetActive(true);
+    }
+
+    public void DisableFadeBlack()
+    {
+        FadeBlack = false;
+        fadeBlack.SetActive(false);
     }
 
     private void HighlightButtonForSelectedTab()

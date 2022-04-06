@@ -14,10 +14,12 @@ public class PlayerSleep : SingletonMonobehaviour<PlayerSleep>
         ScreenTint screenTint = GameManager.instance.screenTint;
 
         screenTint.Tint();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         screenTint.UnTint();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
+
+        UIManager.Instance.DisableFadeBlack();
 
         yield return null;
     }
