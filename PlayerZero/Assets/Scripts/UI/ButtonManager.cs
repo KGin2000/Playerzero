@@ -14,7 +14,6 @@ public class ButtonManager : MonoBehaviour
         UIManager.Instance.DisableCanSleepMenu();
         UIManager.Instance.EnableFadeBlack();
         PlayerSleep.Instance.DoSleep();
-        TimeManager.Instance.TestAdvanceSkip();
     }
 
     public void CloseTabNotSleep()

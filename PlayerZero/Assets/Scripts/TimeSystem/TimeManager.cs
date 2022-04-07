@@ -8,13 +8,15 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
     private Season gameSeason = Season.Spring;
     private int gameDay = 1;
     public int gameHour = 6;
-    private int gameMinute = 30;
+    private int gameMinute = 0;
     private int gameSecond = 0;
+    private float lightRotate = 0.0f;
     private string gameDayOfWeek = "Mon";
 
     private bool gameClockPaused = false;
 
     private float gameTick = 0f;
+    float x = 0;
 
     private void Start()
     {
@@ -27,6 +29,7 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
         {
             GameTick();
         }
+        // SendRotateLight();
     }
 
     private void GameTick()
@@ -38,12 +41,15 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
             gameTick -= Settings.secondsPerGameSecond;
 
             UpdateGameSecond();
+            UpdateLightRotate();
         }
+        
     }
 
     private void UpdateGameSecond()
     {
         gameSecond++;
+        //Debug.Log("gameSecond = " + gameSecond);
 
         if (gameSecond > 59)
         {
@@ -96,10 +102,29 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
 
             //Debug.Log("Game Year : " + gameYear + " Game Season : " + gameSeason + " Game Day : " + gameDay + " Game Hour : " + gameHour + " Game Minute : " + gameMinute);
         }
-
+        
         // Call
     }
 
+    private void UpdateLightRotate()
+    {
+        if(gameHour >= 18)
+        {
+            RotateLight.Instance.RotateLightingDown(0.02f);
+        }
+        if(gameHour == 0)
+        {
+            RotateLight.Instance.ReSetLight();
+        }
+        if(gameHour >= 5)
+        {
+            if(gameHour < 7)
+            {
+                RotateLight.Instance.RotateLightingUp(0.02f);
+            }
+        }
+    }
+    
     private string GetDayOfWeek()
     {
         int totalDays = (((int)gameSeason) * 30) + gameDay;
@@ -133,12 +158,12 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
         }
     }
 
-
     public void TestAdvanceGameMinute()
     {
         for (int i = 0; i < 60; i++)
         {
             UpdateGameSecond();
+            UpdateLightRotate();
         }
     }
 
@@ -147,6 +172,7 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
         for (int i = 0; i < 86400; i++)
         {
             UpdateGameSecond();
+            UpdateLightRotate();
         }
     }
 
@@ -154,11 +180,12 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
     {
         if (gameHour >= 20 && gameHour <= 22)
         {
-            Debug.Log("IF");
+            // Debug.Log("IF");
             int gamHourCal = ((24 - gameHour) + 6) * 3600 ;
             for (int i = 0; i < gamHourCal; i++)
             {
                 UpdateGameSecond();
+                UpdateLightRotate();
             }
             gameMinute = 0;
             gameHour = 6;

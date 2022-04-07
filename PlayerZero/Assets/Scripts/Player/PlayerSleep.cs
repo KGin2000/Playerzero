@@ -15,6 +15,7 @@ public class PlayerSleep : SingletonMonobehaviour<PlayerSleep>
 
         screenTint.Tint();
         yield return new WaitForSeconds(1f);
+        TimeManager.Instance.TestAdvanceSkip();
 
         screenTint.UnTint();
         yield return new WaitForSeconds(1f);
