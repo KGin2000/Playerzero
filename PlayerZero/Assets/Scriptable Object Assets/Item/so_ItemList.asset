@@ -85,7 +85,7 @@ MonoBehaviour:
     itemDescription: HoeTool
     itemSprite: {fileID: -5619285666156628218, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
     itemLongDescription: "\u0E08\u0E2D\u0E1A\u0E43\u0E0A\u0E49\u0E02\u0E38\u0E14"
-    itemUseGridRadius: 4
+    itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
     canBePickedUp: 1

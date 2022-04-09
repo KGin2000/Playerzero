@@ -35,7 +35,7 @@ public class MovementAnimationParameterControl : MonoBehaviour
         animator.SetFloat(Settings.hInput, hInput);
         animator.SetBool(Settings.isWalking, isWalking);
 
-        animator.SetInteger(Settings.toolEffect, (int)toolEffect);
+        //animator.SetInteger(Settings.toolEffect, (int)toolEffect);
 
         if (isUsingMiningToolUp)
             animator.SetTrigger(Settings.isUsingMiningToolUp);

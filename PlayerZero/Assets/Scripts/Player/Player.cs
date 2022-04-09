@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : SingletonMonobehaviour<Player>
 {
+    [SerializeField] GameObject GetAnimator;
     public Vector3 PlayerPosition;
     public Vector3 MPosition;
     private AnimationOverrides animationOverrides;
@@ -241,15 +242,6 @@ public class Player : SingletonMonobehaviour<Player>
         }
     }
 
-    // private void PlayerDigInput()
-    // {
-    //     if(Input.GetKeyDown(KeyCode.Space))
-    //     {
-    //         Debug.Log("M");
-    //         isUsingChoppingToolDown = true;
-    //     }
-    // }
-
     private void PlayerClickInput()
     {
         if(!playerToolUseDisabled)
@@ -419,23 +411,24 @@ public class Player : SingletonMonobehaviour<Player>
         // characterAttributeCustomisationList.Add(toolCharacterAttribute);
         // animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);            
 
-        // if(playerDirection == Vector3Int.right)
-        // {
-        //     isUsingChoppingToolRight = true;
-        // }
-        // if(playerDirection == Vector3Int.left)
-        // {
-        //     isUsingChoppingToolLeft = true;
-        // }
-        // if(playerDirection == Vector3Int.up)
-        // {
-        //     isUsingChoppingToolUp = true;
-        // }
-        // if(playerDirection == Vector3Int.down)
-        // {
-        //     isUsingChoppingToolDown = true;
-        // }
-        // yield return useToolAnimationPause;
+        if(playerDirection == Vector3Int.right)
+        {
+            StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseDiggingToolRight());
+        }
+        if(playerDirection == Vector3Int.left)
+        {
+            StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseDiggingToolLeft());
+        }
+        if(playerDirection == Vector3Int.up)
+        {
+            StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseDiggingToolUp());
+        }
+        if(playerDirection == Vector3Int.down)
+        {
+            StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseDiggingToolDown());
+            //isUsingChoppingToolDown = true;
+        }
+        yield return useToolAnimationPause;
 
         if (gridPropertyDetails.daysSinceDug == -1)
         {
@@ -470,23 +463,23 @@ public class Player : SingletonMonobehaviour<Player>
 
             toolEffect = ToolEffect.watering;
 
-            // if(playerDirection == Vector3Int.right)
-            // {
-            //     isUsingLiftingToolRight = true;
-            // }
-            // if(playerDirection == Vector3Int.left)
-            // {
-            //     isUsingLiftingToolLeft = true;
-            // }
-            // if(playerDirection == Vector3Int.up)
-            // {
-            //     isUsingLiftingToolUp = true;
-            // }
-            // if(playerDirection == Vector3Int.down)
-            // {
-            //     isUsingLiftingToolDown = true;
-            // }
-            // yield return liftToolAnimationPause;
+            if(playerDirection == Vector3Int.right)
+            {
+                StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseLiftingToolRight());
+            }
+            if(playerDirection == Vector3Int.left)
+            {
+                StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseLiftingToolLeft());
+            }
+            if(playerDirection == Vector3Int.up)
+            {
+                StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseLiftingToolUp());
+            }
+            if(playerDirection == Vector3Int.down)
+            {
+                StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseLiftingToolDown());
+            }
+            yield return liftToolAnimationPause;
 
             if (gridPropertyDetails.daysSinceWatered == -1)
             {
@@ -522,8 +515,9 @@ public class Player : SingletonMonobehaviour<Player>
         // animationOverrides.ApplyCharacterCustomisationParameters(characterAttributeCustomisationList);
 
         ProcessCropWithEquippedItemInPlayerDirection(playerDirection, equippedItemDetails, gridPropertyDetails);
+        
 
-        // yield return useToolAnimationPause;
+        yield return useToolAnimationPause;
 
         //After animation pause
         yield return afterUseToolAnimationPause;
@@ -556,8 +550,27 @@ public class Player : SingletonMonobehaviour<Player>
 
     private void ProcessCropWithEquippedItemInPlayerDirection(Vector3Int playerDirection, ItemDetails equippedItemDetails, GridPropertyDetails gridPropertyDetails)
     {
-        // switch (equippedItemDetails.itemType)
-        // {
+        switch (equippedItemDetails.itemType)
+        {
+            case ItemType.Chopping_tool:
+            if(playerDirection == Vector3Int.right)
+                 {
+                     StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseChoppingToolRight());
+                 }
+                 else if (playerDirection == Vector3Int.left)
+                 {
+                     StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseChoppingToolLeft());
+                 }
+                 else if (playerDirection == Vector3Int.up)
+                 {
+                     StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseChoppingToolUp());
+                 }
+                 else if (playerDirection == Vector3Int.down)
+                 {
+                     StartCoroutine(GetAnimator.GetComponent<AnimatorController>().UseChoppingToolDown());
+                 }
+                 break;
+
             // case ItemType.Collecting_tool :
                  
             //      if(playerDirection == Vector3Int.right)
@@ -578,9 +591,9 @@ public class Player : SingletonMonobehaviour<Player>
             //      }
             //      break;
 
-        //     case ItemType.none :
-        //         break;
-        // }
+            case ItemType.none :
+                break;
+        }
 
         //Get crops at cursor grid location
         Crop crop = GridPropertiesManager.Instance.GetCropObjectAtGridLocation(gridPropertyDetails);
