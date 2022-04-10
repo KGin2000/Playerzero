@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {//555
 
-     public Vector3 MPosition; //สร้างตัวแปรนอก จะได้ไม่หนัก
+    public Vector3 MPosition; //สร้างตัวแปรนอก จะได้ไม่หนัก
+    [SerializeField] GameObject Crossbow;
 
     private Camera mainCamera; 
 
@@ -111,6 +112,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         inventoryBar.ClearHighlightOnInventorySlots();
         
         isSelected = false;
+
 
         InventoryManager.Instance.ClearSelectedInventoryItem(InventoryLocation.player);
     }
@@ -248,11 +250,13 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         {
             if (isSelected == true)
             {
+                UnequipWeapon();            //ถอดอาวุธ
                 ClearSelectedItem();
             }
             else
             {
-                if(itemQuantity > 0)
+                EquipWeapon();
+                if(itemQuantity > 0)        //ติดตั้งอาวุธ
                 {
                     SetSelectedItem();
                 }   
@@ -304,4 +308,21 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     {
         parentItem = GameObject.FindGameObjectWithTag(Tags.ItemsParentTransform).transform;
     } 
+
+    private void EquipWeapon()
+    {
+        if(itemDetails.itemType == ItemType.Weapon_tool)
+        {
+            Crossbow.SetActive(true);
+        }
+        else
+        {
+            Crossbow.SetActive(false);
+        }
+    }
+
+    private void UnequipWeapon()
+    {
+        Crossbow.SetActive(false);
+    }
 }
