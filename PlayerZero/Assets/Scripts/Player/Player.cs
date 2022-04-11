@@ -115,6 +115,11 @@ public class Player : SingletonMonobehaviour<Player>
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.J))
+        {
+            PlayerStatus.Instance.TakeDamage(10);
+        }
+        
         #region Player Input
 
         if (!PlayerInputIsDisabled)
