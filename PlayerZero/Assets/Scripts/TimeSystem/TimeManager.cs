@@ -178,7 +178,7 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
 
     public void TestAdvanceSkip()
     {
-        if (gameHour >= 20 && gameHour <= 22)
+        if (gameHour >= 20 && gameHour <= 23)
         {
             // Debug.Log("IF");
             int gamHourCal = ((24 - gameHour) + 6) * 3600 ;
@@ -187,6 +187,27 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
                 UpdateGameSecond();
                 UpdateLightRotate();
             }
+
+            PlayerStatus.Instance.isExhausted = false;
+            PlayerStatus.Instance.FullRest();
+
+            gameMinute = 0;
+            gameHour = 6;
+        }
+
+        if (gameHour >= 0 && gameHour <= 5)
+        {
+            // Debug.Log("IF");
+            int gamHourCal = (6 - gameHour) * 3600 ;
+            for (int i = 0; i < gamHourCal; i++)
+            {
+                UpdateGameSecond();
+                UpdateLightRotate();
+            }
+
+            PlayerStatus.Instance.isExhausted = false;
+            PlayerStatus.Instance.HalfRest();
+
             gameMinute = 0;
             gameHour = 6;
         }

@@ -13,7 +13,7 @@ public class ButtonManager : MonoBehaviour
     {
         UIManager.Instance.DisableCanSleepMenu();
         UIManager.Instance.EnableFadeBlack();
-        PlayerSleep.Instance.DoSleep();
+        Player.Instance.DoSleep();
     }
 
     public void CloseTabNotSleep()

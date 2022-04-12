@@ -40,6 +40,17 @@ public class Stat
     {
         currVal = maxVal;
     }
+
+    internal void SetToHalf()
+    {
+        int halfVal = (maxVal/2);
+        currVal += halfVal;
+        
+        if (currVal > maxVal)
+        {
+            currVal = maxVal;
+        }
+    }
 }
 
 public class PlayerStatus : SingletonMonobehaviour<PlayerStatus>
@@ -70,50 +81,78 @@ public class PlayerStatus : SingletonMonobehaviour<PlayerStatus>
     public void TakeDamage(int amount)
     {
         hp.Subtract(amount);
-        if (hp.currVal < 0)
-        {
-            isDead = true;
-        }
+        UpdateStatus();
         UpdateHPBar();
+        
     }
 
     public void Heal(int amount)
     {
         hp.Add(amount);
+        UpdateStatus();
         UpdateHPBar();
     }
 
     public void FullHeal()
     {
         hp.SetToMax();
+        UpdateStatus();
         UpdateHPBar();
     }
 
     public void GetTired(int amount)
     {
         stamina.Subtract(amount);
-
-        if(stamina.currVal < 0)
-        {
-            isExhausted = true;
-        }
+        UpdateStatus();
         UpdateStaminaBar();
     }
 
     public void Rest(int amount)
     {
         stamina.Add(amount);
+        UpdateStatus();
         UpdateStaminaBar();
     }
 
     public void FullRest()
     {
         stamina.SetToMax();
+        UpdateStatus();
         UpdateStaminaBar();
+    }
+
+    public void HalfRest()
+    {
+        stamina.SetToHalf();
+        UpdateStatus();
+        UpdateStaminaBar();
+    }
+
+    public void UpdateStatus()
+    {
+        if (hp.currVal <= 0)
+        {
+            isDead = true;
+        }
+        // else if (hp.currVal > 0)
+        // {
+        //     isDead = false;
+        // }
+
+         if(stamina.currVal <= 0)
+        {
+            isExhausted = true;
+        }
+        // else if(stamina.currVal > 0)
+        // {
+        //     isExhausted = false;
+        // }
     }
 
     private void Update()
     {
+        Debug.Log("isDead = " + isDead);
+        Debug.Log("isExhausted = " + isExhausted);
         if(Input.GetKeyDown(KeyCode.J))
         {
             TakeDamage(10);

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -304,7 +304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &40487345
 Light:
   m_ObjectHideFlags: 0
@@ -7651,7 +7651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1039881170
 Light:
   m_ObjectHideFlags: 0
@@ -17059,7 +17059,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2384286092453490792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17217,7 +17217,6 @@ GameObject:
   - component: {fileID: 3635738351045405415}
   - component: {fileID: 3635738351045405416}
   - component: {fileID: 3635738351045405418}
-  - component: {fileID: 3635738351045405417}
   - component: {fileID: 3635738351045405419}
   - component: {fileID: 3635738351045405421}
   m_Layer: 0
@@ -17319,18 +17318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc545cdaf79f4a14f998dae83e8f21ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3635738351045405417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3635738351045405411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe052e7cf6abf8a41bf5db9e9ccf6560, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3635738351045405418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17385,8 +17372,8 @@ MonoBehaviour:
     currVal: 100
   hpBar: {fileID: 3878579523570285293}
   stamina:
-    maxVal: 200
-    currVal: 200
+    maxVal: 100
+    currVal: 100
   staminaBar: {fileID: 1210553261193353753}
   isDead: 0
   isExhausted: 0
@@ -17421,7 +17408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1001 &4878053260836175392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17586,7 +17573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.41509432, g: 0.28201377, b: 0.11904589, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17632,7 +17619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.123029836, g: 0.8773585, b: 0, a: 1}
+  m_Color: {r: 0.8784314, g: 0, b: 0.09861887, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17795,7 +17782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.41568628, g: 0.28235295, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17917,6 +17904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GetAnimator: {fileID: 7910156710679251468}
+  PlayerObject: {fileID: 3635738351045405411}
   PlayerPosition: {x: 0, y: 0, z: 0}
   MPosition: {x: 0, y: 0, z: 0}
   equippedItemSpriteRenderer: {fileID: 0}
@@ -17952,7 +17940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.75950825, b: 0, a: 1}
+  m_Color: {r: 0.23232341, g: 0.8867924, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

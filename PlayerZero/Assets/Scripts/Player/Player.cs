@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : SingletonMonobehaviour<Player>
 {
     [SerializeField] GameObject GetAnimator;
+    [SerializeField] GameObject PlayerObject;
     public Vector3 PlayerPosition;
     public Vector3 MPosition;
     private AnimationOverrides animationOverrides;
@@ -17,6 +18,8 @@ public class Player : SingletonMonobehaviour<Player>
     //Movement Parameters
     private float vInput;
     private float hInput;
+    private bool PlayerDead;
+    private bool PlayerExhausted;
     private bool isCarrying = false;
     private bool isIdle;
     private bool isWalking;
@@ -115,11 +118,6 @@ public class Player : SingletonMonobehaviour<Player>
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.J))
-        {
-            PlayerStatus.Instance.TakeDamage(10);
-        }
-        
         #region Player Input
 
         if (!PlayerInputIsDisabled)
@@ -134,6 +132,10 @@ public class Player : SingletonMonobehaviour<Player>
             PlayerClickInput();
 
             PlayerTestInput();
+
+            PlayerGetStatus();
+
+            PlayerRespawn();
 
             EventHandler.CallMovementEvent(vInput, hInput, isWalking, isIdle, isCarrying,
                                             toolEffect,
@@ -296,7 +298,10 @@ public class Player : SingletonMonobehaviour<Player>
                 case ItemType.Chopping_tool :
                 case ItemType.Hoeing_tool :
                 case ItemType.Collecting_tool :
-                    ProcessPlayerClickInputTool(gridPropertyDetails, itemDetails, playerDirection);
+                    if(PlayerExhausted == false)            //      ถ้าไม่เหนื่อยเข้า loop   (ถ้ามีstaminaจะไม่ทำ) //
+                        {
+                            ProcessPlayerClickInputTool(gridPropertyDetails, itemDetails, playerDirection);  
+                        }
                     break;
                 
                 case ItemType.none :
@@ -447,6 +452,7 @@ public class Player : SingletonMonobehaviour<Player>
 
         yield return afterUseToolAnimationPause;
 
+        PlayerStatus.Instance.GetTired(10);
         PlayerInputIsDisabled = false;
         playerToolUseDisabled = false;
     }
@@ -687,4 +693,62 @@ public class Player : SingletonMonobehaviour<Player>
     {
         return new Vector3(transform.position.x, transform.position.y + Settings.playerCentreYOffset, transform.position.z);
     }
+
+    public void DoSleep()
+    {
+        StartCoroutine(SleepRoutine());
+    }
+
+    IEnumerator SleepRoutine()
+    {
+        ScreenTint screenTint = GameManager.instance.screenTint;
+
+        screenTint.Tint();
+        yield return new WaitForSeconds(1f);
+        TimeManager.Instance.TestAdvanceSkip();
+
+        screenTint.UnTint();
+        yield return new WaitForSeconds(1f);
+
+        UIManager.Instance.DisableFadeBlack();
+
+        yield return null;
+    }
+
+    private void PlayerGetStatus()
+    {
+        PlayerDead = PlayerStatus.Instance.isDead;
+        PlayerExhausted = PlayerStatus.Instance.isExhausted;
+    }
+
+    private void PlayerRespawn()
+    {
+        if(PlayerDead == true)
+        {
+            PlayerStatus.Instance.isDead = false; 
+            UIManager.Instance.EnableFadeBlack();
+            StartCoroutine(Respawn());
+        }
+    }
+
+    private IEnumerator Respawn()
+    {
+        ScreenTint screenTint = GameManager.instance.screenTint;
+
+        screenTint.Tint();
+        yield return new WaitForSeconds(2f);
+
+        PlayerObject.transform.position = new Vector3(0.0f, 0.0f, 0.0f);            //Move to Target
+        Debug.Log("Die");
+        PlayerStatus.Instance.Heal(5);
+        yield return new WaitForSeconds(1f);
+
+        screenTint.UnTint();
+        yield return new WaitForSeconds(1f);
+
+        UIManager.Instance.DisableFadeBlack();
+
+        yield return null;
+    }
+    
 }

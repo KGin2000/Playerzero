@@ -19,13 +19,21 @@ public class SceneSleep : MonoBehaviour
     {
         Player player = collision.GetComponent<Player>();
 
-        if (gameHour >= 21)
+        if (gameHour > 5)
         {
-            UIManager.Instance.EnableCanSleepMenu();
+            if(gameHour < 21)
+            {
+                UIManager.Instance.EnableNotSleepMenu();
+            }
+            else
+            {
+                UIManager.Instance.EnableCanSleepMenu();
+            }
+            
         }
         else
         {
-            UIManager.Instance.EnableNotSleepMenu();
+            UIManager.Instance.EnableCanSleepMenu();
         }
 
         // if (player != null)
