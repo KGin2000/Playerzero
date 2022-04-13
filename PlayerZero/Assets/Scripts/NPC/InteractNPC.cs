@@ -4,7 +4,7 @@ public class InteractNPC : MonoBehaviour
 {
 
     [SerializeField] DialogContainer dialogue;
-    public bool Trig;
+    public bool Trig = false;
     private float vInput;
     private float hInput;
     

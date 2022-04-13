@@ -262,3 +262,68 @@ MonoBehaviour:
     canBeEaten: 0
     canBeCarried: 0
     canBeSell: 0
+  - itemCode: 10019
+    itemType: 1
+    itemDescription: Pumpkin
+    itemSprite: {fileID: -4552040448214343433, guid: 2e6494951dce983448b29d574e6c5f0f, type: 3}
+    itemLongDescription: "\u0E1F\u0E31\u0E01\u0E17\u0E2D\u0E07"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+    canBeSell: 0
+  - itemCode: 10020
+    itemType: 1
+    itemDescription: Sunflower
+    itemSprite: {fileID: -5888745959762517969, guid: 2e6494951dce983448b29d574e6c5f0f, type: 3}
+    itemLongDescription: "\u0E1F\u0E31\u0E01\u0E17\u0E2D\u0E07"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+    canBeSell: 0
+  - itemCode: 10021
+    itemType: 0
+    itemDescription: SunflowerSeed
+    itemSprite: {fileID: -6629125783200732662, guid: a6e5ebeed6fbedd4db600f5d29f9fec1, type: 3}
+    itemLongDescription: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E17\u0E32\u0E19\u0E15\u0E30\u0E27\u0E31\u0E19"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+    canBeSell: 0
+  - itemCode: 10022
+    itemType: 0
+    itemDescription: PumpkinSeed
+    itemSprite: {fileID: 1857384008819250416, guid: a6e5ebeed6fbedd4db600f5d29f9fec1, type: 3}
+    itemLongDescription: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E1F\u0E31\u0E01\u0E17\u0E2D\u0E07"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+    canBeSell: 0
+  - itemCode: 10023
+    itemType: 0
+    itemDescription: AppleSeed
+    itemSprite: {fileID: -5674467626565343100, guid: a6e5ebeed6fbedd4db600f5d29f9fec1, type: 3}
+    itemLongDescription: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E41\u0E2D\u0E1B\u0E40\u0E1B\u0E34\u0E49\u0E25"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+    canBeSell: 0
