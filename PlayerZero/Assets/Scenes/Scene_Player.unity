@@ -6326,6 +6326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 765116998}
   - component: {fileID: 765116997}
+  - component: {fileID: 765116999}
   m_Layer: 0
   m_Name: InventoryManager
   m_TagString: Untagged
@@ -6361,6 +6362,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &765116999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765116996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6922234ac6d92440a92359e6c9e22ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gUID: 5da0ef01-497a-430b-8261-7d6d57ddfc49
 --- !u!1001 &767349403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13023,7 +13037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988cbff4d28013641ad165036405a310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 1
+  fadeDuration: 0.25
   faderCanvasGroup: {fileID: 605593971}
   faderImage: {fileID: 605593972}
   startingSceneName: 0
@@ -18194,6 +18208,7 @@ GameObject:
   - component: {fileID: 3635738351045405418}
   - component: {fileID: 3635738351045405419}
   - component: {fileID: 3635738351045405421}
+  - component: {fileID: 3635738351045405417}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -18293,6 +18308,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc545cdaf79f4a14f998dae83e8f21ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3635738351045405417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3635738351045405411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6922234ac6d92440a92359e6c9e22ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gUID: a0b03f39-6290-44a8-9bdd-0cd260ac07d7
 --- !u!114 &3635738351045405418
 MonoBehaviour:
   m_ObjectHideFlags: 0

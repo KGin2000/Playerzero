@@ -3,6 +3,9 @@ using UnityEngine;
 
 public static class Settings 
 {
+    // Scenes
+    public const string PersistentScene = "PersistentScene";
+
     public const float fadeInSeconds = 0.25f;
     public const float fadeOutSeconds = 0.35f;
     public const float targetAlpha = 0.45f;
