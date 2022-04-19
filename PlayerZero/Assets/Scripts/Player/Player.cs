@@ -203,7 +203,23 @@ public class Player : SingletonMonobehaviour<Player>
             //isRunning = true;
             isWalking = true;
             isIdle = false;
-            movementSpeed = Settings.runningSpeed;
+            
+            if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            {
+                if(PlayerExhausted == false)            //      ถ้าไม่เหนื่อยเข้า loop   (ถ้ามีstaminaจะไม่ทำ) //
+                {
+                    movementSpeed = Settings.runningSpeed;
+                }
+                else
+                {
+                    movementSpeed = Settings.walkingSpeed;
+                }
+            }
+            else
+            {
+                movementSpeed = Settings.walkingSpeed;
+            }
+           
 
             //Capture player direction for save game
             if (hInput < 0)
@@ -234,18 +250,21 @@ public class Player : SingletonMonobehaviour<Player>
     private void PlayerWalkInput()
     {
         if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-        {
+        {   Debug.Log("Run");
             //isRunning = false;
-            isWalking = false;
-            isIdle = false;
-            movementSpeed = Settings.walkingSpeed;
-        }
-        else
-        {
-            //isRunning = true;
+            // isWalking = false;
+            // isIdle = false;
+            // movementSpeed = Settings.walkingSpeed;
             isWalking = true;
             isIdle = false;
             movementSpeed = Settings.runningSpeed;
+        }
+        else
+        {   Debug.Log("Walk");
+            //isRunning = true;
+            isWalking = true;
+            isIdle = false;
+            movementSpeed = Settings.walkingSpeed;
         }
     }
 

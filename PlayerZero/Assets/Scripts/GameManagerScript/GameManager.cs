@@ -1,15 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : SingletonMonobehaviour<GameManager>
 {
     public static GameManager instance;
 
-    private void Awake()
+    protected override void Awake()
     {
         instance = this;
+
+        base.Awake();
+
+        Screen.SetResolution(1980, 1080, FullScreenMode.FullScreenWindow, 0);
     }
+    
     public DialogueSystem dialogueSystem;
     public ShopManagerScript ShopManagerScript;
     public GetPlayerPosition getPlayerPosition;
