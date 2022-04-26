@@ -813,6 +813,10 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
         // Create String Dictionary
         sceneSave.stringDictionary = new Dictionary<string, string>();
 
+        sceneSave.intDictionary = new Dictionary<string, int>();
+
+        sceneSave.floatDictionary = new Dictionary<string, float>();
+
         //Add Player position to Vector3 dictionary
         Vector3Serializable vector3Serializable = new Vector3Serializable(transform.position.x, transform.position.y, transform.position.z);
         sceneSave.vector3Dictionary.Add("playerPosition", vector3Serializable);
@@ -822,6 +826,11 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
         //Add Player Dictionary to string dictionary
         sceneSave.stringDictionary.Add("playerDirection", playerDirection.ToString());
+
+        sceneSave.intDictionary.Add("hp", PlayerStatus.Instance.hp.currVal);
+        sceneSave.intDictionary.Add("stamina", PlayerStatus.Instance.stamina.currVal);
+
+        sceneSave.floatDictionary.Add("Coins", ShopManagerScript.Instance.coins);
 
         //Add sceneSave data for player game object
         GameObjectSave.sceneData.Add(Settings.PersistentScene, sceneSave);
@@ -862,6 +871,29 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
                             SetPlayerDirection(playerDirection);
                         }
                     }
+                }
+
+                //if int and string dictionaries are found
+                if(sceneSave.intDictionary != null)
+                {
+                    //populate saved int values
+                    if(sceneSave.intDictionary.TryGetValue("hp", out int savedhp))
+                        PlayerStatus.Instance.hp.currVal = savedhp;
+                    
+                    if(sceneSave.intDictionary.TryGetValue("stamina", out int savedstamina))
+                        PlayerStatus.Instance.stamina.currVal = savedstamina;
+                    
+                    PlayerStatus.Instance.UpdateStatus();
+                    PlayerStatus.Instance.UpdateHPBar();
+                    PlayerStatus.Instance.UpdateStaminaBar();
+                }
+
+                if(sceneSave.floatDictionary != null)
+                {
+                    if(sceneSave.floatDictionary.TryGetValue("Coins", out float savedcoins))
+                        ShopManagerScript.Instance.coins = savedcoins;
+
+                    ShopManagerScript.Instance.SetCoins();
                 }
             }
         }   

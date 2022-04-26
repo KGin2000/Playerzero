@@ -53,7 +53,7 @@ public class Stat
     }
 }
 
-public class PlayerStatus : SingletonMonobehaviour<PlayerStatus>
+public class PlayerStatus : SingletonMonobehaviour<PlayerStatus>//, ISaveable
 {
     public Stat hp;
     [SerializeField] StatusBar hpBar;
@@ -62,18 +62,41 @@ public class PlayerStatus : SingletonMonobehaviour<PlayerStatus>
     public bool isDead;
     public bool isExhausted;
 
+    // private string _iSaveableUniqueID;
+    // public  string ISaveableUniqueID { get { return _iSaveableUniqueID; } set { _iSaveableUniqueID = value; } }
+    // private GameObjectSave _gameObjectSave;
+    // public GameObjectSave GameObjectSave { get { return _gameObjectSave; } set { _gameObjectSave = value; } }
+
+    // protected override void Awake()
+    // {
+    //     base.Awake();
+
+    //     ISaveableUniqueID = GetComponent<GenerateGUID>().GUID;
+    //     GameObjectSave = new GameObjectSave();
+    // }
+
+    //  private void OnEnable()
+    // {
+    //     ISaveableRegister();
+    // }
+
+    //  private void OnDisable()
+    // {
+    //     ISaveableDeregister();
+    // }
+
     private void Start()
     {
         UpdateHPBar();
         UpdateStaminaBar();
     }
 
-    private void UpdateHPBar()
+    public void UpdateHPBar()
     {
         hpBar.Set(hp.currVal, hp.maxVal);
     }
 
-    private void UpdateStaminaBar()
+    public void UpdateStaminaBar()
     {
         staminaBar.Set(stamina.currVal, stamina.maxVal);
     }
@@ -170,4 +193,70 @@ public class PlayerStatus : SingletonMonobehaviour<PlayerStatus>
             FullRest();
         }
     }
+
+    // public void ISaveableRegister()
+    // {
+    //     SaveLoadManager.Instance.iSaveableObjectList.Add(this);
+    // }
+
+    // public void ISaveableDeregister()
+    // {
+    //     SaveLoadManager.Instance.iSaveableObjectList.Remove(this);
+    // }
+
+    // public GameObjectSave ISaveableSave()
+    // {
+    //     //Delete existing scene save if exists
+    //     GameObjectSave.sceneData.Remove(Settings.PersistentScene);
+
+    //     //Create new scene save
+    //     SceneSave sceneSave = new SceneSave();
+
+    //     //Create new int dictionary
+    //     sceneSave.intDictionary = new Dictionary<string, int>();
+
+    //     //Add values to the int dictionary
+    //     sceneSave.intDictionary.Add("hp", hp.currVal);
+    //     sceneSave.intDictionary.Add("stamina", stamina.currVal);
+
+    //     //Add scene save to game object for persistent scene
+    //     GameObjectSave.sceneData.Add(Settings.PersistentScene, sceneSave);
+
+    //     Debug.Log("Saved");
+    //     return GameObjectSave;
+    // }
+
+    // public void ISaveableLoad(GameSave gameSave)
+    // {
+    //     //Get saved gameobject from gameSave data
+    //     if (gameSave.gameObjectData.TryGetValue(ISaveableUniqueID, out GameObjectSave gameObjectSave))
+    //     {
+    //         GameObjectSave = gameObjectSave;
+
+    //         //Get savedscene data for gameobject
+    //         if(GameObjectSave.sceneData.TryGetValue(Settings.PersistentScene, out SceneSave sceneSave))
+    //         {
+    //             //if int and string dictionaries are found
+    //             if(sceneSave.intDictionary != null)
+    //             {
+    //                 //populate saved int values
+    //                 if(sceneSave.intDictionary.TryGetValue("hp", out int savedhp))
+    //                     hp.currVal = savedhp;
+                    
+    //                 if(sceneSave.intDictionary.TryGetValue("stamina", out int savedstamina))
+    //                     stamina.currVal = savedstamina;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // public void ISaveableStoreScene(string sceneName)
+    // {
+    //     //Nothing required here since Time Manager is running on the persistent scene
+    // }
+
+    // public void ISaveableRestoreScene(string sceneName)
+    // {
+    //     //Nothing required here since Time Manager is running on the persistent scene
+    // }
 }

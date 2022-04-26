@@ -59,6 +59,13 @@ public class ShopManagerScript : SingletonMonobehaviour<ShopManagerScript>
         CoinsTXT2.text = CoinsTXT.text;
     }
 
+    public void SetCoins()
+    {
+        Debug.Log("SavedDoin");
+        CoinsTXT.text = "Coin: " + coins.ToString();
+        CoinsTXT2.text = CoinsTXT.text;
+    }
+
     public void Buy()
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;

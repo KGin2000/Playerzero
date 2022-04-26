@@ -5,10 +5,26 @@ using UnityEngine;
 public class RotateLight : SingletonMonobehaviour<RotateLight>
 {
     [SerializeField] private GameObject DirecLight;
+    
    [SerializeField] private Vector3 _rotation;
     // Update is called once per frame
     float x = 90.0f;
+
+    //public Quaternion RotationOfLight; 
+    public float angleX;
+
     void Start()
+    {
+        DirecLight.transform.localRotation = Quaternion.Euler(x, 0, 0);
+    }
+
+    void Update()
+    {
+        ///RotationOfLight = DirecLight.transform.rotation;
+        angleX = DirecLight.transform.rotation.eulerAngles.x; 
+    }
+
+    public void SetRotateLight(float x)
     {
         DirecLight.transform.localRotation = Quaternion.Euler(x, 0, 0);
     }
