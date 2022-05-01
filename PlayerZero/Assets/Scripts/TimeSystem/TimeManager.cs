@@ -8,7 +8,7 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
     private Season gameSeason = Season.Spring;
     private int gameDay = 1;
     public int gameHour = 6;
-    private int gameMinute = 0;
+    public int gameMinute = 0;
     private int gameSecond = 0;
     private float lightRotate = 0.0f;
     private string gameDayOfWeek = "Mon";
@@ -79,7 +79,6 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
             gameTick -= Settings.secondsPerGameSecond;
 
             UpdateGameSecond();
-            UpdateLightRotate();
         }
         
     }
@@ -87,7 +86,6 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
     private void UpdateGameSecond()
     {
         gameSecond++;
-        //Debug.Log("gameSecond = " + gameSecond);
 
         if (gameSecond > 59)
         {
@@ -143,25 +141,6 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
         
         // Call
     }
-
-    private void UpdateLightRotate()
-    {
-        if(gameHour >= 18)
-        {
-            RotateLight.Instance.RotateLightingDown(0.02f);
-        }
-        if(gameHour == 0)
-        {
-            RotateLight.Instance.ReSetLight();
-        }
-        if(gameHour >= 5)
-        {
-            if(gameHour < 7)
-            {
-                RotateLight.Instance.RotateLightingUp(0.02f);
-            }
-        }
-    }
     
     private string GetDayOfWeek()
     {
@@ -201,7 +180,6 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
         for (int i = 0; i < 60; i++)
         {
             UpdateGameSecond();
-            UpdateLightRotate();
         }
     }
 
@@ -210,7 +188,6 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
         for (int i = 0; i < 86400; i++)
         {
             UpdateGameSecond();
-            UpdateLightRotate();
         }
     }
 
@@ -223,7 +200,6 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
             for (int i = 0; i < gamHourCal; i++)
             {
                 UpdateGameSecond();
-                UpdateLightRotate();
             }
 
             PlayerStatus.Instance.isExhausted = false;
@@ -240,7 +216,6 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
             for (int i = 0; i < gamHourCal; i++)
             {
                 UpdateGameSecond();
-                UpdateLightRotate();
             }
 
             PlayerStatus.Instance.isExhausted = false;
