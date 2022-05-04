@@ -10,6 +10,17 @@ TagManager:
   - GroundDecoration2
   - CropsParentTransform
   - Event
+  - 3
+  - Build
+  - tree
+  - 2
+  - 1
+  - 0
+  - GameManager
+  - Building
+  - smell
+  - R_Build
+  - W_Build
   layers:
   - Default
   - TransparentFX
@@ -17,6 +28,13 @@ TagManager:
   - 
   - Water
   - UI
+  - BaseLayers
+  - Enemies
+  - Tree
+  - Building
+  - Player
+  - Plant
+  - Smells
   - Crop
   - 
   - 
@@ -35,14 +53,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ImmortalObject
   m_SortingLayers:
   - name: Default
     uniqueID: 0
