@@ -78,6 +78,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -556,6 +557,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HighGroundGrass5_7: -4888647584134518194
+      HighGroundGrass5_4: 8077824975761772467
+      HighGroundGrass5_13: 631979056431214046
+      HighGroundGrass5_0: 9015717502629451754
+      HighGroundGrass5_3: 3775630581616237687
+      HighGroundGrass5_14: -5171128468879091672
+      HighGroundGrass5_17: 8295963573500689478
+      HighGroundGrass5_9: 5369040671700476730
+      HighGroundGrass5_11: 1203460390654160116
+      HighGroundGrass5_15: 6648379585308921515
+      HighGroundGrass5_5: 6683521590880167466
+      HighGroundGrass5_8: 559109988954033237
+      HighGroundGrass5_1: 8339224451811360094
+      HighGroundGrass5_10: 796188374999969130
+      HighGroundGrass5_12: -3277242806322671257
+      HighGroundGrass5_2: -2428025476484230933
+      HighGroundGrass5_6: 2579137058947731473
+      HighGroundGrass5_16: 3321300033569443431
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

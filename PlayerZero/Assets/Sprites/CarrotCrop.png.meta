@@ -54,6 +54,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -259,6 +260,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      CarrotCrop_0: 5019637925292627494
+      CarrotCrop_3: -1940565496804469330
+      CarrotCrop_4: -3588771236601618626
+      CarrotCrop_1: 2753380684986024624
+      CarrotCrop_2: -8833443369831703907
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

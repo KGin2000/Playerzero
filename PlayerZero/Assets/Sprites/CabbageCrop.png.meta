@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -244,6 +245,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      CabbageCrop_4: -959432523973853908
+      CabbageCrop_3: 1714211284252508681
+      CabbageCrop_0: 5934357181357116768
+      CabbageCrop_2: -5213797047871637927
+      CabbageCrop_1: 5414384340555472792
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

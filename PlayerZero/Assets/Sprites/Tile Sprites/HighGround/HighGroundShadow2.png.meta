@@ -294,6 +294,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2284,6 +2285,97 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HighGroundShadow2_70: 5408897205215923557
+      HighGroundShadow2_2: -8391323865178833346
+      HighGroundShadow2_19: -265526029162198817
+      HighGroundShadow2_15: -4636063673788037730
+      HighGroundShadow2_32: -9127137198638108918
+      HighGroundShadow2_48: -373551927240240149
+      HighGroundShadow2_43: -3645579969972314768
+      HighGroundShadow2_69: -7699732791439221816
+      HighGroundShadow2_86: -759405997469994397
+      HighGroundShadow2_33: 6117425286592659011
+      HighGroundShadow2_36: -1763918659636630566
+      HighGroundShadow2_53: 6260708005298438
+      HighGroundShadow2_26: -6708969510371881482
+      HighGroundShadow2_23: 3417867232333520177
+      HighGroundShadow2_50: 612007084668805946
+      HighGroundShadow2_51: 4128210629984755848
+      HighGroundShadow2_55: 1102714718569376462
+      HighGroundShadow2_58: 5479331332150648341
+      HighGroundShadow2_71: 5388512606862179561
+      HighGroundShadow2_35: 8453424776766227868
+      HighGroundShadow2_52: -3550434196779780529
+      HighGroundShadow2_38: -5245715667431436215
+      HighGroundShadow2_82: -229557018412549779
+      HighGroundShadow2_87: 9212713841135536102
+      HighGroundShadow2_56: 3035049493570410590
+      HighGroundShadow2_44: 7357041073414456627
+      HighGroundShadow2_49: 8993513209887430453
+      HighGroundShadow2_76: 5535680947726102017
+      HighGroundShadow2_4: 8976116055698642891
+      HighGroundShadow2_29: -5742885113805708501
+      HighGroundShadow2_5: 3070099644713500793
+      HighGroundShadow2_21: -8758992142487497056
+      HighGroundShadow2_59: 1949815699378179536
+      HighGroundShadow2_64: -7160465010178340952
+      HighGroundShadow2_85: 8547330987137362428
+      HighGroundShadow2_14: -6585553571778424568
+      HighGroundShadow2_80: 7237490916558286439
+      HighGroundShadow2_81: -2645531278577198572
+      HighGroundShadow2_13: -6178227535850120794
+      HighGroundShadow2_83: -8817187466242187145
+      HighGroundShadow2_25: 1409252737546502908
+      HighGroundShadow2_57: -7502231830174031282
+      HighGroundShadow2_84: -5676692032229664642
+      HighGroundShadow2_65: 2024944319565586965
+      HighGroundShadow2_72: -513941457345584744
+      HighGroundShadow2_30: -8905031601889187745
+      HighGroundShadow2_62: 1346960886232946051
+      HighGroundShadow2_54: 4901113408729300301
+      HighGroundShadow2_39: -600042901978526777
+      HighGroundShadow2_46: 6859461358697752012
+      HighGroundShadow2_60: 2302324468468196768
+      HighGroundShadow2_20: -8699081694182251127
+      HighGroundShadow2_78: 3724508002762089696
+      HighGroundShadow2_40: 7091748689989941805
+      HighGroundShadow2_79: -3880381365682259253
+      HighGroundShadow2_8: 8532536265413361773
+      HighGroundShadow2_27: -5688367328860663101
+      HighGroundShadow2_89: -1688801972650642594
+      HighGroundShadow2_42: 6909876660199985741
+      HighGroundShadow2_74: -4115894930116221432
+      HighGroundShadow2_63: 4591812165979807528
+      HighGroundShadow2_77: -240279032398645556
+      HighGroundShadow2_10: 6128318746712163140
+      HighGroundShadow2_45: -5531671779986112769
+      HighGroundShadow2_47: -1282704887607146824
+      HighGroundShadow2_22: -6514644552063424198
+      HighGroundShadow2_0: 2843559868036652724
+      HighGroundShadow2_67: -8546498111135751009
+      HighGroundShadow2_88: -3930289103986473781
+      HighGroundShadow2_34: -7589753129289954584
+      HighGroundShadow2_37: 1855778463932608392
+      HighGroundShadow2_12: -6532344611867323467
+      HighGroundShadow2_24: -1309203748072340014
+      HighGroundShadow2_31: 723041910472083792
+      HighGroundShadow2_41: -4947708952236439211
+      HighGroundShadow2_66: -8134911540659741030
+      HighGroundShadow2_1: 7182011383946274158
+      HighGroundShadow2_75: -2860497656971135490
+      HighGroundShadow2_61: 7612701462374890607
+      HighGroundShadow2_16: -5026119364950462947
+      HighGroundShadow2_18: 1047544538667936055
+      HighGroundShadow2_73: -5838858652728427436
+      HighGroundShadow2_28: -1433940368699367165
+      HighGroundShadow2_3: -2624956184314224547
+      HighGroundShadow2_11: 4188432007120465807
+      HighGroundShadow2_7: 7509971382506317067
+      HighGroundShadow2_17: 2323748144931536385
+      HighGroundShadow2_6: 1843318539050022151
+      HighGroundShadow2_68: 6983461111691163179
+      HighGroundShadow2_9: -7586973877884608131
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

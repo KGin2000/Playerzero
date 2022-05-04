@@ -255,6 +255,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1972,6 +1973,84 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HighGroundCliff_Stone1_68: 5018020113798615194
+      HighGroundCliff_Stone1_11: -8010363317903911420
+      HighGroundCliff_Stone1_20: 3492194586530947759
+      HighGroundCliff_Stone1_39: 4299395404020948346
+      HighGroundCliff_Stone1_7: -8457261984827599104
+      HighGroundCliff_Stone1_37: 291840175694014016
+      HighGroundCliff_Stone1_64: 3613572074390923981
+      HighGroundCliff_Stone1_70: 4206565209641516895
+      HighGroundCliff_Stone1_8: -5406702239585650820
+      HighGroundCliff_Stone1_28: -2937030734748656995
+      HighGroundCliff_Stone1_34: -4180560894702468569
+      HighGroundCliff_Stone1_5: 5910504039940579615
+      HighGroundCliff_Stone1_74: -7763035805169809305
+      HighGroundCliff_Stone1_43: 5270288203669575724
+      HighGroundCliff_Stone1_25: -7675539151975968402
+      HighGroundCliff_Stone1_6: 8727158732583365346
+      HighGroundCliff_Stone1_61: 5138222751879111590
+      HighGroundCliff_Stone1_10: -7112012040508049974
+      HighGroundCliff_Stone1_63: 4440666077961419531
+      HighGroundCliff_Stone1_38: -368279044819377543
+      HighGroundCliff_Stone1_45: 1626045597430576705
+      HighGroundCliff_Stone1_48: 5422802184202094579
+      HighGroundCliff_Stone1_22: -1205426810652512254
+      HighGroundCliff_Stone1_17: 6392766099920637926
+      HighGroundCliff_Stone1_53: 2662511427205169726
+      HighGroundCliff_Stone1_26: -5834376709816126499
+      HighGroundCliff_Stone1_57: -5920164287918097366
+      HighGroundCliff_Stone1_31: -5775251156335045010
+      HighGroundCliff_Stone1_67: -6978721313203180473
+      HighGroundCliff_Stone1_18: 5724318074617915808
+      HighGroundCliff_Stone1_9: 2026846476842705992
+      HighGroundCliff_Stone1_65: 6999789294692694345
+      HighGroundCliff_Stone1_52: 4266779690615377627
+      HighGroundCliff_Stone1_32: -1191544337791882028
+      HighGroundCliff_Stone1_2: 8961504618573773586
+      HighGroundCliff_Stone1_12: -1923990767127768418
+      HighGroundCliff_Stone1_29: 3619239349974349937
+      HighGroundCliff_Stone1_19: -1638279218854568926
+      HighGroundCliff_Stone1_13: -6208425743049980022
+      HighGroundCliff_Stone1_3: 7943491618127813993
+      HighGroundCliff_Stone1_46: -7709300165242804567
+      HighGroundCliff_Stone1_21: -1775921725609521194
+      HighGroundCliff_Stone1_55: 2306228206357449329
+      HighGroundCliff_Stone1_66: -8596419152856045947
+      HighGroundCliff_Stone1_36: 5002218634013190409
+      HighGroundCliff_Stone1_59: -3841365282044859286
+      HighGroundCliff_Stone1_1: 3968131447482533264
+      HighGroundCliff_Stone1_62: 5434553629729729706
+      HighGroundCliff_Stone1_50: 5573346739293122810
+      HighGroundCliff_Stone1_14: -2210120924705749986
+      HighGroundCliff_Stone1_24: -420411604872727251
+      HighGroundCliff_Stone1_69: -2736048280950439200
+      HighGroundCliff_Stone1_15: -5174156157932169743
+      HighGroundCliff_Stone1_40: -6701089115076273527
+      HighGroundCliff_Stone1_44: -7108728215602930691
+      HighGroundCliff_Stone1_23: -8579605539488795089
+      HighGroundCliff_Stone1_0: 6977436356942867478
+      HighGroundCliff_Stone1_54: 6306462029498472493
+      HighGroundCliff_Stone1_76: -5660461029296158080
+      HighGroundCliff_Stone1_16: 7110539662542574378
+      HighGroundCliff_Stone1_27: -1487848948699016608
+      HighGroundCliff_Stone1_51: -3656283720302489031
+      HighGroundCliff_Stone1_73: -1684251094765047208
+      HighGroundCliff_Stone1_56: 7239968025002347392
+      HighGroundCliff_Stone1_30: 242799461756688712
+      HighGroundCliff_Stone1_47: -3452349977267440996
+      HighGroundCliff_Stone1_75: -4783772556876885718
+      HighGroundCliff_Stone1_4: -2297298532491212165
+      HighGroundCliff_Stone1_58: 150917074123708946
+      HighGroundCliff_Stone1_60: -7672712145426308023
+      HighGroundCliff_Stone1_41: 4800658831808071528
+      HighGroundCliff_Stone1_49: -3149315342763568497
+      HighGroundCliff_Stone1_72: -4666899300949169212
+      HighGroundCliff_Stone1_71: 8352112433075263046
+      HighGroundCliff_Stone1_42: -4018830285612427969
+      HighGroundCliff_Stone1_33: 500601916209657010
+      HighGroundCliff_Stone1_35: 9014325573130174446
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

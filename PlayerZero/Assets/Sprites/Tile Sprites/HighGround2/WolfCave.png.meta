@@ -135,6 +135,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1012,6 +1013,44 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      WolfCave_30: 5276294709895774137
+      WolfCave_33: 8103980255950548613
+      WolfCave_6: -6234771352884468337
+      WolfCave_10: 6497752915163398349
+      WolfCave_1: -2700141328645068131
+      WolfCave_7: -8464448589057149105
+      WolfCave_0: -5476837070821366584
+      WolfCave_14: 7942840411846898421
+      WolfCave_3: -4039463565739138439
+      WolfCave_22: -771227902088892330
+      WolfCave_9: -5569243736734071106
+      WolfCave_18: 8616906628478746775
+      WolfCave_20: 7369390737854687422
+      WolfCave_26: -7685676082655524311
+      WolfCave_4: 8264992814264380001
+      WolfCave_5: -8809457047080030330
+      WolfCave_17: 2448020019340200867
+      WolfCave_16: -2090418390434182360
+      WolfCave_28: 7175006355099360313
+      WolfCave_27: 1199741548782855931
+      WolfCave_13: -9154233255695726210
+      WolfCave_15: 2544975499763115317
+      WolfCave_29: -2144450237200460686
+      WolfCave_2: -8419209173398830347
+      WolfCave_34: -7856260532733884295
+      WolfCave_35: 3268621601443755467
+      WolfCave_19: -7060798580591126249
+      WolfCave_25: 2348347585464541810
+      WolfCave_11: 5730742292440813935
+      WolfCave_12: -6648141849346853812
+      WolfCave_31: 2552527593839515166
+      WolfCave_21: -2581263685277974689
+      WolfCave_23: 6466702632634407170
+      WolfCave_24: 1013933050201418812
+      WolfCave_32: 7997776385742200262
+      WolfCave_8: 6565293365083611751
+      WolfCave_36: -7093500872589137911
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

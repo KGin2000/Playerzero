@@ -231,6 +231,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1780,6 +1781,76 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HighGroundCliff_Stone8_34: -2577107115015236986
+      HighGroundCliff_Stone8_2: 8980307001715300171
+      HighGroundCliff_Stone8_33: -1026363981051214427
+      HighGroundCliff_Stone8_66: 5761500769600471822
+      HighGroundCliff_Stone8_37: 4734943669208944486
+      HighGroundCliff_Stone8_43: -6757907995778452265
+      HighGroundCliff_Stone8_45: 7498969554393472653
+      HighGroundCliff_Stone8_7: 3711687281662886504
+      HighGroundCliff_Stone8_24: -2360856720995962907
+      HighGroundCliff_Stone8_12: 7435109210283419485
+      HighGroundCliff_Stone8_26: 3864916097750871733
+      HighGroundCliff_Stone8_20: -5105422985274849217
+      HighGroundCliff_Stone8_57: -1118117984023082022
+      HighGroundCliff_Stone8_17: 3242043345822944728
+      HighGroundCliff_Stone8_58: 8820819725681444615
+      HighGroundCliff_Stone8_51: -3763127179025264777
+      HighGroundCliff_Stone8_65: -9128534096140173200
+      HighGroundCliff_Stone8_9: 2709734870544354526
+      HighGroundCliff_Stone8_63: -3104213808209985388
+      HighGroundCliff_Stone8_11: -6290453283400292363
+      HighGroundCliff_Stone8_42: 7226765401814780746
+      HighGroundCliff_Stone8_44: -3208416035531136350
+      HighGroundCliff_Stone8_3: -8320931647743503259
+      HighGroundCliff_Stone8_6: -5330339443059041986
+      HighGroundCliff_Stone8_50: -5337091202517033058
+      HighGroundCliff_Stone8_40: -4862200576838330800
+      HighGroundCliff_Stone8_53: 3594853315305654102
+      HighGroundCliff_Stone8_62: 6128009935438514901
+      HighGroundCliff_Stone8_18: 786070287311053032
+      HighGroundCliff_Stone8_22: -2794662138473663855
+      HighGroundCliff_Stone8_14: 8325862543390527222
+      HighGroundCliff_Stone8_54: 8514488326162408416
+      HighGroundCliff_Stone8_47: -2781093457817639652
+      HighGroundCliff_Stone8_21: -3408759246947418780
+      HighGroundCliff_Stone8_46: -9216223017240346456
+      HighGroundCliff_Stone8_31: -9015377701344392052
+      HighGroundCliff_Stone8_10: -6367180463253408221
+      HighGroundCliff_Stone8_48: -2235900640556240612
+      HighGroundCliff_Stone8_68: -7331438249321439463
+      HighGroundCliff_Stone8_39: 3339518907349753788
+      HighGroundCliff_Stone8_1: 9141329095121860933
+      HighGroundCliff_Stone8_36: 8260918918373067784
+      HighGroundCliff_Stone8_49: -680455410034581099
+      HighGroundCliff_Stone8_56: 5805643604096272296
+      HighGroundCliff_Stone8_0: -1290658302132614167
+      HighGroundCliff_Stone8_15: 8216541794549357185
+      HighGroundCliff_Stone8_19: 4202180687501416416
+      HighGroundCliff_Stone8_67: -2075740658595442919
+      HighGroundCliff_Stone8_55: 8045344348281450504
+      HighGroundCliff_Stone8_5: -1062836524533769897
+      HighGroundCliff_Stone8_29: 3010154446388307850
+      HighGroundCliff_Stone8_32: -8308958983200644413
+      HighGroundCliff_Stone8_30: 2882481487977219240
+      HighGroundCliff_Stone8_64: 7881196370734343303
+      HighGroundCliff_Stone8_16: 6446785333269574568
+      HighGroundCliff_Stone8_52: -5340222140566994871
+      HighGroundCliff_Stone8_4: -1766774104783529461
+      HighGroundCliff_Stone8_59: 2459242740771585149
+      HighGroundCliff_Stone8_23: -923144732770046756
+      HighGroundCliff_Stone8_13: 2495854801127762326
+      HighGroundCliff_Stone8_8: -7206733948940917678
+      HighGroundCliff_Stone8_35: 8567057403380488360
+      HighGroundCliff_Stone8_25: -6775758458977842781
+      HighGroundCliff_Stone8_27: 1744497552002476595
+      HighGroundCliff_Stone8_41: 8674307133860681326
+      HighGroundCliff_Stone8_28: 8932140012647520314
+      HighGroundCliff_Stone8_38: 4205471751615196445
+      HighGroundCliff_Stone8_61: 859733283862418428
+      HighGroundCliff_Stone8_60: -9074145379084893594
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

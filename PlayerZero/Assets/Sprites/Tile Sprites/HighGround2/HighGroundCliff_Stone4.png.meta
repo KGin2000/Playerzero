@@ -78,6 +78,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -556,6 +557,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HighGroundCliff_Stone4_7: -822693569171333311
+      HighGroundCliff_Stone4_4: -5607883523738792614
+      HighGroundCliff_Stone4_6: 2931592549794747629
+      HighGroundCliff_Stone4_13: -2978548096201254413
+      HighGroundCliff_Stone4_5: -1950068776652942500
+      HighGroundCliff_Stone4_0: 7528251018257773581
+      HighGroundCliff_Stone4_10: 5955516647860306514
+      HighGroundCliff_Stone4_15: -4611626672264504481
+      HighGroundCliff_Stone4_2: -600439992902391340
+      HighGroundCliff_Stone4_1: -6645137440765909417
+      HighGroundCliff_Stone4_11: 5788998000656308412
+      HighGroundCliff_Stone4_9: 4944575919436383616
+      HighGroundCliff_Stone4_16: 5253455271609637046
+      HighGroundCliff_Stone4_12: 6641173311654735365
+      HighGroundCliff_Stone4_3: -1903360868954612677
+      HighGroundCliff_Stone4_14: 8745242457905293080
+      HighGroundCliff_Stone4_8: 2241915816689309028
+      HighGroundCliff_Stone4_17: 79753730702434209
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -132,6 +132,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -988,6 +989,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      CharacterWalk_6: -1262583190408962528
+      CharacterWalk_5: -335103577072071447
+      CharacterWalk_15: 6908202510116284872
+      CharacterWalk_28: -2988509998170070253
+      CharacterWalk_21: -7377726469217686346
+      CharacterWalk_12: 8384417168420311091
+      CharacterWalk_23: -362861519478205300
+      CharacterWalk_9: -7591676764230815629
+      CharacterWalk_14: -6292085365283582372
+      CharacterWalk_10: -4949896119023079864
+      CharacterWalk_20: -624436725733430725
+      CharacterWalk_19: -2883222454114980555
+      CharacterWalk_4: -3293163892613669830
+      CharacterWalk_26: 6009828978271399560
+      CharacterWalk_29: 6874216790832952639
+      CharacterWalk_8: -235246837200716554
+      CharacterWalk_11: 3436781166482152048
+      CharacterWalk_0: 5242402504339785698
+      CharacterWalk_1: -2714089779142991700
+      CharacterWalk_22: 215340572722406680
+      CharacterWalk_2: 3094161660966317596
+      CharacterWalk_13: -536431325088049555
+      CharacterWalk_32: 6410373844874702564
+      CharacterWalk_3: 7572851284483819145
+      CharacterWalk_18: 2431542172639576108
+      CharacterWalk_30: 7397366592809449480
+      CharacterWalk_7: 2273535981797914756
+      CharacterWalk_35: -3203819324994190292
+      CharacterWalk_24: -1960444144151520656
+      CharacterWalk_17: -6156596446912238606
+      CharacterWalk_31: -574681813634017751
+      CharacterWalk_16: 5996218126679599754
+      CharacterWalk_25: -1321628137151694916
+      CharacterWalk_34: 6527168350565053744
+      CharacterWalk_27: -5243166454826395370
+      CharacterWalk_33: 3238863882695136310
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

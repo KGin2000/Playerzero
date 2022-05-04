@@ -51,6 +51,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -340,6 +341,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      PumpkinCrop_0: -3539033338271775433
+      PumpkinCrop_6: 2615112000537123266
+      PumpkinCrop_3: 526701775452766164
+      PumpkinCrop_8: 3006598761222986346
+      PumpkinCrop_1: -5751957575304409421
+      PumpkinCrop_4: 6514324408923622743
+      PumpkinCrop_7: -4393061530624988866
+      PumpkinCrop_5: -8128883016605198813
+      PumpkinCrop_2: -2977635334617688854
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

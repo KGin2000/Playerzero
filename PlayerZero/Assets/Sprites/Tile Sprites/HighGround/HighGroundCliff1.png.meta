@@ -255,6 +255,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1972,6 +1973,84 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HighGroundCliff1_20: 959395619725136066
+      HighGroundCliff1_46: 6847457416452066786
+      HighGroundCliff1_72: 1725641232604301331
+      HighGroundCliff1_55: 2841639606654290769
+      HighGroundCliff1_2: -1546082833877948372
+      HighGroundCliff1_21: 2357064508298109488
+      HighGroundCliff1_11: 8004701793738564947
+      HighGroundCliff1_39: -2787111447498326832
+      HighGroundCliff1_67: 4339215779357678323
+      HighGroundCliff1_65: 8234392451300251293
+      HighGroundCliff1_48: 4591504948279658296
+      HighGroundCliff1_43: 1831480811291700492
+      HighGroundCliff1_4: -8173083813583429231
+      HighGroundCliff1_27: 8451493018345418449
+      HighGroundCliff1_12: 4201157939902233285
+      HighGroundCliff1_17: -1902424506746649207
+      HighGroundCliff1_31: -5875930608313250785
+      HighGroundCliff1_56: -6144212869661442927
+      HighGroundCliff1_15: 1530781631473467996
+      HighGroundCliff1_24: 5194692662091373805
+      HighGroundCliff1_33: -3844343280745433047
+      HighGroundCliff1_13: -5975426275240491920
+      HighGroundCliff1_74: 3039065545933254534
+      HighGroundCliff1_51: 4465278634736311778
+      HighGroundCliff1_57: 2778070099646325299
+      HighGroundCliff1_73: 994440485361380201
+      HighGroundCliff1_9: 3905437324991848906
+      HighGroundCliff1_47: -8354958667557029062
+      HighGroundCliff1_23: -3365375146488659896
+      HighGroundCliff1_69: -5404299504428705712
+      HighGroundCliff1_76: 2677930503138550397
+      HighGroundCliff1_16: 4670320766347319539
+      HighGroundCliff1_22: -6943935226984185288
+      HighGroundCliff1_52: -7208356741227339290
+      HighGroundCliff1_38: 5098411523600368698
+      HighGroundCliff1_63: -4512216465135721192
+      HighGroundCliff1_54: 3582588710667538411
+      HighGroundCliff1_8: 3799484091946895007
+      HighGroundCliff1_6: 2523970755769843379
+      HighGroundCliff1_75: 201774347671969478
+      HighGroundCliff1_19: -8420779842672200060
+      HighGroundCliff1_5: -1716275512314028254
+      HighGroundCliff1_50: 7595855125498007105
+      HighGroundCliff1_40: 251503528295989510
+      HighGroundCliff1_36: 3457004204702081198
+      HighGroundCliff1_32: 3657033622773020010
+      HighGroundCliff1_42: 2352141071006708047
+      HighGroundCliff1_25: -2609613723793396569
+      HighGroundCliff1_71: 7917611992961879942
+      HighGroundCliff1_26: 3287971078660896865
+      HighGroundCliff1_60: 5300675884067806275
+      HighGroundCliff1_30: -5926787745881302347
+      HighGroundCliff1_68: 9175603288789216940
+      HighGroundCliff1_0: 176137040441387815
+      HighGroundCliff1_64: -6964213136693550172
+      HighGroundCliff1_49: 1773453036069693588
+      HighGroundCliff1_41: -5677450402060008540
+      HighGroundCliff1_14: -6741185601143420384
+      HighGroundCliff1_1: 7335720108735764615
+      HighGroundCliff1_3: -8962378118797662584
+      HighGroundCliff1_7: 4966317722879137486
+      HighGroundCliff1_37: 1385928529857867110
+      HighGroundCliff1_59: -7104401826606021724
+      HighGroundCliff1_58: 2515794390801677980
+      HighGroundCliff1_35: -3762843533684309996
+      HighGroundCliff1_10: -6630347937530867684
+      HighGroundCliff1_18: -7595648607934704150
+      HighGroundCliff1_61: 1498215737790427995
+      HighGroundCliff1_44: 240034059299738845
+      HighGroundCliff1_45: -1003576318101788440
+      HighGroundCliff1_28: 8018479225486181384
+      HighGroundCliff1_53: -5759452969639246475
+      HighGroundCliff1_62: -4489885991027660521
+      HighGroundCliff1_66: 403312793952102588
+      HighGroundCliff1_29: -1153930445583816027
+      HighGroundCliff1_70: 2065006761705031584
+      HighGroundCliff1_34: -3215356708924212428
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
