@@ -15,7 +15,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         public SharedVector3 targetPosition;
         public SharedString textStatus;
         public SharedString Status;
-        
+        public SharedBool IsRunning;
 
         public override void OnStart()
         {
@@ -30,16 +30,19 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         // Return running if the agent hasn't reached the destination yet
         public override TaskStatus OnUpdate()
         {
+            IsRunning.Value = true;
             if (HasArrived()) 
             {   
                 Debug.Log("Hasarrived");
                 Status.Value = "null";
                 target.Value = null;
+                IsRunning.Value = false;
                 return TaskStatus.Success;
             }
             if (target.Value == null)
             {
                 Status.Value = "null";
+                IsRunning.Value = false;
                 return TaskStatus.Failure;
             }
 
@@ -47,6 +50,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             {
                 Debug.Log("ImmortalObject");
                 Status.Value = "null";
+                IsRunning.Value = false;
                 return TaskStatus.Failure;
             }
 
@@ -69,6 +73,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             base.OnReset();
             target = null;
             targetPosition = Vector3.zero;
+            IsRunning.Value = false;
         }
     }
 }
