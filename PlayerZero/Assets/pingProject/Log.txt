@@ -1,0 +1,5287 @@
+Login log 
+
+Login date : 25/4/2565 21:39:57
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:40:09
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:40:19
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:42:52
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:43:03
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:43:41
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:43:53
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:44:03
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:44:13
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:44:23
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:45:25
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:45:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:45:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:46:18
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:47:00
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:47:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:47:47
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:47:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:48:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:48:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:48:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:48:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:49:42
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:49:54
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:50:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:50:15
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:50:25
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:50:35
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:50:45
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 25/4/2565 21:51:34
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 25/4/2565 21:51:45
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 18:38:46
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 18:38:58
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 18:39:08
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 18:39:18
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 18:39:28
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 18:39:38
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 18:39:48
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 18:40:06
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 18:40:19
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 18:40:29
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 18:42:38
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 18:42:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 18:42:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:00:06
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:00:18
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:13:33
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:18:26
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:18:38
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:20:59
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:21:24
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:21:35
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:21:45
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:21:55
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:22:05
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:22:15
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:24:00
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:25:01
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:25:12
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:30:03
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:30:14
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:30:24
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:30:56
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:31:07
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:31:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:31:27
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:31:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:31:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:32:18
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:32:29
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:32:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:32:54
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:33:05
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:33:15
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:34:49
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:35:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:35:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:36:16
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:36:28
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:36:57
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:37:08
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:37:18
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:38:05
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:38:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:38:27
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:38:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:38:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:39:01
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:39:13
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:41:57
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:42:08
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:42:18
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:42:28
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:42:44
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:42:55
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:44:03
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:44:33
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:44:45
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 20:44:55
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 20:45:28
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:45:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 20:52:22
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:52:33
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:52:43
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:54:50
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:58:48
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:58:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:59:09
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:59:19
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:59:29
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 20:59:59
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:00:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:00:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:00:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:00:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:00:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:01:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:01:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:01:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:03:00
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:03:11
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:03:59
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:04:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:04:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:04:46
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:04:57
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:05:07
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:05:24
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:09:20
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:09:31
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:09:41
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:09:51
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:10:01
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:10:38
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:10:52
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:11:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:11:46
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:11:57
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:12:07
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:12:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:12:55
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:13:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:13:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:13:26
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:13:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:13:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:14:25
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:14:37
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:15:04
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:15:15
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:15:25
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:15:35
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:15:45
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:15:55
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:16:05
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:16:15
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:16:25
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:17:11
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:17:22
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:17:32
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:17:42
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:17:52
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:18:02
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:18:12
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:18:22
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:18:32
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:18:42
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:18:52
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:19:02
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:19:12
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:19:22
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:20:10
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:20:21
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:21:40
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:21:51
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:22:01
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:22:40
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:23:02
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:23:13
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:23:23
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:23:33
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:23:43
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:23:53
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:24:03
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:24:13
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:24:23
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:24:33
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:24:43
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:24:59
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:25:14
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:25:25
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:25:35
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:25:45
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:25:56
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:26:06
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:26:16
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:26:26
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:26:36
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:26:46
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:26:56
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:27:06
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:27:16
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:27:26
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:27:36
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:27:46
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:27:56
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:28:06
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:28:16
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:28:26
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:28:36
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:28:46
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:28:56
+Rabbit = 2
+Wildboar = 0
+Wolf = 1
+
+Login date : 26/4/2565 21:44:54
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:45:05
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:45:15
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:45:25
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:45:35
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:45:45
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:45:55
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:46:05
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:46:15
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:46:25
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:46:50
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:47:04
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:47:46
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:48:12
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:48:23
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:48:34
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:48:44
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:48:54
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:49:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:49:14
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:49:33
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:49:45
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:49:55
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:50:05
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:50:15
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:50:25
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:50:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:52:23
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:52:34
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:54:05
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:54:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:54:26
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:54:53
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:55:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:55:14
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 26/4/2565 21:56:20
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 15:56:28
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 15:56:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 15:56:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 15:56:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 15:57:09
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:29:39
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:29:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:30:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:30:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:31:25
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:31:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:31:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:31:56
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:32:33
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:33:02
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:33:13
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:33:23
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:33:33
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:33:48
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:33:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:34:09
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:35:23
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:35:34
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:35:44
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:37:06
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:37:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:37:27
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:37:50
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:38:01
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:38:11
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:38:21
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:38:31
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:38:41
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:39:26
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:39:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:39:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:39:57
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:40:07
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:40:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:40:27
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:40:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:40:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:40:57
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:41:07
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:41:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:41:27
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:42:13
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:44:21
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:44:32
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:44:42
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:44:52
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:46:16
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:46:28
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:46:38
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:46:48
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:46:58
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:47:08
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:47:18
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:47:28
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:50:38
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:50:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:50:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:51:09
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 16:51:19
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:45:19
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:45:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:45:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:45:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:46:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:46:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:46:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:46:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:46:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:46:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:47:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:47:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:47:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:47:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:47:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:47:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:48:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:48:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:48:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:48:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:48:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:48:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:49:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:49:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:49:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:49:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:49:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:49:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:50:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:50:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:50:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:50:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:50:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:50:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:51:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:51:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:51:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:51:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:51:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:51:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:52:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:52:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:52:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:52:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:52:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:52:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:53:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:53:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:53:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:53:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:53:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:53:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:54:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:54:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:54:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:54:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:54:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:54:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:55:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:55:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:55:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:55:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:55:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:55:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:56:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:56:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:56:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:56:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:56:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:56:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:57:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:57:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:57:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:57:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:57:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:57:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:58:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:58:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:58:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:58:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:58:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:58:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:59:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:59:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:59:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:59:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:59:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 17:59:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:00:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:00:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:00:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:00:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:00:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:00:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:01:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:01:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:01:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:01:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:01:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:01:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:02:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:02:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:02:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:02:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:02:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:10:11
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:10:51
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:11:25
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:11:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:11:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:11:56
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:12:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:12:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:12:26
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:12:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:12:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:12:56
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:13:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:13:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:13:26
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:13:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:16:21
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:16:33
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:16:43
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:16:56
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:17:08
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:17:18
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:18:44
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:18:55
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:19:05
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:19:46
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:19:58
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:20:08
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:20:18
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:20:28
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:20:58
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:21:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:21:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:21:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:21:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:21:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:24:00
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:24:11
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:24:21
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:24:31
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:24:41
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:24:51
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:26:54
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:27:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:27:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:27:26
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:27:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:31:25
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:31:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:31:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:31:56
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:32:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:32:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:32:26
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:32:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:32:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:32:56
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:33:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:33:27
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:33:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:33:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:33:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:34:09
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:34:19
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:34:29
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:34:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:34:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:34:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:35:09
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:35:19
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:35:29
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:35:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:35:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:36:01
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:36:12
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:36:22
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:36:43
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:36:54
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:37:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:37:14
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:37:24
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:37:34
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:37:44
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:37:54
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:38:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:38:29
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:38:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:38:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:39:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:39:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:39:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:39:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:39:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:39:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:40:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:40:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:40:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:40:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:40:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:40:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:41:00
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:41:10
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:41:20
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:41:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:43:27
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 18:43:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:43:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:43:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:44:09
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:44:19
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:44:29
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:44:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:44:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:44:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:45:09
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:45:19
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 18:45:29
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:12:00
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 20:12:11
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:12:21
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:12:31
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:12:41
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:12:51
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:13:01
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:13:11
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:13:21
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:13:43
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 20:13:54
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:14:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:14:28
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 20:14:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:14:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:14:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:15:09
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:15:19
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:15:29
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:15:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:15:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:15:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:16:23
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 20:16:34
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:16:44
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:17:06
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 20:17:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:17:27
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:17:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:17:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:20:36
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 20:20:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:30:06
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 20:30:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:30:27
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:30:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:30:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:30:57
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:31:07
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:31:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:31:27
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:31:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:31:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:31:58
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:32:08
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:32:33
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:32:43
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:35:55
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 20:36:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:36:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:36:26
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:36:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:36:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:36:56
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:37:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:38:05
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 20:38:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:38:27
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:38:56
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 20:39:07
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:39:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:39:27
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:39:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:39:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 20:39:57
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:14:05
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:14:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:14:26
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:14:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:14:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:15:03
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:15:14
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:15:24
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:29:52
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:30:02
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:30:13
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:30:23
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:30:33
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:30:42
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:33:26
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:33:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:34:02
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:34:13
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:34:33
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:34:44
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:34:54
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:35:39
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:35:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:36:03
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:36:19
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:36:54
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:37:05
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:37:27
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 21:37:38
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:37:48
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:37:58
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:38:08
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:38:18
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:38:28
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:38:38
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:38:48
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 21:38:58
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:10:46
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:10:57
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:11:07
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:11:19
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:11:29
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:11:50
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:12:02
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:14:13
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:14:32
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:14:44
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:14:54
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:15:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:15:14
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:15:32
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:15:44
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:15:54
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:16:19
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:16:30
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:16:40
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:18:28
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:18:39
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:18:49
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:18:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:19:52
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:20:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:20:14
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:20:24
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:20:34
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:21:14
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:21:26
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:21:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:21:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:21:56
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:22:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:22:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:23:42
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:23:53
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:24:03
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:25:38
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:25:48
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:25:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:27:12
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:27:24
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:28:11
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:28:22
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:29:29
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:29:48
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:30:03
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:30:15
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:30:44
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:30:56
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:32:25
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:32:36
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:32:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:33:48
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:33:59
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:35:10
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:35:22
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:35:32
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:35:42
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:36:23
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:36:34
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:36:45
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:39:25
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:39:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:40:34
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:40:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:40:58
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:42:02
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:42:13
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:42:23
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:42:33
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:42:43
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:42:53
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:43:03
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:44:30
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:44:41
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:45:32
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:47:55
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:49:20
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:50:04
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:51:49
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:52:24
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:54:18
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:56:00
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:56:22
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:56:33
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:57:26
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:57:37
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 22:58:03
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 22:58:14
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 23:02:23
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:02:35
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 23:02:45
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 23:03:31
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:03:42
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 23:04:03
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:05:30
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:08:31
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:09:01
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:09:12
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 23:09:22
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 23:09:32
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 23:10:08
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:11:15
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:11:36
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:12:07
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:20:54
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:22:57
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:24:34
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:24:45
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 27/4/2565 23:25:53
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 27/4/2565 23:26:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 11:17:22
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 28/4/2565 11:17:34
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 11:17:44
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 11:17:54
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 11:18:39
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 28/4/2565 11:18:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 15:53:11
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 28/4/2565 15:53:22
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 15:53:32
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 15:53:42
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 15:53:52
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 15:54:02
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 15:54:13
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 15:54:23
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 15:54:33
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 15:54:43
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 16:12:47
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 28/4/2565 16:12:58
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 28/4/2565 16:13:08
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 30/4/2565 15:08:45
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 30/4/2565 15:08:56
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 30/4/2565 15:09:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 30/4/2565 15:09:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 30/4/2565 15:09:34
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 30/4/2565 15:09:46
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 30/4/2565 15:09:56
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 30/4/2565 15:10:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 17:21:11
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 17:21:22
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 17:21:32
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 17:21:42
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 17:21:52
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 17:22:02
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 21:01:09
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 21:01:21
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:01:31
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:01:41
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:01:51
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:03:17
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 21:03:28
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:03:38
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:03:48
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:03:58
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:04:08
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:04:36
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 21:04:47
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:04:57
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:05:07
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:05:17
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:05:50
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:06:17
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 21:06:28
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:06:38
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:06:48
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:10:43
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 21:10:55
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:11:05
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:11:15
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:11:25
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:16:44
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 2/5/2565 21:16:55
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:17:06
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:17:16
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:17:26
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:17:36
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 2/5/2565 21:17:46
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 3/5/2565 22:21:51
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:22:02
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:22:12
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:22:22
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:22:32
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:22:42
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:22:52
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:23:02
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:23:13
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:23:23
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:23:33
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:23:43
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:23:54
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:24:45
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:24:56
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:25:06
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:25:16
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:25:26
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:26:19
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:26:30
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:26:41
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:26:51
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:27:01
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:27:11
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:27:21
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:27:31
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:27:42
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:27:52
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:28:10
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:28:42
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:28:54
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:29:07
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:29:17
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:30:41
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:30:53
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 3/5/2565 22:31:03
+Rabbit = 1
+Wildboar = 0
+Wolf = 1
+
+Login date : 3/5/2565 22:31:13
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 3/5/2565 22:31:56
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:32:08
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:32:18
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:33:08
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:33:20
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:33:30
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:33:40
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:35:00
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:35:12
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:38:51
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:39:02
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:39:12
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:39:22
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:39:35
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:39:47
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:41:22
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:41:33
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:41:43
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:41:53
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:42:03
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:42:13
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:43:20
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:43:31
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:46:00
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:47:19
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:47:30
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:47:40
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:47:50
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:48:00
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:48:10
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:48:20
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:48:30
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:48:40
+Rabbit = 2
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:49:30
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:49:41
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:49:51
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:50:01
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:50:11
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:50:22
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:50:32
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:50:42
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:50:52
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:51:02
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:51:12
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:51:22
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:51:32
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:51:42
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:51:52
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:52:02
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:52:16
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:52:26
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:52:36
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:52:46
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:53:04
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:53:14
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:53:32
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:53:42
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 22:54:10
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:54:21
+Rabbit = 1
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 22:55:14
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:58:40
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 22:59:57
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 23:02:41
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 23:04:11
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 23:05:04
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 23:05:47
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 23:06:27
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 23:07:02
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 23:07:53
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 23:08:05
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 3/5/2565 23:08:15
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 23:08:21
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 3/5/2565 23:08:33
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 23:08:43
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 3/5/2565 23:08:53
+Rabbit = 0
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 20:32:41
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 20:32:52
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 20:33:02
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 20:43:49
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 20:43:59
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 20:45:30
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 20:45:40
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 20:47:00
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 20:47:09
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 20:48:10
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 20:49:35
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 20:49:45
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:08:34
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:08:45
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:08:55
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:09:05
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:09:23
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:09:33
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:09:43
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:09:53
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:10:03
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:10:13
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:10:23
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:10:33
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:10:43
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:11:24
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:11:35
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:11:45
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:11:55
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:12:05
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:12:15
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:12:25
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:12:35
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:14:17
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:16:04
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:16:14
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:16:24
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:16:34
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:16:44
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:16:54
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:18:25
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:18:36
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:18:46
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:18:56
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:19:06
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:19:30
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:19:41
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:19:51
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:20:01
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:20:11
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:20:21
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:20:31
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:20:41
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:20:51
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:21:01
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:21:54
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:22:05
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:22:15
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:22:25
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:22:35
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:24:05
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:24:15
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:24:27
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:24:37
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:24:47
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:24:57
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:25:07
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:25:17
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:25:27
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:25:37
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:26:59
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:27:09
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:27:40
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:27:51
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:28:01
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:28:14
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:28:24
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:28:34
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:30:34
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:30:44
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:30:54
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:32:35
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:32:45
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:32:55
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:33:14
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 4/5/2565 21:33:24
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:33:34
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:33:44
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:33:54
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:34:04
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:34:48
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:34:59
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:35:09
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:35:19
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:35:29
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:35:39
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:35:49
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:35:59
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:36:09
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:36:19
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:36:29
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:36:39
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:36:50
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:37:00
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:37:10
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:37:20
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:37:30
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:37:40
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:37:50
+Rabbit = 1
+Wildboar = 1
+Wolf = 0
+
+Login date : 4/5/2565 21:38:07
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:38:18
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:38:28
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:38:38
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 4/5/2565 21:38:48
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 4/5/2565 21:38:58
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 4/5/2565 21:39:08
+Rabbit = 0
+Wildboar = 0
+Wolf = 1
+
+Login date : 4/5/2565 21:39:18
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:39:28
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:39:38
+Rabbit = 1
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:42:03
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:42:50
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:43:00
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:43:10
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:43:20
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:43:34
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:43:45
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:43:55
+Rabbit = 0
+Wildboar = 1
+Wolf = 1
+
+Login date : 4/5/2565 21:44:10
+Rabbit = 0
+Wildboar = 0
+Wolf = 0
+
+Login date : 4/5/2565 21:44:20
+Rabbit = 0
+Wildboar = 1
+Wolf = 2
+
+Login date : 4/5/2565 21:44:30
+Rabbit = 0
+Wildboar = 1
+Wolf = 2
+
