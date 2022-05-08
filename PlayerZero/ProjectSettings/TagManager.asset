@@ -21,6 +21,7 @@ TagManager:
   - smell
   - R_Build
   - W_Build
+  - ImmortalObject
   layers:
   - Default
   - TransparentFX

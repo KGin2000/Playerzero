@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NavMeshBake : MonoBehaviour
+public class NavMeshBaker : MonoBehaviour
 {
-
     public NavMeshSurface[] surfaces;
     public string navObjName;
     public string navObjTag;
     private int numberNavObj;
 
-    // Use this for initialization
     void Awake()
     {
         Bake();
     }
+
     void Start()
     {
         numberNavObj = GameObject.FindGameObjectsWithTag(navObjTag).Length;
@@ -54,4 +53,6 @@ public class NavMeshBake : MonoBehaviour
             surfaces[i].BuildNavMesh();
         }
     }
+
 }
+
