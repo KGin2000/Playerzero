@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+PlayerZero/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+*.log
+*.log
