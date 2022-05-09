@@ -563,7 +563,6 @@ GameObject:
   - component: {fileID: 3884524992493399971}
   - component: {fileID: 3884524992493399968}
   - component: {fileID: 3884524992493399969}
-  - component: {fileID: 3884524992493399974}
   - component: {fileID: 3884524992493399975}
   - component: {fileID: 3884524992493399977}
   - component: {fileID: 3884524992493399982}
@@ -680,19 +679,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attack: 20
---- !u!114 &3884524992493399974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3884524992493399972}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2e9bb60825647649a0a29b2f5e00e33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
 --- !u!114 &3884524992493399975
 MonoBehaviour:
   m_ObjectHideFlags: 0

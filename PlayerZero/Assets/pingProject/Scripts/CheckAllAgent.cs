@@ -35,7 +35,7 @@ public class CheckAllAgent : MonoBehaviour
         time += Time.deltaTime;
         if ( time >= 10.0f)
         {
-            CreateText();
+            //CreateText();
             time = 0.0f;
         }
     }

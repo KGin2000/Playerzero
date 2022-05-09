@@ -191,7 +191,8 @@ PrefabInstance:
       propertyPath: behaviorTree
       value: 
       objectReference: {fileID: 1800855144}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5072210404699025382, guid: 199731e171339d740b1d7cc97f0e19fe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 199731e171339d740b1d7cc97f0e19fe, type: 3}
 --- !u!1 &15628231
 GameObject:
@@ -289,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8126303112642474945, guid: 1b22028aa049f894d8cd242feeec3a38, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b22028aa049f894d8cd242feeec3a38, type: 3}
@@ -675,7 +676,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3884524992493399974, guid: 44147482f87734949a2a8ed82b70a7e2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 44147482f87734949a2a8ed82b70a7e2, type: 3}
 --- !u!1 &1506378357
 GameObject:
@@ -1006,7 +1008,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2014913985523484947, guid: 188947a7634a4b641a5cdef314a20084, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 188947a7634a4b641a5cdef314a20084, type: 3}
 --- !u!114 &1800855144 stripped
 MonoBehaviour:
@@ -1093,7 +1096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 135444715969029639, guid: c133d716810916549a9e5945bd2063b5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 135444715969029639, guid: c133d716810916549a9e5945bd2063b5, type: 3}
       propertyPath: m_TagString
@@ -1353,7 +1356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3935833847319151650, guid: 6c4f11703762e1f4db00859fd5571fc5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3935833847319151663, guid: 6c4f11703762e1f4db00859fd5571fc5, type: 3}
       propertyPath: m_RootOrder
@@ -1707,5 +1710,6 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7327939511439239898, guid: 2e50592b6256b2d4a84d1c0d0709dbad, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2e50592b6256b2d4a84d1c0d0709dbad, type: 3}

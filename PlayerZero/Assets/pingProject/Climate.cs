@@ -10,27 +10,13 @@ public class Climate : MonoBehaviour
      private float SecondTemperature;
     [SerializeField] private float humidity;
 
-    private float timePerMonth;
-    private float timePerDay;
-    private float second;
-
-
-    private int x;
     private int newRate;
     private int lastRate;
-
-
-    private int gamrMonth = 1;
-    private int gameYear = 1;   
-    private int gameDay = 1;
-    public int gameHour = 7;
-    private int gameMinute = 0;
-    private int gameSecond = 0;
+  
+    private int Day;
+    private int Hour;
+    private int Minute;
    
-
-    private bool gameClockPaused = false;
-
-    private float gameTick = 0f;
     private float treeRatio;
     private float oldA;
 
@@ -50,26 +36,31 @@ public class Climate : MonoBehaviour
 
     void Update() //temperature อิงตามความชื้อกับช่วงเวลา (กลางวันกลางคือน) ความชื้นอิงอามต้นไม้ layer Crop tag Tree
     {
+        Day = TimeManager.Instance.gameDay;
+        Hour = TimeManager.Instance.gameHour;
+        Minute = TimeManager.Instance.gameMinute;
+
+        Debug.Log("Day = " + Day);
+        //Debug.Log("Hour = " + Hour);
+        //Debug.Log("Minute " + Minute);
+        Debug.Log("lastTemperature = " + lastTemperature);
+
         //Rain();
         Humidity();
 
-        if (!gameClockPaused)
-        {
-            GameTick();
-        }
 
-        if (gameMinute == 59)
+        if (Minute == 59) // ของเดิม 59
         {
             TemperaturePerHour();
             //Debug.Log("TemperaturePerHour()");
         }
 
-        if (gameHour == 23)
+        if (Hour == 23) // ของเดิม 23
         {
             TemperaturePerDay();
             //Debug.Log("TemperaturePerDay()");
         }
-        if (gameDay == 30)
+        if (Day == 30) // ของเดิม 30
         {
             TemperaturePerMonth();
             Debug.Log("TemperaturePerMonth()");
@@ -119,7 +110,7 @@ public class Climate : MonoBehaviour
 
     void TemperaturePerHour()
     {
-        float B = Mathf.Abs(gameHour - 14); //ค่าสัมบูรณ์
+        float B = Mathf.Abs(Hour - 14); //ค่าสัมบูรณ์
         float Y = (SecondTemperature - (B / 3f));
         lastTemperature = Y;
     }
@@ -154,66 +145,6 @@ public class Climate : MonoBehaviour
 
             lastRate = newRate;
         }          
-    }*/
-    private void GameTick()
-    {
-        gameTick += Time.deltaTime;
-
-        if (gameTick >= Settings.secondsPerGameSecond)
-        {
-            gameTick -= Settings.secondsPerGameSecond;
-
-            UpdateGameSecond();
-
-        }
-
-    }
-        
-
-    private void UpdateGameSecond()
-    {
-        gameSecond = gameSecond + 1;
-
-        if (gameSecond > 59)
-        {
-            gameSecond = 0;
-            gameMinute++;
-
-            if (gameMinute > 59)
-            {
-                gameMinute = 0;
-                gameHour++;
-
-
-
-                if (gameHour > 23)
-                {
-                    gameHour = 0;
-                    gameDay++;
-
-
-                    if (gameDay > 30)
-                    {
-                        gameDay = 1;
-                        gamrMonth++;
-
-
-                        if (gamrMonth > 12)
-                        {
-                            gamrMonth = 1;
-                            gameYear++;
-
-                            
-
-                            if (gameYear > 9999)
-                            {
-                                gameYear = 1;
-                            }
-                        }                           
-                    }
-                }
-            }
-        }
-    }
+    }*/   
 }
 
