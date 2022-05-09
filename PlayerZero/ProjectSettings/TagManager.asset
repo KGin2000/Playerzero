@@ -80,8 +80,14 @@ TagManager:
   - name: GroundDecoration2
     uniqueID: 1411114715
     locked: 0
+  - name: HighGround
+    uniqueID: 2638223163
+    locked: 0
   - name: Instances
     uniqueID: 1043871721
+    locked: 0
+  - name: Cave
+    uniqueID: 2632932495
     locked: 0
   - name: Front1
     uniqueID: 48457089
