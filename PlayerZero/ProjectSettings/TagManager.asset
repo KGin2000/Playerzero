@@ -68,8 +68,20 @@ TagManager:
   - name: GroundDecoration2
     uniqueID: 1411114715
     locked: 0
+  - name: Cliff
+    uniqueID: 2659152819
+    locked: 0
   - name: Instances
     uniqueID: 1043871721
+    locked: 0
+  - name: HigherInstances
+    uniqueID: 3405117921
+    locked: 0
+  - name: ShadowCliff
+    uniqueID: 4160758459
+    locked: 0
+  - name: CliffGrass
+    uniqueID: 1273145993
     locked: 0
   - name: Front1
     uniqueID: 48457089
