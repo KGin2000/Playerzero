@@ -40,11 +40,6 @@ public class Climate : MonoBehaviour
         Hour = TimeManager.Instance.gameHour;
         Minute = TimeManager.Instance.gameMinute;
 
-        Debug.Log("Day = " + Day);
-        //Debug.Log("Hour = " + Hour);
-        //Debug.Log("Minute " + Minute);
-        Debug.Log("lastTemperature = " + lastTemperature);
-
         //Rain();
         Humidity();
 

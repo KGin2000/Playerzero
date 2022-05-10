@@ -10,7 +10,7 @@ public class BoarAnimation : MonoBehaviour
     private Animator animator;
     private float lastXVal;
     private bool ifRun;
-
+    private bool ifSleep;
     // Start is called before the first frame update
     void Awake()
     {
@@ -35,9 +35,11 @@ public class BoarAnimation : MonoBehaviour
     private void Animation()
     {
         var runCondition = (SharedBool)GlobalVariables.Instance.GetVariable("BoarIsRunning");
+        var sleepCondition = (SharedBool)GlobalVariables.Instance.GetVariable("BoarIsSleeping");
         //Debug.Log(runCondition);
 
         ifRun = runCondition.Value;
+        ifSleep = sleepCondition.Value;
         //Debug.Log(ifRun);
 
         if (transform.position.x == lastXVal) //Idle
@@ -45,6 +47,15 @@ public class BoarAnimation : MonoBehaviour
             animator.SetBool("Idle", true);
             animator.SetBool("Run", false);
             animator.SetBool("Walk", false);
+            animator.SetBool("Sleep", false);
+            if (ifSleep == true)
+            {
+                animator.SetBool("Idle", false);
+                animator.SetBool("Run", false);
+                animator.SetBool("Walk", false);
+                animator.SetBool("Sleep", true);
+            }
+
             lastXVal = transform.position.x;
         }
 

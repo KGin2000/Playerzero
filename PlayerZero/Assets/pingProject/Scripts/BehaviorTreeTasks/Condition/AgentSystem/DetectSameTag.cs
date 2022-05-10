@@ -29,11 +29,12 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                     {
                         returnTag.Value = obj.tag;
                         returnGameObject.Value = obj.gameObject;
+                        //Debug.Log("success");
                         return TaskStatus.Success;
                     }                   
                 }
             }
-           
+            //Debug.Log("fail");
             return TaskStatus.Failure;
         }
 

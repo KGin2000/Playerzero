@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 167775968735580132}
   m_Layer: 9
   m_Name: BoarCave
-  m_TagString: Building
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -10,6 +10,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
 
     public class DetectNotInArea: Conditional
     {
+        public SharedString targetName;
         public SharedString targetTag;
         public SharedFloat colliderRange;
         public LayerMask enemyLayers;
@@ -26,15 +27,14 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
             Collider[] hitObj = Physics.OverlapSphere(thisObjPos, colliderRange.Value, enemyLayers);
             foreach (Collider enemy in hitObj)
             {
-                if (enemy.tag == targetTag.Value)
+                if (enemy.name == targetName.Value)
                 {
-                    return TaskStatus.Running;
-                }
-                else 
-                {
-                    return TaskStatus.Success;
-                }
-                
+                    if(enemy.tag == targetTag.Value)
+                    {
+                        Debug.Log("Name");
+                        return TaskStatus.Failure;
+                    }
+                }                            
             }
             return TaskStatus.Success;
             //return TaskStatus.Failure;

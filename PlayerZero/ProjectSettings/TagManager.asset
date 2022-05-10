@@ -22,6 +22,7 @@ TagManager:
   - R_Build
   - W_Build
   - ImmortalObject
+  - Bush
   layers:
   - Default
   - TransparentFX
