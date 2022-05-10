@@ -20,7 +20,6 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
         private string a;
         private string b;
 
-        public SharedBool IsEscape;
 
         public override void OnStart()
         {
@@ -70,13 +69,11 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                 {
                     IsRunning.Value = false;
                     //Debug.Log(isRunning.Value);
-                    IsEscape.Value = false;
                     return TaskStatus.Success;
                 }
                 else
                 {
                     dir -= toward;
-                    IsEscape.Value = true;
                 }
             }
 
