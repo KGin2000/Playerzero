@@ -222,7 +222,27 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
             isWalking = true;
             isIdle = false;
             
+            // if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            // {
+            //     if(PlayerExhausted == false)            //      ถ้าไม่เหนื่อยเข้า loop   (ถ้ามีstaminaจะไม่ทำ) //
+            //     {
+            //         movementSpeed = Settings.runningSpeed;
+            //     }
+            //     else
+            //     {
+            //         movementSpeed = Settings.walkingSpeed;
+            //     }
+            // }
+            // else
+            // {
+            //     movementSpeed = Settings.walkingSpeed;
+            // }
+
             if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            {
+                movementSpeed = Settings.walkingSpeed;
+            }
+            else
             {
                 if(PlayerExhausted == false)            //      ถ้าไม่เหนื่อยเข้า loop   (ถ้ามีstaminaจะไม่ทำ) //
                 {
@@ -232,10 +252,6 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
                 {
                     movementSpeed = Settings.walkingSpeed;
                 }
-            }
-            else
-            {
-                movementSpeed = Settings.walkingSpeed;
             }
            
 

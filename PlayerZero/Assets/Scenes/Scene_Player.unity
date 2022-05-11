@@ -27887,7 +27887,6 @@ GameObject:
   - component: {fileID: 3635738351045405414}
   - component: {fileID: 3635738351045405413}
   - component: {fileID: 3635738351045405415}
-  - component: {fileID: 3635738351045405422}
   - component: {fileID: 3635738351045405416}
   - component: {fileID: 3635738351045405418}
   - component: {fileID: 3635738351045405419}
@@ -28059,23 +28058,11 @@ MonoBehaviour:
     currVal: 100
   hpBar: {fileID: 3878579523570285293}
   stamina:
-    maxVal: 500
-    currVal: 500
+    maxVal: 100
+    currVal: 100
   staminaBar: {fileID: 1210553261193353753}
   isDead: 0
   isExhausted: 0
---- !u!114 &3635738351045405422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3635738351045405411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d22510c02ffc4d47b8b741ef475dd81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3878579523570285293
 MonoBehaviour:
   m_ObjectHideFlags: 0
