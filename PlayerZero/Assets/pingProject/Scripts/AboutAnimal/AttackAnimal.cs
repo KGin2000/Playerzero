@@ -47,7 +47,7 @@ public class AttackAnimal : MonoBehaviour
                 if (x > y)
                 {
                     enemy.GetComponent<Enemy>().TakeDamage(attack);
-                    enemy.gameObject.GetComponent<Enemy>().CounterAttack(gameObject);
+                    //enemy.gameObject.GetComponent<Enemy>().CounterAttack(gameObject);
                 }
             }                      
         }

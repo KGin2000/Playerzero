@@ -42,14 +42,14 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
 
                 if (x < y)
                 {
-                    returnTag.Value = enemy.tag;
-                    returnTargetObject = enemy.gameObject;
+                    //returnTag.Value = enemy.tag;
+                    returnTargetObject.Value = enemy.gameObject;
                     return TaskStatus.Success;
                 }
                 if (x > y)
                 {
-                    returnTag.Value = enemy.tag;
-                    returnTargetObject = enemy.gameObject;
+                    //returnTag.Value = enemy.tag;
+                    //returnTargetObject = enemy.gameObject;
                     return TaskStatus.Failure;
                 }
             }

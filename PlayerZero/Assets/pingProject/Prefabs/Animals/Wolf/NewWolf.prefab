@@ -445,7 +445,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1043871721
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e790cc8c623f6a54cb46cf0528067fb0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -711,7 +711,6 @@ GameObject:
   - component: {fileID: 5072210404699025370}
   - component: {fileID: 1244256234387951183}
   - component: {fileID: 5072210404699025380}
-  - component: {fileID: 5072210404699025381}
   - component: {fileID: 5072210404699025383}
   - component: {fileID: 8532873222605733992}
   - component: {fileID: 8969982762738197681}
@@ -793,24 +792,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &5072210404699025381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5072210404699025376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5998323369f0f489ea79964524f45b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPoint: {fileID: 5072210405599573880}
-  attackRange: 1
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 128
-  attack: 10
 --- !u!114 &5072210404699025383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,10 +836,13 @@ MonoBehaviour:
   currentHealth: 0
   maxHungryPoint: 200
   currentHungryPoint: 0
-  hungryTime: 1
+  hungryRate: 0
+  hungryRateNormalMode: 0
+  hungryRateSleepMode: 0
+  hungryRateFastingMode: 0
   Meat: {fileID: 23256878733264632, guid: 7d508a9eb49f57842ad8c8ff009c6d3f, type: 3}
+  floatTime: 0
   countEat: 0
-  functionCounterAttack: 0
 --- !u!114 &4679781058495195801
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1395598243056085854}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: eatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,9 +45,9 @@ GameObject:
   - component: {fileID: 582538599069916068}
   - component: {fileID: 6154537117423105669}
   - component: {fileID: 2808160738410502751}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Grass
-  m_TagString: tree
+  m_TagString: 0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

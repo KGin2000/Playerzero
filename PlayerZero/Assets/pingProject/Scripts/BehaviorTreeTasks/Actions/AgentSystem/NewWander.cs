@@ -1,128 +1,72 @@
-﻿using BehaviorDesigner.Runtime;
-using BehaviorDesigner.Runtime.Tasks;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.AI;
-namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
-{
-    [TaskCategory("AgentSystem")]
-    public class NewWander : Action
-    {
-        public SharedFloat speed;
+﻿using UnityEngine;
 
+namespace BehaviorDesigner.Runtime.Tasks.Movement
+{
+    public class NewWander : NavMeshMovement
+    {
         public SharedFloat minWanderDistance = 20;
         public SharedFloat maxWanderDistance = 20;
         public SharedFloat wanderRate = 2;
-        public SharedFloat minPauseDuration = 0;
-        public SharedFloat maxPauseDuration = 0;
-        public float pauseTime;
+        public SharedFloat minPauseDuration = 0;     
+        public SharedFloat maxPauseDuration = 0;      
+        public SharedInt targetRetries = 1;
 
-        private Animator animator;
-        private float lastXVal;
-        private float time;
-        private bool randomPos = false;
-        private bool randomTime = false;
-        private Vector3 newPos;
-        private Vector3 direction;
-        private Vector3 destination;
-
-        public SharedBool findNewPos = false;
-
-        public override void OnAwake()
-        {
-            GameObject a = this.gameObject.transform.GetChild(0).gameObject;
-            animator = a.GetComponent<Animator>();
-        }
+        private float pauseTime;
+        private float destinationReachTime;
         public override void OnStart()
         {
-            lastXVal = transform.position.x;
+            navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+            navMeshAgent.updateRotation = false;
         }
-
         public override TaskStatus OnUpdate()
         {
- 
-            if (maxPauseDuration.Value > 0)
+            if (HasArrived()) 
             {
-                if (randomTime == false)
+                // The agent should pause at the destination only if the max pause duration is greater than 0
+                if (maxPauseDuration.Value > 0) 
                 {
-                    pauseTime = Random.Range(minPauseDuration.Value, maxPauseDuration.Value);
-                    randomTime = true;                                      
-                }
-
-                if (randomTime == true)
-                {
-                    pauseTime -= Time.deltaTime;
-                    if (pauseTime <= 0f)
+                    if (destinationReachTime == -1) 
                     {
-                        if (randomPos == false)
+                        destinationReachTime = Time.time;
+                        pauseTime = Random.Range(minPauseDuration.Value, maxPauseDuration.Value);
+                    }
+                    if (destinationReachTime + pauseTime <= Time.time) 
+                    {
+                        // Only reset the time if a destination has been set.
+                        if (TrySetTarget()) 
                         {
-                            randomPosition();
-                            randomPos = true;
-
-                        }
-                        else if (randomPos == true)
-                        {
-                            walkToPos();
-                            if (transform.position == destination)
-                            {
-                                randomPos = false;
-                                randomTime = false;
-                            }
+                            destinationReachTime = -1;
                         }
                     }
+                } 
+                else 
+                {
+                    TrySetTarget();
                 }
-
             }
-            else if (maxPauseDuration.Value <= 0)
-            {
-                if (findNewPos.Value == true)
-                {
-                    randomPosition();
-                    randomPos = false;
-                    findNewPos.Value = false;
-                    //Debug.Log("aaaaaaaaaaaaaaaaaaaaaaa");
-                }
-
-                if (randomPos == false)
-                {
-                    randomPosition();
-                    randomPos = true;
-                    //Debug.Log("bbbbbbbbbbbbbbbbbbbbbbbb");
-                }
-
-                else if (randomPos == true)
-                {
-                    walkToPos();
-                    if (transform.position == destination)
-                    {
-                        randomPos = false;
-                        return TaskStatus.Success;
-                        //Debug.Log("CCCCCCCCCCCCCCCCCCCCCCCCCCC");
-                    }
-                }
-            }           
             return TaskStatus.Running;
         }
 
-        void randomPosition()
+        private bool TrySetTarget()
         {
-            direction = transform.forward;
-            direction = direction + Random.insideUnitSphere * wanderRate.Value;            
-            //Debug.Log(newPos);
-        }
-
-       void walkToPos()
-        {
-            destination = transform.position;
-            destination = transform.forward + direction.normalized * Random.Range(minWanderDistance.Value, maxWanderDistance.Value); // เดินไปทิศนั้น
-            destination.y = 0;
-        }
-        public override void OnReset()
-        {
-            minWanderDistance = 20;
-            maxWanderDistance = 20;
-            wanderRate = 2;
+            Vector3 direction = transform.position;
+            bool validDestination = false;
+            var attempts = targetRetries.Value;
+            Vector3 destination = transform.position;
+            while (!validDestination && attempts > 0) 
+            {            
+                direction = direction + Random.insideUnitSphere * Random.Range(20, 20); // สุ่มจุด
+                direction.y =1;
+                validDestination = SamplePosition(direction); 
+                Debug.Log(direction);
+                attempts--;
+            }
+            if (validDestination) 
+            {
+                SetDestination(direction);               
+            }
+            return validDestination;
         }
     }
 }
+

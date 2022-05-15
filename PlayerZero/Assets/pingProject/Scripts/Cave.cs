@@ -9,8 +9,8 @@ public class Cave : MonoBehaviour
 {
     public string Name;
 
-    public string Status;
-    private SharedString textStatus;
+   // public string Status;
+//private SharedString textStatus;
     public BehaviorTree behaviorTree;
     public string orginTag;
 

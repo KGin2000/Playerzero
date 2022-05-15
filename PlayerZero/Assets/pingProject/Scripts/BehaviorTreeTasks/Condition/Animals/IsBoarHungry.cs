@@ -26,12 +26,14 @@ namespace BehaviorDesigner.Runtime.Tasks.Animals
         public override TaskStatus OnUpdate()
         {
             //Debug.Log(enemy.currentHungryPoint);
-            if ((enemy.currentHungryPoint < calPercentage1 * enemy.maxHungryPoint) && (calPercentage2 * enemy.maxHungryPoint < enemy.currentHungryPoint))
+            if(enemy.currentHungryPoint < calPercentage1 * enemy.maxHungryPoint)
             {
-                return TaskStatus.Success;
+                if(calPercentage2 * enemy.maxHungryPoint < enemy.currentHungryPoint)
+                {
+                    return TaskStatus.Success;
+                }
             }
-            else
-                return TaskStatus.Failure;
+            return TaskStatus.Failure;
         }
     }
 }

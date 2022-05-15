@@ -152,37 +152,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &3884524991959895504
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3884524991959895507}
-  m_Layer: 7
-  m_Name: AttackPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3884524991959895507
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3884524991959895504}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3884524992493399980}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3884524992185239609
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,8 +530,6 @@ GameObject:
   - component: {fileID: 3884524992493399981}
   - component: {fileID: 3884524992493399970}
   - component: {fileID: 3884524992493399971}
-  - component: {fileID: 3884524992493399968}
-  - component: {fileID: 3884524992493399969}
   - component: {fileID: 3884524992493399975}
   - component: {fileID: 3884524992493399977}
   - component: {fileID: 3884524992493399982}
@@ -588,7 +555,6 @@ Transform:
   m_Children:
   - {fileID: 3884524993031118859}
   - {fileID: 3884524992362968939}
-  - {fileID: 3884524991959895507}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -625,7 +591,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2.96, y: 1, z: 2.02}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3884524992493399971
 Rigidbody:
@@ -643,42 +609,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &3884524992493399968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3884524992493399972}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5998323369f0f489ea79964524f45b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPoint: {fileID: 3884524991959895507}
-  attackRange: 1.5
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 128
-  attack: 20
---- !u!114 &3884524992493399969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3884524992493399972}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66080f3284fe6b044b52d9532dd899f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPoint: {fileID: 3884524991959895507}
-  attackRange: 1.5
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 128
-  attack: 20
 --- !u!114 &3884524992493399975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,14 +644,14 @@ MonoBehaviour:
   resetValuesOnRestart: 0
   externalBehavior: {fileID: 11400000, guid: c945e10a8f63ce34db786c15633e9b2f, type: 2}
   mBehaviorSource:
-    behaviorName: Behavior
+    behaviorName: Boar
     behaviorDescription: 
     mTaskData:
       types: []
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnTarget","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnCave","IsShared":true}]}'
+      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnTarget","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnRabbitCave","IsShared":true}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
@@ -745,7 +675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4567af59f242d1041bc6c7e6d3c61f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviorTree: {fileID: 3884524992493399977}
 --- !u!114 &3884524992493399983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -763,10 +692,13 @@ MonoBehaviour:
   currentHealth: 0
   maxHungryPoint: 200
   currentHungryPoint: 0
-  hungryTime: 2
+  hungryRate: 0
+  hungryRateNormalMode: 0
+  hungryRateSleepMode: 0
+  hungryRateFastingMode: 0
   Meat: {fileID: 1543187425221919526, guid: fa3912906995ff44c99f02719c3e316e, type: 3}
+  floatTime: 0
   countEat: 0
-  functionCounterAttack: 0
 --- !u!1 &3884524992607833576
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,6 @@ using BehaviorDesigner.Runtime;
 public class BoarAnimation : MonoBehaviour
 {
     Enemy enemy;
-    public BehaviorTree behaviorTree;
     private Animator animator;
     private float lastXVal;
     private bool ifRun;

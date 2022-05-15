@@ -13,8 +13,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         [Tooltip("If target is null then use the target position")]
         
         public SharedVector3 targetPosition;
-        public SharedString textStatus;
-        public SharedString Status;
         public SharedBool IsRunning;
 
         public override void OnStart()
@@ -34,14 +32,14 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             if (HasArrived()) 
             {   
                 Debug.Log("Hasarrived");
-                Status.Value = "null";
-                target.Value = null;
+
+                //target.Value = null;
                 IsRunning.Value = false;
                 return TaskStatus.Success;
             }
             if (target.Value == null)
             {
-                Status.Value = "null";
+
                 IsRunning.Value = false;
                 return TaskStatus.Failure;
             }
@@ -49,13 +47,12 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             if (target.Value.tag == "ImmortalObject")
             {
                 Debug.Log("ImmortalObject");
-                Status.Value = "null";
+
                 IsRunning.Value = false;
                 return TaskStatus.Failure;
             }
 
             SetDestination(Target());
-            Status.Value = textStatus.Value;
             return TaskStatus.Running;
         }
         

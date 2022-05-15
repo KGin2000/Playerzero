@@ -60,7 +60,6 @@ public class RabbitAnimation : MonoBehaviour
                 animator.SetBool("Idle", false);
                 animator.SetBool("Run", true);
                 animator.SetBool("Walk", false);
-
             }
 
             lastXVal = transform.position.x;
