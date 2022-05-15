@@ -20,8 +20,19 @@ public class InteractNPC : MonoBehaviour
 
     private void OnTriggerEnter (Collider collision)
     {
-        Trig = true;
-        
+        if(collision.gameObject.tag == "Player")
+        {
+            Trig = true;
+        }
+        else
+        {
+            Trig = false;
+        }
+        // if(collision.gameObject.tag == "Arrow")
+        // {
+        //     Debug.Log("Arrow");
+        // }
+
     }
     private void OnTriggerExit (Collider collision)
     {

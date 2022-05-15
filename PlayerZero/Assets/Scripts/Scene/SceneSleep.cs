@@ -17,24 +17,26 @@ public class SceneSleep : MonoBehaviour
     
     private void OnTriggerEnter(Collider collision)
     {
-        Player player = collision.GetComponent<Player>();
-
-        if (gameHour > 5)
+        if(collision.gameObject.tag == "Player")
         {
-            if(gameHour < 21)
+            Player player = collision.GetComponent<Player>();
+
+            if (gameHour > 5)
             {
-                UIManager.Instance.EnableNotSleepMenu();
+                if(gameHour < 21)
+                {
+                    UIManager.Instance.EnableNotSleepMenu();
+                }
+                else
+                {
+                    UIManager.Instance.EnableCanSleepMenu();
+                }
+                
             }
             else
             {
                 UIManager.Instance.EnableCanSleepMenu();
             }
-            
-        }
-        else
-        {
-            UIManager.Instance.EnableCanSleepMenu();
-        }
 
         // if (player != null)
         //     {
@@ -46,5 +48,6 @@ public class SceneSleep : MonoBehaviour
 
         //         SceneControllerManager.Instance.FadeAndLoadScene(sceneNameGoto.ToString(), new Vector3(xPosition, yPosition, zPosition));
         //     }  
+        }
     }
 }

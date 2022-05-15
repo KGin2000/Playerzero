@@ -41,7 +41,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         bool ShopStatus =  GameManager.instance.dialogueSystem.ShopEnter;
         // Debug.Log("ShopStatus = " + ShopStatus);
         PauseMenu();
-        ShopMenu(ShopStatus);
+        //ShopMenu(ShopStatus);
     }
 
     private void PauseMenu()
@@ -92,12 +92,12 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         pauseMenu.SetActive(false);
     }
 
-    private void ShopMenu(bool ShopStatus)
+    public void ShopMenu(bool ShopStatus)
     {
         //Toggle pause menu if escape is pressed
 
-        if (Input.GetKeyDown(KeyCode.B) && ShopStatus == true)
-        {
+        // if (Input.GetKeyDown(KeyCode.B) && ShopStatus == true)
+        // {
             if (ShopMenuOn)
             {
                 DisableShopMenu();
@@ -106,7 +106,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
             {
                 EnableShopMenu();
             }
-        }
+        //}
     }
 
     private void EnableShopMenu()
