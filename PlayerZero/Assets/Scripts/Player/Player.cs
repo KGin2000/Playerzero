@@ -412,6 +412,9 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
         //Remove item from inventory
         EventHandler.CallRemoveSelectedItemFromInventoryEvent();
+
+        //Make planting sound
+        AudioManager.Instance.PlaySound(SoundName.effectPlantingSound);
     }
 
     private void ProcessPlayerClickInputCommodity(ItemDetails itemDetails)
@@ -461,6 +464,9 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
     private void HoeGroundAtCursor(GridPropertyDetails gridPropertyDetails, Vector3Int playerDirection)
     {
+        //Play sound
+        AudioManager.Instance.PlaySound(SoundName.effectHoe);
+
         StartCoroutine(HoeGroundAtCursorRoutine(playerDirection, gridPropertyDetails));
     }
 
@@ -512,6 +518,9 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
     private void WaterGroundAtCursor(GridPropertyDetails gridPropertyDetails, Vector3Int playerDirection)
     {
+        //Play sound
+        AudioManager.Instance.PlaySound(SoundName.effectWateringCan);
+
         StartCoroutine(WaterGroundAtCursorRoutine(playerDirection, gridPropertyDetails));
     }
 
@@ -563,6 +572,9 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
     private void ChopInPlayerDirection(GridPropertyDetails gridPropertyDetails, ItemDetails equippedItemDetails, Vector3Int playerDirection)
     {
+        //Play sound
+        AudioManager.Instance.PlaySound(SoundName.effectAxe);
+
         //Trigger animation
         StartCoroutine(ChopInPlayerDirectionRoutine(gridPropertyDetails, equippedItemDetails, playerDirection));
     }
@@ -592,6 +604,9 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
     private void CollectInPlayerDirection(GridPropertyDetails gridPropertyDetails, ItemDetails equippedItemDetails, Vector3Int playerDirection)
     {
+        //Play sound
+        AudioManager.Instance.PlaySound(SoundName.effectBasket);
+
         StartCoroutine(CollectInPlayerDirectionRoutine(gridPropertyDetails, equippedItemDetails, playerDirection));
     }
 

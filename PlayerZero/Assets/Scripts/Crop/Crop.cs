@@ -41,6 +41,11 @@ public class Crop : MonoBehaviour
 
     private void HarvestCrop(CropDetails cropDetails, GridPropertyDetails gridPropertyDetails)
     {
+        if (cropDetails.harvestSound != SoundName.none)
+        {
+            AudioManager.Instance.PlaySound(cropDetails.harvestSound);
+        }
+
         //Delete crop from grid properties
         gridPropertyDetails.seedItemCode = -1;
         gridPropertyDetails.growthDays = -1;

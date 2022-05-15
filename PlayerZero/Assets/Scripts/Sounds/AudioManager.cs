@@ -9,11 +9,33 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
 {
     [SerializeField] private GameObject soundPrefab = null;
 
+    [Header("Audio Sources")]
+    [SerializeField] private AudioSource ambientSoundAudioSource = null;
+
+    [SerializeField] private AudioSource gameMusicAudioSource = null;
+
+    [Header("Audio Mixers")]
+    [SerializeField] private AudioMixer gameAudioMixer = null;
+
+    [Header("Audio Snapshots")]
+    [SerializeField] private AudioMixerSnapshot gameMusicSnapshot = null;
+
+    [SerializeField] private AudioMixerSnapshot gameAmbientSnapshot = null;
+
     [Header("Other")]
     //Sound list and dictionary
     [SerializeField] private SO_SoundList so_soundList = null;
 
+    [SerializeField] private SO_SceneSoundsList so_sceneSoundsList = null;
+    [SerializeField] private float defaultSceneMusicPlayTimeSecounds = 120f;
+    [SerializeField] private float sceneMusicStartMinSecs = 20f;
+    [SerializeField] private float sceneMusicStartMaxSecs = 40f;
+    [SerializeField] private float musicTransitionsSecs = 8f;
+
     private Dictionary<SoundName, SoundItem> soundDictionary;
+    private Dictionary<SceneName, SceneSoundsItem> sceneSoundsDictionary;
+
+    private Coroutine playSceneSoundsCoroutine;
 
     protected override void Awake()
     {
@@ -27,6 +49,111 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
         {
             soundDictionary.Add(soundItem.soundName, soundItem);
         }
+
+        //Initialise scene sounds dictionary
+        sceneSoundsDictionary = new Dictionary<SceneName, SceneSoundsItem>();
+
+        //Load scene sounds dictionary
+        foreach (SceneSoundsItem sceneSoundsItem in so_sceneSoundsList.sceneSoundsDetails)
+        {
+            sceneSoundsDictionary.Add(sceneSoundsItem.sceneName, sceneSoundsItem);
+        }
+    }
+
+    private void OnEnable()
+    {
+        EventHandler.AfterSceneLoadEvent += PlaySceneSounds;
+    }
+
+    private void OnDisable()
+    {
+        EventHandler.AfterSceneLoadEvent -= PlaySceneSounds;
+    }
+
+    private void PlaySceneSounds()
+    {
+        SoundItem musicSoundItem = null;
+        SoundItem ambientSoundItem = null;
+
+        float musicPlayTime = defaultSceneMusicPlayTimeSecounds;
+
+        //Try Get Current scene
+        if (Enum.TryParse<SceneName>(SceneManager.GetActiveScene().name, true, out SceneName currentSceneName))
+        {
+            //Get Music and Ambient Sounds For Scene
+            if(sceneSoundsDictionary.TryGetValue(currentSceneName, out SceneSoundsItem sceneSoundsItem))
+            {
+                soundDictionary.TryGetValue(sceneSoundsItem.musicForScene, out musicSoundItem);
+                soundDictionary.TryGetValue(sceneSoundsItem.ambientSoundForScene, out ambientSoundItem);
+            }
+            else
+            {
+                return;
+            }
+
+            //Stop any scene sounds already playing
+            if(playSceneSoundsCoroutine != null)
+            {
+                StopCoroutine(playSceneSoundsCoroutine);
+            }
+
+            //Play scene ammbient sounds and music
+            playSceneSoundsCoroutine = StartCoroutine(PlaySceneSoundsRoutine(musicPlayTime, musicSoundItem, ambientSoundItem));
+        }
+    }
+
+    private IEnumerator PlaySceneSoundsRoutine(float musicPlaySeconds, SoundItem musicSoundItem, SoundItem ambientSoundItem)
+    {
+        if (musicSoundItem != null && ambientSoundItem != null)
+        {
+            //Start with ambient sound
+            PlayAmbientSoundClip(ambientSoundItem, 0f);
+
+            //Wait for random of secounds before playing music
+            yield return new WaitForSeconds(UnityEngine.Random.Range(sceneMusicStartMaxSecs, sceneMusicStartMinSecs));
+
+            //Play music
+            PlayMusicSoundClip(musicSoundItem, musicTransitionsSecs);
+
+            //Wait for music play seconds before transitioning to ambient sounds
+            yield return new WaitForSeconds(musicPlaySeconds);
+
+            //Play ambient sound clip
+            PlayAmbientSoundClip(ambientSoundItem, musicTransitionsSecs);
+        }
+    }
+
+    private void PlayMusicSoundClip(SoundItem musicSoundItem, float transitionTimeSeconds)
+    {
+        //Set Volume
+        gameAudioMixer.SetFloat("MusicVolume", ConvertSoundVolumeDecimalFractionToDecibels(musicSoundItem.soundVolume));
+
+        //Set clip & play
+        gameMusicAudioSource.clip = musicSoundItem.soundClip;
+        gameMusicAudioSource.Play();
+
+        //Transition to music snapshot
+        gameMusicSnapshot.TransitionTo(transitionTimeSeconds);
+    }
+
+    private void PlayAmbientSoundClip(SoundItem ambientSoundItem, float transitionTimeSeconds)
+    {
+        //Set Volume
+        gameAudioMixer.SetFloat("AmbientVolume", ConvertSoundVolumeDecimalFractionToDecibels(ambientSoundItem.soundVolume));
+
+        //Set clip & play
+        ambientSoundAudioSource.clip = ambientSoundItem.soundClip;
+        ambientSoundAudioSource.Play();
+
+        //Transition to ambient
+        gameAmbientSnapshot.TransitionTo(transitionTimeSeconds);
+    }
+
+    private float ConvertSoundVolumeDecimalFractionToDecibels(float volumeDecimalFraction)
+    {
+        //Convert volume from decimal fraction to -80 to +20 decibel range
+
+        return(volumeDecimalFraction * 100f - 80f);
     }
 
     public void PlaySound(SoundName soundName)
