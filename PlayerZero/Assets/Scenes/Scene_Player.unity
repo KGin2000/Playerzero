@@ -2594,6 +2594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a253b290194fd474f911d78e86a4d522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameDay: 1
   gameHour: 6
   gameMinute: 0
 --- !u!4 &305142761

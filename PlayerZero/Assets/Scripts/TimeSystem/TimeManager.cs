@@ -6,7 +6,7 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
 {
     private int gameYear = 1;
     private Season gameSeason = Season.Spring;
-    private int gameDay = 1;
+    public int gameDay = 1;
     public int gameHour = 6;
     public int gameMinute = 0;
     private int gameSecond = 0;
