@@ -136,6 +136,7 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
     private void Update()
     {
+
         #region Player Input
 
         if (!PlayerInputIsDisabled)
@@ -773,6 +774,7 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
         screenTint.Tint();
         yield return new WaitForSeconds(1f);
+
         TimeManager.Instance.TestAdvanceSkip();
 
         screenTint.UnTint();
@@ -806,9 +808,10 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
         screenTint.Tint();
         yield return new WaitForSeconds(2f);
 
-        PlayerObject.transform.position = new Vector3(0.0f, 0.0f, 0.0f);            //Move to Target
+        // PlayerObject.transform.position = new Vector3(0.0f, 0.0f, 0.0f);            //Move to Target
         Debug.Log("Die");
-        PlayerStatus.Instance.Heal(5);
+        // PlayerStatus.Instance.Heal(5);
+        SaveLoadManager.Instance.LoadDataFromFile();
         yield return new WaitForSeconds(1f);
 
         screenTint.UnTint();

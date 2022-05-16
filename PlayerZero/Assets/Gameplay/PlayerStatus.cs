@@ -166,10 +166,10 @@ public class PlayerStatus : SingletonMonobehaviour<PlayerStatus>//, ISaveable
         {
             isExhausted = true;
         }
-        // else if(stamina.currVal > 0)
-        // {
-        //     isExhausted = false;
-        // }
+        else if(stamina.currVal > 0)
+        {
+            isExhausted = false;
+        }
     }
 
     private void Update()
