@@ -132,6 +132,12 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
         afterUseToolAnimationPause = new WaitForSeconds(Settings.afterUseToolAnimationPause);
         afterLiftToolAnimationPause =  new WaitForSeconds(Settings.afterLiftToolAnimationPause);
         afterPickAnimationPause = new WaitForSeconds(Settings.afterPickAnimationPause);
+
+        InventoryManager.Instance.AddItem(InventoryLocation.player, 10000); //Wicker Basket
+        InventoryManager.Instance.AddItem(InventoryLocation.player, 10006); //Axe
+        InventoryManager.Instance.AddItem(InventoryLocation.player, 10005); //Hoe
+        InventoryManager.Instance.AddItem(InventoryLocation.player, 10004); //Water Can
+        InventoryManager.Instance.AddItem(InventoryLocation.player, 10017); //Crossbow
     }
 
     private void Update()
