@@ -18,5 +18,4 @@ public class GameManager : SingletonMonobehaviour<GameManager>
     public GetPlayerPosition getPlayerPosition;
     public TimeManager timeManager;
     public ScreenTint screenTint;
-    public SaveLoadManager saveLoadManager;
 }

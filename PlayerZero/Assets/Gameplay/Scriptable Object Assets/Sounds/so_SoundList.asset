@@ -133,3 +133,63 @@ MonoBehaviour:
     soundPitchRandomVariationMin: 1
     soundPitchRandomVariationMax: 1
     soundVolume: 0.55
+  - soundName: 160
+    soundClip: {fileID: 8300000, guid: da7fa5775c6aaa340b67c8ae21eda710, type: 3}
+    soundDescription: 
+    soundPitchRandomVariationMin: 0.7
+    soundPitchRandomVariationMax: 0.8
+    soundVolume: 0.2
+  - soundName: 170
+    soundClip: {fileID: 8300000, guid: e6e53ced224dcc743bd5f37abb2766e8, type: 3}
+    soundDescription: 
+    soundPitchRandomVariationMin: 0.4
+    soundPitchRandomVariationMax: 0.6
+    soundVolume: 0.1
+  - soundName: 180
+    soundClip: {fileID: 8300000, guid: 91c2844d9c43f2e4099b473f18a8ab27, type: 3}
+    soundDescription: 
+    soundPitchRandomVariationMin: 0.7
+    soundPitchRandomVariationMax: 0.8
+    soundVolume: 0.2
+  - soundName: 2020
+    soundClip: {fileID: 8300000, guid: 07907097c9eaff44ebdc3b37725d3072, type: 3}
+    soundDescription: 
+    soundPitchRandomVariationMin: 0.7
+    soundPitchRandomVariationMax: 0.8
+    soundVolume: 0.2
+  - soundName: 3000
+    soundClip: {fileID: 8300000, guid: ecbeaa4725e15b641b94f26f90e36876, type: 3}
+    soundDescription: 
+    soundPitchRandomVariationMin: 0.7
+    soundPitchRandomVariationMax: 0.8
+    soundVolume: 0.2
+  - soundName: 3010
+    soundClip: {fileID: 8300000, guid: 56fd015dfbbfcdb4c8f1ea82e5c156d5, type: 3}
+    soundDescription: 
+    soundPitchRandomVariationMin: 0.7
+    soundPitchRandomVariationMax: 0.8
+    soundVolume: 0.2
+  - soundName: 3020
+    soundClip: {fileID: 8300000, guid: 6d4be4bf56357fa4fab295c784e626fb, type: 3}
+    soundDescription: 
+    soundPitchRandomVariationMin: 0.7
+    soundPitchRandomVariationMax: 0.8
+    soundVolume: 0.2
+  - soundName: 4000
+    soundClip: {fileID: 8300000, guid: 54ae95c55e5b9fe4b99551360e3ba873, type: 3}
+    soundDescription: 
+    soundPitchRandomVariationMin: 0.7
+    soundPitchRandomVariationMax: 0.8
+    soundVolume: 0.2
+  - soundName: 4010
+    soundClip: {fileID: 8300000, guid: 2bec79be755704147906670aa110aea2, type: 3}
+    soundDescription: 
+    soundPitchRandomVariationMin: 0.7
+    soundPitchRandomVariationMax: 0.8
+    soundVolume: 0.2
+  - soundName: 4020
+    soundClip: {fileID: 8300000, guid: 0c14cb9a3deb14d42b604ed1047f7188, type: 3}
+    soundDescription: 
+    soundPitchRandomVariationMin: 0.7
+    soundPitchRandomVariationMax: 0.8
+    soundVolume: 0.2

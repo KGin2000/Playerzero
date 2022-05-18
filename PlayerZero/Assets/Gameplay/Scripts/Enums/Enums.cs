@@ -116,11 +116,21 @@ public enum SoundName
     effectPluck = 130,
     effectStoneShatter = 140,
     effectWoodSplinters = 150,
+    effectArrowImpact = 160,    //
+    effectCrossbowShot = 170,   //
+    effectPlayerDead = 180, //
     ambientCountryside1 = 1000,
     ambientCountryside2 = 1010,
     ambientIndoor1 = 1020,
     musicCalm3 = 2000,
-    musicCalm1 = 2010
+    musicCalm1 = 2010,
+    RainCalm = 2020,    //
+    clickBuy = 3000,    //
+    menuButtonClick = 3010, //
+    saleItem = 3020,    //
+    wolfHurt = 4000,    //
+    wolfHowl = 4010,    //
+    wolfHunt = 4020,    //
 }
 
 public enum ItemType
