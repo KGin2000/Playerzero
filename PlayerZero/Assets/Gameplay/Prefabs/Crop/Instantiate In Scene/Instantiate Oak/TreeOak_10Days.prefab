@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 673851199266781870, guid: a419e0b66dbb108469aa80dcda085f7e, type: 3}
       propertyPath: m_Name
-      value: TreeOak_4Days
+      value: TreeOak_10Days
       objectReference: {fileID: 0}
     - target: {fileID: 673851199266781872, guid: a419e0b66dbb108469aa80dcda085f7e, type: 3}
       propertyPath: m_Sprite
@@ -74,6 +74,10 @@ PrefabInstance:
     - target: {fileID: 1802802503065658033, guid: a419e0b66dbb108469aa80dcda085f7e, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943137680759997077, guid: a419e0b66dbb108469aa80dcda085f7e, type: 3}
+      propertyPath: m_Size.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8330966280549954853, guid: a419e0b66dbb108469aa80dcda085f7e, type: 3}
       propertyPath: m_Size.x

@@ -248,6 +248,7 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
             if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             {
                 movementSpeed = Settings.walkingSpeed;
+
             }
             else
             {

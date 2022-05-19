@@ -55,6 +55,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple
       objectReference: {fileID: 0}
+    - target: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+      propertyPath: m_TagString
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5102482091228907224, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
       propertyPath: m_Size.x
       value: 0.72
@@ -97,3 +105,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+--- !u!1 &1377155384110440525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+  m_PrefabInstance: {fileID: 3055367013821110955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2952158212373310071 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 188856913256231132, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+  m_PrefabInstance: {fileID: 3055367013821110955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-836979442199182591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377155384110440525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2c2140db117be4abd63dbccc66d480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  heal: 20
+  eatenPoint: {fileID: 2952158212373310071}
+  colliderRange: 1.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  ImmotalObject: 0

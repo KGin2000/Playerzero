@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -819100962, guid: da41a8dd3b5ec434a802d9b5a2a0a777, type: 3}
+  m_Name: BehaviorDesignerGlobalVariables
+  m_EditorClassIdentifier: 
+  mVariableData:
+    variableStartIndex: 
+    JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Rabbit_walkSpeed","IsShared":true,"IsGlobal":true,"Tooltip":"rabbit
+      walk speed","SinglemValue":5},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Rabbit_runSpeed","IsShared":true,"IsGlobal":true,"Tooltip":"rabbir
+      run speed","SinglemValue":10},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"RabbitIsRunning","IsShared":true,"IsGlobal":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Wolf_walkSpeed","IsShared":true,"IsGlobal":true,"SinglemValue":7},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Wolf_runSpeed","IsShared":true,"IsGlobal":true,"SinglemValue":14},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"WolfIsRunning","IsShared":true,"IsGlobal":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Boar_walkSpeed","IsShared":true,"IsGlobal":true,"SinglemValue":6},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Boar_runSpeed","IsShared":true,"IsGlobal":true,"SinglemValue":12},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"BoarIsRunning","IsShared":true,"IsGlobal":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"BoarIsSleeping","IsShared":true,"IsGlobal":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Escape","IsShared":true,"IsGlobal":true,"BooleanmValue":false}]}'
+    fieldSerializationData:
+      typeName: []
+      fieldNameHash: 
+      startIndex: 
+      dataPosition: 
+      unityObjects: []
+      byteData: 
+      byteDataArray: 
+  mVersion: 1.6.8

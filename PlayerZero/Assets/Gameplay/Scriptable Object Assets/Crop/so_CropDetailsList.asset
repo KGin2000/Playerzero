@@ -33,10 +33,9 @@ MonoBehaviour:
     hideCropBeforeHarvestedAnimation: 1
     disableCropCollidersBeforeHarvestedAnimation: 0
     isHarvestedAnimation: 1
-    UseWater: 0
+    UseWater: 1
     isHarvestActionEffect: 0
     spawnCropProduceAtPlayerPosition: 1
-    harvestSound: 130
     harvestToolItemCode: 10270000
     requiredHarvestActions: 01000000
     cropProducedItemCode: 1b270000
@@ -70,7 +69,6 @@ MonoBehaviour:
     UseWater: 0
     isHarvestActionEffect: 1
     spawnCropProduceAtPlayerPosition: 0
-    harvestSound: 130
     harvestToolItemCode: 16270000
     requiredHarvestActions: 03000000
     cropProducedItemCode: 1d2700001e270000
@@ -97,10 +95,9 @@ MonoBehaviour:
     hideCropBeforeHarvestedAnimation: 1
     disableCropCollidersBeforeHarvestedAnimation: 0
     isHarvestedAnimation: 1
-    UseWater: 0
+    UseWater: 1
     isHarvestActionEffect: 0
     spawnCropProduceAtPlayerPosition: 1
-    harvestSound: 130
     harvestToolItemCode: 10270000
     requiredHarvestActions: 01000000
     cropProducedItemCode: 1c270000
@@ -135,10 +132,9 @@ MonoBehaviour:
     hideCropBeforeHarvestedAnimation: 1
     disableCropCollidersBeforeHarvestedAnimation: 0
     isHarvestedAnimation: 1
-    UseWater: 0
+    UseWater: 1
     isHarvestActionEffect: 0
     spawnCropProduceAtPlayerPosition: 1
-    harvestSound: 130
     harvestToolItemCode: 10270000
     requiredHarvestActions: 01000000
     cropProducedItemCode: 23270000
@@ -167,10 +163,9 @@ MonoBehaviour:
     hideCropBeforeHarvestedAnimation: 1
     disableCropCollidersBeforeHarvestedAnimation: 0
     isHarvestedAnimation: 1
-    UseWater: 0
+    UseWater: 1
     isHarvestActionEffect: 0
     spawnCropProduceAtPlayerPosition: 1
-    harvestSound: 130
     harvestToolItemCode: 10270000
     requiredHarvestActions: 01000000
     cropProducedItemCode: 24270000

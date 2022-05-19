@@ -11,6 +11,18 @@ TagManager:
   - CropsParentTransform
   - Event
   - Arrow
+  - Build
+  - tree
+  - 2
+  - 0
+  - GameManager
+  - 3
+  - smell
+  - Building
+  - 1
+  - Bush
+  - FarmArea
+  - NavmeshBaker
   layers:
   - Default
   - TransparentFX
@@ -20,7 +32,7 @@ TagManager:
   - UI
   - BaseLayers
   - Enemies
-  - Tree
+  - 
   - Building
   - Player
   - Plant
@@ -31,8 +43,8 @@ TagManager:
   - 
   - 
   - 
+  - ColliderBaker
   - 
-  - NavmeshBaker
   - 
   - 
   - 
