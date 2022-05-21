@@ -17,6 +17,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
         [Tooltip("If target is null then use the target position")]
         public SharedVector3 targetPosition;
 
+        public SharedBool IsRunning;
+
         // Component references
         protected UnityEngine.AI.NavMeshAgent navMeshAgent;
 
@@ -34,6 +36,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
         /// </summary>
         public override void OnStart()
         {
+            IsRunning.Value = true;
             navMeshAgent.speed = speed.Value;
             navMeshAgent.angularSpeed = angularSpeed.Value;
 #if UNITY_5_1 || UNITY_5_2 || UNITY_5_3 || UNITY_5_4 || UNITY_5_5
@@ -49,7 +52,9 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
         // Return running if the agent hasn't reached the destination yet
         public override TaskStatus OnUpdate()
         {
+            
             if (HasArrived()) {
+
                 return TaskStatus.Success;
             }
 
@@ -64,7 +69,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
             if (target.Value != null) {
                 return target.Value.transform.position;
             }
-            return targetPosition.Value;
+            //return targetPosition.Value;
+            return transform.position;
         }
 
         /// <summary>
@@ -118,6 +124,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
         /// </summary>
         public override void OnEnd()
         {
+            IsRunning.Value = false;
             Stop();
         }
 

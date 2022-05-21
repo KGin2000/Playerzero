@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -508,6 +509,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      DugGround_12: -4987229573879477163
+      DugGround_13: 818433697204119388
+      DugGround_8: -1144834211054590616
+      DugGround_0: 5588880199808461859
+      DugGround_5: 3766865763359371942
+      DugGround_15: -1397365509746193196
+      DugGround_10: -8186299728689910322
+      DugGround_1: -6124715397737624461
+      DugGround_6: 4104806012796865313
+      DugGround_14: 6933223335694393071
+      DugGround_4: 9185315290136886186
+      DugGround_2: 7303584569058495136
+      DugGround_3: -8482852301027147495
+      DugGround_7: -4060529681369373566
+      DugGround_11: 7364767379561946811
+      DugGround_9: -2463700668463398288
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

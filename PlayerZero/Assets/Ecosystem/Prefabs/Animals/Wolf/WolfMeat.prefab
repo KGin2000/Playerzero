@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6393321266713911136}
   - component: {fileID: 8234662167356137372}
   - component: {fileID: 2823410849112169327}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: WolfMeat
-  m_TagString: Untagged
+  m_TagString: meat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,13 +112,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heal: 20
-  eatenPoint: {fileID: 3116310667457911551}
-  colliderRange: 5
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 128
-  speed: 10
-  pickUpDistance: 7
 --- !u!1 &2446874079408339303
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3116310667457911551}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: EatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 3555279403751375319}
   - component: {fileID: 3588460242068249740}
   - component: {fileID: 3029472037920690611}
-  m_Layer: 0
+  - component: {fileID: 4693748714788347346}
+  m_Layer: 14
   m_Name: WildBoarMeat
-  m_TagString: Untagged
+  m_TagString: meat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,13 +113,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heal: 20
-  eatenPoint: {fileID: 112454895344447535}
-  colliderRange: 5
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 128
-  speed: 10
-  pickUpDistance: 7
+--- !u!114 &4693748714788347346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543187425221919526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d09d3478ceda0b4096a12a1cf3d3cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  age: 4
 --- !u!1 &7857914999272369859
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112454895344447535}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: EatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

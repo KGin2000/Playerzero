@@ -225,6 +225,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1732,6 +1733,74 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HighGroundGrass6_54: 8060473808897433066
+      HighGroundGrass6_28: -6412171674399262684
+      HighGroundGrass6_36: -3959568223581053425
+      HighGroundGrass6_23: -721214246586307211
+      HighGroundGrass6_59: -2432139982379256929
+      HighGroundGrass6_49: 4714775914870222385
+      HighGroundGrass6_64: -3209541764539210425
+      HighGroundGrass6_24: 8333106072854222045
+      HighGroundGrass6_61: 6651170606163312397
+      HighGroundGrass6_9: 5990923063290998232
+      HighGroundGrass6_14: 2426796003131981073
+      HighGroundGrass6_13: 6915996312909059461
+      HighGroundGrass6_22: 31466030808206286
+      HighGroundGrass6_1: -3437245291986070604
+      HighGroundGrass6_25: 1260137903970947311
+      HighGroundGrass6_6: -4918897111665293656
+      HighGroundGrass6_34: 1776623103578115889
+      HighGroundGrass6_8: -2418022999415556405
+      HighGroundGrass6_31: -6267942139335893973
+      HighGroundGrass6_33: 8580087585734824632
+      HighGroundGrass6_35: -983070304332236886
+      HighGroundGrass6_65: 3691864985748506737
+      HighGroundGrass6_41: -7943389183814298811
+      HighGroundGrass6_46: 6590947772389373619
+      HighGroundGrass6_7: -4033987591445015068
+      HighGroundGrass6_45: 4765697078146463731
+      HighGroundGrass6_63: 8287563862310935625
+      HighGroundGrass6_11: 3924371442106747997
+      HighGroundGrass6_55: -6983340057136376544
+      HighGroundGrass6_18: 6465177893436192062
+      HighGroundGrass6_38: 4989149247902610496
+      HighGroundGrass6_43: 4959537055403634447
+      HighGroundGrass6_16: 1034585724572442842
+      HighGroundGrass6_37: 3877882815614378500
+      HighGroundGrass6_21: 2116859126883105478
+      HighGroundGrass6_60: -942043103398878583
+      HighGroundGrass6_52: 8008644648696676305
+      HighGroundGrass6_58: 4191380083322547774
+      HighGroundGrass6_17: -6501490961254950288
+      HighGroundGrass6_4: 7876197960807949815
+      HighGroundGrass6_40: 5017885067343705418
+      HighGroundGrass6_57: 1287559575819997273
+      HighGroundGrass6_47: -1006049601482137460
+      HighGroundGrass6_26: 6635641445399569489
+      HighGroundGrass6_39: 3405620148842540781
+      HighGroundGrass6_30: -575091578423607873
+      HighGroundGrass6_2: 1974781779679039133
+      HighGroundGrass6_3: 424804223367838511
+      HighGroundGrass6_62: 5165011396017922082
+      HighGroundGrass6_50: 701439819437801917
+      HighGroundGrass6_10: 5816237180743296325
+      HighGroundGrass6_29: -230053484281358601
+      HighGroundGrass6_15: 384483365000875023
+      HighGroundGrass6_42: -4545327704198785326
+      HighGroundGrass6_53: -4864595453144802088
+      HighGroundGrass6_20: -5909673229547008071
+      HighGroundGrass6_19: 8704695608979968945
+      HighGroundGrass6_12: -3679319176605520202
+      HighGroundGrass6_0: -9216209552526808652
+      HighGroundGrass6_32: 3049014797166308449
+      HighGroundGrass6_66: -2902234401639528724
+      HighGroundGrass6_44: -2940489609874151624
+      HighGroundGrass6_27: 2249875788908722167
+      HighGroundGrass6_56: -6127076751263435326
+      HighGroundGrass6_48: -802817596283477466
+      HighGroundGrass6_51: -2361036437923284620
+      HighGroundGrass6_5: 823066172115694017
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

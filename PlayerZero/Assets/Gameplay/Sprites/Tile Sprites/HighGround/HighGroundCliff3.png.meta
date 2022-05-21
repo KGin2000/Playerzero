@@ -249,6 +249,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1924,6 +1925,82 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HighGroundCliff3_35: 2703413642954752060
+      HighGroundCliff3_46: -542941265061728546
+      HighGroundCliff3_54: 2748643829816209772
+      HighGroundCliff3_3: -1162319726121064590
+      HighGroundCliff3_10: 6407855349357278987
+      HighGroundCliff3_50: 1431527979357323825
+      HighGroundCliff3_22: 4966333160309472692
+      HighGroundCliff3_0: -7264890154970231085
+      HighGroundCliff3_31: 671386191445794609
+      HighGroundCliff3_23: -4114989207799541990
+      HighGroundCliff3_38: 3489201289395149111
+      HighGroundCliff3_58: -7175141839411125995
+      HighGroundCliff3_70: -3662924308640025021
+      HighGroundCliff3_26: 5074960402763393834
+      HighGroundCliff3_60: -1476485748227039915
+      HighGroundCliff3_66: 5044163121328506764
+      HighGroundCliff3_73: 5103989169948287700
+      HighGroundCliff3_39: 5129661110761060512
+      HighGroundCliff3_62: 5305385377071629400
+      HighGroundCliff3_1: 5180846625292497365
+      HighGroundCliff3_36: 1937873469739434621
+      HighGroundCliff3_52: 6834245844411437566
+      HighGroundCliff3_15: 398499397889166078
+      HighGroundCliff3_13: -1323586175275457464
+      HighGroundCliff3_43: 4365979377372186147
+      HighGroundCliff3_57: 1562285142785167138
+      HighGroundCliff3_41: -2777438600839109191
+      HighGroundCliff3_27: -701882238162843383
+      HighGroundCliff3_4: 7155358749173217182
+      HighGroundCliff3_21: -1127325164341823032
+      HighGroundCliff3_56: 1946457481994292129
+      HighGroundCliff3_2: 4219971934734338218
+      HighGroundCliff3_40: -814962658840849517
+      HighGroundCliff3_34: -3144125527523949850
+      HighGroundCliff3_74: 9160482911103657265
+      HighGroundCliff3_63: 2048509302862961005
+      HighGroundCliff3_19: 4761364046553690576
+      HighGroundCliff3_24: 178016492770295209
+      HighGroundCliff3_37: -3251828588888512434
+      HighGroundCliff3_53: 6561566432876068566
+      HighGroundCliff3_59: -1843354248791633451
+      HighGroundCliff3_29: 4376592596353330894
+      HighGroundCliff3_12: -7187218353604114604
+      HighGroundCliff3_6: 1522019649822515189
+      HighGroundCliff3_17: -7912695819074110615
+      HighGroundCliff3_20: 2493428750751617851
+      HighGroundCliff3_30: -1411469230304512035
+      HighGroundCliff3_5: -3563592288235369107
+      HighGroundCliff3_71: 2299923120030355910
+      HighGroundCliff3_67: -735818863933552480
+      HighGroundCliff3_11: 5316648976750432727
+      HighGroundCliff3_9: -5903496173789247217
+      HighGroundCliff3_48: 2486240042402555683
+      HighGroundCliff3_7: 1291702091092010684
+      HighGroundCliff3_14: 1369349971661622108
+      HighGroundCliff3_16: -5569027980747882631
+      HighGroundCliff3_33: -5717504347268937050
+      HighGroundCliff3_8: -970629441224252532
+      HighGroundCliff3_28: 5108959457810960177
+      HighGroundCliff3_45: -5182591888463147790
+      HighGroundCliff3_51: -7582908297027248270
+      HighGroundCliff3_72: 8931142055608380121
+      HighGroundCliff3_61: -4735547524898788209
+      HighGroundCliff3_65: 3119660465653618760
+      HighGroundCliff3_44: 6657581739896935727
+      HighGroundCliff3_42: -2245200301307690137
+      HighGroundCliff3_25: 6076696777674760081
+      HighGroundCliff3_47: 7248865214225269734
+      HighGroundCliff3_49: -5661089952903762129
+      HighGroundCliff3_32: 3697193762725290275
+      HighGroundCliff3_55: 3596878481706846413
+      HighGroundCliff3_18: 3355490215301040838
+      HighGroundCliff3_68: 5043432369243024757
+      HighGroundCliff3_69: -8317745040465334973
+      HighGroundCliff3_64: -6226827082270420387
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

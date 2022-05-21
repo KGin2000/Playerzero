@@ -20,7 +20,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Animals
 
         public override TaskStatus OnUpdate()
         {
-            Debug.Log(enemy.currentHungryPoint);
+            //Debug.Log(enemy.currentHungryPoint);
             if (enemy.currentHungryPoint >= pointOfFull * enemy.maxHungryPoint)
             {
                 return TaskStatus.Success;
@@ -30,4 +30,3 @@ namespace BehaviorDesigner.Runtime.Tasks.Animals
         }
     }
 }
-

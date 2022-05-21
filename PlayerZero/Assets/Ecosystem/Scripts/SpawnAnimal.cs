@@ -26,6 +26,5 @@ public class SpawnAnimal : MonoBehaviour
              GameObject instanceAgentA = (GameObject)Instantiate(Animal);
             instanceAgentA.transform.position = transform.position;
         }
-
     }
 }

@@ -5,8 +5,8 @@ using System.IO;
 
 public class CheckAllAgent : SingletonMonobehaviour<CheckAllAgent>
 {
-    [SerializeField] public int maxTree;
-    [SerializeField] public int Tree;
+    [SerializeField] public float maxTree;
+    [SerializeField] public float Tree;
     [SerializeField] public int Grass;
     [SerializeField] public int Rabbit;
     [SerializeField] public int Wildboar;

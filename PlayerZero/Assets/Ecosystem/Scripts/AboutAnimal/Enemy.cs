@@ -68,7 +68,6 @@ public class Enemy : MonoBehaviour
 
     public void Eat(int healPoint)
     {
-        Debug.Log("GETTTTTTTTTTTTTTTTTTTTTTTTTTTTTHEalllllllllllllllllllllllllllll");
         currentHealth += 5;
         currentHungryPoint += healPoint;
         countEat += 1;

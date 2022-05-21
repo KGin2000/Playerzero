@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -508,6 +509,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SoilDecoration_7: -5787630370530111499
+      SoilDecoration_11: 3490626831391171928
+      SoilDecoration_15: 2580973512162675446
+      SoilDecoration_8: -7485056021842139697
+      SoilDecoration_1: -1832566383815659851
+      SoilDecoration_4: 8542582419188374418
+      SoilDecoration_3: 275640697373164937
+      SoilDecoration_2: 2288319663072285761
+      SoilDecoration_5: 1272743488242372470
+      SoilDecoration_6: -8922515793764498854
+      SoilDecoration_13: -3325533673801943524
+      SoilDecoration_9: -4592363255064272888
+      SoilDecoration_14: 6237036199772405240
+      SoilDecoration_0: 2319953096635050923
+      SoilDecoration_12: 1154580562710566314
+      SoilDecoration_10: -1526282420543445245
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

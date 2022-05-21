@@ -8,6 +8,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
         public SharedInt IntVar;
         public SharedGameObject gameObjectVar1;
         public SharedGameObject gameObjectVar2;
+        public SharedString status;
 
         public override void OnStart()
         {
@@ -17,6 +18,10 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
 
         public override TaskStatus OnUpdate()
         {
+            if(status.Value != null)
+            {
+                status.Value = null;
+            }
             if(gameObjectVar1.Value)
             {
                 gameObjectVar1.Value = null;               

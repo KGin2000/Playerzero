@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  age: 10
+  age: 4
 --- !u!1 &7249842536294094987
 GameObject:
   m_ObjectHideFlags: 0

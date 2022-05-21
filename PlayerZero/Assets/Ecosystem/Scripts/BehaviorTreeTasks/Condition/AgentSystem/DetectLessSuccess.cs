@@ -38,12 +38,13 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                 float curDistance = Space.sqrMagnitude;
                 
                 string a = Mytag.Value;
-                x = float.Parse(a);
-                //x = Convert.ToInt32(a);
+                //x = float.Parse(a);
+                x = Convert.ToInt32(a);
 
                 string b = enemy.tag;
-                y = float.Parse(b);
-                //y = Convert.ToInt32(b);
+                Debug.Log("b = " + b);
+               // y = float.Parse(b);
+                y = Convert.ToInt32(b);
 
                 if (x < y)
                 {

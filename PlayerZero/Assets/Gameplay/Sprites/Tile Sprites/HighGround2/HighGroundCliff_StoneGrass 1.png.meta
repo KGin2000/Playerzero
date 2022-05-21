@@ -63,6 +63,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -436,6 +437,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HighGroundCliff_StoneGrass 1_5: -6046004328949952968
+      HighGroundCliff_StoneGrass 1_4: -2479464946006453228
+      HighGroundCliff_StoneGrass 1_3: 1495378576404335532
+      HighGroundCliff_StoneGrass 1_1: 6220960628138098575
+      HighGroundCliff_StoneGrass 1_8: 2211297357107728789
+      HighGroundCliff_StoneGrass 1_0: 5162477007669239736
+      HighGroundCliff_StoneGrass 1_10: -4387157947717771146
+      HighGroundCliff_StoneGrass 1_7: -3973767714067607069
+      HighGroundCliff_StoneGrass 1_6: -7185667840619145135
+      HighGroundCliff_StoneGrass 1_12: -2901524340604177364
+      HighGroundCliff_StoneGrass 1_9: 1016330328735834812
+      HighGroundCliff_StoneGrass 1_11: 3581127494535234535
+      HighGroundCliff_StoneGrass 1_2: 5018925954230509751
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

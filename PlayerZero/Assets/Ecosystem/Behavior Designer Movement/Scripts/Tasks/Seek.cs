@@ -53,7 +53,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                 return TaskStatus.Failure;
             }
 
-            //SetDestination(Target());
+            SetDestination(Target());
             return TaskStatus.Running;
         }
         

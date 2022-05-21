@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -604,6 +605,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HighGroundCliff_Stone_Shadow_8: -4875296719467059113
+      HighGroundCliff_Stone_Shadow_13: -6819637821271670558
+      HighGroundCliff_Stone_Shadow_14: -2595541879915173765
+      HighGroundCliff_Stone_Shadow_9: 4904518551178945922
+      HighGroundCliff_Stone_Shadow_10: -7096501455555833752
+      HighGroundCliff_Stone_Shadow_11: -6796783042542540886
+      HighGroundCliff_Stone_Shadow_3: 3729152317740037050
+      HighGroundCliff_Stone_Shadow_15: 1141490954944228001
+      HighGroundCliff_Stone_Shadow_17: 4373083909896562710
+      HighGroundCliff_Stone_Shadow_16: 5395126758199160461
+      HighGroundCliff_Stone_Shadow_1: 9122820474189713272
+      HighGroundCliff_Stone_Shadow_0: 2484911851348302388
+      HighGroundCliff_Stone_Shadow_5: 5886736511054039452
+      HighGroundCliff_Stone_Shadow_18: -106616979646981578
+      HighGroundCliff_Stone_Shadow_7: 2233860633308813235
+      HighGroundCliff_Stone_Shadow_12: -166016000351382366
+      HighGroundCliff_Stone_Shadow_2: 3827125152934711969
+      HighGroundCliff_Stone_Shadow_19: 6796957001970510143
+      HighGroundCliff_Stone_Shadow_4: 7464144910355486609
+      HighGroundCliff_Stone_Shadow_6: -2771645219447665667
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

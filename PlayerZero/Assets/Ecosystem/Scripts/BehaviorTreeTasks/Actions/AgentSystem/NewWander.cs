@@ -15,6 +15,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         private float destinationReachTime;
         public override void OnStart()
         {
+            navMeshAgent.speed = 3;
+            navMeshAgent.angularSpeed = 1;
             navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
             navMeshAgent.updateRotation = false;
         }

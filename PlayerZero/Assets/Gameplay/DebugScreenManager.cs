@@ -26,7 +26,7 @@ public class DebugScreenManager : MonoBehaviour
         NumberOfRabbit = CheckAllAgent.Instance.Rabbit;
         NumberOfWildboar = CheckAllAgent.Instance.Wildboar;
         NumberOfWolf = CheckAllAgent.Instance.Wolf;
-        NumberOfTree = CheckAllAgent.Instance.Tree;
+        //NumberOfTree = CheckAllAgent.Instance.Tree;
 
         Rabbit.text = "Rabbit : " + NumberOfRabbit.ToString();
         Boar.text = "Boar : " + NumberOfWildboar.ToString();
