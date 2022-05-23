@@ -286,4 +286,17 @@ public class UIManager : SingletonMonobehaviour<UIManager>
     {
         Application.Quit();
     }
+
+    public void CraftArrow()
+    {
+        if(InventoryManager.Instance.haveWood)
+        {
+            InventoryManager.Instance.RemoveItem(InventoryLocation.player, 10014);
+
+            for(int i = 0; i < 3; i++)
+            {
+                InventoryManager.Instance.AddItem(InventoryLocation.player, 10018);
+            }
+        }
+    }
 }

@@ -26,6 +26,8 @@ public class ShopManagerScript : SingletonMonobehaviour<ShopManagerScript>
         shopItems[1, 5] = 5;
         shopItems[1, 6] = 6;
         shopItems[1, 7] = 7;
+        shopItems[1, 8] = 8;
+        shopItems[1, 9] = 9;
 
         //Price
         shopItems[2, 1] = 10;
@@ -34,7 +36,9 @@ public class ShopManagerScript : SingletonMonobehaviour<ShopManagerScript>
         shopItems[2, 4] = 40;
         shopItems[2, 5] = 50;
         shopItems[2, 6] = 40;
-        shopItems[2, 7] = 200;
+        shopItems[2, 7] = 5;
+        shopItems[2, 8] = 50;
+        shopItems[2, 9] = 50;
 
         //Quantity
         shopItems[3, 1] = NumItem;
@@ -44,6 +48,8 @@ public class ShopManagerScript : SingletonMonobehaviour<ShopManagerScript>
         shopItems[3, 5] = NumItem;
         shopItems[3, 6] = NumItem;
         shopItems[3, 7] = NumItem;
+        shopItems[3, 8] = 1;
+        shopItems[3, 9] = NumItem;
     }
 
     public void Update()
@@ -109,7 +115,33 @@ public class ShopManagerScript : SingletonMonobehaviour<ShopManagerScript>
              else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 7)
             {
                
-                shopItems[2, 7] += 200;
+                InventoryManager.Instance.AddItem(InventoryLocation.player, 10018);
+            }
+            else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 8)
+            {
+                if(shopItems[3, 8] <= 10)
+                {
+                    SendUpgradeCrossbow.Instance.upgradeRateofFire(-0.1f);
+                    shopItems[2, 8] += 10;
+
+                    if (shopItems[3, 8] == 10)
+                    {
+                        shopItems[2, 8] = 99999;
+                    }
+                }
+            }
+            else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 9)
+            {
+               if(shopItems[3, 9] <= 10)
+                {
+                    SendUpgradeCrossbow.Instance.upgradeArrowSpeed(1f);
+                    shopItems[2, 9] += 10;
+
+                    if (shopItems[3, 9] == 10)
+                    {
+                        shopItems[2, 9] = 99999;
+                    }
+                }
             }
         }
     }

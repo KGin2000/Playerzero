@@ -18,7 +18,6 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
     private Cursor cursor;
     
     public bool canShootCrossbow = true;
-    public bool haveArrow;
 
     //Movement Parameters
     private float vInput;

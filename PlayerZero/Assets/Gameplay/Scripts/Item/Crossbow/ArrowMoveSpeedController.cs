@@ -16,7 +16,7 @@ public class ArrowMoveSpeedController : MonoBehaviour
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 2f);
     }
 
     private void OnTriggerEnter (Collider collision)

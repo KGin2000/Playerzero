@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GunController : MonoBehaviour
+public class GunController : SingletonMonobehaviour<GunController>
 {
     public bool isFiring;
+    
+    public float timeClickDelay = 0f;
+    public float timeShootdelay;
+    public float bulletSpeed;
 
     public ArrowMoveSpeedController bullet;
-    public float bulletSpeed;
 
     public float timeBetweenShots;
     private float shortCounter;
@@ -18,28 +21,52 @@ public class GunController : MonoBehaviour
         
     }
 
+    private void GetUpgrade()
+    {
+        timeShootdelay = SendUpgradeCrossbow.Instance.RateofFire;
+        bulletSpeed = SendUpgradeCrossbow.Instance.ArrowSpeed;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(isFiring)
+        GetUpgrade();
+
+        if(timeClickDelay > 0f)
         {
-            shortCounter -= Time.deltaTime;
-            if(shortCounter <= 0)
+            timeClickDelay -= Time.deltaTime;
+        }
+        else if(timeClickDelay < 0f)
+        {
+            timeClickDelay = 0f;
+        }
+
+        if(timeClickDelay == 0f)
+        {
+            if(isFiring)
             {
-                shortCounter = timeBetweenShots;
-                ArrowMoveSpeedController newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as ArrowMoveSpeedController;
+                if(InventoryManager.Instance.haveArrow)
+                {
+                    shortCounter -= Time.deltaTime;
+                    if(shortCounter <= 0)
+                    {
+                        shortCounter = timeBetweenShots;
+                        ArrowMoveSpeedController newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as ArrowMoveSpeedController;
 
-                InventoryManager.Instance.RemoveItem(InventoryLocation.player, 10018);      //ลบ Arrow ออกจาก Inventory 
+                        InventoryManager.Instance.RemoveItem(InventoryLocation.player, 10018);      //ลบ Arrow ออกจาก Inventory 
 
-                newBullet.speed = bulletSpeed;
+                        newBullet.speed = bulletSpeed;
 
-                Debug.Log("Shoot!!!!!!!!!");
+                        Debug.Log("Shoot!!!!!!!!!");
+
+                        timeClickDelay = timeShootdelay;
+                    }
+                }
+            }
+            else
+            {
+                shortCounter = 0;
             }
         }
-        else
-        {
-            shortCounter = 0;
-        }
-
     }
 }

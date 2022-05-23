@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISaveable
 {
+    public bool haveArrow;
+    public bool haveWood;
     private UIInventoryBar inventoryBar;
     private Dictionary<int, ItemDetails> itemDetailsDictionary;
 
@@ -137,7 +139,7 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
 
         //DebugPrintInventoryList(inventoryList);
 
-        CheckItem(inventoryList);
+        CheckItemIn(inventoryList);
     }
 
     private void AddItemAtPosition(List<InventoryItem> inventoryList, int itemCode, int position)
@@ -151,7 +153,7 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
 
         //DebugPrintInventoryList(inventoryList);
 
-        CheckItem(inventoryList);
+        CheckItemIn(inventoryList);
     }
 
     public void SwapInventoryItems(InventoryLocation inventoryLocation, int fromItem, int toItem)
@@ -340,8 +342,6 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
 
             EventHandler.CallInventoryUpdatedEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
         }
-
-        CheckItem(inventoryList);
     }
 
     private void RemoveItemAtPosition(List<InventoryItem> inventoryList, int itemCode, int position)
@@ -358,6 +358,7 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
         }
         else
         {
+            CheckItemOut(itemCode);
             inventoryList.RemoveAt(position);
         }
     }
@@ -383,7 +384,7 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
         Debug.Log("******************************************************");
     }
 
-    public void CheckItem(List<InventoryItem> inventoryList)
+    public void CheckItemIn(List<InventoryItem> inventoryList)
     {
         Debug.Log("Check");
 
@@ -391,12 +392,27 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
         {
             if(InventoryManager.Instance.GetItemDetails(inventoryItem.itemCode).itemDescription == "Arrow")
             {
-                Player.Instance.haveArrow = true;
+                haveArrow = true;
             }
-            else if(InventoryManager.Instance.GetItemDetails(inventoryItem.itemCode).itemDescription != "Arrow")
+
+            if(InventoryManager.Instance.GetItemDetails(inventoryItem.itemCode).itemDescription == "Wood")
             {
-                Player.Instance.haveArrow = false;
-            } 
+                haveWood = true;
+            }
         }
+    }
+
+    public void CheckItemOut(int itemCode)
+    {
+        if(itemCode == 10018)
+        {
+            haveArrow = false;
+        }
+
+        if(itemCode == 10014)
+        {
+            haveWood = false;
+        }
+        
     }
 }
