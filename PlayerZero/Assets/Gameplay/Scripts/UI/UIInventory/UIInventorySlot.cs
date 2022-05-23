@@ -255,8 +255,8 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             }
             else
             {
-                EquipWeapon();
-                if(itemQuantity > 0)        //ติดตั้งอาวุธ
+                EquipWeapon();              //ติดตั้งอาวุธ
+                if(itemQuantity > 0)        
                 {
                     SetSelectedItem();
                 }   
@@ -289,11 +289,16 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                 inventoryBar.inventoryTextBoxGameobject.transform.position = new Vector3(transform.position.x, transform.position.y - 50f, transform.position.z);
             }
         }
+
+        Player.Instance.canShootCrossbow = false;       //Set Crossbow
+
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         DestroyInventoryTextBox();
+
+        Player.Instance.canShootCrossbow = true;    //Set Crossbow
     }
     
     public void DestroyInventoryTextBox()

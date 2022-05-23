@@ -42,6 +42,11 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         // Debug.Log("ShopStatus = " + ShopStatus);
         PauseMenu();
         //ShopMenu(ShopStatus);
+
+        if(PauseMenuOn || ShopMenuOn || CanSleepMenuOn || NotSleepMenuOn == true)
+        {
+            Player.Instance.canShootCrossbow = false;       //Set Crossbow
+        }
     }
 
     private void PauseMenu()
@@ -90,6 +95,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         Player.Instance.PlayerInputIsDisabled = false;
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
+        Player.Instance.canShootCrossbow = true;       //Set Crossbow
     }
 
     public void ShopMenu(bool ShopStatus)
@@ -101,6 +107,8 @@ public class UIManager : SingletonMonobehaviour<UIManager>
             if (ShopMenuOn)
             {
                 DisableShopMenu();
+
+                DialogueSystem.Instance.Conclude();
             }
             else
             {
@@ -138,6 +146,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         Player.Instance.PlayerInputIsDisabled = false;
         Time.timeScale = 1;
         shopMenu.SetActive(false);
+        Player.Instance.canShootCrossbow = true;       //Set Crossbow
     }
 
     public void EnableCanSleepMenu()
@@ -169,6 +178,8 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         Player.Instance.PlayerInputIsDisabled = false;
         Time.timeScale = 1;
         canSleepMenu.SetActive(false);
+        Player.Instance.canShootCrossbow = true;       //Set Crossbow
+
     }
 
     public void EnableNotSleepMenu()
@@ -200,6 +211,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         Player.Instance.PlayerInputIsDisabled = false;
         Time.timeScale = 1;
         notSleepMenu.SetActive(false);
+        Player.Instance.canShootCrossbow = true;       //Set Crossbow
     }
 
     public void EnableFadeBlack()

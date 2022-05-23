@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueSystem : MonoBehaviour
+public class DialogueSystem : SingletonMonobehaviour<DialogueSystem>
 {
     public bool ShopEnter = true;
     [SerializeField] Text targetText;
@@ -69,12 +69,14 @@ public class DialogueSystem : MonoBehaviour
     public void Initialize(DialogContainer dialogContainer)
     {
         Show(true);
-        ShopEnter = true;
+        // ShopEnter = true;
         // Debug.Log("Shop" + ShopEnter);
         currentDialogue = dialogContainer;
         currentTextLine = -1;
         PushText();
         UpdatePortrait();
+
+        Player.Instance.canShootCrossbow = false;       //Set Crossbow
     }
 
     private void UpdatePortrait()
@@ -91,8 +93,9 @@ public class DialogueSystem : MonoBehaviour
     public void Conclude()
     {
         // Debug.Log("The dialog has ended");
-        ShopEnter = false;
+        // ShopEnter = false;
         // Debug.Log("Shop" + ShopEnter);
         Show(false);
+        Player.Instance.canShootCrossbow = true;       //Set Crossbow
     }
 }

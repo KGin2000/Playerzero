@@ -37,9 +37,10 @@ public class CrossbowController : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0))
         {
-
-            theGun.isFiring = true;
-            
+            if(Player.Instance.canShootCrossbow && Player.Instance.haveArrow)
+            {
+                theGun.isFiring = true;
+            }            
         }
         if(Input.GetMouseButtonUp(0))
         {

@@ -16,6 +16,9 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
     private WaitForSeconds afterPickAnimationPause;
     private GridCursor gridCursor;
     private Cursor cursor;
+    
+    public bool canShootCrossbow = true;
+    public bool haveArrow;
 
     //Movement Parameters
     private float vInput;

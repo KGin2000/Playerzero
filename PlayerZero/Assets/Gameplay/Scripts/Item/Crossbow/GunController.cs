@@ -28,9 +28,12 @@ public class GunController : MonoBehaviour
             {
                 shortCounter = timeBetweenShots;
                 ArrowMoveSpeedController newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as ArrowMoveSpeedController;
-                InventoryManager.Instance.RemoveItem(InventoryLocation.player, 10018);      //ลบ Arrow ออกจาก Inventory
+
+                InventoryManager.Instance.RemoveItem(InventoryLocation.player, 10018);      //ลบ Arrow ออกจาก Inventory 
 
                 newBullet.speed = bulletSpeed;
+
+                Debug.Log("Shoot!!!!!!!!!");
             }
         }
         else

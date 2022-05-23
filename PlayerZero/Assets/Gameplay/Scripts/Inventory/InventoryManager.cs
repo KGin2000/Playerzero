@@ -136,6 +136,8 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
         inventoryList.Add(inventoryItem);
 
         //DebugPrintInventoryList(inventoryList);
+
+        CheckItem(inventoryList);
     }
 
     private void AddItemAtPosition(List<InventoryItem> inventoryList, int itemCode, int position)
@@ -148,6 +150,8 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
         inventoryList[position] = inventoryItem;
 
         //DebugPrintInventoryList(inventoryList);
+
+        CheckItem(inventoryList);
     }
 
     public void SwapInventoryItems(InventoryLocation inventoryLocation, int fromItem, int toItem)
@@ -198,6 +202,7 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
         {
             return null;
         }
+        
     }
 
     public ItemDetails GetSelectedInventoryItemDetails(InventoryLocation inventoryLocation)     //46//
@@ -335,6 +340,8 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
 
             EventHandler.CallInventoryUpdatedEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
         }
+
+        CheckItem(inventoryList);
     }
 
     private void RemoveItemAtPosition(List<InventoryItem> inventoryList, int itemCode, int position)
@@ -367,12 +374,29 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
         selectedInventoryItem[(int)inventoryLocation] = itemCode;
     }
 
-    /*private void DebugPrintInventoryList(List<InventoryItem> inventoryList)
+    private void DebugPrintInventoryList(List<InventoryItem> inventoryList)
     {
         foreach(InventoryItem inventoryItem in inventoryList)
         {
             Debug.Log("Item Description : "+ InventoryManager.Instance.GetItemDetails(inventoryItem.itemCode).itemDescription + "  Item Quantity : " + inventoryItem.itemQuantity);
         }
         Debug.Log("******************************************************");
-    }*/
+    }
+
+    public void CheckItem(List<InventoryItem> inventoryList)
+    {
+        Debug.Log("Check");
+
+        foreach(InventoryItem inventoryItem in inventoryList)
+        {
+            if(InventoryManager.Instance.GetItemDetails(inventoryItem.itemCode).itemDescription == "Arrow")
+            {
+                Player.Instance.haveArrow = true;
+            }
+            else if(InventoryManager.Instance.GetItemDetails(inventoryItem.itemCode).itemDescription != "Arrow")
+            {
+                Player.Instance.haveArrow = false;
+            } 
+        }
+    }
 }
