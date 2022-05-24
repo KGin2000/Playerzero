@@ -174,6 +174,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 1924557117}
@@ -774,6 +782,14 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 1924557117}
@@ -1355,6 +1371,14 @@ PrefabInstance:
       propertyPath: slotNumber
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
@@ -2328,6 +2352,14 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 1924557117}
@@ -2679,7 +2711,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1043871721
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 027730d4ce34af84db00d4b9dac3fc0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4951,6 +4983,14 @@ PrefabInstance:
       propertyPath: slotNumber
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
@@ -7282,6 +7322,14 @@ PrefabInstance:
       propertyPath: slotNumber
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
@@ -12837,7 +12885,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2069473067
-  m_SortingLayer: 14
+  m_SortingLayer: 15
   m_SortingOrder: 0
   m_RenderMode: 2
   m_SortMode: 0
@@ -13117,6 +13165,14 @@ PrefabInstance:
       propertyPath: slotNumber
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
@@ -15338,6 +15394,14 @@ PrefabInstance:
       propertyPath: slotNumber
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
@@ -17973,6 +18037,14 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 1924557117}
@@ -18522,7 +18594,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.7767756, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -20140,7 +20212,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2069473067
-  m_SortingLayer: 14
+  m_SortingLayer: 15
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -25168,6 +25240,14 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
       objectReference: {fileID: 1924557117}
@@ -25550,6 +25630,14 @@ PrefabInstance:
       propertyPath: slotNumber
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 
@@ -30671,7 +30759,7 @@ SortingGroup:
   m_GameObject: {fileID: 3635738351045405411}
   m_Enabled: 1
   m_SortingLayerID: 1043871721
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
 --- !u!114 &1210553261193353753
 MonoBehaviour:
@@ -31601,7 +31689,7 @@ GameObject:
   - component: {fileID: 3635738351045405421}
   - component: {fileID: 3635738351045405417}
   - component: {fileID: 3635738351045405422}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -32131,7 +32219,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1043871721
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 5242402504339785698, guid: 3751198f3a3703a4ca495f547e87cfe9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -32378,6 +32466,14 @@ PrefabInstance:
       propertyPath: Crossbow
       value: 
       objectReference: {fileID: 403267456}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab1
+      value: 
+      objectReference: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: itemPrefab2
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 8da7bb2b62a063641a64e829eb6faec9, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryBar
       value: 

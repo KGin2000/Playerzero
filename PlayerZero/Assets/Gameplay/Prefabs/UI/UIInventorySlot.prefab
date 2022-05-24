@@ -312,10 +312,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a411b00eefae1e4bacf235ecd1de86b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MPosition: {x: 0, y: 0, z: 0}
+  Crossbow: {fileID: 0}
+  draggedItem: {fileID: 0}
   inventorySlotHightlight: {fileID: 3840498434377065373}
   inventorySlotImage: {fileID: 9204425895754449053}
   textMeshProUGUI: {fileID: 4438244975950259841}
   inventoryBar: {fileID: 0}
+  inventoryTextBoxPrefab: {fileID: 0}
+  isSelected: 0
   itemDetails:
     itemCode: 0
     itemType: 0
@@ -329,5 +334,7 @@ MonoBehaviour:
     canBeDropped: 0
     canBeEaten: 0
     canBeCarried: 0
+    canBeSell: 0
   itemPrefab: {fileID: 4141758708997405414, guid: 0e4ff4c0313720f45932312dfdbef725, type: 3}
   itemQuantity: 0
+  slotNumber: 0

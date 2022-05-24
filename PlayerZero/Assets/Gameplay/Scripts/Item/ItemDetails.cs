@@ -7,6 +7,7 @@ public class ItemDetails
 {
     public int itemCode;
     public ItemType itemType;
+    public ItemPrefabType itemPrefabType;
     public string itemDescription;
     public Sprite itemSprite;
     public string itemLongDescription;

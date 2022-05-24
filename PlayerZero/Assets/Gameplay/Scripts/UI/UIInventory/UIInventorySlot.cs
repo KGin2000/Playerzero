@@ -25,7 +25,11 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     [SerializeField] private GameObject inventoryTextBoxPrefab = null;
     [HideInInspector] public bool isSelected = false; // 32 // 
     [HideInInspector] public ItemDetails itemDetails;
-    [SerializeField] private GameObject itemPrefab = null;
+
+    [SerializeField] private GameObject getItemPrefab = null;
+    [SerializeField] private GameObject itemPrefab1 = null;
+    [SerializeField] private GameObject itemPrefab2 = null;
+
     [HideInInspector] public int itemQuantity;
     [SerializeField] private int slotNumber = 0;
 
@@ -149,7 +153,19 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             //if (gridPropertyDetails != null && gridPropertyDetails.canDropItem)   // out 46
             if (gridCursor.CursorPositionIsValid)
             {
-                GameObject itemGameObject = Instantiate(itemPrefab, MPosition, Quaternion.identity, parentItem);
+                switch (itemDetails.itemPrefabType)
+                {
+                    case ItemPrefabType.Item_Default:
+                    getItemPrefab = itemPrefab1;
+                    break;
+
+                    case ItemPrefabType.Item_Plant:
+                    getItemPrefab = itemPrefab2;
+                    break;
+                }
+
+                GameObject itemGameObject = Instantiate(getItemPrefab, MPosition, Quaternion.identity, parentItem);
+
                 Item item = itemGameObject.GetComponent<Item>();
                     //Debug.Log("Before item" + item.transform.rotation);
                 item.transform.Rotate(90.0f,0.0f,0.0f,Space.Self);

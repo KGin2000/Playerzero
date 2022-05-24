@@ -149,3 +149,11 @@ public enum ItemType
     none,
     count
 }
+
+public enum ItemPrefabType
+{
+    Item_Default,
+    Item_Plant,
+    Item_Meat,
+    count
+}

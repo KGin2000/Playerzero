@@ -15,6 +15,7 @@ MonoBehaviour:
   itemDetails:
   - itemCode: 10000
     itemType: 7
+    itemPrefabType: 0
     itemDescription: Wicker Basket
     itemSprite: {fileID: 21300000, guid: 0562c5d2fc9133b44a2eb01bdeabd0d7, type: 3}
     itemLongDescription: "\u0E15\u0E23\u0E30\u0E01\u0E25\u0E49\u0E32\u0E40\u0E01\u0E47\u0E1A\u0E1C\u0E25\u0E1C\u0E25\u0E34\u0E15"
@@ -28,6 +29,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10001
     itemType: 1
+    itemPrefabType: 0
     itemDescription: Orange
     itemSprite: {fileID: -1508740589214030948, guid: ea63f5f0faa39e541983b2d020993efa, type: 3}
     itemLongDescription: "\u0E40\u0E1B\u0E23\u0E35\u0E49\u0E22\u0E27\u0E08\u0E35\u0E4A\u0E14
@@ -42,6 +44,7 @@ MonoBehaviour:
     canBeSell: 1
   - itemCode: 10002
     itemType: 1
+    itemPrefabType: 1
     itemDescription: Apple
     itemSprite: {fileID: -3606841403275873578, guid: ea63f5f0faa39e541983b2d020993efa, type: 3}
     itemLongDescription: "\u0E2B\u0E27\u0E32\u0E19 \u0E0A\u0E38\u0E48\u0E21\u0E09\u0E48\u0E33
@@ -56,6 +59,7 @@ MonoBehaviour:
     canBeSell: 1
   - itemCode: 10003
     itemType: 8
+    itemPrefabType: 0
     itemDescription: Grass1
     itemSprite: {fileID: 5056341712583817290, guid: 2993cc048f8619c4a97ffd110ede7bdd, type: 3}
     itemLongDescription: 
@@ -69,6 +73,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10004
     itemType: 2
+    itemPrefabType: 0
     itemDescription: Watering Can
     itemSprite: {fileID: 5471719376562228750, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
     itemLongDescription: "\u0E23\u0E14\u0E19\u0E49\u0E33"
@@ -82,6 +87,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10005
     itemType: 3
+    itemPrefabType: 0
     itemDescription: HoeTool
     itemSprite: {fileID: -5619285666156628218, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
     itemLongDescription: "\u0E08\u0E2D\u0E1A\u0E43\u0E0A\u0E49\u0E02\u0E38\u0E14"
@@ -95,6 +101,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10006
     itemType: 4
+    itemPrefabType: 0
     itemDescription: Axe
     itemSprite: {fileID: -7908162705200595085, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
     itemLongDescription: "\u0E02\u0E27\u0E32\u0E19\u0E43\u0E0A\u0E49\u0E15\u0E31\u0E14"
@@ -108,6 +115,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10007
     itemType: 5
+    itemPrefabType: 0
     itemDescription: Pickaxe
     itemSprite: {fileID: -4312329199005865351, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
     itemLongDescription: "\u0E40\u0E2A\u0E35\u0E22\u0E21\u0E40\u0E2A\u0E35\u0E49\u0E22\u0E21"
@@ -121,6 +129,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10008
     itemType: 6
+    itemPrefabType: 0
     itemDescription: ReapingTool
     itemSprite: {fileID: -3425871062690078838, guid: ae080c770a2425a46bc0192cc9d688cb, type: 3}
     itemLongDescription: "\u0E16\u0E32\u0E07\u0E22\u0E48\u0E32"
@@ -134,6 +143,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10009
     itemType: 0
+    itemPrefabType: 0
     itemDescription: CarrotSeed
     itemSprite: {fileID: 5943964564357768285, guid: 0541c90da67a9e34bbbee4e84b9b1dfd, type: 3}
     itemLongDescription: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E41\u0E04\u0E23\u0E2D\u0E17"
@@ -147,6 +157,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10010
     itemType: 0
+    itemPrefabType: 0
     itemDescription: CabbageSeed
     itemSprite: {fileID: 2681426169418703813, guid: 0541c90da67a9e34bbbee4e84b9b1dfd, type: 3}
     itemLongDescription: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E01\u0E30\u0E2B\u0E25\u0E48\u0E33\u0E1B\u0E25\u0E35"
@@ -160,6 +171,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10011
     itemType: 1
+    itemPrefabType: 0
     itemDescription: Carrot
     itemSprite: {fileID: -2996002688947889658, guid: e7be5ad07f07a354e9f4d47d993db4b0, type: 3}
     itemLongDescription: "\u0E41\u0E04\u0E23\u0E2D\u0E17"
@@ -173,6 +185,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10012
     itemType: 1
+    itemPrefabType: 0
     itemDescription: Cabbage
     itemSprite: {fileID: 7086760253628195734, guid: e7be5ad07f07a354e9f4d47d993db4b0, type: 3}
     itemLongDescription: "\u0E01\u0E30\u0E2B\u0E25\u0E48\u0E33\u0E1B\u0E25\u0E35"
@@ -186,6 +199,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10013
     itemType: 0
+    itemPrefabType: 0
     itemDescription: Oak Acorn
     itemSprite: {fileID: 21300000, guid: 5121703ca58e3c147b4ce26f23aa0333, type: 3}
     itemLongDescription: "\u0E42\u0E2D\u0E4A\u0E01"
@@ -199,6 +213,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10014
     itemType: 1
+    itemPrefabType: 0
     itemDescription: Wood
     itemSprite: {fileID: 21300000, guid: b9acdfd512d31a840b7d68fde4a17d8d, type: 3}
     itemLongDescription: "\u0E44\u0E21\u0E49"
@@ -212,6 +227,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10015
     itemType: 0
+    itemPrefabType: 0
     itemDescription: Oak Tree Stump
     itemSprite: {fileID: 21300000, guid: 17ca5f0be0ff94045a2ab9dcd2640ca7, type: 3}
     itemLongDescription: 
@@ -225,6 +241,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10016
     itemType: 1
+    itemPrefabType: 0
     itemDescription: Pumkin Torch
     itemSprite: {fileID: 21300000, guid: 3b90c479b49c5bb4cbed660f31a3e1a2, type: 3}
     itemLongDescription: "\u0E15\u0E1A\u0E44\u0E1F\u0E1F\u0E31\u0E01\u0E17\u0E2D\u0E07\u0E08\u0E37\u0E4B\u0E27"
@@ -238,6 +255,7 @@ MonoBehaviour:
     canBeSell: 1
   - itemCode: 10017
     itemType: 9
+    itemPrefabType: 0
     itemDescription: Crossbow
     itemSprite: {fileID: 21300000, guid: 027730d4ce34af84db00d4b9dac3fc0d, type: 3}
     itemLongDescription: "\u0E2B\u0E19\u0E49\u0E32\u0E44\u0E21\u0E49"
@@ -251,6 +269,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10018
     itemType: 11
+    itemPrefabType: 0
     itemDescription: Arrow
     itemSprite: {fileID: 21300000, guid: d16b078db5d96ac4cab3f2fdd631ff4d, type: 3}
     itemLongDescription: "\u0E25\u0E39\u0E01\u0E28\u0E23"
@@ -264,6 +283,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10019
     itemType: 1
+    itemPrefabType: 0
     itemDescription: Pumpkin
     itemSprite: {fileID: -4552040448214343433, guid: 2e6494951dce983448b29d574e6c5f0f, type: 3}
     itemLongDescription: "\u0E1F\u0E31\u0E01\u0E17\u0E2D\u0E07"
@@ -277,6 +297,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10020
     itemType: 1
+    itemPrefabType: 0
     itemDescription: Sunflower
     itemSprite: {fileID: -5888745959762517969, guid: 2e6494951dce983448b29d574e6c5f0f, type: 3}
     itemLongDescription: "\u0E1F\u0E31\u0E01\u0E17\u0E2D\u0E07"
@@ -290,6 +311,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10021
     itemType: 0
+    itemPrefabType: 0
     itemDescription: SunflowerSeed
     itemSprite: {fileID: -6629125783200732662, guid: a6e5ebeed6fbedd4db600f5d29f9fec1, type: 3}
     itemLongDescription: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E17\u0E32\u0E19\u0E15\u0E30\u0E27\u0E31\u0E19"
@@ -303,6 +325,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10022
     itemType: 0
+    itemPrefabType: 0
     itemDescription: PumpkinSeed
     itemSprite: {fileID: 1857384008819250416, guid: a6e5ebeed6fbedd4db600f5d29f9fec1, type: 3}
     itemLongDescription: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E1F\u0E31\u0E01\u0E17\u0E2D\u0E07"
@@ -316,6 +339,7 @@ MonoBehaviour:
     canBeSell: 0
   - itemCode: 10023
     itemType: 0
+    itemPrefabType: 0
     itemDescription: AppleSeed
     itemSprite: {fileID: -5674467626565343100, guid: a6e5ebeed6fbedd4db600f5d29f9fec1, type: 3}
     itemLongDescription: "\u0E40\u0E21\u0E25\u0E47\u0E14\u0E41\u0E2D\u0E1B\u0E40\u0E1B\u0E34\u0E49\u0E25"
