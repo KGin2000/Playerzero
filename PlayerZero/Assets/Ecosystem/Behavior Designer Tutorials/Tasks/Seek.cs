@@ -124,6 +124,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Tutorials
         /// </summary>
         public override void OnEnd()
         {
+            navMeshAgent.isStopped = true;
+            navMeshAgent.ResetPath();
             IsRunning.Value = false;
             Stop();
         }

@@ -25,6 +25,7 @@ TagManager:
   - NavmeshBaker
   - ImmortalObject
   - meat
+  - WolfArea
   layers:
   - Default
   - TransparentFX

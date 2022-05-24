@@ -230,14 +230,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2603137418851068131}
+  - component: {fileID: 3498749373804182740}
   - component: {fileID: 5248234664534302307}
   - component: {fileID: 5178424598483779493}
   - component: {fileID: 4275915449195069256}
   - component: {fileID: 8823924292282936563}
-  - component: {fileID: 3498749373804182740}
-  - component: {fileID: 8126303112642474945}
-  - component: {fileID: 7887415083606214694}
   - component: {fileID: -3607917002310316731}
+  - component: {fileID: 8126303112642474945}
   m_Layer: 7
   m_Name: NewRabbit
   m_TagString: 1
@@ -262,6 +261,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &3498749373804182740
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2603137418851068140}
+  m_Enabled: 0
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 1
+  m_StoppingDistance: 0.5
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 0
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!136 &5248234664534302307
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -318,28 +339,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87d0c6c4641c8d04c925853cdb75d1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!195 &3498749373804182740
-NavMeshAgent:
+--- !u!114 &-3607917002310316731
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2603137418851068140}
   m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 1
-  avoidancePriority: 50
-  m_AngularSpeed: 0
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee214c3d3dce1448abd44e947f1a3a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rabbit
+  maxHealth: 100
+  currentHealth: 0
+  maxHungryPoint: 100
+  currentHungryPoint: 0
+  hungryRate: 0
+  hungryRateNormalMode: 2
+  hungryRateSleepMode: 3
+  hungryRateFastingMode: 6
+  Meat: {fileID: 6651033587098069460, guid: 96c61dd56a2364c4ba4595fd86a5a8d3, type: 3}
+  floatTime: 0
+  countEat: 0
+  Damaged: 0
 --- !u!114 &8126303112642474945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,7 +392,7 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnRabbitCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnGameObject","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Wolf","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnEnemies","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObjectList","Name":"randomlist","IsShared":true,"List`1mValue":[null,null,null]},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"returnStatus","IsShared":true}]}'
+      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnRabbitCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnGameObject","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Wolf","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnEnemies","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObjectList","Name":"randomlist","IsShared":true,"List`1mValue":[null,null,null]},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"returnStatus","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnPlayer","IsShared":true}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
@@ -380,73 +404,6 @@ MonoBehaviour:
       Version: 1.6.8
   gizmoViewMode: 2
   showBehaviorDesignerGizmo: 1
---- !u!23 &7887415083606214694
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2603137418851068140}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-3607917002310316731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2603137418851068140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cee214c3d3dce1448abd44e947f1a3a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Rabbit
-  maxHealth: 100
-  currentHealth: 0
-  maxHungryPoint: 100
-  currentHungryPoint: 0
-  hungryRate: 0
-  hungryRateNormalMode: 2
-  hungryRateSleepMode: 3
-  hungryRateFastingMode: 6
-  Meat: {fileID: 6651033587098069460, guid: 96c61dd56a2364c4ba4595fd86a5a8d3, type: 3}
-  floatTime: 0
-  countEat: 0
-  Damaged: 0
 --- !u!1 &2791013059688474060
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ public class NavMeshBaker : SingletonMonobehaviour<NavMeshBaker>
 
     void Awake()
     {
-        //Bake();
+        Bake();
     }
 
     void Start()

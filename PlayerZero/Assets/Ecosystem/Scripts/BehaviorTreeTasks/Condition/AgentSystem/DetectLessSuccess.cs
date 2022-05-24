@@ -42,7 +42,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                 x = Convert.ToInt32(a);
 
                 string b = enemy.tag;
-                Debug.Log("b = " + b);
+                //Debug.Log("b = " + b);
                // y = float.Parse(b);
                 y = Convert.ToInt32(b);
 

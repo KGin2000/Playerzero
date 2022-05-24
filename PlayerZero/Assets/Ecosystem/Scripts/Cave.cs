@@ -9,25 +9,15 @@ public class Cave : MonoBehaviour
 {
     public string Name;
 
+    Collider rabbitCollider;
+    Collider rabbitOtherCollider;
+
+    Renderer rend;
     //public string Status;
     //private SharedString textStatus;
 
     public string orginTag;
 
-    void Awake()
-    {
-        
-    }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     void OnTriggerEnter(Collider collider)
     {       
@@ -40,6 +30,14 @@ public class Cave : MonoBehaviour
 
             //if ((SharedString)behaviorTree.GetVariable("returnStatus").Contains(Status)) //มีปัญห
             //{ 
+                // rabbitCollider = collider.GetComponent<Collider>();
+                // rabbitCollider.enabled = false;
+
+                GameObject a = collider.gameObject.transform.GetChild(0).gameObject;
+                rend = a.GetComponent<Renderer>();
+                //rend = collider.GetComponent<Renderer>();
+                rend.enabled = false;
+
                 collider.gameObject.tag = "ImmortalObject";
                 collider.gameObject.layer = 31;
             //}
@@ -56,6 +54,13 @@ public class Cave : MonoBehaviour
     {
         if (other.name.Contains(Name))
         {
+            // rabbitOtherCollider = other.GetComponent<Collider>();
+            // rabbitOtherCollider.enabled = true;
+
+            GameObject b = other.gameObject.transform.GetChild(0).gameObject;
+            rend = b.GetComponent<Renderer>();
+            rend.enabled = true;
+
             other.gameObject.tag = orginTag;
             other.gameObject.layer = 7;
 

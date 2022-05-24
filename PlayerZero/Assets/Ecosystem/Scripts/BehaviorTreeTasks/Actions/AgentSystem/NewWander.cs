@@ -69,6 +69,13 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             }
             return validDestination;
         }
+
+        public override void OnEnd()
+        {
+            navMeshAgent.isStopped = true;
+            navMeshAgent.ResetPath();
+            Debug.Log("wander End");
+        }
     }
 }
 

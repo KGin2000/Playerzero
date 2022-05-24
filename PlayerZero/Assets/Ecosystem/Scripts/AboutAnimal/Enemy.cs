@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
     public int countEat = 0; 
     public float Damaged;
 
+    protected UnityEngine.AI.NavMeshAgent navMeshAgent;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class Enemy : MonoBehaviour
         gameObject.name = Name;
         currentHealth = maxHealth;
         currentHungryPoint = maxHungryPoint;    
+        gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
     }
 
     void Update() 
