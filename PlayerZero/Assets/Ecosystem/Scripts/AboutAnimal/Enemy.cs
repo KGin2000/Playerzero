@@ -4,12 +4,13 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.UI;
 using System;
-//using BehaviorDesigner.Runtime;
+using BehaviorDesigner.Runtime;
 
 
 
 public class Enemy : MonoBehaviour
 {
+    BehaviorTree behaviorTree;
     [SerializeField] private string Name;
      public float maxHealth;
      public float currentHealth;
@@ -30,6 +31,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        behaviorTree = gameObject.GetComponent<BehaviorTree>();
         hungryRate = hungryRateNormalMode;
         gameObject.name = Name;
         currentHealth = maxHealth;
@@ -56,6 +58,7 @@ public class Enemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
+            behaviorTree.enabled = false;
             Destroy(gameObject);
             DropMeat();
         }

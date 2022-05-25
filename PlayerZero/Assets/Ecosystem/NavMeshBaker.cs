@@ -51,19 +51,19 @@ public class NavMeshBaker : SingletonMonobehaviour<NavMeshBaker>
     {
         if(Input.GetKey(KeyCode.Q))
         {
-            Debug.Log("IFBake");
+            //Debug.Log("IFBake");
             Bake();
         }
     }
 
     public void Bake()
     {
-        Debug.Log("Bake");
+        //Debug.Log("Bake");
         for (int i = 0; i < surfaces.Length; i++)
         {
             
             surfaces[i].BuildNavMesh();
-            Debug.Log("ForBake");
+            //Debug.Log("ForBake");
         }
     }
 

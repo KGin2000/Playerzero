@@ -15,6 +15,10 @@ public class CheckAllAgent : SingletonMonobehaviour<CheckAllAgent>
 
 
     private float time;
+    void Awake()
+    {
+        maxTree = GameObject.FindGameObjectsWithTag("tree").Length;
+    }
 
     void Start()
     {
@@ -29,6 +33,7 @@ public class CheckAllAgent : SingletonMonobehaviour<CheckAllAgent>
         Wildboar = GameObject.FindGameObjectsWithTag("2").Length;
         Wolf = GameObject.FindGameObjectsWithTag("3").Length;
         Tree = GameObject.FindGameObjectsWithTag("tree").Length;
+
 
 
 

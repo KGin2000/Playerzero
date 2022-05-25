@@ -11,6 +11,9 @@ public class Cave : MonoBehaviour
 
     Collider rabbitCollider;
     Collider rabbitOtherCollider;
+    BehaviorTree behaviorTree;
+    public float colliderRange;
+    public LayerMask enemyLayers;
 
     Renderer rend;
     //public string Status;
@@ -20,12 +23,17 @@ public class Cave : MonoBehaviour
 
 
     void OnTriggerEnter(Collider collider)
-    {       
+    {   
         if (collider.name.Contains(Name))
         {
             //GameObject a = collider.gameObject.GetComponent<GameObject>();
-            //behaviorTree = collider.GetComponent<BehaviorTree>();
-            //textStatus = (SharedString)behaviorTree.GetVariable("returnStatus");
+            behaviorTree = collider.GetComponent<BehaviorTree>();
+            SharedString textStatus = (SharedString)behaviorTree.GetVariable("returnStatus");
+
+            if(textStatus.Value == null)
+            {
+                Debug.Log("textStatus = "   + textStatus.Value);
+            }
            // Debug.Log(textStatus);
 
             //if ((SharedString)behaviorTree.GetVariable("returnStatus").Contains(Status)) //มีปัญห

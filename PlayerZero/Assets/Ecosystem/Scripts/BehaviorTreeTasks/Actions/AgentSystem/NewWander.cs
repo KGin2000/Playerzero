@@ -74,7 +74,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         {
             navMeshAgent.isStopped = true;
             navMeshAgent.ResetPath();
-            Debug.Log("wander End");
+            //Debug.Log("wander End");
         }
     }
 }
