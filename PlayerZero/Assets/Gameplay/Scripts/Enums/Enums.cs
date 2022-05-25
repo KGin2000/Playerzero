@@ -155,5 +155,6 @@ public enum ItemPrefabType
     Item_Default,
     Item_Plant,
     Item_Meat,
+    Item_Light,
     count
 }

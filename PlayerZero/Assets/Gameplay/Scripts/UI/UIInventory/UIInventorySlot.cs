@@ -26,9 +26,13 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     [HideInInspector] public bool isSelected = false; // 32 // 
     [HideInInspector] public ItemDetails itemDetails;
 
-    [SerializeField] private GameObject getItemPrefab = null;
-    [SerializeField] private GameObject itemPrefab1 = null;
-    [SerializeField] private GameObject itemPrefab2 = null;
+
+    //      Get ItemPrefab
+    [SerializeField] private GameObject itemPrefab = null;
+    [SerializeField] private GameObject getItemPrefab1 = null;
+    [SerializeField] private GameObject getItemPrefab2 = null;
+    [SerializeField] private GameObject getItemPrefab3 = null;
+
 
     [HideInInspector] public int itemQuantity;
     [SerializeField] private int slotNumber = 0;
@@ -156,15 +160,19 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                 switch (itemDetails.itemPrefabType)
                 {
                     case ItemPrefabType.Item_Default:
-                    getItemPrefab = itemPrefab1;
+                    itemPrefab = getItemPrefab1;
                     break;
 
                     case ItemPrefabType.Item_Plant:
-                    getItemPrefab = itemPrefab2;
+                    itemPrefab = getItemPrefab2;
+                    break;
+
+                    case ItemPrefabType.Item_Light:
+                    itemPrefab = getItemPrefab3;
                     break;
                 }
 
-                GameObject itemGameObject = Instantiate(getItemPrefab, MPosition, Quaternion.identity, parentItem);
+                GameObject itemGameObject = Instantiate(itemPrefab, MPosition, Quaternion.identity, parentItem);
 
                 Item item = itemGameObject.GetComponent<Item>();
                     //Debug.Log("Before item" + item.transform.rotation);

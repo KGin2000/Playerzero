@@ -7,6 +7,9 @@ public class SceneItemsManager : SingletonMonobehaviour<SceneItemsManager>, ISav
 {
     private Transform parentItem;
     [SerializeField] private GameObject itemPrefab = null;
+    [SerializeField] private GameObject getItemPrefab1 = null;
+    [SerializeField] private GameObject getItemPrefab2 = null;
+    [SerializeField] private GameObject getItemPrefab3 = null;
 
     private string _iSaveableUniqueID;
     public string ISaveableUniqueID { get { return _iSaveableUniqueID; } set { _iSaveableUniqueID = value;}}
@@ -40,7 +43,7 @@ public class SceneItemsManager : SingletonMonobehaviour<SceneItemsManager>, ISav
 
     public void InstantiateSceneItem(int itemCode, Vector3 itemPosition)
     {
-        GameObject itemGameObject = Instantiate(itemPrefab, itemPosition, Quaternion.identity, parentItem);
+        GameObject itemGameObject = Instantiate(getItemPrefab1, itemPosition, Quaternion.identity, parentItem);
         Item item = itemGameObject.GetComponent<Item>();
         item.transform.Rotate(90.0f,0.0f,0.0f,Space.Self);
         item.Init(itemCode);
@@ -52,8 +55,18 @@ public class SceneItemsManager : SingletonMonobehaviour<SceneItemsManager>, ISav
 
         foreach (SceneItem sceneItem in sceneItemList)
         {
+            Debug.Log(sceneItem.itemCode);
+            if(sceneItem.itemCode == 10016)
+            {
+                itemPrefab = getItemPrefab3;
+            }
+            else
+            {
+                itemPrefab = getItemPrefab1;
+            }
+            
             itemGameObject = Instantiate(itemPrefab, new Vector3(sceneItem.position.x, sceneItem.position.y, sceneItem.position.z), Quaternion.identity, parentItem);
-
+            
             Item item = itemGameObject.GetComponent<Item>();
             item.transform.Rotate(90.0f,0.0f,0.0f,Space.Self);
             item.ItemCode = sceneItem.itemCode;

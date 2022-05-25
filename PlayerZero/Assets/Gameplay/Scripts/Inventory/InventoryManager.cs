@@ -386,7 +386,7 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
 
     public void CheckItemIn(List<InventoryItem> inventoryList)
     {
-        Debug.Log("Check");
+        // Debug.Log("Check");
 
         foreach(InventoryItem inventoryItem in inventoryList)
         {

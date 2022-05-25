@@ -694,6 +694,9 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
                                 }
                         }
 
+                        GetValueDaily.Instance.CheckRain();         // Check Update Rain
+                        TilemapManager.Instance.SetPoundTilemap();  // Check Update Pound
+                        
                         gridPropertyDetails.daysSinceWatered = -1;
 
                         SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails, sceneSave.gridPropertyDetailsDictionary);

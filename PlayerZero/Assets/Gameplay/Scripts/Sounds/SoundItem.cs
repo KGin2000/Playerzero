@@ -5,6 +5,7 @@ public class SoundItem
 {
     public SoundName soundName;
     public AudioClip soundClip;
+    public AudioClip soundClipTwo;
     public string soundDescription;
     [Range(0.1f, 1.5f)]
     public float soundPitchRandomVariationMin = 0.8f;

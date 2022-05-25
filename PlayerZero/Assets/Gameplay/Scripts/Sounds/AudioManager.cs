@@ -70,6 +70,14 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
         EventHandler.AfterSceneLoadEvent -= PlaySceneSounds;
     }
 
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.B))
+        {
+            PlaySceneSounds();
+        }
+    }
+
     private void PlaySceneSounds()
     {
         SoundItem musicSoundItem = null;
@@ -142,7 +150,17 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
         gameAudioMixer.SetFloat("AmbientVolume", ConvertSoundVolumeDecimalFractionToDecibels(ambientSoundItem.soundVolume));
 
         //Set clip & play
-        ambientSoundAudioSource.clip = ambientSoundItem.soundClip;
+        Debug.Log(ambientSoundItem.soundClip);
+        
+        if(GetValueDaily.Instance.Rainsound)
+        {
+            ambientSoundAudioSource.clip = ambientSoundItem.soundClipTwo;
+        }
+        else
+        {
+            ambientSoundAudioSource.clip = ambientSoundItem.soundClip;
+        }
+
         ambientSoundAudioSource.Play();
 
         //Transition to ambient
