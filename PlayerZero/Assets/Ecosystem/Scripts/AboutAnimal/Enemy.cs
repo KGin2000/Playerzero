@@ -4,12 +4,13 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.UI;
 using System;
-//using BehaviorDesigner.Runtime;
+using BehaviorDesigner.Runtime;
 
 
 
 public class Enemy : MonoBehaviour
 {
+    BehaviorTree behaviorTree;
     [SerializeField] private string Name;
      public float maxHealth;
      public float currentHealth;
@@ -21,18 +22,21 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int hungryRateFastingMode;
 
     [SerializeField] private GameObject Meat = null;
-    private int NumberOfMeat = 3;
+    public int NumberOfMeat;
     public float floatTime;
     public int countEat = 0; 
     public float Damaged;
 
+    protected UnityEngine.AI.NavMeshAgent navMeshAgent;
 
     void Start()
     {
+        behaviorTree = gameObject.GetComponent<BehaviorTree>();
         hungryRate = hungryRateNormalMode;
         gameObject.name = Name;
         currentHealth = maxHealth;
         currentHungryPoint = maxHungryPoint;    
+        gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
     }
 
     void Update() 
@@ -54,6 +58,7 @@ public class Enemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
+            behaviorTree.enabled = false;
             Destroy(gameObject);
             DropMeat();
         }

@@ -804,6 +804,7 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
     {
         if(PlayerDead == true)
         {
+            gameObject.layer = 31;
             PlayerStatus.Instance.isDead = false; 
             UIManager.Instance.EnableFadeBlack();
             StartCoroutine(Respawn());
@@ -821,6 +822,7 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
         Debug.Log("Die");
         // PlayerStatus.Instance.Heal(5);
         SaveLoadManager.Instance.LoadDataFromFile();
+        gameObject.layer = 10;
         yield return new WaitForSeconds(1f);
 
         screenTint.UnTint();

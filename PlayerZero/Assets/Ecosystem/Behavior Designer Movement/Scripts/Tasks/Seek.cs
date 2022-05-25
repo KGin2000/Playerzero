@@ -31,7 +31,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             IsRunning.Value = true;
             if (HasArrived()) 
             {   
-                Debug.Log("Hasarrived");
+                //Debug.Log("Hasarrived");
 
                 IsRunning.Value = false;
                 //target.Value = null;

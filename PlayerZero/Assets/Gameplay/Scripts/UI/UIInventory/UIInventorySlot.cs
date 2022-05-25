@@ -32,6 +32,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     [SerializeField] private GameObject getItemPrefab1 = null;
     [SerializeField] private GameObject getItemPrefab2 = null;
     [SerializeField] private GameObject getItemPrefab3 = null;
+    [SerializeField] private GameObject getItemPrefab4 = null;
 
 
     [HideInInspector] public int itemQuantity;
@@ -169,6 +170,10 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
                     case ItemPrefabType.Item_Light:
                     itemPrefab = getItemPrefab3;
+                    break;
+
+                    case ItemPrefabType.Item_Meat:
+                    itemPrefab = getItemPrefab4;
                     break;
                 }
 

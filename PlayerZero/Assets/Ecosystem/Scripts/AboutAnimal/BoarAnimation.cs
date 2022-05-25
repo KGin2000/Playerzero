@@ -66,6 +66,7 @@ public class BoarAnimation : MonoBehaviour
             animator.SetBool("Idle", false);
             animator.SetBool("Run", false);
             animator.SetBool("Walk", true);
+            animator.SetBool("Sleep", false);
             
 
             //Debug.Log(ifRun);
@@ -74,6 +75,7 @@ public class BoarAnimation : MonoBehaviour
                 animator.SetBool("Idle", false);
                 animator.SetBool("Run", true);
                 animator.SetBool("Walk", false);
+                animator.SetBool("Sleep", false);
             }
 
             
@@ -88,6 +90,7 @@ public class BoarAnimation : MonoBehaviour
             animator.SetBool("Idle", false);
             animator.SetBool("Run", false);
             animator.SetBool("Walk", true);
+            animator.SetBool("Sleep", false);
 
 
             //Debug.Log(ifRun);
@@ -96,6 +99,7 @@ public class BoarAnimation : MonoBehaviour
                 animator.SetBool("Idle", false);
                 animator.SetBool("Run", true);
                 animator.SetBool("Walk", false);
+                animator.SetBool("Sleep", false);
             }
 
             lastXVal = transform.position.x;

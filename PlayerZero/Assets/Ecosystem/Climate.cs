@@ -76,11 +76,13 @@ public class Climate : MonoBehaviour
 
     void Humidity() // ความชื้นในอากาส
     {    
-        if (checkAllAgent.maxTree != 0)
-        {
-            treeRatio = (checkAllAgent.Tree / checkAllAgent.maxTree);
-            humidity = treeRatio * 2f; 
-        }
+        //Debug.Log("checkAllAgent.maxTree = " + checkAllAgent.maxTree);
+
+        //Debug.Log("humidity");
+
+        humidity = (checkAllAgent.Tree / 235);
+            //humidity = treeRatio;//* 2f; 
+        
         // else if (checkAllAgent.maxTree == 0)
         // {
         //     treeRatio = 1;
@@ -123,30 +125,30 @@ public class Climate : MonoBehaviour
 
 
 
-    /*void Rain()
-    {
-        if (lastRate != newRate)
-        {
-            Debug.Log(" if ");
-            Debug.Log(newRate);
-            for (int i = 0; i < newRate; i++)
-            {
-                Debug.Log(" for");
-                rainRate[i] = "rainning";
-                Debug.Log(" rainRate[i] " + i + " = " + rainRate[i]);
+    // void Rain()
+    // {
+    //     if (lastRate != newRate)
+    //     {
+    //         Debug.Log(" if ");
+    //         Debug.Log(newRate);
+    //         for (int i = 0; i < newRate; i++)
+    //         {
+    //             Debug.Log(" for");
+    //             rainRate[i] = "rainning";
+    //             Debug.Log(" rainRate[i] " + i + " = " + rainRate[i]);
 
-                randomNum = Random.Range(0, 10);
+    //             randomNum = Random.Range(0, 10);
 
-                if (rainRate[randomNum] == "rainning")
-                {
-                    Debug.Log("rainning");
-                    lastRate = newRate;
-                }
-                else lastRate = newRate;
-            }
+    //             if (rainRate[randomNum] == "rainning")
+    //             {
+    //                 Debug.Log("rainning");
+    //                 lastRate = newRate;
+    //             }
+    //             else lastRate = newRate;
+    //         }
 
-            lastRate = newRate;
-        }          
-    }*/   
+    //         lastRate = newRate;
+    //     }          
+    // }
 }
 

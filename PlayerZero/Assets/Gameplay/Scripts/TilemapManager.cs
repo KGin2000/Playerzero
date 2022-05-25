@@ -21,7 +21,7 @@ public class TilemapManager : SingletonMonobehaviour<TilemapManager>
 
     void Update()
     {
-        IfDrought = GetValueDaily.Instance.Drought;
+        IfDrought = EnvironmentManager.Instance.Drought;
     }
 
     public void SetPoundTilemap()

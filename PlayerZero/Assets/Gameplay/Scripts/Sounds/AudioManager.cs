@@ -152,7 +152,7 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
         //Set clip & play
         Debug.Log(ambientSoundItem.soundClip);
         
-        if(GetValueDaily.Instance.Rainsound)
+        if(EnvironmentManager.Instance.Rainsound)
         {
             ambientSoundAudioSource.clip = ambientSoundItem.soundClipTwo;
         }

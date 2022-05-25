@@ -206,6 +206,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
       objectReference: {fileID: 6620183514097789881, guid: 91a738631de12c8459e4efac6f253a94, type: 3}
@@ -834,6 +838,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
       objectReference: {fileID: 6620183514097789881, guid: 91a738631de12c8459e4efac6f253a94, type: 3}
@@ -1443,6 +1451,10 @@ PrefabInstance:
       propertyPath: getItemPrefab3
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
@@ -2396,6 +2408,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6c204bcb3724d043855eed6ab4da9e3, type: 3}
+--- !u!1001 &288808360
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898322, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392932440002898324, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
+      propertyPath: m_Name
+      value: InfomationManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 452673873e5a9ee44b2e16ad4a4d32b3, type: 3}
 --- !u!1001 &292381744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2443,6 +2512,10 @@ PrefabInstance:
       propertyPath: getItemPrefab3
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
@@ -5096,6 +5169,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
       objectReference: {fileID: 6620183514097789881, guid: 91a738631de12c8459e4efac6f253a94, type: 3}
@@ -7454,6 +7531,10 @@ PrefabInstance:
       propertyPath: getItemPrefab3
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
@@ -13318,6 +13399,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
       objectReference: {fileID: 6620183514097789881, guid: 91a738631de12c8459e4efac6f253a94, type: 3}
@@ -15566,6 +15651,10 @@ PrefabInstance:
       propertyPath: getItemPrefab3
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
@@ -17982,7 +18071,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1349400819
 GameObject:
@@ -18231,6 +18320,10 @@ PrefabInstance:
       propertyPath: getItemPrefab3
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
@@ -18777,7 +18870,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.777561, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -25455,6 +25548,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
       objectReference: {fileID: 6620183514097789881, guid: 91a738631de12c8459e4efac6f253a94, type: 3}
@@ -25866,6 +25963,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 
       objectReference: {fileID: 6620183514097789881, guid: 91a738631de12c8459e4efac6f253a94, type: 3}
@@ -26030,7 +26131,7 @@ Transform:
   - {fileID: 1995422223}
   - {fileID: 1620737769}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1686730110
 GameObject:
@@ -28727,7 +28828,7 @@ GameObject:
   - component: {fileID: 1948631061}
   m_Layer: 0
   m_Name: EnvironmentManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28746,9 +28847,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hot: 0
   Rain: 0
-  Rainsound: 1
-  Raining: {fileID: 1625495970}
+  Rainsound: 0
   Drought: 0
+  Rain_Probability: 5
+  x: 0
+  stackRain: 0
+  Raining: {fileID: 1625495970}
 --- !u!4 &1948631062
 Transform:
   m_ObjectHideFlags: 0
@@ -32769,6 +32873,10 @@ PrefabInstance:
       propertyPath: getItemPrefab3
       value: 
       objectReference: {fileID: 8791288847486227903, guid: ff848ce2dd94be0489487796b672a91f, type: 3}
+    - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
+      propertyPath: getItemPrefab4
+      value: 
+      objectReference: {fileID: 644110907438095711, guid: 5bb383c2678c71946930081c0451e427, type: 3}
     - target: {fileID: -6319516601566042015, guid: a7687b0a54cbbb64291ae8c6c2d9f943, type: 3}
       propertyPath: inventoryTextBoxPrefab
       value: 

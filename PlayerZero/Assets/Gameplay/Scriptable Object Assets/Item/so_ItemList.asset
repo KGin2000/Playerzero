@@ -351,3 +351,45 @@ MonoBehaviour:
     canBeEaten: 0
     canBeCarried: 1
     canBeSell: 0
+  - itemCode: 10024
+    itemType: 1
+    itemPrefabType: 2
+    itemDescription: Rabbit Meat
+    itemSprite: {fileID: 6669852852261953786, guid: 0249d1606f45cab479292f8e73aee514, type: 3}
+    itemLongDescription: "\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E01\u0E23\u0E30\u0E15\u0E48\u0E32\u0E22"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+    canBeSell: 0
+  - itemCode: 10025
+    itemType: 1
+    itemPrefabType: 2
+    itemDescription: Boar Meat
+    itemSprite: {fileID: 2073203306736515940, guid: 0249d1606f45cab479292f8e73aee514, type: 3}
+    itemLongDescription: "\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E21\u0E39\u0E1B\u0E48\u0E32"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+    canBeSell: 0
+  - itemCode: 10026
+    itemType: 1
+    itemPrefabType: 2
+    itemDescription: Wolf Meat
+    itemSprite: {fileID: 8984754096541894249, guid: 0249d1606f45cab479292f8e73aee514, type: 3}
+    itemLongDescription: "\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E21\u0E32\u0E1B\u0E48\u0E32"
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+    canBeSell: 0

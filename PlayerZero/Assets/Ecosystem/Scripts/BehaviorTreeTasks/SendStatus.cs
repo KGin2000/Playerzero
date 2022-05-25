@@ -13,7 +13,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
             if(statusToSend != null)
             {
                 Status.Value = statusToSend;
-                Debug.Log("ผ่านนนนนนนนน");
+                //Debug.Log("ผ่านนนนนนนนน");
                 return TaskStatus.Success;
             }
             else return TaskStatus.Failure;

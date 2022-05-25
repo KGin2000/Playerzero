@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3705023747900221980}
   - component: {fileID: 4624413319252195828}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bush_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,9 +95,9 @@ GameObject:
   - component: {fileID: 1252015222028012874}
   - component: {fileID: 4049917050175279276}
   - component: {fileID: 1794250183038901635}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BoarCave_1
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -79,6 +79,7 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
             gameTick -= Settings.secondsPerGameSecond;
 
             UpdateGameSecond();
+            EnvironmentManager.Instance.StackRain();
         }
         
     }

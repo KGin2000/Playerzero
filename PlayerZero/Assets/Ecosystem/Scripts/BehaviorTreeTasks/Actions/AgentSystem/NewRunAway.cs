@@ -20,11 +20,16 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
         private string a;
         private string b;
 
+        protected UnityEngine.AI.NavMeshAgent navMeshAgent;
+        public override void OnAwake()
+        {
+            navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+            navMeshAgent.updateRotation = false;
+        }
 
         public override void OnStart()
         {
-            base.OnStart();
-            
+            base.OnStart();         
         }
 
         public override TaskStatus OnUpdate()
@@ -33,13 +38,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
 
             Vector3 thisObjPos = transform.position;
             GameObject closest = null;
-            float distance = Mathf.Infinity;
-            if(!returnEnemy.Value)
-            {
-                //return TaskStatus.Success;
-            }
-            else
-            {                       
+            float distance = Mathf.Infinity;                        
             Vector3 diff = returnEnemy.Value.transform.position - thisObjPos;
             float curDistance = diff.sqrMagnitude;
             if (curDistance < distance)
@@ -47,7 +46,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                     closest = returnEnemy.Value.gameObject;
                     distance = curDistance;
                 }        
-            }
+            
 
 
             Vector3 dir = Vector3.zero;
@@ -87,6 +86,12 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
             base.OnReset();
             animationIsRunning.Value = false;
 
+        }
+
+        public override void OnEnd()
+        {
+            navMeshAgent.isStopped = true;
+            navMeshAgent.ResetPath();
         }
 
     }

@@ -10,7 +10,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
       
         public override void OnAwake()
         {
-            GameObject a = GameObject.FindGameObjectWithTag("GameManager");
+            GameObject a = GameObject.FindGameObjectWithTag("InfomationManager");
             climate = a.GetComponent<Climate>();
         }
         

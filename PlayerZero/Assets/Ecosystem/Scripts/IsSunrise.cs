@@ -9,13 +9,14 @@ namespace BehaviorDesigner.Runtime.Tasks.Animals
 
         public override void OnAwake()
         {
-            GameObject a = GameObject.FindGameObjectWithTag("GameManager");
+            GameObject a = GameObject.FindGameObjectWithTag("InfomationManager");
             climate = a.GetComponent<Climate>();
         }
 
         public override void OnStart()
         {
-            
+            GameObject a = GameObject.FindGameObjectWithTag("InfomationManager");
+            climate = a.GetComponent<Climate>();
         }
 
         public override TaskStatus OnUpdate()
