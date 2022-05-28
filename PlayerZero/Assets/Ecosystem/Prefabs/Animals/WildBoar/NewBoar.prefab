@@ -130,9 +130,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: NewBoar
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   maxHungryPoint: 200
-  currentHungryPoint: 0
+  currentHungryPoint: 200
   hungryRate: 0
   hungryRateNormalMode: 3
   hungryRateSleepMode: 4

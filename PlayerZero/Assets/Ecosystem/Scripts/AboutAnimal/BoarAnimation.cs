@@ -105,8 +105,14 @@ public class BoarAnimation : MonoBehaviour
             lastXVal = transform.position.x;
         }
 
-        if (enemy.currentHealth <= 0)
+        if ( enemy.currentHealth <= 0)
         {
+            Debug.Log("Deadddddd");
+            animator.SetBool("Die", false);
+        }
+        else if(enemy.currentHealth > 0)
+        {
+            Debug.Log("Lifeeeeee");
             animator.SetBool("Die", true);
         }
     }

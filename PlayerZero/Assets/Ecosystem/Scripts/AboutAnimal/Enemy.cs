@@ -28,6 +28,11 @@ public class Enemy : MonoBehaviour
     public float Damaged;
 
     protected UnityEngine.AI.NavMeshAgent navMeshAgent;
+    void Awake()
+    {
+        // currentHealth = maxHealth;
+        // currentHungryPoint = maxHungryPoint;    
+    }
 
     void Start()
     {

@@ -350,9 +350,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Rabbit
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   maxHungryPoint: 100
-  currentHungryPoint: 0
+  currentHungryPoint: 100
   hungryRate: 0
   hungryRateNormalMode: 2
   hungryRateSleepMode: 3

@@ -808,7 +808,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f48c4e77e737843a67e21ca9a178e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviorTree: {fileID: 0}
 --- !u!114 &8969982762738197681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,9 +822,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Wolf
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   maxHungryPoint: 200
-  currentHungryPoint: 0
+  currentHungryPoint: 200
   hungryRate: 0
   hungryRateNormalMode: 4
   hungryRateSleepMode: 6

@@ -30,12 +30,14 @@ public class RabbitAnimation : MonoBehaviour
     }
     private void Animation()
     {
+        
         var runCondition = (SharedBool)GlobalVariables.Instance.GetVariable("RabbitIsRunning");
         //Debug.Log(runCondition);
+        // animator.SetBool("Die", true);
 
         ifRun = runCondition.Value;
         //Debug.Log(ifRun);
-
+        
         if (transform.position.x == lastXVal) //Idle
         {
             animator.SetBool("Idle", true);
@@ -87,7 +89,15 @@ public class RabbitAnimation : MonoBehaviour
 
         if ( enemy.currentHealth <= 0)
         {
+            Debug.Log("Deadddddd");
+            animator.SetBool("Die", false);
+        }
+        else if(enemy.currentHealth > 0)
+        {
+            Debug.Log("Lifeeeeee");
             animator.SetBool("Die", true);
-        }    
+        }
+
+           
     }
 }

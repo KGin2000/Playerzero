@@ -6,7 +6,6 @@ using BehaviorDesigner.Runtime;
 public class WolfAnimation : MonoBehaviour
 {
     Enemy enemy;
-    public BehaviorTree behaviorTree;
     private Animator animator;
     private float lastXVal;
     private bool ifRun;
@@ -82,8 +81,14 @@ public class WolfAnimation : MonoBehaviour
             lastXVal = transform.position.x;
         }
 
-        if (enemy.currentHealth <= 0)
+        if ( enemy.currentHealth <= 0)
         {
+            Debug.Log("Deadddddd");
+            animator.SetBool("Die", false);
+        }
+        else if(enemy.currentHealth > 0)
+        {
+            Debug.Log("Lifeeeeee");
             animator.SetBool("Die", true);
         }
     }
