@@ -37,6 +37,8 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
 
     private Coroutine playSceneSoundsCoroutine;
 
+    private bool CheckDid = true;
+
     protected override void Awake()
     {
         base.Awake();
@@ -72,14 +74,28 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.B))
+        if (TimeManager.Instance.gameHour == 12 && TimeManager.Instance.gameMinute == 0)
         {
+            CheckDid = false;
+        }
+    }
+
+    public void RePlaySceneSounds()
+    {
+        if(CheckDid == false)
+        {   
             PlaySceneSounds();
+        }
+        else
+        {
+            Debug.Log("DID DID");
         }
     }
 
     private void PlaySceneSounds()
     {
+        CheckDid = true;
+
         SoundItem musicSoundItem = null;
         SoundItem ambientSoundItem = null;
 
@@ -152,12 +168,14 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
         //Set clip & play
         Debug.Log(ambientSoundItem.soundClip);
         
-        if(EnvironmentManager.Instance.Rainsound)
+        if(EnvironmentManager.Instance.Rainsound == true)
         {
+            Debug.Log("RainSound = TRUE");
             ambientSoundAudioSource.clip = ambientSoundItem.soundClipTwo;
         }
-        else
+        else if (EnvironmentManager.Instance.Rainsound == false)
         {
+            Debug.Log("RainSound = FALSE");
             ambientSoundAudioSource.clip = ambientSoundItem.soundClip;
         }
 
