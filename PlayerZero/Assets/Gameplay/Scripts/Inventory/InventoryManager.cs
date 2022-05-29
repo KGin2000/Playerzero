@@ -14,6 +14,8 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
 
     [HideInInspector] public int[] inventoryListCapacityIntArray;
 
+    [HideInInspector] public ItemDetails itemDetails;
+
     [SerializeField] private SO_ItemList itemList = null;
 
     private string _iSaveableUniqueID;
@@ -412,7 +414,6 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>, ISavea
         if(itemCode == 10014)
         {
             haveWood = false;
-        }
-        
-    }
+        } 
+    } 
 }

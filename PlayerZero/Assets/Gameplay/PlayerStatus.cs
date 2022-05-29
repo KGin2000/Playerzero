@@ -105,8 +105,7 @@ public class PlayerStatus : SingletonMonobehaviour<PlayerStatus>//, ISaveable
     {
         hp.Subtract(amount);
         UpdateStatus();
-        UpdateHPBar();
-        
+        UpdateHPBar();  
     }
 
     public void Heal(int amount)
@@ -174,8 +173,8 @@ public class PlayerStatus : SingletonMonobehaviour<PlayerStatus>//, ISaveable
 
     private void Update()
     {
-        Debug.Log("isDead = " + isDead);
-        Debug.Log("isExhausted = " + isExhausted);
+        // Debug.Log("isDead = " + isDead);
+        // Debug.Log("isExhausted = " + isExhausted);
         if(Input.GetKeyDown(KeyCode.J))
         {
             TakeDamage(10);

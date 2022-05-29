@@ -37,7 +37,7 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
 
     private Coroutine playSceneSoundsCoroutine;
 
-    private bool CheckDid = true;
+    public bool CheckDid = true;
 
     protected override void Awake()
     {
@@ -76,8 +76,11 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
     {
         if (TimeManager.Instance.gameHour == 12 && TimeManager.Instance.gameMinute == 0)
         {
+            // Debug.Log("CheckDid Set 122222222222");
             CheckDid = false;
         }
+        
+    Debug.Log("CheckDid : " + CheckDid);
     }
 
     public void RePlaySceneSounds()
@@ -88,7 +91,7 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
         }
         else
         {
-            Debug.Log("DID DID");
+            Debug.Log("Set DID CheckDid = TRUE");
         }
     }
 
@@ -166,16 +169,16 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
         gameAudioMixer.SetFloat("AmbientVolume", ConvertSoundVolumeDecimalFractionToDecibels(ambientSoundItem.soundVolume));
 
         //Set clip & play
-        Debug.Log(ambientSoundItem.soundClip);
+        // Debug.Log(ambientSoundItem.soundClip);
         
         if(EnvironmentManager.Instance.Rainsound == true)
         {
-            Debug.Log("RainSound = TRUE");
+            // Debug.Log("RainSound = TRUE");
             ambientSoundAudioSource.clip = ambientSoundItem.soundClipTwo;
         }
         else if (EnvironmentManager.Instance.Rainsound == false)
         {
-            Debug.Log("RainSound = FALSE");
+            // Debug.Log("RainSound = FALSE");
             ambientSoundAudioSource.clip = ambientSoundItem.soundClip;
         }
 

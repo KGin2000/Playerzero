@@ -24,34 +24,27 @@ public class EnvironmentManager : SingletonMonobehaviour<EnvironmentManager>
         climate = a.GetComponent<Climate>();
     }
 
-    public void StackRain()
+    void Update()
+    {
+        RaindomRain();
+        SetRain();
+    }
+
+    public void RaindomRain()
     {
         if(TimeManager.Instance.gameHour == 12 && TimeManager.Instance.gameMinute == 0)
         {
+            Debug.Log("Random");
             x = Random.Range(1,11);
         }
 
-        if(climate.light >= 28f && TimeManager.Instance.gameHour == 12 && TimeManager.Instance.gameMinute == 0)
-        {
-            stackRain += 1;
-            Debug.Log("stackRain = " + stackRain);
-        }
+       
+    }
 
-        if(stackRain == 3)
-        {
-            Rain = true;
-        }
-        else
-        {
-            Rain = false;
-        }
-
-        if(climate.light < 28f && TimeManager.Instance.gameHour == 12 && TimeManager.Instance.gameMinute == 0)
-        {
-            stackRain = 0;
-            Rain = false;
-        }
-        randomRain();
+    public void GetRaindomRain()
+    {
+        
+        x = Random.Range(1,11);
     }
 
     public void CheckRain()
@@ -60,16 +53,21 @@ public class EnvironmentManager : SingletonMonobehaviour<EnvironmentManager>
         {
             Raining.SetActive(true);
             Rainsound = true;
+
+            AudioManager.Instance.RePlaySceneSounds();       //Check for Sound
         }
         else
         {
             Raining.SetActive(false);
             Rainsound = false;
+
+            AudioManager.Instance.RePlaySceneSounds();       //Check for Sound
         }
     }
-    void randomRain()
+
+    void SetRain()
     {
-        if(x <= Rain_Probability)
+         if(x <= Rain_Probability)
         {
             Rain = true;
         }
@@ -77,8 +75,5 @@ public class EnvironmentManager : SingletonMonobehaviour<EnvironmentManager>
         {
             Rain = false;
         }
-        
     }
-
-    
 }

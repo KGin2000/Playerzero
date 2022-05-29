@@ -79,7 +79,6 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
             gameTick -= Settings.secondsPerGameSecond;
 
             UpdateGameSecond();
-            EnvironmentManager.Instance.StackRain();
         }
         
     }
@@ -224,6 +223,41 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>, ISaveable
 
             gameMinute = 0;
             gameHour = 6;
+        }
+    }
+
+    public void DieSkipTime()
+    {
+        if (gameHour < 18)
+        {
+            gameMinute = 0;
+            gameHour = 18;
+            
+            EnvironmentManager.Instance.GetRaindomRain();
+
+            AudioManager.Instance.CheckDid = false;
+
+            // PlayerStatus.Instance.isExhausted = false;
+            // PlayerStatus.Instance.FullRest();
+        }
+        else if (gameHour >= 18)
+        {
+            Debug.Log("ELSE_IF_DieSkipTime");
+            // Debug.Log("IF");
+            int gamHourCal = ((24 - gameHour)+ 18) * 3600 ;
+            for (int i = 0; i < gamHourCal; i++)
+            {
+                UpdateGameSecond();
+            }
+
+            gameMinute = 0;
+
+            EnvironmentManager.Instance.GetRaindomRain();
+            
+            AudioManager.Instance.CheckDid = false;
+
+            // PlayerStatus.Instance.isExhausted = false;
+            // PlayerStatus.Instance.HalfRest();
         }
     }
 

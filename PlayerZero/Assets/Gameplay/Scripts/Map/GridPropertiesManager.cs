@@ -696,8 +696,6 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
 
                         EnvironmentManager.Instance.CheckRain();         // Check Update Rain
                         TilemapManager.Instance.SetPoundTilemap();  // Check Update Pound
-
-                        AudioManager.Instance.RePlaySceneSounds();       //Check for Sound
                         
                         gridPropertyDetails.daysSinceWatered = -1;
 

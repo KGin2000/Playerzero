@@ -25,7 +25,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Animals
             //Debug.Log(enemy.currentHungryPoint);
             if (enemy.currentHungryPoint < calPercentage * enemy.maxHungryPoint)
             {
-                Debug.Log(calPercentage);
+                // Debug.Log(calPercentage);
                 return TaskStatus.Success;
             }
             else

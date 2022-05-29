@@ -818,10 +818,14 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
         screenTint.Tint();
         yield return new WaitForSeconds(2f);
 
-        // PlayerObject.transform.position = new Vector3(0.0f, 0.0f, 0.0f);            //Move to Target
-        Debug.Log("Die");
-        // PlayerStatus.Instance.Heal(5);
-        SaveLoadManager.Instance.LoadDataFromFile();
+        PlayerObject.transform.position = new Vector3(0.0f, 0.0f, 0.0f);            //Move to Target
+        //Debug.Log("Die");
+         PlayerStatus.Instance.Heal(5);
+         PlayerStatus.Instance.GetTired(50);        //ลด stamina
+
+         TimeManager.Instance.DieSkipTime();
+         
+        //SaveLoadManager.Instance.LoadDataFromFile();
         gameObject.layer = 10;
         yield return new WaitForSeconds(1f);
 
