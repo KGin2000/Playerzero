@@ -42,7 +42,7 @@ public class PlantStatus : MonoBehaviour
         {
             if (currentHealth <= 0)
             {
-                Debug.Log("HEalllllllllllllllllllllllllllll");
+                //Debug.Log("HEalllllllllllllllllllllllllllll");
                 enemy.GetComponent<Enemy>().Eat(heal);
                 Destroy(gameObject);
             }

@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InteractDialog : MonoBehaviour
 {
 
     //[SerializeField] DialogContainer dialogue;
-    public bool Trig = false;
+    [SerializeField] Text DialogText;
+    [SerializeField] Text NameTalker;
+    private bool Trig = false;
     private float vInput;
     private float hInput;
     private bool Enter = false;
@@ -14,10 +17,11 @@ public class InteractDialog : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("i = "+ i);
+        //Debug.Log("i = "+ i);
         // Debug.Log("Trig = " + Trig);
         if(Input.GetKeyDown(KeyCode.E) && Trig == true)
         {
+            UIManager.Instance.EnableDialogBox();
             // GameManager.instance.dialogueSystem.Initialize(dialogue);
             Enter = true;
             Test(dialogDetails1);
@@ -31,14 +35,16 @@ public class InteractDialog : MonoBehaviour
 
         if(Enter == true)
         {
-            
-            Debug.Log(dialogDetails.DialogText[i]); // >= daysCounter
+            NameTalker.text = "[ " + dialogDetails.NameTalker + " ]";
+            DialogText.text = "< " + dialogDetails.DialogText[i] + " >";
+            //Debug.Log(dialogDetails.DialogText[i]); // >= daysCounter
         }
         i++;
         
         if(i >= dialogStages)
         {
             i = 0;
+            UIManager.Instance.DisableDialogBox();
         } 
         Enter = false;     
     }
@@ -60,11 +66,11 @@ public class InteractDialog : MonoBehaviour
             dialogDetails1 = dialogDetails;
 
             // Print
-            Debug.Log(dialogDetails.NameTalker);
+            // Debug.Log(dialogDetails.NameTalker);
 
-            Debug.Log(dialogDetails.DialogCode);
+            // Debug.Log(dialogDetails.DialogCode);
 
-            Debug.Log(dialogDetails.DialogText);
+            // Debug.Log(dialogDetails.DialogText);
         }
 
     }
