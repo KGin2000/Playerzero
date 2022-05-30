@@ -10,6 +10,7 @@ public class SceneItemsManager : SingletonMonobehaviour<SceneItemsManager>, ISav
     [SerializeField] private GameObject getItemPrefab1 = null;
     [SerializeField] private GameObject getItemPrefab2 = null;
     [SerializeField] private GameObject getItemPrefab3 = null;
+    [SerializeField] private GameObject getItemPrefab4 = null;
 
     private string _iSaveableUniqueID;
     public string ISaveableUniqueID { get { return _iSaveableUniqueID; } set { _iSaveableUniqueID = value;}}
@@ -56,10 +57,18 @@ public class SceneItemsManager : SingletonMonobehaviour<SceneItemsManager>, ISav
         foreach (SceneItem sceneItem in sceneItemList)
         {
             Debug.Log(sceneItem.itemCode);
+            // if(sceneItem.itemCode == 10016)
+            // {
+            //     itemPrefab = getItemPrefab2;    //Plant
+            // }
             if(sceneItem.itemCode == 10016)
             {
-                itemPrefab = getItemPrefab3;
+                itemPrefab = getItemPrefab3;    //Light
             }
+            // else if(sceneItem.itemCode == 10024 || 10025 || 10026)
+            // {
+            //     itemPrefab = getItemPrefab4;    //Meat
+            // }
             else
             {
                 itemPrefab = getItemPrefab1;

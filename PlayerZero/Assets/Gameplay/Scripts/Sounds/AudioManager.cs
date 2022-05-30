@@ -80,7 +80,7 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
             CheckDid = false;
         }
         
-    Debug.Log("CheckDid : " + CheckDid);
+    // Debug.Log("CheckDid : " + CheckDid);
     }
 
     public void RePlaySceneSounds()

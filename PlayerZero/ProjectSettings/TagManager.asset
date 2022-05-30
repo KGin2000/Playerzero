@@ -27,6 +27,7 @@ TagManager:
   - meat
   - WolfArea
   - InfomationManager
+  - Dialog
   layers:
   - Default
   - TransparentFX

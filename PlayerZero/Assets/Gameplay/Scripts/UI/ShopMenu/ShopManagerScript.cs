@@ -104,7 +104,7 @@ public class ShopManagerScript : SingletonMonobehaviour<ShopManagerScript>
             else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 4)
             {
                 
-                InventoryManager.Instance.AddItem(InventoryLocation.player, 10023);
+                InventoryManager.Instance.AddItem(InventoryLocation.player, 10016);
                
             }
             else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 5)
