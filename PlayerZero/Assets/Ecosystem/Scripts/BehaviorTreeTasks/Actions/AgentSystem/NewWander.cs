@@ -6,7 +6,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
     {
         public SharedFloat minWanderDistance = 20;
         public SharedFloat maxWanderDistance = 20;
-        public SharedFloat wanderRate = 2;
         public SharedFloat minPauseDuration = 0;     
         public SharedFloat maxPauseDuration = 0;      
         public SharedInt targetRetries = 1;
@@ -57,8 +56,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             Vector3 destination = transform.position;
             while (!validDestination && attempts > 0) 
             {            
-                direction = direction + Random.insideUnitSphere * Random.Range(20, 20); // สุ่มจุด
-                direction.y =1;
+                direction = direction + Random.insideUnitSphere * Random.Range(minWanderDistance.Value, maxWanderDistance.Value); // สุ่มจุด
+                direction.y =0;
                 validDestination = SamplePosition(direction); 
                 //Debug.Log(direction);
                 attempts--;
@@ -72,7 +71,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
 
         public override void OnEnd()
         {
-            navMeshAgent.isStopped = true;
+            //navMeshAgent.isStopped = true;
             navMeshAgent.ResetPath();
             //Debug.Log("wander End");
         }

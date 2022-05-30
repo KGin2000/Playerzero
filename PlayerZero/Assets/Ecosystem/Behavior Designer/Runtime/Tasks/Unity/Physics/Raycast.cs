@@ -51,6 +51,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Unity.UnityPhysics
                 storeHitPoint.Value = hit.point;
                 storeHitNormal.Value = hit.normal;
                 storeHitDistance.Value = hit.distance;
+                Debug.DrawRay(position, dir * distance.Value, Color.red);
                 return TaskStatus.Success;
             }
 

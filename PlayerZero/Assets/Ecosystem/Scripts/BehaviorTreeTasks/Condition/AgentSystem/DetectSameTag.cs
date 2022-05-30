@@ -10,6 +10,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
 
     public class DetectSameTag : Conditional
     {
+        public SharedString Name;
         public SharedString Mytag;
         public SharedFloat colliderRange;
         public LayerMask enemyLayers;
@@ -24,14 +25,21 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
             foreach (Collider obj in hitObj)
             {
                 if(obj.tag == Mytag.Value)
-                {                   
+                {                                      
                     if (obj.transform.root != transform)
                     {
-                        returnTag.Value = obj.tag;
-                        returnGameObject.Value = obj.gameObject;
-                        //Debug.Log("success");
-                        return TaskStatus.Success;
-                    }                   
+                        if(obj.name == Name.Value)
+                        {
+                            returnTag.Value = obj.tag;
+                            returnGameObject.Value = obj.gameObject;
+                            //Debug.Log("success");
+                             return TaskStatus.Success;
+                        }
+                        else if(obj.name != Name.Value)
+                        {
+                            Debug.Log(gameObject.name + " = " + obj.name + " = " + "I see you but you're not us.");
+                        }
+                    }                        
                 }
             }
             //Debug.Log("fail");

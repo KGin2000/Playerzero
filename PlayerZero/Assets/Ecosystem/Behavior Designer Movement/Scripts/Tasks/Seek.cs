@@ -74,5 +74,13 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             targetPosition = Vector3.zero;
             IsRunning.Value = false;
         }
+
+        // public override void OnBehaviorComplete()
+        // {
+        //     navMeshAgent.isStopped = true;
+        //     navMeshAgent.ResetPath();
+        //     IsRunning.Value = false;
+        //     Stop();
+        // }
     }
 }

@@ -31,33 +31,25 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
             Vector3 thisObjPos = transform.position;
             Collider[] hitObj = Physics.OverlapSphere(thisObjPos, colliderRange.Value, enemyLayers);
             foreach (Collider enemy in hitObj)
-            {
-                Vector3 targetPos = enemy.transform.position;
-                Vector3 currentPos = transform.position;
-                Vector3 Space = targetPos - currentPos;
-                float curDistance = Space.sqrMagnitude;
-                
+            {               
                 string a = Mytag.Value;
-                //x = float.Parse(a);
-                x = Convert.ToInt32(a);
+                x = float.Parse(a);
+                //x = Convert.ToInt32(a);
 
                 string b = enemy.tag;
-                //Debug.Log("b = " + b);
-               // y = float.Parse(b);
-                y = Convert.ToInt32(b);
+                y = float.Parse(b);
+                //y = Convert.ToInt32(b);
 
                 if (x < y)
                 {
-                    //returnTag.Value = enemy.tag;
-                    returnTargetObject.Value = enemy.gameObject;
-                    return TaskStatus.Success;
+                    if( Mathf.Abs(x - y) <=3 )
+                    {
+                        returnTag.Value = enemy.tag;
+                        returnTargetObject.Value = enemy.gameObject;
+                        Debug.Log( x + " - " + y + " = " + (x-y));
+                        return TaskStatus.Success;
+                    }
                 }
-                else if (x > y)
-                {
-                    //returnTag.Value = enemy.tag;
-                    //returnTargetObject.Value = null;
-                    return TaskStatus.Failure;
-                }              
             }
             returnTargetObject.Value = null;
             return TaskStatus.Failure;

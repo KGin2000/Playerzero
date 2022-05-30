@@ -12,22 +12,42 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
     {
         public SharedString Mytag;
         public SharedFloat colliderRange;
+         public float maxColliderRange;
         public LayerMask enemyLayers;
         public SharedFloat fieldOfViewAngle = 360;
 
-        private float x;
-        private float y;
-
         public SharedString returnTag;
         public SharedGameObject returnTarget;
+        public bool increaseRange = false;
 
+        private float x;
+        private float y;
+        private float currentRange;
+
+        public override void OnAwake()
+        {
+            currentRange = colliderRange.Value;
+        }
         public override void OnStart()
         {
-            returnTarget.Value = null;
+            increaseRange = true;
         }
 
         public override TaskStatus OnUpdate()
         {
+            if (returnTarget.Value == null)
+            {
+                if(increaseRange == true) // ต้องมี
+                {
+                    colliderRange.Value += 1 * Time.deltaTime;
+                    if(colliderRange.Value > maxColliderRange)
+                    {
+                        colliderRange.Value = maxColliderRange;
+                    }
+                    //Debug.Log("colliderRange.Value = " + colliderRange.Value);
+                }
+            }
+
             Vector3 thisObjPos = transform.position;
             Collider[] hitObj = Physics.OverlapSphere(thisObjPos, colliderRange.Value, enemyLayers);
             foreach (Collider enemy in hitObj)
@@ -42,21 +62,21 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                 
                 if (x > y)
                 {
-                    returnTag.Value = enemy.tag;
-                    returnTarget.Value = enemy.gameObject;
-                    return TaskStatus.Success;
-                }
-                if (x < y)
-                {
-                    returnTag.Value = enemy.tag;
-                    returnTarget.Value = enemy.gameObject;
-                    return TaskStatus.Failure;
-                }
+                    if( Mathf.Abs(x - y) <=3 )
+                    {
+                        returnTag.Value = enemy.tag;
+                        returnTarget.Value = enemy.gameObject;
+                        colliderRange.Value = currentRange;
+                        increaseRange = false;
+                        Debug.Log( x + " - " + y + " = " + (x-y));
+                        return TaskStatus.Success;
+                    }
+                }               
             }
             returnTarget.Value = null;
             return TaskStatus.Failure;
         }
-
+        
         public override void OnDrawGizmos()
         {
 #if UNITY_EDITOR

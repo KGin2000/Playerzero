@@ -54,6 +54,9 @@ public class Enemy : MonoBehaviour
         if (currentHungryPoint >= maxHungryPoint) // check currentHungryPoint dont over maxHungryPoint
         {
             currentHungryPoint = maxHungryPoint;
+            // behaviorTree.enabled = false;
+            // Destroy(gameObject);
+            // DropMeat();
         }
 
         if (currentHungryPoint < 0)

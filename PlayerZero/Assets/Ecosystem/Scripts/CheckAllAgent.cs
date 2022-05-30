@@ -36,6 +36,7 @@ public class CheckAllAgent : SingletonMonobehaviour<CheckAllAgent>
 
 
 
+
         time += Time.deltaTime;
         if ( time >= 10.0f)
         {

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Behavior_test
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(-518.141052,-1228.08838)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(2.58466721,197.854614)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.AgentSystem.DetectLessSuccess","NodeData":{"Offset":"(-293.595825,197.366455)"},"ID":2,"Name":"Detect
+        Less Success","Instant":true,"SharedStringMytag":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"0"},"SharedFloatcolliderRange":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":10},"LayerMaskenemyLayers":-2147483648,"SharedFloatfieldOfViewAngle":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":360},"SharedStringreturnTag":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null},"SharedGameObjectreturnTargetObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null}}]},"DetachedTasks":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-3752.629,-1238.20154)"},"ID":3,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None"},{"Type":"BehaviorDesigner.Runtime.Tasks.AgentSystem.DetectMoreSuccess","NodeData":{"Offset":"(-338.1819,-810)"},"ID":4,"Name":"Detect
+        More Success","Instant":true,"SharedStringMytag":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"8"},"SharedFloatcolliderRange":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":10},"SinglemaxColliderRange":90,"LayerMaskenemyLayers":-2147483648,"SharedFloatfieldOfViewAngle":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":360},"SharedStringreturnTag":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null},"SharedGameObjectreturnTarget":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null},"BooleanincreaseRange":false},{"Type":"BehaviorDesigner.Runtime.Tasks.Animals.IsSunrise","NodeData":{"Offset":"(-738.141052,-1118.08838)"},"ID":5,"Name":"Is
+        Sunrise","Instant":true,"SinglesunLight":0}],"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"gobj1","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"V31","IsShared":true,"Vector3mValue":"(0,0,0)"},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"V32","IsShared":true,"Vector3mValue":"(0,0,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"f","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnMeat","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnPlayer","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"returnStatus","IsShared":true,"StringmValue":"null"},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnAnimal","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnSmell","IsShared":true}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.6.8
