@@ -22,10 +22,10 @@ public class SpawnAnimal : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            SpawnAgent();
-        }
+        // if (Input.GetKeyDown("space"))
+        // {
+        //     SpawnAgent();
+        // }
     }
     void SpawnAgent()
     {

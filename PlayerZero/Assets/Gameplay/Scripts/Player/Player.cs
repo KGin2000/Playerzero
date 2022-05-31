@@ -773,7 +773,7 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
     }
 
     public void DoSleep()
-    {
+    { 
         StartCoroutine(SleepRoutine());
     }
 
@@ -785,6 +785,8 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
         yield return new WaitForSeconds(1f);
 
         TimeManager.Instance.TestAdvanceSkip();
+
+        EnvironmentManager.Instance.CheckRain();
 
         screenTint.UnTint();
         yield return new WaitForSeconds(1f);
@@ -881,6 +883,13 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
         sceneSave.floatDictionary.Add("Coins", ShopManagerScript.Instance.coins);
 
+        sceneSave.intDictionary.Add("LevelRateofFire", LevelCrossbow.Instance.LevelRateofFire);
+        sceneSave.intDictionary.Add("LevelSpeedArrow", LevelCrossbow.Instance.LevelSpeedArrow);
+
+        sceneSave.boolDictionary = new Dictionary<string, bool>();
+        sceneSave.boolDictionary.Add("haveArrow", InventoryManager.Instance.haveArrow);
+        sceneSave.boolDictionary.Add("haveWood", InventoryManager.Instance.haveWood);
+
         //Add sceneSave data for player game object
         GameObjectSave.sceneData.Add(Settings.PersistentScene, sceneSave);
 
@@ -935,6 +944,11 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
                     PlayerStatus.Instance.UpdateStatus();
                     PlayerStatus.Instance.UpdateHPBar();
                     PlayerStatus.Instance.UpdateStaminaBar();
+
+                    if(sceneSave.intDictionary.TryGetValue("LevelRateofFire", out int LevelRateofFire))
+                        LevelCrossbow.Instance.LevelRateofFire = LevelRateofFire;
+                    if(sceneSave.intDictionary.TryGetValue("LevelSpeedArrow", out int LevelSpeedArrow))
+                        LevelCrossbow.Instance.LevelSpeedArrow = LevelSpeedArrow;
                 }
 
                 if(sceneSave.floatDictionary != null)
@@ -943,6 +957,14 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
                         ShopManagerScript.Instance.coins = savedcoins;
 
                     ShopManagerScript.Instance.SetCoins();
+                }
+
+                if(sceneSave.boolDictionary != null)
+                {
+                    if(sceneSave.boolDictionary.TryGetValue("haveArrow", out bool haveArrow))
+                        InventoryManager.Instance.haveArrow = haveArrow;
+                    if(sceneSave.boolDictionary.TryGetValue("haveWood", out bool haveWood))
+                        InventoryManager.Instance.haveWood = haveWood;
                 }
             }
         }   

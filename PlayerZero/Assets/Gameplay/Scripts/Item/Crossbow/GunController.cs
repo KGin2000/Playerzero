@@ -23,8 +23,11 @@ public class GunController : SingletonMonobehaviour<GunController>
 
     private void GetUpgrade()
     {
-        timeShootdelay = SendUpgradeCrossbow.Instance.RateofFire;
-        bulletSpeed = SendUpgradeCrossbow.Instance.ArrowSpeed;
+        // timeShootdelay = SendUpgradeCrossbow.Instance.RateofFire;
+        // bulletSpeed = SendUpgradeCrossbow.Instance.ArrowSpeed;
+
+        timeShootdelay = 1.1f - (LevelCrossbow.Instance.LevelRateofFire * 0.1f);
+        bulletSpeed = 9f + LevelCrossbow.Instance.LevelSpeedArrow;
     }
 
     // Update is called once per frame
@@ -57,7 +60,7 @@ public class GunController : SingletonMonobehaviour<GunController>
 
                         newBullet.speed = bulletSpeed;
 
-                        Debug.Log("Shoot!!!!!!!!!");
+                        //Debug.Log("Shoot!!!!!!!!!");
 
                         timeClickDelay = timeShootdelay;
                     }

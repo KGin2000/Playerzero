@@ -30,13 +30,13 @@ public class ShopManagerScript : SingletonMonobehaviour<ShopManagerScript>
         shopItems[1, 9] = 9;
 
         //Price
-        shopItems[2, 1] = 10;
+        shopItems[2, 1] = 20;
         shopItems[2, 2] = 20;
-        shopItems[2, 3] = 30;
-        shopItems[2, 4] = 40;
+        shopItems[2, 3] = 40;
+        shopItems[2, 4] = 25;
         shopItems[2, 5] = 50;
-        shopItems[2, 6] = 40;
-        shopItems[2, 7] = 5;
+        shopItems[2, 6] = 25;
+        shopItems[2, 7] = 10;
         shopItems[2, 8] = 50;
         shopItems[2, 9] = 50;
 
@@ -48,18 +48,31 @@ public class ShopManagerScript : SingletonMonobehaviour<ShopManagerScript>
         shopItems[3, 5] = NumItem;
         shopItems[3, 6] = NumItem;
         shopItems[3, 7] = NumItem;
-        shopItems[3, 8] = 1;
+        shopItems[3, 8] = NumItem;
         shopItems[3, 9] = NumItem;
     }
 
     public void Update()
     {
-        
+            shopItems[2, 8] = 50+(LevelCrossbow.Instance.LevelRateofFire*20);
+            shopItems[2, 9] = 50+(LevelCrossbow.Instance.LevelSpeedArrow*20);
+
+            shopItems[3, 8] = LevelCrossbow.Instance.LevelRateofFire;
+            shopItems[3, 9] = LevelCrossbow.Instance.LevelSpeedArrow;
+
+            if (LevelCrossbow.Instance.LevelRateofFire == 10)
+            {
+                shopItems[2, 8] = 99999999;
+            }
+            if (LevelCrossbow.Instance.LevelSpeedArrow == 10)
+            {
+                shopItems[2, 9] = 99999999;
+            }
     }
 
     public void GetCoins(float getcoins)
     {
-        Debug.Log("GetDoin");
+        //Debug.Log("GetDoin");
         coins += getcoins;
         CoinsTXT.text = "Coin: " + coins.ToString();
         CoinsTXT2.text = CoinsTXT.text;
@@ -67,7 +80,7 @@ public class ShopManagerScript : SingletonMonobehaviour<ShopManagerScript>
 
     public void SetCoins()
     {
-        Debug.Log("SavedDoin");
+        //Debug.Log("SavedCoin");
         CoinsTXT.text = "Coin: " + coins.ToString();
         CoinsTXT2.text = CoinsTXT.text;
     }
@@ -117,30 +130,18 @@ public class ShopManagerScript : SingletonMonobehaviour<ShopManagerScript>
                
                 InventoryManager.Instance.AddItem(InventoryLocation.player, 10018);
             }
-            else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 8)
+            else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 8)      //อัตรายิง
             {
-                if(shopItems[3, 8] <= 10)
+                if(LevelCrossbow.Instance.LevelRateofFire <= 9)
                 {
-                    SendUpgradeCrossbow.Instance.upgradeRateofFire(-0.1f);
-                    shopItems[2, 8] += 10;
-
-                    if (shopItems[3, 8] == 10)
-                    {
-                        shopItems[2, 8] = 99999;
-                    }
+                    LevelCrossbow.Instance.LevelRateofFire +=1;
                 }
             }
-            else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 9)
+            else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 9)      //ความเร็ว
             {
-               if(shopItems[3, 9] <= 10)
+                if(LevelCrossbow.Instance.LevelSpeedArrow <= 9)
                 {
-                    SendUpgradeCrossbow.Instance.upgradeArrowSpeed(1f);
-                    shopItems[2, 9] += 10;
-
-                    if (shopItems[3, 9] == 10)
-                    {
-                        shopItems[2, 9] = 99999;
-                    }
+                    LevelCrossbow.Instance.LevelSpeedArrow +=1;
                 }
             }
         }
