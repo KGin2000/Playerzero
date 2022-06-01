@@ -56,7 +56,7 @@ public class SceneItemsManager : SingletonMonobehaviour<SceneItemsManager>, ISav
 
         foreach (SceneItem sceneItem in sceneItemList)
         {
-            Debug.Log(sceneItem.itemCode);
+            //Debug.Log(sceneItem.itemCode);
             // if(sceneItem.itemCode == 10016)
             // {
             //     itemPrefab = getItemPrefab2;    //Plant

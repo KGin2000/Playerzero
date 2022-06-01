@@ -21,7 +21,7 @@ public class CropInstantiator : MonoBehaviour
         EventHandler.InstantiateCropPrefabsEvent += InstantiateCropPrefabs;
     }
 
-    private void InstantiateCropPrefabs()
+    public void InstantiateCropPrefabs()
     {
         //Get Grid gameobject
         grid = GameObject.FindObjectOfType<Grid>();

@@ -11,10 +11,11 @@ public class CheckAllAgent : SingletonMonobehaviour<CheckAllAgent>
     [SerializeField] public int Rabbit;
     [SerializeField] public int Wildboar;
     [SerializeField] public int Wolf;
+    private int ImmortalObject;
+    private int NormalRabbit;
     
-
-
     private float time;
+    
     void Awake()
     {
         maxTree = GameObject.FindGameObjectsWithTag("tree").Length;
@@ -29,11 +30,13 @@ public class CheckAllAgent : SingletonMonobehaviour<CheckAllAgent>
     void Update()
     {
         Grass = GameObject.FindGameObjectsWithTag("0").Length;
-        Rabbit = GameObject.FindGameObjectsWithTag("1").Length;
         Wildboar = GameObject.FindGameObjectsWithTag("2").Length;
         Wolf = GameObject.FindGameObjectsWithTag("3").Length;
         Tree = GameObject.FindGameObjectsWithTag("tree").Length;
 
+        NormalRabbit = GameObject.FindGameObjectsWithTag("1").Length;
+        ImmortalObject = GameObject.FindGameObjectsWithTag("ImmortalObject").Length;
+        Rabbit = NormalRabbit + ImmortalObject;
 
 
 

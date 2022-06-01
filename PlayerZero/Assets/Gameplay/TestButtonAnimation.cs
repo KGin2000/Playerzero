@@ -16,12 +16,5 @@ public class TestButtonAnimation : MonoBehaviour
     void Update()
     {
         
-        if(Input.GetKeyDown(KeyCode.X))
-        {
-            Debug.Log("X = "+ x);
-            Debug.Log("X");
-            //TestAnimator.Instance.CallMe();
-            //StartCoroutine(GetComponent<TestAnimator>().ExampleCoroutine());
-        }
     }
 }

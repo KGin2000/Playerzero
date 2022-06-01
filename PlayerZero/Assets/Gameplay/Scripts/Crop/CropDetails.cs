@@ -37,12 +37,10 @@ public class CropDetails
     {
         if (RequairedHarvestActionsForTool(toolItemCode) == -1)
         {
-            Debug.Log("IF");
             return false;
         }
         else
         {
-            Debug.Log("ELSE");
             return true;
         }
     }
