@@ -38,14 +38,14 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                 else if(target.Value.tag == enemy.tag)
                 {
                     if(enemy.tag == "0")
-                        {
-                            enemy.GetComponent<PlantStatus>().TakeDamage(attackPower);
-                        }
-                        else 
-                        {
-                            enemy.GetComponent<Enemy>().TakeDamage(attackPower);                    
-                        }
-                        return TaskStatus.Success;   
+                    {
+                        enemy.GetComponent<PlantStatus>().TakeDamage(attackPower);
+                    }
+                    else 
+                    {
+                        enemy.GetComponent<Enemy>().TakeDamage(attackPower);                    
+                    }
+                    return TaskStatus.Success;   
                 }                         
             }
             return TaskStatus.Failure;  

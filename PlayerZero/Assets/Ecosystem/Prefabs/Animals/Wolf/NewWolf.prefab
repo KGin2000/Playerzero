@@ -804,8 +804,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d09d3478ceda0b4096a12a1cf3d3cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: -0.03
-  age: 259200
+  time: 0
+  age: 28800
 --- !u!114 &8532873222605733992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,9 +836,9 @@ MonoBehaviour:
   maxHungryPoint: 200
   currentHungryPoint: 200
   hungryRate: 0
-  hungryRateNormalMode: 4
-  hungryRateSleepMode: 6
-  hungryRateFastingMode: 12
+  hungryRateNormalMode: 10
+  hungryRateSleepMode: 12
+  hungryRateFastingMode: 20
   Meat: {fileID: 6984738092280742406, guid: 92a2380ec5cf4ea4ea5c456adda4b8e9, type: 3}
   NumberOfMeat: 2
   floatTime: 0
@@ -872,7 +872,7 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnSmell","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnAnimal","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnMeat","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"returnStatus","IsShared":true,"StringmValue":"null"},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnPlayer","IsShared":true}]}'
+      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnSmell","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnAnimal","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnMeat","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"returnStatus","IsShared":true,"StringmValue":"null"},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnPlayer","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnGameObject","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"colliderRange","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"WolfRunAnimation","IsShared":true,"BooleanmValue":false}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 

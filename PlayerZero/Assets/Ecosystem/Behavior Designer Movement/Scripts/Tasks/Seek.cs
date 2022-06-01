@@ -13,7 +13,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         [Tooltip("If target is null then use the target position")]
         
         public SharedVector3 targetPosition;
-        public SharedBool IsRunning;
+        public SharedBool IsRunningAnimation;
 
         public override void OnStart()
         {
@@ -28,12 +28,12 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         // Return running if the agent hasn't reached the destination yet
         public override TaskStatus OnUpdate()
         {
-            IsRunning.Value = true;
+            IsRunningAnimation.Value = true;
             if (HasArrived()) 
             {   
                 //Debug.Log("Hasarrived");
 
-                IsRunning.Value = false;
+                IsRunningAnimation.Value = false;
                 //target.Value = null;
                 return TaskStatus.Success;
 
@@ -41,15 +41,15 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             if (target.Value == null)
             {
 
-                IsRunning.Value = false;
+                IsRunningAnimation.Value = false;
                 return TaskStatus.Failure;
             }
 
-            if (target.Value.tag == "ImmortalObject")
+            if (target.Value.layer == 31)
             {
                 Debug.Log("ImmortalObject");
-
-                IsRunning.Value = false;
+                target.Value = null;
+                IsRunningAnimation.Value = false;
                 return TaskStatus.Failure;
             }
 
@@ -72,14 +72,14 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             base.OnReset();
             target = null;
             targetPosition = Vector3.zero;
-            IsRunning.Value = false;
+            IsRunningAnimation.Value = false;
         }
 
         // public override void OnBehaviorComplete()
         // {
         //     navMeshAgent.isStopped = true;
         //     navMeshAgent.ResetPath();
-        //     IsRunning.Value = false;
+        //     IsRunningAnimation.Value = false;
         //     Stop();
         // }
     }

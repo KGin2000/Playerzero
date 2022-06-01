@@ -98,13 +98,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3884524992493399972}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d09d3478ceda0b4096a12a1cf3d3cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  age: 1000
+  age: 21600
 --- !u!114 &3884524992493399982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4567af59f242d1041bc6c7e6d3c61f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &3884524992493399983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,9 +136,9 @@ MonoBehaviour:
   maxHungryPoint: 200
   currentHungryPoint: 200
   hungryRate: 0
-  hungryRateNormalMode: 3
-  hungryRateSleepMode: 4
-  hungryRateFastingMode: 7
+  hungryRateNormalMode: 10
+  hungryRateSleepMode: 12
+  hungryRateFastingMode: 20
   Meat: {fileID: 638088717944251706, guid: 67a115f25f4f16f46989855596b93dcf, type: 3}
   NumberOfMeat: 3
   floatTime: 0
@@ -171,7 +172,7 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnEnemy","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnAnimal","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnSmell","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnRabbitCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnAlly","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"counterAttack","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnGameObject","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"countSuccess","IsShared":true,"Int32mValue":0},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnPlayer","IsShared":true}]}'
+      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnEnemy","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnAnimal","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnSmell","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnRabbitCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnAlly","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"counterAttack","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnGameObject","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"countSuccess","IsShared":true,"Int32mValue":0},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnPlayer","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"colliderRange","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"BoarRunAnimation","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"BoarSleepAnimation","IsShared":true,"BooleanmValue":false}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 

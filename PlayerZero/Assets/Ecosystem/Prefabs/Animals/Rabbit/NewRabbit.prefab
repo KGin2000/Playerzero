@@ -320,13 +320,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2603137418851068140}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d09d3478ceda0b4096a12a1cf3d3cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  age: 10000
+  age: 14400
 --- !u!114 &8823924292282936563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,9 +357,9 @@ MonoBehaviour:
   maxHungryPoint: 100
   currentHungryPoint: 100
   hungryRate: 0
-  hungryRateNormalMode: 2
-  hungryRateSleepMode: 3
-  hungryRateFastingMode: 6
+  hungryRateNormalMode: 30
+  hungryRateSleepMode: 32
+  hungryRateFastingMode: 40
   Meat: {fileID: 5349318949007902895, guid: ebfb3e81c9a57204b8f5215c6b018f67, type: 3}
   NumberOfMeat: 1
   floatTime: 0
@@ -393,7 +393,7 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnRabbitCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnGameObject","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Wolf","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnEnemies","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObjectList","Name":"randomlist","IsShared":true,"List`1mValue":[null,null,null]},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"returnStatus","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnPlayer","IsShared":true}]}'
+      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnRabbitCave","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnGameObject","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Wolf","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnEnemies","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObjectList","Name":"randomlist","IsShared":true,"List`1mValue":[null,null,null]},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"returnStatus","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnPlayer","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"returnAllay","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"RabbitRunAnimation","IsShared":true,"BooleanmValue":false}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 

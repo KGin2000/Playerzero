@@ -6,6 +6,8 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
     {
         public SharedBool boolVar;
         public SharedInt IntVar;
+        public SharedFloat floatVar;
+        public float setFloat;
         public SharedGameObject gameObjectVar1;
         public SharedGameObject gameObjectVar2;
         public SharedString status;
@@ -30,6 +32,8 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
             {
                 gameObjectVar2.Value = null;               
             }
+            
+            floatVar.Value = setFloat;
             return TaskStatus.Success;
         }
     }   

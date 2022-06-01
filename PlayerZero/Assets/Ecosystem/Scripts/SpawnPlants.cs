@@ -11,17 +11,25 @@ public class SpawnPlants : MonoBehaviour
     public GameObject prefabAgent_;
     public Transform Plane_;
 
-    private float time;
+    public LayerMask Layer;
 
     public int numOfGrassInMap; // check only
     public int maxGrassInMap; // จำนวนหญ้าในแต่ละเพลน x จำนวนเพลน;
 
     public float tempToDay;
+    public Collider[] hitColliders;
+
+    public float coolDown;
+    private float B;
+
+    private float time;
     private float Hour;
     private int A;
 
+
     void Start()
     {
+        B = coolDown;
         A = numberAgent_;
         GameObject a = GameObject.FindGameObjectWithTag("InfomationManager");
         climate = a.GetComponent<Climate>();
@@ -30,9 +38,12 @@ public class SpawnPlants : MonoBehaviour
 
     void Update()
     {
+        Vector3 thisPosition = gameObject.transform.position;
+        var scale = gameObject.transform.localScale;
         Hour = TimeManager.Instance.gameHour;
-        numOfGrassInMap = GameObject.FindGameObjectsWithTag("0").Length;
-        
+
+        hitColliders = Physics.OverlapBox(thisPosition, gameObject.transform.localScale*5, Quaternion.identity, Layer);
+
         if( Hour == 12)
         {
             tempToDay = climate.totalTemperature;
@@ -46,13 +57,25 @@ public class SpawnPlants : MonoBehaviour
             }
             else if(tempToDay <= 28)
             {
-                 numberAgent_ = A;
+                numberAgent_ = A;
             }
-            if(numOfGrassInMap <= maxGrassInMap)
+
+            // if(hitColliders.Length < numberAgent_)
+            // {
+            //     Spawn();
+            // }
+        }
+
+        coolDown -= Time.deltaTime;
+        if(coolDown <0 )
+        {
+            if(hitColliders.Length < numberAgent_)
             {
                 Spawn();
+                // coolDown = B;
             }
-        }       
+            coolDown = B;
+        }     
     }    
 
     public void Spawn()
@@ -65,5 +88,11 @@ public class SpawnPlants : MonoBehaviour
             GameObject instanceAgent_ = (GameObject)Instantiate(prefabAgent_);
             instanceAgent_.transform.position = new Vector3(Random.Range((Pos.x + (-size.x * 5f)), (Pos.x + (size.x * 5f))), instanceAgent_.transform.position.y, Random.Range((Pos.z + (-size.z * 5f)), (Pos.z + (size.z * 5f))));
         }
-    }   
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(gameObject.transform.position, gameObject.transform.localScale*5);
+    }  
 }

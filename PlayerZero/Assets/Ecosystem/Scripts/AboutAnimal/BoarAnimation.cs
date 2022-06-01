@@ -6,16 +6,19 @@ using BehaviorDesigner.Runtime;
 public class BoarAnimation : MonoBehaviour
 {
     Enemy enemy;
-    private Animator animator;
+    BehaviorTree behaviorTree;
+    public Animator animator;
     private float lastXVal;
     private bool ifRun;
     private bool ifSleep;
     // Start is called before the first frame update
     void Awake()
     {
-        enemy = GetComponent<Enemy>();
+        // = GetComponent<Enemy>();
         GameObject a = this.gameObject.transform.GetChild(0).gameObject;
         animator = a.GetComponent<Animator>();
+
+        behaviorTree = gameObject.GetComponent<BehaviorTree>();
 
 
     }
@@ -33,8 +36,8 @@ public class BoarAnimation : MonoBehaviour
     }
     private void Animation()
     {
-        var runCondition = (SharedBool)GlobalVariables.Instance.GetVariable("BoarIsRunning");
-        var sleepCondition = (SharedBool)GlobalVariables.Instance.GetVariable("BoarIsSleeping");
+        var runCondition = (SharedBool)behaviorTree.GetVariable("BoarRunAnimation");
+        var sleepCondition = (SharedBool)behaviorTree.GetVariable("BoarSleepAnimation");
         //Debug.Log(runCondition);
 
         ifRun = runCondition.Value;
@@ -103,17 +106,6 @@ public class BoarAnimation : MonoBehaviour
             }
 
             lastXVal = transform.position.x;
-        }
-
-        if ( enemy.currentHealth <= 0)
-        {
-            //Debug.Log("Deadddddd");
-            animator.SetBool("Die", false);
-        }
-        else if(enemy.currentHealth > 0)
-        {
-            //Debug.Log("Lifeeeeee");
-            animator.SetBool("Die", true);
         }
     }
 }

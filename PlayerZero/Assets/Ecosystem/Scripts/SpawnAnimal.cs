@@ -20,13 +20,6 @@ public class SpawnAnimal : MonoBehaviour
     //     }
     }
 
-    void Update()
-    {
-        // if (Input.GetKeyDown("space"))
-        // {
-        //     SpawnAgent();
-        // }
-    }
     void SpawnAgent()
     {
         for(int i = 0;i<numberAnimal;i++)
@@ -34,7 +27,7 @@ public class SpawnAnimal : MonoBehaviour
             GameObject instanceAgentA = (GameObject)Instantiate(Animal);
             instanceAgentA.transform.position = new Vector3(gameObject.transform.position.x, 0.0f , gameObject.transform.position.z);
 
-            instanceAgentA.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
+            //instanceAgentA.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = true;
         }
     }
 }

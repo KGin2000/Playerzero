@@ -15,6 +15,8 @@ public class SpeedUpTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timeCount += Time.deltaTime;
+        
         if(modifiedScale != 0)
         {
             TimeManager.Instance.TestAdvanceGameMinute();
@@ -24,7 +26,7 @@ public class SpeedUpTime : MonoBehaviour
         {
             modifiedScale += 1;
             Time.timeScale = modifiedScale;
-            timeCount += Time.deltaTime;
+
         }
 
     }

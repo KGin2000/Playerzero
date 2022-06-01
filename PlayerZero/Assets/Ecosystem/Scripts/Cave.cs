@@ -9,16 +9,16 @@ public class Cave : MonoBehaviour
 {
     public string Name;
 
-    Collider rabbitCollider;
-    Collider rabbitOtherCollider;
-    BehaviorTree behaviorTree;
-    public float colliderRange;
-    public LayerMask enemyLayers;
+    // Collider rabbitCollider;
+    // Collider rabbitOtherCollider;
+     BehaviorTree behaviorTree;
+    //public float colliderRange;
+    //public LayerMask enemyLayers;
 
     Renderer rend;
     //public string Status;
     //private SharedString textStatus;
-
+    public string changToTag;
     public string orginTag;
 
 
@@ -39,7 +39,7 @@ public class Cave : MonoBehaviour
                 //rend = collider.GetComponent<Renderer>();
                 rend.enabled = false;
 
-                collider.gameObject.tag = "ImmortalObject";
+                collider.gameObject.tag = changToTag;
                 collider.gameObject.layer = 31;
             }
            // Debug.Log(textStatus);

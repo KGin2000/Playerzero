@@ -6,6 +6,7 @@ using BehaviorDesigner.Runtime;
 public class WolfAnimation : MonoBehaviour
 {
     Enemy enemy;
+    BehaviorTree behaviorTree;
     private Animator animator;
     private float lastXVal;
     private bool ifRun;
@@ -16,6 +17,8 @@ public class WolfAnimation : MonoBehaviour
         enemy = GetComponent<Enemy>();
         GameObject a = this.gameObject.transform.GetChild(0).gameObject;
         animator = a.GetComponent<Animator>();
+
+        behaviorTree = gameObject.GetComponent<BehaviorTree>();
     }
     void Start()
     {
@@ -28,7 +31,7 @@ public class WolfAnimation : MonoBehaviour
     }
     private void Animation()
     {
-        var runCondition = (SharedBool)GlobalVariables.Instance.GetVariable("WolfIsRunning");
+        var runCondition = (SharedBool)behaviorTree.GetVariable("WolfRunAnimation");
         //Debug.Log(runCondition);
 
         ifRun = runCondition.Value;
@@ -79,17 +82,6 @@ public class WolfAnimation : MonoBehaviour
                 animator.SetBool("Walk", false);
             }
             lastXVal = transform.position.x;
-        }
-
-        if ( enemy.currentHealth <= 0)
-        {
-            //Debug.Log("Deadddddd");
-            animator.SetBool("Die", false);
-        }
-        else if(enemy.currentHealth > 0)
-        {
-            //Debug.Log("Lifeeeeee");
-            animator.SetBool("Die", true);
         }
     }
 }

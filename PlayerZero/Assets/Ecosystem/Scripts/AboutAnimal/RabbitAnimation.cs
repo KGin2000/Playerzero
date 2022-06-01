@@ -6,6 +6,7 @@ using BehaviorDesigner.Runtime;
 public class RabbitAnimation : MonoBehaviour
 {
     Enemy enemy;
+    BehaviorTree behaviorTree;
     private Animator animator;
     private float lastXVal;
     private bool ifRun;
@@ -17,7 +18,7 @@ public class RabbitAnimation : MonoBehaviour
         GameObject a = this.gameObject.transform.GetChild(0).gameObject;
         animator = a.GetComponent<Animator>();
 
-      
+        behaviorTree = gameObject.GetComponent<BehaviorTree>();
     }
     void Start()
     {
@@ -31,7 +32,7 @@ public class RabbitAnimation : MonoBehaviour
     private void Animation()
     {
         
-        var runCondition = (SharedBool)GlobalVariables.Instance.GetVariable("RabbitIsRunning");
+        var runCondition = (SharedBool)behaviorTree.GetVariable("RabbitRunAnimation");
         //Debug.Log(runCondition);
         // animator.SetBool("Die", true);
 
@@ -85,19 +86,6 @@ public class RabbitAnimation : MonoBehaviour
             }
 
             lastXVal = transform.position.x;
-        }
-
-        if ( enemy.currentHealth <= 0)
-        {
-            //Debug.Log("Deadddddd");
-            animator.SetBool("Die", false);
-        }
-        else if(enemy.currentHealth > 0)
-        {
-            //Debug.Log("Lifeeeeee");
-            animator.SetBool("Die", true);
-        }
-
-           
+        }          
     }
 }

@@ -111,8 +111,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Wolf
-  colliderRange: 0
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 0
+  changToTag: 3
   orginTag: 3

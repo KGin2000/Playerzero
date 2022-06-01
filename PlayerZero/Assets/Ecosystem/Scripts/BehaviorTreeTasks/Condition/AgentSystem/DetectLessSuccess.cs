@@ -46,7 +46,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                     {
                         returnTag.Value = enemy.tag;
                         returnTargetObject.Value = enemy.gameObject;
-                        Debug.Log( x + " - " + y + " = " + (x-y));
+                        //Debug.Log( x + " - " + y + " = " + (x-y));
                         return TaskStatus.Success;
                     }
                 }

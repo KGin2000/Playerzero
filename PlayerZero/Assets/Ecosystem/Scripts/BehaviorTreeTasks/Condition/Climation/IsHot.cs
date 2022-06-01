@@ -14,7 +14,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Climation
         }
         public override TaskStatus OnUpdate()
         {
-            if (climate.totalTemperature >= 30f)
+            if (climate.totalTemperature >= 29f)
             {
                 return TaskStatus.Success;
             }

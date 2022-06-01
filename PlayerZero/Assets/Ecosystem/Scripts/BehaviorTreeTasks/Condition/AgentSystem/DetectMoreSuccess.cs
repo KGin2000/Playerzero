@@ -12,7 +12,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
     {
         public SharedString Mytag;
         public SharedFloat colliderRange;
-         public float maxColliderRange;
+        public float maxColliderRange;
         public LayerMask enemyLayers;
         public SharedFloat fieldOfViewAngle = 360;
 
@@ -30,23 +30,21 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
         }
         public override void OnStart()
         {
+            //colliderRange.Value = currentRange;
+
             increaseRange = true;
         }
 
         public override TaskStatus OnUpdate()
         {
-            if (returnTarget.Value == null)
+            if(increaseRange == true) // ต้องมี
             {
-                if(increaseRange == true) // ต้องมี
+                colliderRange.Value += 1 * Time.deltaTime;
+                if(colliderRange.Value > maxColliderRange)
                 {
-                    colliderRange.Value += 1 * Time.deltaTime;
-                    if(colliderRange.Value > maxColliderRange)
-                    {
-                        colliderRange.Value = maxColliderRange;
-                    }
-                    //Debug.Log("colliderRange.Value = " + colliderRange.Value);
+                    colliderRange.Value = maxColliderRange;
                 }
-            }
+            }           
 
             Vector3 thisObjPos = transform.position;
             Collider[] hitObj = Physics.OverlapSphere(thisObjPos, colliderRange.Value, enemyLayers);
@@ -64,18 +62,29 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                 {
                     if( Mathf.Abs(x - y) <=3 )
                     {
-                        returnTag.Value = enemy.tag;
-                        returnTarget.Value = enemy.gameObject;
-                        colliderRange.Value = currentRange;
-                        increaseRange = false;
-                        Debug.Log( x + " - " + y + " = " + (x-y));
-                        return TaskStatus.Success;
+                    returnTag.Value = enemy.tag;
+                    returnTarget.Value = enemy.gameObject;
+                    increaseRange = false;
+                    Debug.Log( x + " - " + y + " = " + (x-y));
+                    Debug.Log("TaskStatus.Success" +  returnTarget.Value);
+                    return TaskStatus.Success;
                     }
+                    // if( Mathf.Abs(x - y) <=3 )
+                    // {
+                    //     returnTag.Value = enemy.tag;
+                    //     returnTarget.Value = enemy.gameObject;
+                    //     increaseRange = false;
+                    //     colliderRange.Value = currentRange;
+                    //     Debug.Log( x + " - " + y + " = " + (x-y));
+                    //     return TaskStatus.Success;
+                    // }
                 }               
             }
-            returnTarget.Value = null;
+            Debug.Log("TaskStatus.Failure");
             return TaskStatus.Failure;
         }
+
+        
         
         public override void OnDrawGizmos()
         {
