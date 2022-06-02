@@ -68,6 +68,8 @@ public class Climate : MonoBehaviour
 
         totalTemperature = (firstTemperature + light) - humidity;
 
+        DebugScreenManager.Instance.GetDataTemp(totalTemperature);
+
     }
 }
 

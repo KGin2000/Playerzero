@@ -38,7 +38,7 @@ public class CheckAllAgent : SingletonMonobehaviour<CheckAllAgent>
         ImmortalObject = GameObject.FindGameObjectsWithTag("ImmortalObject").Length;
         Rabbit = NormalRabbit + ImmortalObject;
 
-
+        DebugScreenManager.Instance.GetData(Rabbit, Wildboar, Wolf, Grass, Tree);
 
         time += Time.deltaTime;
         if ( time >= 10.0f)

@@ -11,11 +11,14 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
     public Text Wolf;
     public Text Tree;
     public Text Grass;
+    public Text Temp;
     public int NumberOfRabbit;
     public int NumberOfWildboar;
     public int NumberOfWolf;
     public float NumberOfTree;
     public int NumberOfGrass;
+
+    public float Temperature;
     
     void Start()
     {
@@ -31,6 +34,11 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
         NumberOfTree = Tree;
     }
 
+    public void GetDataTemp(float totalTemperature)
+    {
+        Temperature = totalTemperature;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -44,5 +52,6 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
         Wolf.text = "Wolf : " + NumberOfWolf.ToString();
         Tree.text = "Tree : " + NumberOfTree.ToString();
         Grass.text = "Grass : " + NumberOfGrass.ToString();
+        Temp.text = "Temperature : " + Temperature.ToString() + " ํC";
     }
 }

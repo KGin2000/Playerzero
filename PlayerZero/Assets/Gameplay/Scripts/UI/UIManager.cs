@@ -130,7 +130,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
 
         ShopMenuOn = true;
         Player.Instance.PlayerInputIsDisabled = true;
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         shopMenu.SetActive(true);
 
         // //Trigger garbage collector
@@ -147,7 +147,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
 
         ShopMenuOn = false;
         Player.Instance.PlayerInputIsDisabled = false;
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
         shopMenu.SetActive(false);
         Player.Instance.canShootCrossbow = true;       //Set Crossbow
     }

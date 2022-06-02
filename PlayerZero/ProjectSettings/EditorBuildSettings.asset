@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gameplay/Scenes/Scene1_Farm.unity
     guid: 5e1fc90b02314504eb3244ea0a0f9a95
-  - enabled: 1
+  - enabled: 0
     path: Assets/Gameplay/Scenes/Scene2_Center.unity
     guid: 3b3796d5323d13f4a9eacd9675f62126
   - enabled: 0
