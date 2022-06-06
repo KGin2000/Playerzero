@@ -18,6 +18,9 @@ public class Age : MonoBehaviour
     void Update()
     {
         time -= Time.deltaTime;
-        Destroy(gameObject, age);
+        if(time <= 0 )
+        {
+            Destroy(gameObject);
+        }
     }
 }
