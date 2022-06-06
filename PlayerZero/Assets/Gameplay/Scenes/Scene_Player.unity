@@ -5322,7 +5322,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -0.18121338, y: 0}
+  m_SizeDelta: {x: 0, y: -0.0680542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &486773206
 MonoBehaviour:
@@ -6530,7 +6530,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -0.18121338, y: 0}
+  m_SizeDelta: {x: 0, y: -0.0680542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &627041697
 MonoBehaviour:
@@ -19650,6 +19650,9 @@ MonoBehaviour:
   NumberOfTree: 0
   NumberOfGrass: 0
   Temperature: 0
+  RabbitImmigration: 0
+  BoarImmigration: 0
+  WolfImmigration: 0
 --- !u!4 &1345446949
 Transform:
   m_ObjectHideFlags: 0
@@ -20461,7 +20464,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7784492, y: 1}
+    m_SensorSize: {x: 1.7773299, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

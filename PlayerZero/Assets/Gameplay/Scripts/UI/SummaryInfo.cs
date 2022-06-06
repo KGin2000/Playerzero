@@ -47,7 +47,6 @@ public class SummaryInfo : MonoBehaviour
         CalculateInfo();
         if(TimeManager.Instance.gameHour == 12 && TimeManager.Instance.gameMinute == 0)
         {
-            
             UIManager.Instance.EnableSummary();
         }
         UISummary();

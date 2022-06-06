@@ -51,7 +51,10 @@ public class Immigration : MonoBehaviour
         count -= Time.deltaTime;
         if (count <= 0)
         {
-            int a = Random.Range(5,7);
+            DebugScreenManager.Instance.CheckImmigration(1,0,0);
+            DebugScreenManager.Instance.PrintTimeImmigration("Rabbit");
+
+            float a = Random.Range(5,7);
             float x = checkAllAgent.Grass * (a / 100);
             rabbitNum = (int)x;
 
@@ -71,10 +74,14 @@ public class Immigration : MonoBehaviour
         count -= Time.deltaTime;
         if (count <= 0)
         {
-            int b = Random.Range(2,4);
+            DebugScreenManager.Instance.CheckImmigration(0,1,0);
+            DebugScreenManager.Instance.PrintTimeImmigration("Boar");
+
+            float b = Random.Range(2,4);
             float y = (checkAllAgent.Grass + checkAllAgent.Rabbit) * (b / 100);
             boarNum = (int)y;
 
+            
             for(int i = 0;i<boarNum;i++)
             {
                 GameObject instanceAgentB = (GameObject)Instantiate(prefabWildboar);
@@ -91,7 +98,10 @@ public class Immigration : MonoBehaviour
         count -= Time.deltaTime;
         if (count <= 0)
         {
-            int z = Random.Range(2,4);
+            DebugScreenManager.Instance.CheckImmigration(0,0,1);
+            DebugScreenManager.Instance.PrintTimeImmigration("Wolf");
+            
+            float z = Random.Range(2,4);
             wolfNum = (int)z;
 
             for(int i = 0;i<wolfNum;i++)

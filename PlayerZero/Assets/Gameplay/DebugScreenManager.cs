@@ -19,6 +19,10 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
     public int NumberOfGrass;
 
     public float Temperature;
+
+    public int RabbitImmigration;
+    public int BoarImmigration;
+    public int WolfImmigration;
     
     void Start()
     {
@@ -53,5 +57,17 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
         Tree.text = "Tree : " + NumberOfTree.ToString();
         Grass.text = "Grass : " + NumberOfGrass.ToString();
         Temp.text = "Temperature : " + Temperature.ToString() + " ํC";
+    }
+
+    public void CheckImmigration(int Rabbit, int Boar, int Wolf)
+    {
+        RabbitImmigration += Rabbit;
+        BoarImmigration += Boar;
+        WolfImmigration += Wolf;
+    }
+
+    public void PrintTimeImmigration(string Animal)
+    {
+        Debug.LogWarning(Animal + " => Day : " + TimeManager.Instance.gameDay + " Hour : " + TimeManager.Instance.gameHour + " Minute : " + TimeManager.Instance.gameMinute);
     }
 }
