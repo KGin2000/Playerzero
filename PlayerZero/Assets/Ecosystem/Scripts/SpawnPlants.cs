@@ -47,13 +47,13 @@ public class SpawnPlants : MonoBehaviour
         if( Hour == 12)
         {
             tempToDay = climate.totalTemperature;
-            Debug.Log("tempToDay = " + tempToDay);
+            //Debug.Log("tempToDay = " + tempToDay);
             if(tempToDay > 28)
             {
                 float x = tempToDay - 28;
                 float y = A*x*0.1f;
                 numberAgent_ = A - (int)y;
-                Debug.Log("numberAgent_ = " + numberAgent_);
+                //Debug.Log("numberAgent_ = " + numberAgent_);
             }
             else if(tempToDay <= 28)
             {

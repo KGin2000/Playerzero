@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Climate : MonoBehaviour
+public class Climate : SingletonMonobehaviour<Climate>
 {
     [SerializeField] CheckAllAgent checkAllAgent;
     public float totalTemperature;
+    public float HighestTemp;
+    public float LowestTemp;
     public float light;
-    //private float lastTemperature; //ร้อนจัด
     private float firstTemperature;
-    // private float SecondTemperature;
     [SerializeField] private float humidity;
 
     private int newRate;
@@ -29,6 +29,9 @@ public class Climate : MonoBehaviour
         newRate = 0;
         lastRate = newRate;
 
+        HighestTemp = firstTemperature;
+        LowestTemp = firstTemperature;
+
         Humidity();
     }
 
@@ -38,23 +41,29 @@ public class Climate : MonoBehaviour
 
         Humidity();
         CalculateTemperature();
+
+        if(totalTemperature > HighestTemp)
+        {
+            HighestTemp = totalTemperature;
+        }
+
+        if(totalTemperature < LowestTemp)
+        {
+            LowestTemp = totalTemperature;
+        }
         
     }
 
     void Humidity() // ความชื้นในอากาส
     {    
-        humidity = (checkAllAgent.Tree / 235);                   
+        humidity = (checkAllAgent.Tree*0.004f);                   
     }
     void CalculateTemperature() 
     {
-        //float X = Random.Range(21, 30);
-        //firstTemperature = X;
+        
         if((Hour >= 6) && (Hour <= 10))
         {
-            // float A = Mathf.Abs(Hour - 12);
-            // light = 5 - (A/2f);
             light = 2;
-            //Debug.Log(light);
         }
         else if((Hour >= 11) && (Hour <= 16))
         {

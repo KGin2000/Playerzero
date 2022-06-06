@@ -26,7 +26,7 @@ public class Immigration : MonoBehaviour
     {
         checkAllAgent = gameObject.GetComponent<CheckAllAgent>();
         stableCount = count;
-        Debug.Log("stableCount = "  + stableCount);
+        //Debug.Log("stableCount = "  + stableCount);
 
     }
 

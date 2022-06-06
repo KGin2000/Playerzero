@@ -9,11 +9,13 @@ public class UIManager : SingletonMonobehaviour<UIManager>
     private bool _notSleepMenuOn = false;
     private bool _fadeBlack = false;
     private bool _dialogBoxOn = false;
+    private bool _summaryOn = false;
     [SerializeField] private UIInventoryBar uiInventoryBar = null;
     [SerializeField] private PauseMenuInventoryManagement pauseMenuInventoryManagement = null;
     [SerializeField] private GameObject pauseMenu = null;
     [SerializeField] private GameObject shopMenu = null;
     [SerializeField] private GameObject dialogBox = null;
+    [SerializeField] private GameObject summary = null;
     [SerializeField] private GameObject canSleepMenu = null;
     [SerializeField] private GameObject notSleepMenu = null;
     [SerializeField] private GameObject fadeBlack = null;
@@ -26,6 +28,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
     public bool NotSleepMenuOn { get => _notSleepMenuOn; set => _notSleepMenuOn = value; }
     public bool FadeBlack { get => _fadeBlack; set => _fadeBlack = value; }
     public bool DialogBoxOn { get => _dialogBoxOn; set => _dialogBoxOn = value; }
+    public bool SummaryOn { get => _summaryOn; set => _summaryOn = value; }
 
     protected override void Awake()
     {
@@ -37,6 +40,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         notSleepMenu.SetActive(false);
         fadeBlack.SetActive(false);
         dialogBox.SetActive(false);
+        summary.SetActive(false);
     }
 
     //Update is Called once per frame
@@ -47,7 +51,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         PauseMenu();
         //ShopMenu(ShopStatus);
 
-        if(PauseMenuOn || ShopMenuOn || CanSleepMenuOn || NotSleepMenuOn || DialogBoxOn == true)
+        if(PauseMenuOn || ShopMenuOn || CanSleepMenuOn || NotSleepMenuOn || DialogBoxOn || SummaryOn == true)
         {
             Player.Instance.canShootCrossbow = false;       //Set Crossbow
         }
@@ -130,7 +134,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
 
         ShopMenuOn = true;
         Player.Instance.PlayerInputIsDisabled = true;
-        //Time.timeScale = 0;
+        Time.timeScale = 0;
         shopMenu.SetActive(true);
 
         // //Trigger garbage collector
@@ -147,7 +151,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
 
         ShopMenuOn = false;
         Player.Instance.PlayerInputIsDisabled = false;
-        //Time.timeScale = 1;
+        Time.timeScale = 1;
         shopMenu.SetActive(false);
         Player.Instance.canShootCrossbow = true;       //Set Crossbow
     }
@@ -264,6 +268,38 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         Player.Instance.PlayerInputIsDisabled = false;
         Time.timeScale = 1;
         dialogBox.SetActive(false);
+        Player.Instance.canShootCrossbow = true;       //Set Crossbow
+    }
+
+    public void EnableSummary()
+    {
+        //Destroy any currently dragged items
+        uiInventoryBar.DestroyCurrentlyDraggedItems();
+
+        //Clear currently selected items
+        uiInventoryBar.ClearCurrentlySelectedItems();
+
+        SummaryOn = true;
+        Player.Instance.PlayerInputIsDisabled = true;
+        Time.timeScale = 0;
+        summary.SetActive(true);
+
+        // //Trigger garbage collector
+        // System.GC.Collect();
+
+        // //Highlight selected button
+        // HighlightButtonForSelectedTab();
+    }
+
+    public void DisableSummary()
+    {
+        // //Destroy any currently dragged items
+        // pauseMenuInventoryManagement.DestroyCurrentlyDraggedItems();
+
+        SummaryOn = false;
+        Player.Instance.PlayerInputIsDisabled = false;
+        Time.timeScale = 1;
+        summary.SetActive(false);
         Player.Instance.canShootCrossbow = true;       //Set Crossbow
     }
 
