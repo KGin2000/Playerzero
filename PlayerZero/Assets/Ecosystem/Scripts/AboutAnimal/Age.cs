@@ -7,6 +7,8 @@ public class Age : MonoBehaviour
     [SerializeField] private float time;
     [SerializeField] private float age; //second
 
+    [SerializeField] GameObject AnimalsPrefab;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,8 @@ public class Age : MonoBehaviour
         time -= Time.deltaTime;
         if(time <= 0 )
         {
+            DebugScreenManager.Instance.GetDataDeath(AnimalsPrefab.name, "AgeOut");
+
             Destroy(gameObject);
         }
     }

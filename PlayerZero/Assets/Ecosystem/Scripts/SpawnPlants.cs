@@ -34,6 +34,14 @@ public class SpawnPlants : MonoBehaviour
         GameObject a = GameObject.FindGameObjectWithTag("InfomationManager");
         climate = a.GetComponent<Climate>();
         Spawn();
+
+        Vector3 size = Plane_.transform.localScale;
+        Vector3 Pos = Plane_.transform.position;
+        for (int i = 1; i < 60; i++)
+        {
+            GameObject instanceAgent_ = (GameObject)Instantiate(prefabAgent_);
+            instanceAgent_.transform.position = new Vector3(Random.Range((Pos.x + (-size.x * 5f)), (Pos.x + (size.x * 5f))), instanceAgent_.transform.position.y, Random.Range((Pos.z + (-size.z * 5f)), (Pos.z + (size.z * 5f))));
+        }
     }
 
     void Update()

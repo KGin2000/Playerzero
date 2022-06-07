@@ -38,7 +38,11 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
 
             Vector3 thisObjPos = transform.position;
             GameObject closest = null;
-            float distance = Mathf.Infinity;                        
+            float distance = Mathf.Infinity;
+            if(returnEnemy.Value == null)
+            {
+                return TaskStatus.Failure;
+            }
             Vector3 diff = returnEnemy.Value.transform.position - thisObjPos;
             float curDistance = diff.sqrMagnitude;
             if (curDistance < distance)

@@ -60,6 +60,8 @@ public class Immigration : MonoBehaviour
 
             for(int i = 0;i<rabbitNum;i++)
             {
+                DebugScreenManager.Instance.GetNumAnimalImmigration("Rabbit", 1);
+
                 GameObject instanceAgentA = (GameObject)Instantiate(prefabRabbit);
                 instanceAgentA.transform.position = new Vector3(rabbitImmigrationLocation.transform.position.x, 0.0f , rabbitImmigrationLocation.transform.position.z);
 
@@ -84,6 +86,8 @@ public class Immigration : MonoBehaviour
             
             for(int i = 0;i<boarNum;i++)
             {
+                DebugScreenManager.Instance.GetNumAnimalImmigration("Boar", 1);
+
                 GameObject instanceAgentB = (GameObject)Instantiate(prefabWildboar);
                 instanceAgentB.transform.position = new Vector3(boarImmigrationLocation.transform.position.x, 0.0f , boarImmigrationLocation.transform.position.z);
 
@@ -106,6 +110,8 @@ public class Immigration : MonoBehaviour
 
             for(int i = 0;i<wolfNum;i++)
             {
+                DebugScreenManager.Instance.GetNumAnimalImmigration("Wolf", 1);
+
                 GameObject instanceAgentC = (GameObject)Instantiate(prefabWolf);
                 instanceAgentC.transform.position = new Vector3(wolfImmigrationLocation.transform.position.x, 0.0f , wolfImmigrationLocation.transform.position.z);
 

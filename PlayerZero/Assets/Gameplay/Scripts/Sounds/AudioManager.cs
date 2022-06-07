@@ -89,10 +89,6 @@ public class AudioManager : SingletonMonobehaviour<AudioManager>
         {   
             PlaySceneSounds();
         }
-        else
-        {
-            Debug.Log("Set DID CheckDid = TRUE");
-        }
     }
 
     private void PlaySceneSounds()

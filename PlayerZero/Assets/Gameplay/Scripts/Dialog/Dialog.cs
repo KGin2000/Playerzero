@@ -24,6 +24,11 @@ public class Dialog : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+    
+    }
+
     public void Init (int itemCodeParam)
     {
     

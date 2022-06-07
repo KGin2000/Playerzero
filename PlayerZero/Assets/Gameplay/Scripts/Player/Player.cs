@@ -575,6 +575,8 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
             yield return afterLiftToolAnimationPause;
 
+            PlayerStatus.Instance.GetTired(10);
+
             PlayerInputIsDisabled = false;
             playerToolUseDisabled = false;
 
@@ -607,6 +609,8 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
 
         //After animation pause
         yield return afterUseToolAnimationPause;
+
+        PlayerStatus.Instance.GetTired(10);
 
         PlayerInputIsDisabled = false;
         playerToolUseDisabled = false;
@@ -785,8 +789,6 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
         yield return new WaitForSeconds(1f);
 
         TimeManager.Instance.TestAdvanceSkip();
-
-        EnvironmentManager.Instance.CheckRain();
 
         screenTint.UnTint();
         yield return new WaitForSeconds(1f);

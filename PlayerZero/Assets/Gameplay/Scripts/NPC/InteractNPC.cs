@@ -7,13 +7,21 @@ public class InteractNPC : MonoBehaviour
     public bool Trig = false;
     private float vInput;
     private float hInput;
+    [SerializeField] GameObject NPC;
     
 
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space) && Trig == true)
         {
-            GameManager.instance.dialogueSystem.Initialize(dialogue);
+            if(NPC.tag == "InfoMan")
+            {
+                UIManager.Instance.EnableSummary();
+            }
+            else if(NPC.tag == "SellMan")
+            {
+                GameManager.instance.dialogueSystem.Initialize(dialogue);
+            } 
         }
     }
     

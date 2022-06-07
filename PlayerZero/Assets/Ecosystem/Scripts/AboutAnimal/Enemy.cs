@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
     public int countEat = 0; 
     public float Damaged;
 
+    [SerializeField] GameObject AnimalsPrefab;
+
     protected UnityEngine.AI.NavMeshAgent navMeshAgent;
     void Awake()
     {
@@ -60,6 +62,9 @@ public class Enemy : MonoBehaviour
         {
             currentHungryPoint = 0;
             behaviorTree.enabled = false;
+            
+            DebugScreenManager.Instance.GetDataDeath(AnimalsPrefab.name, "Strave");
+
             Destroy(gameObject);
             DropMeat();
         }
@@ -67,6 +72,9 @@ public class Enemy : MonoBehaviour
         {
             currentHealth = 0;
             behaviorTree.enabled = false;
+
+            DebugScreenManager.Instance.GetDataDeath(AnimalsPrefab.name, "Killed");
+
             Destroy(gameObject);
             DropMeat();
         }
@@ -114,7 +122,7 @@ public class Enemy : MonoBehaviour
         for (int i = 0; i < NumberOfMeat; i++)
         {
             GameObject rawMeat = (GameObject)Instantiate(Meat);
-            rawMeat.transform.position = new Vector3(Random.Range(thisPosition.x + 2, thisPosition.x - 2), 0.0f, Random.Range(thisPosition.z + 2, thisPosition.z - 2));
+            rawMeat.transform.position = new Vector3(Random.Range(thisPosition.x + 0.5f, thisPosition.x - 0.5f), 0.0f, Random.Range(thisPosition.z + 0.5f, thisPosition.z - 0.5f));
         }
     }
   

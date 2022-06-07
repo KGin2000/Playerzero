@@ -35,6 +35,10 @@ public class SummaryInfo : MonoBehaviour
     public Text TextHighestTemp;
     public Text TextLowestTemp;
 
+    [SerializeField] GameObject CloseButton;
+    [SerializeField] GameObject PlayButton;
+    [SerializeField] GameObject QuitButton;
+
 
     void Start()
     {
@@ -45,11 +49,14 @@ public class SummaryInfo : MonoBehaviour
     {
         GetInfo();
         CalculateInfo();
-        if(TimeManager.Instance.gameHour == 12 && TimeManager.Instance.gameMinute == 0)
+        UISummary();
+
+        if(TimeManager.Instance.gameDay == 30 && TimeManager.Instance.gameHour == 12 && TimeManager.Instance.gameMinute == 0)
         {
             UIManager.Instance.EnableSummary();
+            PlayButton.SetActive(true);
+            QuitButton.SetActive(true);
         }
-        UISummary();
     }
 
     private void GetInfo()

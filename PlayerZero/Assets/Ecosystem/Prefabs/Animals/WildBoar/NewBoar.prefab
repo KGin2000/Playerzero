@@ -97,13 +97,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3884524992493399972}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d09d3478ceda0b4096a12a1cf3d3cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
   age: 21600
+  AnimalsPrefab: {fileID: 3884524992493399972}
 --- !u!114 &3884524992493399982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee214c3d3dce1448abd44e947f1a3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: NewBoar
+  Name: Boar
   maxHealth: 100
   currentHealth: 100
   maxHungryPoint: 200
@@ -143,6 +144,7 @@ MonoBehaviour:
   floatTime: 0
   countEat: 0
   Damaged: 0
+  AnimalsPrefab: {fileID: 3884524992493399972}
 --- !u!114 &3884524992493399977
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class Climate : SingletonMonobehaviour<Climate>
     public float light;
     private float firstTemperature;
     [SerializeField] private float humidity;
+    [SerializeField] private float humidityfromRain;
 
     private int newRate;
     private int lastRate;
@@ -51,7 +52,11 @@ public class Climate : SingletonMonobehaviour<Climate>
         {
             LowestTemp = totalTemperature;
         }
-        
+    }
+
+    public void GethumidityfromRain(float x)
+    {
+        humidityfromRain = x;
     }
 
     void Humidity() // ความชื้นในอากาส
@@ -75,7 +80,7 @@ public class Climate : SingletonMonobehaviour<Climate>
         }
         else light = 0;
 
-        totalTemperature = (firstTemperature + light) - humidity;
+        totalTemperature = (firstTemperature + light) ;
 
         DebugScreenManager.Instance.GetDataTemp(totalTemperature);
 

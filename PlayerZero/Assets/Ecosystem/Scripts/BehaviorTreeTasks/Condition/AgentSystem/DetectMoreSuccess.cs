@@ -28,6 +28,8 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
 
         public override TaskStatus OnUpdate()
         {
+            GameObject closest = null;
+            float distance = Mathf.Infinity;
             Vector3 thisObjPos = transform.position;
             Collider[] hitObj = Physics.OverlapSphere(thisObjPos, colliderRange.Value, enemyLayers);
             foreach (Collider enemy in hitObj)
@@ -44,11 +46,26 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                 {
                     if( Mathf.Abs(x - y) <=3 )
                     {
-                        returnTag.Value = enemy.tag;
-                        returnTargetObject.Value = enemy.gameObject;
-                        //Debug.Log( x + " - " + y + " = " + (x-y));
-                        return TaskStatus.Success;
+                        Vector3 space = enemy.transform.position - thisObjPos;
+                        float curDistancetag = space.sqrMagnitude;
+                        if (curDistancetag < distance)
+                        {
+                            closest = enemy.gameObject;
+                            distance = curDistancetag;
+                        }
                     }
+                }
+            }
+            if (closest != null)
+            {
+                Vector3 targetPos = closest.transform.position;
+                Vector3 currentPos = transform.position;
+                Vector3 toward = targetPos - currentPos;
+                if (toward.magnitude <= colliderRange.Value)
+                {
+                    Debug.Log("success");
+                    returnTargetObject.Value = closest.gameObject;
+                    return TaskStatus.Success;
                 }
             }
             returnTargetObject.Value = null;

@@ -789,13 +789,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5072210404699025376}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d09d3478ceda0b4096a12a1cf3d3cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
   age: 28800
+  AnimalsPrefab: {fileID: 5072210404699025376}
 --- !u!114 &8532873222605733992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -834,6 +835,7 @@ MonoBehaviour:
   floatTime: 0
   countEat: 0
   Damaged: 0
+  AnimalsPrefab: {fileID: 5072210404699025376}
 --- !u!114 &4679781058495195801
 MonoBehaviour:
   m_ObjectHideFlags: 0

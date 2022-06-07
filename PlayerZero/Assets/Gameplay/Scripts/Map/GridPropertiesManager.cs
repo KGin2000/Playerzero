@@ -694,9 +694,17 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
                                 }
                         }
 
-                        TilemapManager.Instance.SetPoundTilemap();  // Check Update Pound
+                        if(EnvironmentManager.Instance.Rain)
+                        {
+                            gridPropertyDetails.daysSinceWatered = 0;
+                        }
+                        else
+                        {
+                            gridPropertyDetails.daysSinceWatered = -1;
+                        }
                         
-                        gridPropertyDetails.daysSinceWatered = -1;
+                        EnvironmentManager.Instance.CheckRain();    // Check Rain
+                        TilemapManager.Instance.SetPoundTilemap();  // Check Update Pound
 
                         SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails, sceneSave.gridPropertyDetailsDictionary);
 

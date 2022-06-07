@@ -33,21 +33,21 @@ public class TilemapManager : SingletonMonobehaviour<TilemapManager>
             DryWaterLV2.SetActive(false);
             PoundSoil.SetActive(false);
         }
-        else if (IfDrought == 1)
+        else if (IfDrought == 3)
         {
             Pound.SetActive(false);
             DryWaterLV1.SetActive(true);
             DryWaterLV2.SetActive(false);
             PoundSoil.SetActive(true);
         }
-        else if (IfDrought == 2)
+        else if (IfDrought == 6)
         {
             Pound.SetActive(false);
             DryWaterLV1.SetActive(false);
             DryWaterLV2.SetActive(true);
             PoundSoil.SetActive(true);
         }
-        else if (IfDrought == 3)
+        else if (IfDrought == 8)
         {
             Pound.SetActive(false);
             DryWaterLV1.SetActive(false);

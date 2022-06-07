@@ -28,6 +28,8 @@ TagManager:
   - WolfArea
   - InfomationManager
   - Dialog
+  - InfoMan
+  - SellMan
   layers:
   - Default
   - TransparentFX
