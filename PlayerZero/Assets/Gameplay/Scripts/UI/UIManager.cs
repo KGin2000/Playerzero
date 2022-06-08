@@ -10,6 +10,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
     private bool _fadeBlack = false;
     private bool _dialogBoxOn = false;
     private bool _summaryOn = false;
+    private bool _debugScreenOn = false;
     [SerializeField] private UIInventoryBar uiInventoryBar = null;
     [SerializeField] private PauseMenuInventoryManagement pauseMenuInventoryManagement = null;
     [SerializeField] private GameObject pauseMenu = null;
@@ -19,6 +20,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
     [SerializeField] private GameObject canSleepMenu = null;
     [SerializeField] private GameObject notSleepMenu = null;
     [SerializeField] private GameObject fadeBlack = null;
+    [SerializeField] private GameObject debugScreen = null;
     [SerializeField] private GameObject[] menuTabs = null;
     [SerializeField] private Button[] menuButtons = null;
 
@@ -29,6 +31,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
     public bool FadeBlack { get => _fadeBlack; set => _fadeBlack = value; }
     public bool DialogBoxOn { get => _dialogBoxOn; set => _dialogBoxOn = value; }
     public bool SummaryOn { get => _summaryOn; set => _summaryOn = value; }
+    public bool DebugScreenOn { get => _debugScreenOn; set => _debugScreenOn = value; }
 
     protected override void Awake()
     {
@@ -41,6 +44,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         fadeBlack.SetActive(false);
         dialogBox.SetActive(false);
         summary.SetActive(false);
+        debugScreen.SetActive(false);
     }
 
     //Update is Called once per frame
@@ -49,6 +53,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         bool ShopStatus =  GameManager.instance.dialogueSystem.ShopEnter;
         // Debug.Log("ShopStatus = " + ShopStatus);
         PauseMenu();
+        DebugScreen();
         //ShopMenu(ShopStatus);
 
         if(PauseMenuOn || ShopMenuOn || CanSleepMenuOn || NotSleepMenuOn || DialogBoxOn || SummaryOn == true)
@@ -73,6 +78,7 @@ public class UIManager : SingletonMonobehaviour<UIManager>
             }
         }
     }
+
     private void EnablePauseMenu()
     {
         //Destroy any currently dragged items
@@ -302,6 +308,26 @@ public class UIManager : SingletonMonobehaviour<UIManager>
         summary.SetActive(false);
         Player.Instance.canShootCrossbow = true;       //Set Crossbow
     }
+
+    private void DebugScreen()
+    {
+        //Toggle pause menu if escape is pressed
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            if (DebugScreenOn)
+            {
+                DebugScreenOn = false;
+                debugScreen.SetActive(false);
+            }
+            else
+            {
+                DebugScreenOn = true;
+                debugScreen.SetActive(true);
+            }
+        }
+    }
+
 
 
     private void HighlightButtonForSelectedTab()

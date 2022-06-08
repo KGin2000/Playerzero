@@ -6,13 +6,47 @@ using UnityEngine.UI;
 
 public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
 {
+    #region  // Text UI
+
+    //Rabbit
+    public Text NumberOfRabbitText;
+    public Text NumberOfRabbit_AllText;
+    public Text RabbitKilledText;
+    public Text RabbitStarveText;
+    public Text RabbitDefunctText;
+    public Text RabbitImmigrationText;
+    public Text NumberOfRabbit_ImmigrationText;
+    public Text NumberOfRabbit_HeirText;
+
+    //WildBoar
+    public Text NumberOfWildboarText;
+    public Text NumberOfWildboar_AllText;
+    public Text WildboarKilledText;
+    public Text WildboarStarveText;
+    public Text WildboarDefunctText;
+    public Text WildboarImmigrationText;
+    public Text NumberOfWildboar_ImmigrationText;
+    public Text NumberOfWildboar_HeirText;
+
+    public Text NumberOfWolfText;
+    public Text NumberOfWolf_AllText;
+    public Text WolfKilledText;
+    public Text WolfStarveText;
+    public Text WolfDefunctText;
+    public Text WolfImmigrationText;
+    public Text NumberOfWolf_ImmigrationText;
+    public Text NumberOfWolf_HeirText;
+
+    public Text NumberOfTreeText;
+    public Text NumberOfGrassText;
+
+    public Text TemperatureText;
+
+    
+
+    #endregion
+
     #region         //ตัวแปร
-    public Text Rabbit;
-    public Text Boar;
-    public Text Wolf;
-    public Text Tree;
-    public Text Grass;
-    public Text Temp;
     public int NumberOfRabbit;
     public int NumberOfWildboar;
     public int NumberOfWolf;
@@ -27,15 +61,15 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
 
     public int RabbitKilled;
     public int RabbitStarve;
-    public int RabbitAgeOut;
+    public int RabbitDefunct;
 
     public int BoarKilled;
     public int BoarStarve;
-    public int BoarAgeOut;
+    public int BoarDefunct;
 
     public int WolfKilled;
     public int WolfStarve;
-    public int WolfAgeOut;
+    public int WolfDefunct;
 
      int NumberOfRabbit_Old;
      int NumberOfWildboar_Old;
@@ -49,9 +83,9 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
     public int NumberOfWildboar_Immigration;
     public int NumberOfWolf_Immigration;
 
-    public int NumberOfRabbit_Child;
-    public int NumberOfWildboar_Child;
-    public int NumberOfWolf_Child;
+    public int NumberOfRabbit_Heir;
+    public int NumberOfWildboar_Heir;
+    public int NumberOfWolf_Heir;
 
 
     #endregion
@@ -85,14 +119,54 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
         // NumberOfWolf = CheckAllAgent.Instance.Wolf;
         // //NumberOfTree = CheckAllAgent.Instance.Tree;
 
-        Rabbit.text = "Rabbit : " + NumberOfRabbit.ToString();
-        Boar.text = "Boar : " + NumberOfWildboar.ToString();
-        Wolf.text = "Wolf : " + NumberOfWolf.ToString();
-        Tree.text = "Tree : " + NumberOfTree.ToString();
-        Grass.text = "Grass : " + NumberOfGrass.ToString();
-        Temp.text = "Temperature : " + Temperature.ToString() + " ํC";
+        DebugScreenTextUI();
 
         NumberofAnimalChild();
+    }
+
+    void DebugScreenTextUI()
+    {
+        // Rabbit.text = "Rabbit : " + NumberOfRabbit.ToString();
+        // Boar.text = "Boar : " + NumberOfWildboar.ToString();
+        // Wolf.text = "Wolf : " + NumberOfWolf.ToString();
+        // Tree.text = "Tree : " + NumberOfTree.ToString();
+        // Grass.text = "Grass : " + NumberOfGrass.ToString();
+        // Temp.text = "Temperature : " + Temperature.ToString() + " ํC";
+
+        //Rabbit
+        NumberOfRabbitText.text = "Rabbit : " + NumberOfRabbit.ToString();
+        NumberOfRabbit_AllText.text = "All : " + NumberOfRabbit_All.ToString();
+        RabbitKilledText.text = "Killed : " + RabbitKilled.ToString();
+        RabbitStarveText.text = "Starve : " + RabbitStarve.ToString();
+        RabbitDefunctText.text = "Defunct :" + RabbitDefunct.ToString();
+        RabbitImmigrationText.text = "Immigration : " + RabbitImmigration.ToString();
+        NumberOfRabbit_ImmigrationText.text = "NumIm : " + NumberOfRabbit_Immigration.ToString();
+        NumberOfRabbit_HeirText.text = "Heir : " + NumberOfRabbit_Heir.ToString();
+
+        //WildBoar
+        NumberOfWildboarText.text = "Boar : " + NumberOfWildboar.ToString();
+        NumberOfWildboar_AllText.text = "All : " + NumberOfWildboar_All.ToString();
+        WildboarKilledText.text = "Killed : " + BoarKilled.ToString();
+        WildboarStarveText.text = "Starve : " + BoarStarve.ToString();
+        WildboarDefunctText.text = "Defunct :" + BoarDefunct.ToString();
+        WildboarImmigrationText.text = "Immigration : " + BoarImmigration.ToString();
+        NumberOfWildboar_ImmigrationText.text = "NumIm : " + NumberOfWildboar_Immigration.ToString();
+        NumberOfWildboar_HeirText.text = "Heir : " + NumberOfWildboar_Heir.ToString();
+
+        //Wolf
+        NumberOfWolfText.text = "Wolf : " + NumberOfWolf.ToString();
+        NumberOfWolf_AllText.text = "All : " + NumberOfWolf_All.ToString();
+        WolfKilledText.text = "Killed : " + WolfKilled.ToString();
+        WolfStarveText.text = "Starve : " + WolfStarve.ToString();
+        WolfDefunctText.text = "Defunct :" + WolfDefunct.ToString();
+        WolfImmigrationText.text = "Immigration : " + WolfImmigration.ToString();
+        NumberOfWolf_ImmigrationText.text = "NumIm : " + NumberOfWolf_Immigration.ToString();
+        NumberOfWolf_HeirText.text = "Heir : " + NumberOfWolf_Heir.ToString();
+
+        NumberOfTreeText.text = "NumTree : " + NumberOfTree.ToString();
+        NumberOfGrassText.text = "NumGrass : " + NumberOfGrass.ToString();
+
+        TemperatureText.text = "Temperature : " + Temperature.ToString() + " ํC";
     }
 
     public void CheckImmigration(int Rabbit, int Boar, int Wolf)
@@ -109,9 +183,9 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
 
     void NumberofAnimalChild()
     {
-        NumberOfRabbit_Child =  NumberOfRabbit_All - (NumberOfRabbit_Immigration + 30);
-        NumberOfWildboar_Child =  NumberOfWildboar_All - (NumberOfWildboar_Immigration + 10);
-        NumberOfWolf_Child =  NumberOfWolf_All - (NumberOfWolf_Immigration + 3);
+        NumberOfRabbit_Heir =  NumberOfRabbit_All - (NumberOfRabbit_Immigration + 30);
+        NumberOfWildboar_Heir =  NumberOfWildboar_All - (NumberOfWildboar_Immigration + 10);
+        NumberOfWolf_Heir =  NumberOfWolf_All - (NumberOfWolf_Immigration + 3);
     }
 
     private void CheckIncreaseAnimal()
@@ -179,9 +253,9 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
             {
                 RabbitKilled++;
             }
-            else if (Cause == "AgeOut")
+            else if (Cause == "Defunct")
             {
-                RabbitAgeOut++;
+                RabbitDefunct++;
             }
         }
         else if(Name == "Boar")
@@ -194,9 +268,9 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
             {
                 BoarKilled++;
             }
-            else if (Cause == "AgeOut")
+            else if (Cause == "Defunct")
             {
-                BoarAgeOut++;
+                BoarDefunct++;
             }
         }
         if(Name == "Wolf")
@@ -209,9 +283,9 @@ public class DebugScreenManager : SingletonMonobehaviour<DebugScreenManager>
             {
                 WolfKilled++;
             }
-            else if (Cause == "AgeOut")
+            else if (Cause == "Defunct")
             {
-                WolfAgeOut++;
+                WolfDefunct++;
             }
         }
     }

@@ -714,15 +714,15 @@ public class Player : SingletonMonobehaviour<Player>, ISaveable
             TimeManager.Instance.TestAdvanceGameMinute();
         }
 
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            TimeManager.Instance.TestAdvanceGameDay();
-        }
+        // if (Input.GetKeyDown(KeyCode.G))
+        // {
+        //     TimeManager.Instance.TestAdvanceGameDay();
+        // }
 
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            TimeManager.Instance.TestAdvanceSkip();
-        }
+        // if (Input.GetKeyDown(KeyCode.H))
+        // {
+        //     TimeManager.Instance.TestAdvanceSkip();
+        // }
 
 
         // if (Input.GetKeyDown(KeyCode.L))

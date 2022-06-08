@@ -80,7 +80,7 @@ public class Climate : SingletonMonobehaviour<Climate>
         }
         else light = 0;
 
-        totalTemperature = (firstTemperature + light) ;
+        totalTemperature = (firstTemperature + light) - humidity - humidityfromRain;
 
         DebugScreenManager.Instance.GetDataTemp(totalTemperature);
 

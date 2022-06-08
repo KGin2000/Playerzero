@@ -35,7 +35,7 @@ public class PlantStatus : MonoBehaviour
             heal = 100000;
         }
 
-        Collider[] hitObj = Physics.OverlapSphere(eatenPoint.position, colliderRange, enemyLayers);
+        Collider[] hitObj = Physics.OverlapSphere(transform.position, colliderRange, enemyLayers);
 
 
         foreach (Collider enemy in hitObj)//if (currentHealth <= 0)

@@ -29,7 +29,7 @@ public class CheckAllAgent : SingletonMonobehaviour<CheckAllAgent>
 
     void Update()
     {
-        Grass = GameObject.FindGameObjectsWithTag("0").Length;
+        Grass = GameObject.FindGameObjectsWithTag("CheckNumberGrass").Length;
         Wildboar = GameObject.FindGameObjectsWithTag("2").Length;
         Wolf = GameObject.FindGameObjectsWithTag("3").Length;
         Tree = GameObject.FindGameObjectsWithTag("tree").Length;

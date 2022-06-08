@@ -22,7 +22,7 @@ public class Age : MonoBehaviour
         time -= Time.deltaTime;
         if(time <= 0 )
         {
-            DebugScreenManager.Instance.GetDataDeath(AnimalsPrefab.name, "AgeOut");
+            DebugScreenManager.Instance.GetDataDeath(AnimalsPrefab.name, "Defunct");
 
             Destroy(gameObject);
         }

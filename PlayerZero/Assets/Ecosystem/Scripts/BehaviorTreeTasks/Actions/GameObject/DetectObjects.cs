@@ -14,6 +14,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
         public SharedFloat colliderRange;
         public LayerMask enemyLayers;
         public SharedFloat fieldOfViewAngle = 360;
+        public SharedString returnTag;
         public SharedGameObject returnGameObject;
 
         public override void OnStart()
@@ -23,32 +24,14 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
 
         public override TaskStatus OnUpdate()
         {
-            GameObject closest = null;
-            float distance = Mathf.Infinity;
             Vector3 thisObjPos = transform.position;
             Collider[] hitObj = Physics.OverlapSphere(thisObjPos, colliderRange.Value, enemyLayers);
             foreach (Collider obj in hitObj)
             {
-                if (obj.tag == objectTag.Value)
+                if ( obj.tag == objectTag.Value)
                 {
-                    Vector3 space = obj.transform.position - thisObjPos;
-                    float curDistancetag = space.sqrMagnitude;
-                    if (curDistancetag < distance)
-                    {
-                        closest = obj.gameObject;
-                        distance = curDistancetag;
-                    }   
-                }            
-            }
-            if (closest != null)
-            {
-                Vector3 targetPos = closest.transform.position;
-                Vector3 currentPos = transform.position;
-                Vector3 toward = targetPos - currentPos;
-                if (toward.magnitude <= colliderRange.Value)
-                {
-                    Debug.Log("success");
-                    returnGameObject.Value = closest.gameObject;
+                    returnTag.Value = obj.tag;
+                    returnGameObject.Value = obj.gameObject;
                     return TaskStatus.Success;
                 }
             }

@@ -54,8 +54,8 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
             {
                 if ( obj.tag == targetTag.Value)
                 {
-                    if(obj.name.Contains(targetContainName))
-                    {
+                    // if(obj.name.Contains(targetContainName))
+                    // {
                         Vector3 space = obj.transform.position - thisObjPos;
                         float curDistancetag = space.sqrMagnitude;
                         if (curDistancetag < distance)
@@ -63,7 +63,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                             closest = obj.gameObject;
                             distance = curDistancetag;
                         }
-                    }
+                    // }
                 }
             }
             if (closest != null)

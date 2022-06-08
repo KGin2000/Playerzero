@@ -14,7 +14,7 @@ public class SpawnPlants : MonoBehaviour
     public LayerMask Layer;
 
     public int numOfGrassInMap; // check only
-    public int maxGrassInMap; // จำนวนหญ้าในแต่ละเพลน x จำนวนเพลน;
+    public int maxGrassInPlane; // จำนวนหญ้าในแต่ละเพลน x จำนวนเพลน;
 
     public float tempToDay;
     public Collider[] hitColliders;
@@ -33,11 +33,11 @@ public class SpawnPlants : MonoBehaviour
         A = numberAgent_;
         GameObject a = GameObject.FindGameObjectWithTag("InfomationManager");
         climate = a.GetComponent<Climate>();
-        Spawn();
+        //Spawn();
 
         Vector3 size = Plane_.transform.localScale;
         Vector3 Pos = Plane_.transform.position;
-        for (int i = 1; i < 60; i++)
+        for (int i = 1; i <= 180; i++)
         {
             GameObject instanceAgent_ = (GameObject)Instantiate(prefabAgent_);
             instanceAgent_.transform.position = new Vector3(Random.Range((Pos.x + (-size.x * 5f)), (Pos.x + (size.x * 5f))), instanceAgent_.transform.position.y, Random.Range((Pos.z + (-size.z * 5f)), (Pos.z + (size.z * 5f))));
@@ -52,7 +52,7 @@ public class SpawnPlants : MonoBehaviour
 
         hitColliders = Physics.OverlapBox(thisPosition, gameObject.transform.localScale*5, Quaternion.identity, Layer);
 
-        if( Hour == 12)
+        if( TimeManager.Instance.gameHour == 12 && TimeManager.Instance.gameMinute == 0)
         {
             tempToDay = climate.totalTemperature;
             //Debug.Log("tempToDay = " + tempToDay);
@@ -68,22 +68,22 @@ public class SpawnPlants : MonoBehaviour
                 numberAgent_ = A;
             }
 
-            // if(hitColliders.Length < numberAgent_)
-            // {
-            //     Spawn();
-            // }
-        }
-
-        coolDown -= Time.deltaTime;
-        if(coolDown <0 )
-        {
-            if(hitColliders.Length < numberAgent_)
+            if(hitColliders.Length < maxGrassInPlane)
             {
                 Spawn();
-                // coolDown = B;
             }
-            coolDown = B;
-        }     
+        }
+
+        // coolDown -= Time.deltaTime;
+        // if(coolDown <0 )
+        // {
+        //     if(hitColliders.Length < numberAgent_)
+        //     {
+        //         Spawn();
+        //         // coolDown = B;
+        //     }
+        //     coolDown = B;
+        // }     
     }    
 
     public void Spawn()
@@ -91,7 +91,7 @@ public class SpawnPlants : MonoBehaviour
         Vector3 size = Plane_.transform.localScale;
         Vector3 Pos = Plane_.transform.position;       
 
-        for (int i = 1; i < numberAgent_; i++)
+        for (int i = 0; i < numberAgent_; i++)
         {
             GameObject instanceAgent_ = (GameObject)Instantiate(prefabAgent_);
             instanceAgent_.transform.position = new Vector3(Random.Range((Pos.x + (-size.x * 5f)), (Pos.x + (size.x * 5f))), instanceAgent_.transform.position.y, Random.Range((Pos.z + (-size.z * 5f)), (Pos.z + (size.z * 5f))));
