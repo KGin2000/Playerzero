@@ -795,7 +795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  age: 28800
+  age: 14400
   AnimalsPrefab: {fileID: 5072210404699025376}
 --- !u!114 &8532873222605733992
 MonoBehaviour:
@@ -822,14 +822,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Wolf
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 400
+  currentHealth: 400
   maxHungryPoint: 200
   currentHungryPoint: 200
   hungryRate: 0
-  hungryRateNormalMode: 10
-  hungryRateSleepMode: 12
-  hungryRateFastingMode: 20
+  hungryRateNormalMode: 15
+  hungryRateSleepMode: 19
+  hungryRateFastingMode: 25
   Meat: {fileID: 6984738092280742406, guid: 92a2380ec5cf4ea4ea5c456adda4b8e9, type: 3}
   NumberOfMeat: 2
   floatTime: 0

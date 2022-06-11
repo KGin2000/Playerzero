@@ -13,7 +13,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
         public SharedFloat fieldOfViewAngle = 360;
         public SharedGameObject returnGameObject;
 
-        private List<GameObject> gameObjects = new List<GameObject>();
+        public List<GameObject> gameObjects = new List<GameObject>();
 
         public override void OnStart()
         {
@@ -28,8 +28,13 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
             {
                 if ( obj.tag == objectTag.Value)
                 {
+                    //gameObjects.Clear();
                     gameObjects.Add(obj.gameObject);
+                }
+                if(gameObjects.Count >= 10)
+                {
                     returnGameObject.Value = gameObjects[Random.Range(0, gameObjects.Count)];
+                    gameObjects.Clear();
                     return TaskStatus.Success;
                 }
             }

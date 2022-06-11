@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  age: 14400
+  age: 7200
   AnimalsPrefab: {fileID: 2603137418851068140}
 --- !u!114 &8823924292282936563
 MonoBehaviour:
@@ -355,9 +355,9 @@ MonoBehaviour:
   maxHungryPoint: 100
   currentHungryPoint: 100
   hungryRate: 0
-  hungryRateNormalMode: 23
-  hungryRateSleepMode: 28
-  hungryRateFastingMode: 34
+  hungryRateNormalMode: 20
+  hungryRateSleepMode: 23
+  hungryRateFastingMode: 27
   Meat: {fileID: 5349318949007902895, guid: ebfb3e81c9a57204b8f5215c6b018f67, type: 3}
   NumberOfMeat: 1
   floatTime: 0
