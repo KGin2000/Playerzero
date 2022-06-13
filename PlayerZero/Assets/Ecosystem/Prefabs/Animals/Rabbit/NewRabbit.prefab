@@ -357,7 +357,7 @@ MonoBehaviour:
   hungryRate: 0
   hungryRateNormalMode: 20
   hungryRateSleepMode: 23
-  hungryRateFastingMode: 27
+  hungryRateFastingMode: 33
   Meat: {fileID: 5349318949007902895, guid: ebfb3e81c9a57204b8f5215c6b018f67, type: 3}
   NumberOfMeat: 1
   floatTime: 0

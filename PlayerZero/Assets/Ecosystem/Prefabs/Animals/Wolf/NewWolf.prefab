@@ -795,7 +795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  age: 14400
+  age: 12700
   AnimalsPrefab: {fileID: 5072210404699025376}
 --- !u!114 &8532873222605733992
 MonoBehaviour:
